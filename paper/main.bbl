@@ -289,6 +289,18 @@ S.~Kandel, A.~Paepcke, J.~Hellerstein, and J.~Heer.
 }{.}\hspace{.4pt}1979444}}
 
 
+\bibitem{Kandel2012}
+S.~Kandel, A.~Paepcke, J.~M. Hellerstein, and J.~Heer.
+\newblock {Enterprise Data Analysis and Visualization: An Interview Study.}
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  18(12):2917--26, 2012. doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TVCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2012\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}219}}
+
+
 \bibitem{kandel2012profiler}
 S.~Kandel, R.~Parikh, A.~Paepcke, J.~M. Hellerstein, and J.~Heer.
 \newblock Profiler: integrated statistical analysis and visualization for data
