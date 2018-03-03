@@ -25,10 +25,10 @@ tools (such as {\tt ggplot} or {\tt matplotlib}),
 or direct manipulation interfaces (such as 
 Excel or Tableau)~\cite{Momcheva2015,Prabhu2011,Duck2016}. 
 In either case, scientists are required to specify exactly what
-they want to visualize. \tvcg{From our early discussions with analysts from twelve different application areas, we learned that analysts often need to search for their desired pattern amongst large numbers of visualizations.} For example, when trying to find celestial objects
+they want to visualize. \tvcg{From early discussions with analysts from twelve different application areas, we learned that analysts often need to search for their desired pattern amongst large numbers of visualizations.} For example, when trying to find celestial objects
 corresponding to supernovae, which have a specific pattern
 of brightness over time, scientists
-need to individually \tvcg{inspect the visualizations for} \sout{visualize the brightness of} 
+need to individually \tvcg{inspect the visualizations for} 
 each object (often numbering in the thousands) until they find ones that match. 
 Similarly, when trying to infer relationships between two physical
 properties for different subsets of battery electrolytes,
@@ -45,28 +45,12 @@ traversing all potential visualization candidates to find
 and return those that match the specification. 
 We define such systems to be {\em Visual Query Systems}, or VQSs for short.
 There are a number of VQSs that have been introduced in the literature~\cite{mohebbi2011google,Hochheiser2004,wattenberg2001sketching,Siddiqui2017VLDB,ryall2005querylines,holz2009relaxed}. 
-\cut{One such VQS \nonannon{developed by us} is \zv~\cite{Siddiqui2017VLDB}, 
-which supports multiple modes of specification, including a sketching canvas
-where users can draw a pattern of interest, or drag and drop an existing visualization onto
-the same canvas, with the system finding visualizations that are similar to the queried pattern. 
-Similarly, Google Correlate~\cite{mohebbi2011google} 
-and QuerySketch~\cite{wattenberg2001sketching} allow users to draw a trend of interest,
-with the system automating the search to find matching visualizations.}
 \tvcg{For example, Google Correlate~\cite{mohebbi2011google} 
 and QuerySketch~\cite{wattenberg2001sketching} allow users to draw a trend of interest, with the system automating the search to find matching visualizations.}
-
-
-% \kk{As we discussed earlier today, we should define a VQS. Here we hint at what it is by describing other VQSs, but this approach leaves the term somewhat ambiguous}
-% \kk{Either here or in the related work, make clear how ZV differentiates itself from these other VQSs.}
-
-
-\cut{Overall, VQSs appear to be an ideal fit for the challenge of visualization exploration
-described earlier---in that it automates the painful manual exploration
-of visualizations to find desired patterns.}
-\tvcg{Not surprisingly, when asked about the potential viability of VQSs in aiding scientific data analysis,  many analysts indicated that VQSs could be useful in mitigating the challenge of visualization exploration described earlier---since it automates the painful manual exploration of visualizations to find desired patterns.}
+\par \tvcg{Not surprisingly, when asked about the potential viability of VQSs in aiding scientific data analysis,  many analysts indicated that VQSs could be useful in mitigating the challenge of visualization exploration described earlier---since it automates the painful manual exploration of visualizations to find desired patterns.}
 Yet, to the best of our knowledge, 
 VQSs are not very commonly used in practice.
-{\em Our paper seeks to bridge this gap between current research on VQSs and how they can actually be used in practice, as a first step towards the broad adoption of VQSs in data analysis}. 
+{\em Our paper seeks to bridge this gap between current research on VQSs \tvcg{to understand why existing VQSs are commonly used by analysts} and how they can actually be used in practice, as a first step towards the broad adoption of VQSs in data analysis}. 
 In this paper, we present findings from a series of interviews, cognitive walkthroughs, participatory design, and user studies with scientists from three different scientific 
 domains---{\em astronomy, genetics,} and {\em material science}---through a year-long collaboration.
 These scientific use cases present a diverse set of goals and datasets that could benefit from a VQS. Our three main research questions are as follows:
@@ -76,7 +60,7 @@ These scientific use cases present a diverse set of goals and datasets that coul
 
 Via cognitive walkthroughs and interviews,
 we gained an understanding of the data analysis 
-workflows presently employed by our scientists, their needs,
+workflows presently employed by the scientists, their needs,
 and the challenges they face. 
 We identified opportunities where a VQS could
 help accelerate their analysis, by helping them
@@ -92,21 +76,25 @@ Via participatory design, we distilled a set of key
 features that our scientist participants would
 need for VQSs to be useful and usable within their data 
 analysis workflows. 
-\cut{Working with the scientists closely, we developed 20 additional features they proposed by building on top of \nonannon{our}\annon{an existing} open-source VQS, \zv~\cite{Siddiqui2017VLDB, Siddiqui2017}.
-\techreport{Unlike some of the other VQSs, Zenvisage is more recent, is open-source, is a general-purpose visual exploration system (unlike the other tools that only allow exploration of a fixed set of trends), and also provides more sophisticated querying modalities and high-level summaries.}}
+% \cut{Working with the scientists closely, we developed 20 additional features they proposed by building on top of \nonannon{our}\annon{an existing} open-source VQS, \zv~\cite{Siddiqui2017VLDB, Siddiqui2017}.
+% \techreport{Unlike some of the other VQSs, Zenvisage is more recent, is open-source, is a general-purpose visual exploration system (unlike the other tools that only allow exploration of a fixed set of trends), and also provides more sophisticated querying modalities and high-level summaries.}}
 \tvcg{Based on the our early interactions with these analysts, 
 we first built a basic VQS \zv~\cite{Siddiqui2017VLDB,Siddiqui2017}, 
-that, similar to existing VQSs~\cite{wattenberg2001sketching}, allowed users to search for desired trends via drawing on a canvas\cut{, while using an optimized execution engine for scaling to large collections of visualizations with interactive response times}\dor{this part is probably not necessary and also is not something existing VQS has}. Building on top of our functional prototype, we worked closely with the scientists and developed 20 major features through multiple iterations.} The features we developed address challenges shared across multiple use-cases, ranging from additional querying modalities, to features that support a more integrated workflow, to improving the interpretability of the system output, not all of which were supported by prior VQSs in the literature. We interacted with the participants on a regular basis to gather feedback on our VQS and understand how they envision themselves using it.
+that, similar to existing VQSs~\cite{wattenberg2001sketching}, allowed users to search for desired trends via drawing on a canvas.
+%\cut{, while using an optimized execution engine for scaling to large collections of visualizations with interactive response times}\dor{this part is probably not necessary and also is not something existing VQS has}. Building on top of our functional prototype, we worked closely with the scientists and developed 20 major features through multiple iterations.} 
+The features we developed address challenges shared across multiple use-cases, ranging from additional querying modalities, to features that support a more integrated workflow, to improving the interpretability of the system output, not all of which were supported by prior VQSs in the literature. We interacted with the participants on a regular basis to gather feedback on our VQS and understand how they envision themselves using it.
 %We interacted with the participants on a regular basis to gather feedback on our system and how they envision themselves using the system. Through the collaborative design process, we developed 20 additional features suggested by our participants by building on top of an existing open-source VQS, \zv ~\cite{Siddiqui2017VLDB, Siddiqui2017}---we will describe \zv's features later on. \techreport{Unlike some of the other VQSs, Zenvisage is more recent, is open-source, is a general-purpose visual exploration system (unlike the other tools that only allow exploration of a fixed set of trends), and also provides more sophisticated querying modalities and high-level summaries.}
 %Thus, we employ Zenvisage as our prototypical VQS in this paper.
 %Most of these features address challenges that was shared across multiple use cases. We design features ranging from additional querying modalities, to features that support a more integrated workflow, to improving the interpretability of the system output, which were previously unsupported by prior VQSs in literature.%We designed features to support flexible and expressive querying, dynamic faceting, and control capabilities that is previously unsupported by prior VQSs in literature.
 
-\emph{RQ3: How does VQSs accelerate scientific insights?}\\
+\emph{RQ3: How do VQSs accelerate scientific insights?}\\
 \tvcg{\quad \emph{RQ4: How can VQSs fit within the context of existing data analysis workflows?}}
 \\ Our collaborative design experience culminated in a full-fledged VQS capable of provoking rapid iterations of different data operations and hypotheses that enable insight-discovery. To evaluate our final system, we conducted a user study with nine scientists (including those who had participated in the design), all of whom had a vested interest in using a VQS to address their research questions on their datasets. In a 1.5-hour user study, our scientist participants were able to gain novel scientific insights, such as %identifying a star with a transit pattern that was known to harbor a Jupiter-sized planet, 
 finding characteristic gene expression profiles that confirmed the results of a related publication, and learning that the dip in an astronomical light curve is caused by saturated imaging equipment overlooked by the existing error-flagging pipeline. 
-Participants also gained additional insights about their datasets, including debugging a mislabelled feature and 
-finding out that the way data is aggregated across multiple experiments is erroneous on a collaborator's dataset. We learned how VQSs could be contextualized within scientific data analysis workflows and discovered that VQSs can be used beyond the exploratory phase of analysis, for data verification, debugging preliminary datasets, and performing sanity-checks on downstream models.
+Participants also gained additional insights about their datasets, including debugging \tvcg{mislabelled features and 
+uncovering the erroneous data preprocessing procedure applied to a collaborator's dataset.}
+% that the way data is aggregated across multiple experiments is erroneous on a collaborator's dataset. 
+We learned how VQSs could be contextualized within scientific data analysis workflows and discovered that VQSs can be used beyond the exploratory phase of analysis, for data verification, debugging preliminary datasets, and performing sanity-checks on downstream models.
 \par As most existing VQSs are evaluated in a standalone fashion via artificial tasks and datasets, to the best of our knowledge, our study is the first to holistically examine how VQSs can be used in practice and integrated into existing data analysis workflows. From these experiences, we advocate common design guidelines and end-user considerations when building the next generation VQSs.
 \begin{figure*}[ht!]
 \centering
