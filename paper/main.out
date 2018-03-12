@@ -3,32 +3,29 @@
 \BOOKMARK [1][]{section.5}{Methods}{}% 3
 \BOOKMARK [2][]{subsection.6}{Methodology Background}{section.5}% 4
 \BOOKMARK [2][]{subsection.7}{Our Approach}{section.5}% 5
-\BOOKMARK [1][]{section.10}{Understanding Scientific Data Analysis \(R1\)}{}% 6
-\BOOKMARK [2][]{subsection.11}{Participants, Datasets and Workflows}{section.10}% 7
-\BOOKMARK [2][]{subsection.17}{Cognitive Walkthrough Sessions}{section.10}% 8
-\BOOKMARK [1][]{section.22}{Understanding Scientific Data Analysis \(R1\)}{}% 9
-\BOOKMARK [2][]{subsection.23}{Participants, Datasets and Workflows}{section.22}% 10
-\BOOKMARK [2][]{subsection.29}{Cognitive Walkthrough Sessions}{section.22}% 11
-\BOOKMARK [1][]{section.35}{Themes Emerging from Participatory Design \(R2\)}{}% 12
-\BOOKMARK [2][]{subsection.36}{Uninterrupted workflow}{section.35}% 13
-\BOOKMARK [2][]{subsection.39}{Increasing expressiveness of querying capabilities}{section.35}% 14
-\BOOKMARK [2][]{subsection.40}{Ability to dynamically facet through subsets}{section.35}% 15
-\BOOKMARK [2][]{subsection.42}{Finer System-level Control and Understanding}{section.35}% 16
-\BOOKMARK [1][]{section.45}{Final Evaluation Study: Methodology and Results}{}% 17
-\BOOKMARK [2][]{subsection.47}{Data Collection \046 Analysis}{section.45}% 18
-\BOOKMARK [1][]{section.50}{Actionable VQS features for scientific insight \(R3\)}{}% 19
-\BOOKMARK [2][]{subsection.51}{Top-down v.s. Bottom-up analysis}{section.50}% 20
-\BOOKMARK [3][-]{subsubsection.52}{Querying Behavior}{subsection.51}% 21
-\BOOKMARK [3][-]{subsubsection.54}{Faceted Exploration Behavior}{subsection.51}% 22
-\BOOKMARK [3][-]{subsubsection.55}{Novel workflows focusing on one central foraging act.}{subsection.51}% 23
-\BOOKMARK [2][]{subsection.56}{The need for comparisons across multiple collections of visualizations on different data attributes.}{section.50}% 24
-\BOOKMARK [2][]{subsection.57}{Integrated workflow results in more experimentation.}{section.50}% 25
-\BOOKMARK [2][]{subsection.58}{Rapid insights via VQSs catalyze new questions, hypotheses, and actions.}{section.50}% 26
-\BOOKMARK [1][]{section.59}{VQSs within a scientific data analysis workflow \(R4\)}{}% 27
-\BOOKMARK [2][]{subsection.60}{VQSs used beyond the exploration stage of analysis.}{section.59}% 28
-\BOOKMARK [2][]{subsection.61}{VQSs can be used for verifying data fidelity and debugging.}{section.59}% 29
-\BOOKMARK [2][]{subsection.62}{VQSs are used in conjunction with external tools.}{section.59}% 30
-\BOOKMARK [2][]{subsection.63}{Insights derived as preliminary, and can be subjected to more robust testing or lightgraysupported their intuition for more advanced downstream modeling.}{section.59}% 31
-\BOOKMARK [1][]{section.64}{Reflections on Meta-analysis Methodology and Limitations}{}% 32
-\BOOKMARK [1][]{section.74}{Conclusion and Future Work}{}% 33
-\BOOKMARK [1][]{section.75}{Acknowledgment}{}% 34
+\BOOKMARK [1][]{section.9}{Understanding Scientific Data Analysis \(R1\)}{}% 6
+\BOOKMARK [2][]{subsection.10}{Participants, Datasets and Workflows}{section.9}% 7
+\BOOKMARK [2][]{subsection.17}{Cognitive Walkthrough Sessions}{section.9}% 8
+\BOOKMARK [1][]{section.23}{Themes Emerging from Participatory Design \(R2\)}{}% 9
+\BOOKMARK [2][]{subsection.24}{Uninterrupted workflow}{section.23}% 10
+\BOOKMARK [2][]{subsection.27}{Increasing expressiveness of querying capabilities}{section.23}% 11
+\BOOKMARK [2][]{subsection.28}{Ability to dynamically facet through subsets}{section.23}% 12
+\BOOKMARK [2][]{subsection.30}{Finer System-level Control and Understanding}{section.23}% 13
+\BOOKMARK [1][]{section.33}{Final Evaluation Study: Methodology and Results}{}% 14
+\BOOKMARK [2][]{subsection.35}{Data Collection \046 Analysis}{section.33}% 15
+\BOOKMARK [1][]{section.38}{Actionable VQS features for scientific insight \(R3\)}{}% 16
+\BOOKMARK [2][]{subsection.39}{Top-down v.s. Bottom-up analysis}{section.38}% 17
+\BOOKMARK [3][-]{subsubsection.40}{Querying Behavior}{subsection.39}% 18
+\BOOKMARK [3][-]{subsubsection.42}{Faceted Exploration Behavior}{subsection.39}% 19
+\BOOKMARK [3][-]{subsubsection.43}{Novel workflows focusing on one central foraging act.}{subsection.39}% 20
+\BOOKMARK [2][]{subsection.44}{The need for comparisons across multiple collections of visualizations on different data attributes.}{section.38}% 21
+\BOOKMARK [2][]{subsection.45}{Integrated workflow results in more experimentation.}{section.38}% 22
+\BOOKMARK [2][]{subsection.46}{Rapid insights via VQSs catalyze new questions, hypotheses, and actions.}{section.38}% 23
+\BOOKMARK [1][]{section.47}{VQSs within a scientific data analysis workflow \(R4\)}{}% 24
+\BOOKMARK [2][]{subsection.48}{VQSs used beyond the exploration stage of analysis.}{section.47}% 25
+\BOOKMARK [2][]{subsection.49}{VQSs can be used for verifying data fidelity and debugging.}{section.47}% 26
+\BOOKMARK [2][]{subsection.50}{VQSs are used in conjunction with external tools.}{section.47}% 27
+\BOOKMARK [2][]{subsection.51}{Insights derived as preliminary, and can be subjected to more robust testing or lightgraysupported their intuition for more advanced downstream modeling.}{section.47}% 28
+\BOOKMARK [1][]{section.52}{Reflections on Meta-analysis Methodology and Limitations}{}% 29
+\BOOKMARK [1][]{section.62}{Conclusion and Future Work}{}% 30
+\BOOKMARK [1][]{section.63}{Acknowledgment}{}% 31
