@@ -50,13 +50,11 @@ and QuerySketch~\cite{wattenberg2001sketching} allow users to draw a trend of in
 \par \tvcg{Not surprisingly, when asked about the potential viability of VQSs in aiding scientific data analysis,  many analysts indicated that VQSs could be useful in mitigating the challenge of visualization exploration described earlier---since it automates the painful manual exploration of visualizations to find desired patterns.}
 Yet, to the best of our knowledge, 
 VQSs are not very commonly used in practice.
-{\em Our paper seeks to bridge this gap between current research on VQSs \tvcg{to understand why existing VQSs are commonly used by analysts} and how they can actually be used in practice, as a first step towards the broad adoption of VQSs in data analysis}. 
+{\em Our paper seeks to bridge this gap between current research on VQSs \tvcg{to understand why existing VQSs are not commonly used by analysts} and how they can actually be used in practice, as a first step towards the broad adoption of VQSs in data analysis}. 
 In this paper, we present findings from a series of interviews, cognitive walkthroughs, participatory design, and user studies with scientists from three different scientific 
 domains---{\em astronomy, genetics,} and {\em material science}---through a year-long collaboration.
 These scientific use cases present a diverse set of goals and datasets that could benefit from a VQS. Our three main research questions are as follows:
-
-
-\emph{RQ1: What are the challenges in existing scientific data analysis workflows that could be potentially addressed by a VQS?}
+\par \emph{RQ1: What are the challenges in existing scientific data analysis workflows that could be potentially addressed by a VQS?}
 
 Via cognitive walkthroughs and interviews,
 we gained an understanding of the data analysis 
@@ -77,7 +75,8 @@ be most suitable for exploration on VQSs.
 \label{example}
 \vspace{-10pt}
 \end{figure*}
-\emph{RQ2: What types of interface capabilities are necessary to develop VQSs into a useful component of data analysis?}
+
+\par\emph{RQ2: What types of interface capabilities are necessary to develop VQSs into a useful component of data analysis?}
 
 Via participatory design, we distilled a set of key 
 features that our scientist participants would
@@ -85,9 +84,9 @@ need for VQSs to be useful and usable within their data
 analysis workflows. 
 % \cut{Working with the scientists closely, we developed 20 additional features they proposed by building on top of \nonannon{our}\annon{an existing} open-source VQS, \zv~\cite{Siddiqui2017VLDB, Siddiqui2017}.
 % \techreport{Unlike some of the other VQSs, Zenvisage is more recent, is open-source, is a general-purpose visual exploration system (unlike the other tools that only allow exploration of a fixed set of trends), and also provides more sophisticated querying modalities and high-level summaries.}}
-\tvcg{Based on the our early interactions with these analysts, 
+\tvcg{Based on our early interactions with these analysts, 
 we first built a basic VQS \zv~\cite{Siddiqui2017VLDB,Siddiqui2017}, 
-that, similar to existing VQSs~\cite{wattenberg2001sketching}, allowed users to search for desired trends via drawing on a canvas.}
+that, similar to existing VQSs~\cite{wattenberg2001sketching}, allowed users to search for desired trends via drawing on a canvas.}\agp{not clear that you started with ZV, then extended it}\dor{We had a discussion earlier and decided to frame this work as a participatory design process from the very beginning (motivating the use case of VQS) rather than an extension of the ZV system. Not sure if this sentence is framing it correctly.}
 %\cut{, while using an optimized execution engine for scaling to large collections of visualizations with interactive response times}\dor{this part is probably not necessary and also is not something existing VQS has}. Building on top of our functional prototype, we worked closely with the scientists and developed 20 major features through multiple iterations.} 
 The features we developed address challenges shared across multiple use-cases, ranging from additional querying modalities, to features that support a more integrated workflow, to improving the interpretability of the system output, not all of which were supported by prior VQSs in the literature. We interacted with the participants on a regular basis to gather feedback on our VQS and understand how they envision themselves using it.
 %We interacted with the participants on a regular basis to gather feedback on our system and how they envision themselves using the system. Through the collaborative design process, we developed 20 additional features suggested by our participants by building on top of an existing open-source VQS, \zv ~\cite{Siddiqui2017VLDB, Siddiqui2017}---we will describe \zv's features later on. \techreport{Unlike some of the other VQSs, Zenvisage is more recent, is open-source, is a general-purpose visual exploration system (unlike the other tools that only allow exploration of a fixed set of trends), and also provides more sophisticated querying modalities and high-level summaries.}
