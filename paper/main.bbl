@@ -159,7 +159,7 @@ G.~Duck, G.~Nenadic, M.~Filannino, A.~Brass, D.~L. Robertson, and R.~Stevens.
 
 
 \bibitem{Drlica-Wagner2017}
-D.-W. et~al.
+D.~W. et~al.
 \newblock {Dark Energy Survey Year 1 Results: Photometric Data Set for
   Cosmology}.
 \newblock 2017.
@@ -271,11 +271,6 @@ C.~Holz and S.~Feiner.
 }{/}1622176\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}1622217}}
 
-
-\bibitem{jorgensen_2008}
-D.~L. Jorgensen.
-\newblock {\em Participant observation: a methodology for human studies}.
-\newblock Wiley Online Library, 1989.
 
 \bibitem{kandel2011wrangler}
 S.~Kandel, A.~Paepcke, J.~Hellerstein, and J.~Heer.
@@ -576,23 +571,6 @@ T.~Siddiqui, J.~Lee, A.~Kim, E.~Xue, C.~Wang, Y.~Zou, L.~Guo, C.~Liu, X.~Yu,
 }{/}1235}}
 
 
-\bibitem{simonoff2012smoothing}
-J.~S. Simonoff.
-\newblock {\em Smoothing methods in statistics}.
-\newblock Springer Science \& Business Media, 2012.
-
-\bibitem{stonebraker2005one}
-M.~Stonebraker and U.~Cetintemel.
-\newblock " one size fits all": an idea whose time has come and gone.
-\newblock In {\em Data Engineering, 2005. ICDE 2005. Proceedings. 21st
-  International Conference on}, pp. 2--11. IEEE, 2005. doi: {{%
-10\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}1109\discretionary{/}{%
-}{/}ICDE\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}2005\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}1}}
-
-
 \bibitem{Vartak2016}
 M.~Vartak, S.~Huang, T.~Siddiqui, S.~Madden, and A.~Parameswaran.
 \newblock Towards visualization recommendation systems.
@@ -649,17 +627,6 @@ K.~Wongsuphasawat, Z.~Qu, D.~Moritz, R.~Chang, F.~Ouk, A.~Anand, J.~Mackinlay,
 }{.}\hspace{.4pt}1145\discretionary{/}{%
 }{/}3025453\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}3025768}}
-
-
-\bibitem{wu2013scorpion}
-E.~Wu and S.~Madden.
-\newblock Scorpion: Explaining away outliers in aggregate queries.
-\newblock {\em Proceedings of the VLDB Endowment}, 6(8):553--564, 2013. doi:
-  {{%
-10\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}14778\discretionary{/}{%
-}{/}2536354\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}2536356}}
 
 
 \bibitem{Yi2008}

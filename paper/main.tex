@@ -89,7 +89,8 @@
 % \newcommand{\papertext}[1]{{\leavevmode\color{blue}{#1}}}
 % \newcommand{\techreport}[1]{{\leavevmode\color{red}{#1}}}
 \newcommand{\papertext}[1]{#1}
-\newcommand{\techreport}[1]{#1}
+\newcommand{\techreport}[1]{#1} % show up in tvcg
+\newcommand{\notvcgTR}[1]{} % things to remove from tvcg but include in TR
 \newcommand{\nonannon}[1]{#1}
 \newcommand{\annon}[1]{}
 \newcommand{\boldpara}[1]{\textbf{\paragraph{#1}}}
@@ -269,7 +270,6 @@
 %\bibliographystyle{abbrv-doi-narrow}
 %\bibliographystyle{abbrv-doi-hyperref}
 %\bibliographystyle{abbrv-doi-hyperref-narrow}
-
-\bibliography{reference}
+{\footnotesize \bibliography{reference}}
 \end{document}
 

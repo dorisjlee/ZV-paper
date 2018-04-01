@@ -28,15 +28,7 @@ In either case, scientists are required to specify exactly what
 they want to visualize. \tvcg{From early discussions with analysts from twelve different application areas, we learned that analysts often need to search for some desired pattern or trend amongst large numbers of visualizations.} For example, when trying to find celestial objects
 corresponding to supernovae, which have a specific pattern
 of brightness over time, scientists
-need to individually \tvcg{inspect the visualizations of} 
-<<<<<<< HEAD
-each object (often numbering in the thousands) until they find ones that match the pattern. Similarly, when trying to infer relationships between two physical
-=======
-each object (often numbering in the thousands) until they find ones that match the pattern. 
-Similarly, when trying to infer relationships between two physical
->>>>>>> 08008e20f4a35ad4452ebd11a770d0540d87e261
-properties for different subsets of battery electrolytes,
-scientists need to individually visualize these properties
+need to individually \tvcg{inspect the visualizations of} each object (often numbering in the thousands) until they find ones that match the pattern. Similarly, when trying to infer relationships between two physical properties for different subsets of battery electrolytes, scientists need to individually visualize these properties
 for each subset (out of an unbounded number of such subsets)
 until they identify relationships that make sense to them. This process of manually exploring a large number of visualizations 
 is \tvcg{not only error-prone, but also} overwhelming for scientists who do not have extensive knowledge about their
@@ -84,19 +76,8 @@ be most suitable for exploration on VQSs.
 
 Via participatory design, we distilled a set of key features that our scientist participants would
 need for VQSs to be useful and usable within their data analysis workflows. 
-% \cut{Working with the scientists closely, we developed 20 additional features they proposed by building on top of \nonannon{our}\annon{an existing} open-source VQS, \zv~\cite{Siddiqui2017VLDB, Siddiqui2017}.
-% \techreport{Unlike some of the other VQSs, Zenvisage is more recent, is open-source, is a general-purpose visual exploration system (unlike the other tools that only allow exploration of a fixed set of trends), and also provides more sophisticated querying modalities and high-level summaries.}}
 \tvcg{Based on our early interactions with scientists, 
 we started to build a VQS~\cite{Siddiqui2017VLDB,Siddiqui2017} that, similar to existing VQSs~\cite{wattenberg2001sketching}, allowed them to search for desired trends via drawing on a canvas. This early system served as a functional prototype for us to engage with scientists further in a participatory design process, understand how they envision themselves using a VQS, and gather feedback on feature designs that could make the VQS more useful. The features we developed address challenges shared across the three scientific domains, ranging from additional querying modalities, to features that support a more integrated workflow, to improving the interpretability of the system output, not all of which were supported by prior VQSs in the literature. Our collaborative design experience culminated in a full-fledged VQS, \zv, capable of facilitating rapid hypothesis generation and insight discovery.}
-%focused on the systems and scalability aspects of the VQSs and
-
-
-%\cut{, while using an optimized execution engine for scaling to large collections of visualizations with interactive response times}\dor{this part is probably not necessary and also is not something existing VQS has}. Building on top of our functional prototype, we worked closely with the scientists and developed 20 major features through multiple iterations.} 
-%\tvcg{We interacted with the participants on a regular basis to gather feedback on our VQS and understand how they envision themselves using it. The features we developed address challenges shared across multiple use-cases, ranging from additional querying modalities, to features that support a more integrated workflow, to improving the interpretability of the system output, not all of which were supported by prior VQSs in the literature.}
-%We interacted with the participants on a regular basis to gather feedback on our system and how they envision themselves using the system. Through the collaborative design process, we developed 20 additional features suggested by our participants by building on top of an existing open-source VQS, \zv ~\cite{Siddiqui2017VLDB, Siddiqui2017}---we will describe \zv's features later on. \techreport{Unlike some of the other VQSs, Zenvisage is more recent, is open-source, is a general-purpose visual exploration system (unlike the other tools that only allow exploration of a fixed set of trends), and also provides more sophisticated querying modalities and high-level summaries.}
-%Thus, we employ Zenvisage as our prototypical VQS in this paper.
-%Most of these features address challenges that was shared across multiple use cases. We design features ranging from additional querying modalities, to features that support a more integrated workflow, to improving the interpretability of the system output, which were previously unsupported by prior VQSs in literature.%We designed features to support flexible and expressive querying, dynamic faceting, and control capabilities that is previously unsupported by prior VQSs in literature.
-
 \emph{RQ3: How do VQSs accelerate scientific insights?}\\
 \tvcg{\quad \emph{RQ4: How can VQSs fit within the context of existing data analysis workflows?}}
 \\ To evaluate our final system \zv, we conducted a user study with nine scientists (including those who had participated in the design process), all of whom had a vested interest in using a VQS to address their research questions on their datasets. In a 1.5-hour user study, our scientist participants were able to gain novel scientific insights, such as \emph{\tvcg{identifying a star with a transit pattern that was known to harbor a Jupiter-sized planet,} finding characteristic gene expression profiles that confirmed the results of a related publication, and learning that the dip in an astronomical light curve is caused by saturated imaging equipment overlooked by the existing error-flagging pipeline}.  Participants also gained additional insights about their datasets, including debugging \tvcg{mislabelled features and 
