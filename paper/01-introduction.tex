@@ -29,7 +29,12 @@ they want to visualize. \tvcg{From early discussions with analysts from twelve d
 corresponding to supernovae, which have a specific pattern
 of brightness over time, scientists
 need to individually \tvcg{inspect the visualizations of} 
+<<<<<<< HEAD
 each object (often numbering in the thousands) until they find ones that match the pattern. Similarly, when trying to infer relationships between two physical
+=======
+each object (often numbering in the thousands) until they find ones that match the pattern. 
+Similarly, when trying to infer relationships between two physical
+>>>>>>> 08008e20f4a35ad4452ebd11a770d0540d87e261
 properties for different subsets of battery electrolytes,
 scientists need to individually visualize these properties
 for each subset (out of an unbounded number of such subsets)
@@ -94,9 +99,8 @@ we started to build a VQS~\cite{Siddiqui2017VLDB,Siddiqui2017} that, similar to 
 
 \emph{RQ3: How do VQSs accelerate scientific insights?}\\
 \tvcg{\quad \emph{RQ4: How can VQSs fit within the context of existing data analysis workflows?}}
-\\ To evaluate our final system \zv, we conducted a user study with nine scientists (including those who had participated in the design process), all of whom had a vested interest in using a VQS to address their research questions on their datasets. In a 1.5-hour user study, our scientist participants were able to \textit{gain novel scientific insights, such as \tvcg{identifying a star with a transit pattern that was known to harbor a Jupiter-sized planet,} finding characteristic gene expression profiles that confirmed the results of a related publication, and learning that the dip in an astronomical light curve is caused by saturated imaging equipment overlooked by the existing error-flagging pipeline}. 
-Participants also gained additional insights about their datasets, including debugging \tvcg{mislabelled features and 
+\\ To evaluate our final system \zv, we conducted a user study with nine scientists (including those who had participated in the design process), all of whom had a vested interest in using a VQS to address their research questions on their datasets. In a 1.5-hour user study, our scientist participants were able to gain novel scientific insights, such as \emph{\tvcg{identifying a star with a transit pattern that was known to harbor a Jupiter-sized planet,} finding characteristic gene expression profiles that confirmed the results of a related publication, and learning that the dip in an astronomical light curve is caused by saturated imaging equipment overlooked by the existing error-flagging pipeline}.  Participants also gained additional insights about their datasets, including debugging \tvcg{mislabelled features and 
 uncovering the erroneous data preprocessing procedure applied to a collaborator's dataset.}
 % that the way data is aggregated across multiple experiments is erroneous on a collaborator's dataset. 
 We learned how VQSs could be contextualized within scientific data analysis workflows and discovered that VQSs can be used beyond the exploratory phase of analysis, for data verification, debugging preliminary datasets, and performing sanity-checks on downstream models.
-\par As most existing VQSs are evaluated in a standalone fashion via artificial tasks and datasets, to the best of our knowledge, \textit{our study is the first to holistically examine how VQSs can be used in practice and integrated into existing data analysis workflows}. From these experiences, we advocate common design guidelines and end-user considerations when building the next generation VQSs.
+\par As most existing VQSs are evaluated in a standalone fashion via artificial tasks and datasets, to the best of our knowledge, \emph{our study is the first to holistically examine how VQSs can be used in practice and integrated into existing data analysis workflows}. From these experiences, we advocate common design guidelines and end-user considerations when building the next generation VQSs.

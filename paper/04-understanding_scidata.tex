@@ -3,8 +3,12 @@
 %\cut{ \subsection{Understanding Scientific Data Analysis}
 \par Our initial inspiration for building a VQS came from informal discussions with many academic and industry analysts. Their current workflows required the analysts to manually examine a large number of visualizations to derive insights from their data. In this section, we address RQ1 by understanding the limitations and opportunities in existing scientific data analysis workflows in three research areas. We begin by describing the participants in these areas.
 \subsection{Participants, Datasets and Workflows}
+<<<<<<< HEAD
 We recruited participants by reaching out to research groups who were interested in using VQSs for exploring their data via email. %\kk{Need to be more explicit about recruitment strategy here?}
 \tvcg{As we will describe in Section \ref{metastudy}, we initially spoke to analysts from 12 different potential application areas and narrowed down to three use cases in astronomy, genetics, and material science for our participatory design study.} We summarize the common properties of and differences between these three groups of researchers in Figure~\ref{example} and describe the desirable characteristics common to these datasets that make them suitable for VQSs in Section~\ref{metastudy}.
+=======
+We recruited participants by reaching out to research groups who were interested in using VQSs for exploring their data via email. \kk{Need to be more explicit about recruitment strategy here?}\tvcg{As we will describe in more detail in Section \ref{metastudy}, we initially spoke to analysts from 12 different potential application areas and narrowed down to three use cases in astronomy, genetics, and material science for our participatory design study.} We summarize the common properties of and differences between these three groups of researchers in Figure~\ref{example} and describe the desirable characteristics common to these datasets that make them suitable for VQSs in \tvcg{Section~\ref{metastudy}}.
+>>>>>>> 08008e20f4a35ad4452ebd11a770d0540d87e261
 \par Six scientists from three research groups participated in the design of \zv. The evaluation study participants included these six scientists, along with three ``blank-slate'' participants who had never encountered \zv before. While participatory design subjects actively provided feedback on \zv with their data, they only saw us demonstrating their requested features and explaining the system to them, rather than actively using the system on their own. So the evaluation study was the first time that all nine of the participants used \zv to explore their datasets. On average, the participants had more than 8 years of research experience working in their respective fields. We list the participants in Table~\ref{participants}, and will refer to them by their anonymized ID as listed in the table throughout the paper. 
 \begin{table}[h]
 \centering
@@ -18,8 +22,10 @@ We recruited participants by reaching out to research groups who were interested
 \begin{denselist}
 \item Understanding the gene expression profiles of breast cancer cells that exhibit induced, transient, and  repressed patterns after a particular treatment.
 \item Studying common patterns among stars that exhibit planetary transits versus stars that do not, from the Kepler space telescope\footnote{\url{www.nasa.gov/mission_pages/kepler/main/index.html}}.
-\item Identifying battery solvents with favorable properties and mass production potential through studying how changes in certain chemical properties correlate with changes in other chemical properties. \end{denselist}
-The pre-study survey with the participants showed that out of all of the steps in their data analysis workflow\footnote{This includes viewing and browsing data, data cleaning and wrangling, computing statistics, data visualization, and model building or machine learning.}, they spend the most time computing statistics and creating visualizations.
+\item Identifying battery solvents with favorable properties and mass production potential through studying how changes in certain chemical properties correlate with changes in other chemical properties. 
+\end{denselist}
+
+\noindent The pre-study survey with the participants showed that out of all of the steps in their data analysis workflow\footnote{This includes viewing and browsing data, data cleaning and wrangling, computing statistics, data visualization, and model building or machine learning.}, they spend the most time computing statistics and creating visualizations.
 The main bottlenecks cited in their existing workflows included the challenge of dealing with large amounts of data, writing custom processing and analysis scripts, and long turnaround times incurred by making modifications to an upstream operation in a segmented workflow. %\ccut{On average, participants expressed interest in adopting \zv in their day-to-day workflow as eight from a Likert scale of ten after the study \kk{not sure what this means}.}
 \begin{figure*}[ht!]
 \centering
