@@ -2,7 +2,7 @@
 \BOOKMARK [1][]{section.3}{Visual Query Systems: Definition and Brief Survey}{}% 2
 \BOOKMARK [1][]{section.4}{Methods}{}% 3
 \BOOKMARK [2][]{subsection.5}{Evaluating Visual Analytics Systems}{section.4}% 4
-\BOOKMARK [2][]{subsection.6}{Our Approach}{section.4}% 5
+\BOOKMARK [2][]{subsection.6}{Our Approach: Multiple Design Studies with Initial Prototype}{section.4}% 5
 \BOOKMARK [1][]{section.8}{Understanding Scientific Data Analysis \(RQ1\)}{}% 6
 \BOOKMARK [2][]{subsection.9}{Participants, Datasets and Workflows}{section.8}% 7
 \BOOKMARK [2][]{subsection.16}{Cognitive Walkthrough Sessions}{section.8}% 8
@@ -23,8 +23,8 @@
 \BOOKMARK [2][]{subsection.40}{Rapid insights via VQSs catalyze new questions, hypotheses, and actions.}{section.32}% 23
 \BOOKMARK [1][]{section.41}{VQSs within a scientific data analysis workflow \(RQ4\)}{}% 24
 \BOOKMARK [2][]{subsection.42}{VQSs used beyond the exploration stage of analysis.}{section.41}% 25
-\BOOKMARK [2][]{subsection.43}{VQSs can be used for verifying data fidelity and debugging.}{section.41}% 26
+\BOOKMARK [2][]{subsection.43}{VQSs for verifying data fidelity and debugging.}{section.41}% 26
 \BOOKMARK [2][]{subsection.44}{VQSs are used in conjunction with external tools.}{section.41}% 27
-\BOOKMARK [2][]{subsection.45}{Insights derived as preliminary, and can be subjected to more robust testing or lightgraysupported their intuition for more advanced downstream modeling.}{section.41}% 28
+\BOOKMARK [2][]{subsection.45}{Insights derived from VQS seen as preliminary and can be subjected to more robust testing or downstream modeling.}{section.41}% 28
 \BOOKMARK [1][]{section.46}{Reflections on Meta-analysis Methodology and Limitations}{}% 29
 \BOOKMARK [1][]{section.50}{Conclusion and Future Work}{}% 30
