@@ -44,9 +44,7 @@ C.~R. Aragon, S.~S. Poon, G.~S. Aldering, R.~C. Thomas, and R.~Quimby.
 
 
 \bibitem{AustinNothaft2015}
-F.~{Austin Nothaft}, M.~Massie, T.~Danford, Z.~Zhang, U.~Laserson,
-  C.~Yeksigian, J.~Kottalam, A.~Ahuja, J.~Hammerbacher, M.~Linderman, M.~J.
-  Franklin, A.~D. Joseph, and D.~A. Patterson.
+{Austin Nothaft et al.}
 \newblock {Rethinking Data-Intensive Science Using Scalable Analytics Systems}.
 \newblock {\em Proceedings of the 2015 ACM SIGMOD International Conference on
   Management of Data}, pp. 631--646, 2015. doi: {{%
@@ -70,7 +68,7 @@ A.~Barsky, T.~Munzner, J.~Gardy, and R.~Kincaid.
 
 
 \bibitem{Chen2016}
-N.-C. Chen, S.~Poon, L.~Ramakrishnan, and C.~R. Aragon.
+N.~C. Chen, S.~Poon, L.~Ramakrishnan, and C.~R. Aragon.
 \newblock {Considering Time in Designing Large-Scale Systems for Scientific
   Computing}.
 \newblock {\em Proceedings of the 19th ACM Conference on Computer-Supported
@@ -95,8 +93,7 @@ J.~Chuang, D.~Ramage, C.~Manning, and J.~Heer.
 
 
 \bibitem{Ciolfi2016}
-L.~Ciolfi, G.~Avram, L.~Maye, N.~Dulake, M.~T. Marshall, D.~van Dijk, and fiona
-  McDermott.
+{Ciolfi et al.}
 \newblock {Articulating Co-Design in Museums: Reflections on Two Participatory
   Processes}.
 \newblock {\em Proceedings of the 19th ACM Conference on Computer-Supported
@@ -146,20 +143,8 @@ Y.~Demchenko, P.~Grosso, and P.~Membrey.
 }{.}\hspace{.4pt}6567203}}
 
 
-\bibitem{Duck2016}
-G.~Duck, G.~Nenadic, M.~Filannino, A.~Brass, D.~L. Robertson, and R.~Stevens.
-\newblock A survey of bioinformatics database and software usage through mining
-  the literature.
-\newblock {\em PLOS ONE}, 11(6):1--25, 06 2016. doi: {{%
-10\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}1371\discretionary{/}{%
-}{/}journal\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}pone\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}0157989}}
-
-
 \bibitem{Drlica-Wagner2017}
-D.~W. et~al.
+{Drlica Wagner et al.}
 \newblock {Dark Energy Survey Year 1 Results: Photometric Data Set for
   Cosmology}.
 \newblock 2017.
@@ -204,37 +189,12 @@ D.~Gotz and Z.~Wen.
 \bibitem{Gould1983}
 J.~D. Gould and C.~Lewis.
 \newblock {Designing for usability---key principles and what designers think}.
-\newblock {\em CHI 83 Proceedings of the SIGCHI conference on Human Factors in
+\newblock {\em Proceedings of the SIGCHI conference on Human Factors in
   Computing Systems}, 28(3):50--53, 1983. doi: {{%
 10\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}1145\discretionary{/}{%
 }{/}800045\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}801579}}
-
-
-\bibitem{Gregory2012}
-M.~Gregory and B.~Shneiderman.
-\newblock {\em Shape Identification in Temporal Data Sets}, pp. 305--321.
-\newblock Springer London, London, 2012. doi: {{%
-10\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}1007\discretionary{/}{%
-}{/}978\discretionary{%
-}{-}{-}1\discretionary{%
-}{-}{-}4471\discretionary{%
-}{-}{-}2804\discretionary{%
-}{-}{-}5\_17}}
-
-
-\bibitem{Guo2011}
-P.~J. Guo, S.~Kandel, J.~M. Hellerstein, and J.~Heer.
-\newblock Proactive wrangling: mixed-initiative end-user programming of data
-  transformation scripts.
-\newblock In {\em Proceedings of the 24th annual ACM symposium on User
-  interface software and technology}, pp. 65--74. ACM, 2011. doi: {{%
-10\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}1145\discretionary{/}{%
-}{/}2047196\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}2047205}}
 
 
 \bibitem{Heer2012}
@@ -259,17 +219,6 @@ H.~Hochheiser and B.~Shneiderman.
 }{/}palgrave\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}ivs\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}9500061}}
-
-
-\bibitem{holz2009relaxed}
-C.~Holz and S.~Feiner.
-\newblock Relaxed selection techniques for querying time-series graphs.
-\newblock In {\em Proceedings of the 22nd annual ACM symposium on User
-  interface software and technology}, pp. 213--222. ACM, 2009. doi: {{%
-10\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}1145\discretionary{/}{%
-}{/}1622176\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}1622217}}
 
 
 \bibitem{kandel2011wrangler}
@@ -310,7 +259,8 @@ M.~Kersten, S.~Idreos, S.~Manegold, and E.~Liarou.
 \bibitem{Kery2017}
 M.~B. Kery, A.~Horvath, and B.~A. Myers.
 \newblock Variolite: Supporting exploratory programming by data scientists.
-\newblock In {\em CHI}, pp. 1265--1276, 2017. doi: {{%
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, pp. 1265--1276, 2017. doi: {{%
 10\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}1145\discretionary{/}{%
 }{/}3025453\hspace{.1pt}\discretionary{.}{%
@@ -331,7 +281,7 @@ A.~Key, B.~Howe, D.~Perry, and C.~Aragon.
 \bibitem{lam2012empirical}
 H.~Lam, E.~Bertini, P.~Isenberg, C.~Plaisant, and S.~Carpendale.
 \newblock Empirical studies in information visualization: Seven scenarios.
-\newblock {\em IEEE transactions on visualization and computer graphics},
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
   18(9):1520--1536, 2012. doi: {{%
 10\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}1109\discretionary{/}{%
@@ -344,7 +294,8 @@ H.~Lam, E.~Bertini, P.~Isenberg, C.~Plaisant, and S.~Carpendale.
 G.~G. M{\'{e}}ndez, U.~Hinrichs, and M.~Nacenta.
 \newblock {Bottom-up vs . Top-down : Trade-offs in Efficiency , Understanding ,
   Freedom and Creativity with InfoVis Tools}.
-\newblock {\em CHI'17 Proceedings}, 2017. doi: {{%
+\newblock {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, 2017. doi: {{%
 10\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}1145\discretionary{/}{%
 }{/}3025453\hspace{.1pt}\discretionary{.}{%
@@ -363,7 +314,7 @@ D.~C. Miller, N.~J. Salkind, and D.~C. Miller.
 \newblock SAGE, 2002.
 
 \bibitem{mohebbi2011google}
-M.~Mohebbi, D.~Vanderkam, J.~Kodysh, R.~Schonberger, H.~Choi, and S.~Kumar.
+{Mohebbi et al.}
 \newblock Google correlate whitepaper.
 \newblock 2011.
 
@@ -418,11 +369,11 @@ C.~North.
 
 
 \bibitem{Patel2010}
-K.~Patel, N.~Bancroft, S.~M. Drucker, J.~Fogarty, A.~J. Ko, and J.~Landay.
+{Patel et al.}
 \newblock Gestalt: integrated support for implementation and analysis in
   machine learning.
 \newblock In {\em Proceedings of the 23nd annual ACM symposium on User
-  interface software and technology}, pp. 37--46. ACM, 2010. doi: {{%
+  Interface Software and Technology}, pp. 37--46. ACM, 2010. doi: {{%
 10\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}1145\discretionary{/}{%
 }{/}1866029\hspace{.1pt}\discretionary{.}{%
@@ -430,7 +381,7 @@ K.~Patel, N.~Bancroft, S.~M. Drucker, J.~Fogarty, A.~J. Ko, and J.~Landay.
 
 
 \bibitem{Peng2016}
-P.-C. Peng and S.~Sinha.
+P.~C. Peng and S.~Sinha.
 \newblock Quantitative modeling of gene expression using dna shape features of
   binding sites.
 \newblock {\em Nucleic Acids Research}, 44(13):e120, 2016. doi: {{%
@@ -444,14 +395,14 @@ P.-C. Peng and S.~Sinha.
 P.~Pirolli and S.~Card.
 \newblock The sensemaking process and leverage points for analyst technology as
   identified through cognitive task analysis.
-\newblock In {\em Proceedings of international conference on intelligence
-  analysis}, vol.~5, pp. 2--4, 2005.
+\newblock In {\em Proceedings of International Conference on Intelligence
+  Analysis}, vol.~5, pp. 2--4, 2005.
 
 \bibitem{Plaisant2004}
 C.~Plaisant.
 \newblock The challenge of information visualization evaluation.
-\newblock In {\em Proceedings of the working conference on Advanced visual
-  interfaces}, pp. 109--116. ACM, 2004. doi: {{%
+\newblock In {\em Proceedings of the Working Conference on Advanced Visual
+  Interfaces}, pp. 109--116. ACM, 2004. doi: {{%
 10\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}1145\discretionary{/}{%
 }{/}989863\hspace{.1pt}\discretionary{.}{%
@@ -462,8 +413,8 @@ C.~Plaisant.
 S.~S. Poon, R.~C. Thomas, C.~R. Aragon, and B.~Lee.
 \newblock Context-linked virtual assistants for distributed teams: an
   astrophysics case study.
-\newblock In {\em Proceedings of the 2008 ACM conference on Computer supported
-  cooperative work}, pp. 361--370. ACM, 2008. doi: {{%
+\newblock In {\em Proceedings of the 2008 ACM Conference on Computer supported
+  Cooperative Work}, pp. 361--370. ACM, 2008. doi: {{%
 10\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}1145\discretionary{/}{%
 }{/}1460563\hspace{.1pt}\discretionary{.}{%
@@ -471,8 +422,7 @@ S.~S. Poon, R.~C. Thomas, C.~R. Aragon, and B.~Lee.
 
 
 \bibitem{Prabhu2011}
-P.~Prabhu, T.~B. Jablin, A.~Raman, Y.~Zhang, J.~Huang, H.~Kim, N.~P. Johnson,
-  F.~Liu, S.~Ghosh, S.~Beard, T.~Oh, M.~Zoufaly, D.~Walker, and D.~I. August.
+{Prabhu et al.}
 \newblock A survey of the practice of computational science.
 \newblock In {\em State of the Practice Reports}, SC '11, pp. 19:1--19:12. ACM,
   New York, NY, USA, 2011. doi: {{%
@@ -483,7 +433,7 @@ P.~Prabhu, T.~B. Jablin, A.~Raman, Y.~Zhang, J.~Huang, H.~Kim, N.~P. Johnson,
 
 
 \bibitem{ryall2005querylines}
-K.~Ryall, N.~Lesh, T.~Lanning, D.~Leigh, H.~Miyashita, and S.~Makino.
+{Ryall et al.}
 \newblock Querylines: approximate query for visual browsing.
 \newblock In {\em CHI'05 Extended Abstracts on Human Factors in Computing
   Systems}, pp. 1765--1768. ACM, 2005. doi: {{%
@@ -537,18 +487,6 @@ B.~Shneiderman and C.~Plaisant.
 }{.}\hspace{.4pt}1168158}}
 
 
-\bibitem{Siddiqui2017VLDB}
-T.~Siddiqui, A.~Kim, J.~Lee, K.~Karahalios, and A.~Parameswaran.
-\newblock Effortless data exploration with zenvisage: an expressive and
-  interactive visual analytics system.
-\newblock {\em Proceedings of the VLDB Endowment}, 10(4):457--468, 2016. doi:
-  {{%
-10\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}14778\discretionary{/}{%
-}{/}3025111\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}3025126}}
-
-
 \bibitem{Siddiqui2017}
 T.~Siddiqui, J.~Lee, A.~Kim, E.~Xue, C.~Wang, Y.~Zou, L.~Guo, C.~Liu, X.~Yu,
   K.~Karahalios, and A.~Parameswaran.
@@ -559,14 +497,16 @@ T.~Siddiqui, J.~Lee, A.~Kim, E.~Xue, C.~Wang, Y.~Zou, L.~Guo, C.~Liu, X.~Yu,
 }{/}1235}}
 
 
-\bibitem{Vartak2016}
-M.~Vartak, S.~Huang, T.~Siddiqui, S.~Madden, and A.~Parameswaran.
-\newblock Towards visualization recommendation systems.
-\newblock {\em ACM SIGMOD Record}, 45(4):34--39, 2017. doi: {{%
+\bibitem{Siddiqui2017VLDB}
+{Siddiqui et al.}
+\newblock Effortless data exploration with zenvisage: an expressive and
+  interactive visual analytics system.
+\newblock {\em Proceedings of the VLDB Endowment}, 10(4):457--468, 2016. doi:
+  {{%
 10\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}1145\discretionary{/}{%
-}{/}3092931\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}3092937}}
+}{.}\hspace{.4pt}14778\discretionary{/}{%
+}{/}3025111\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}3025126}}
 
 
 \bibitem{Vartak2015}
@@ -606,8 +546,7 @@ K.~Wongsuphasawat, D.~Moritz, A.~Anand, J.~Mackinlay, B.~Howe, and J.~Heer.
 
 
 \bibitem{Wongsuphasawat2017}
-K.~Wongsuphasawat, Z.~Qu, D.~Moritz, R.~Chang, F.~Ouk, A.~Anand, J.~Mackinlay,
-  B.~Howe, and J.~Heer.
+{Wongsuphasawat et al.}
 \newblock {Voyager 2 : Augmenting Visual Analysis with Partial View
   Specifications}.
 \newblock 2017. doi: {{%
@@ -618,7 +557,7 @@ K.~Wongsuphasawat, Z.~Qu, D.~Moritz, R.~Chang, F.~Ouk, A.~Anand, J.~Mackinlay,
 
 
 \bibitem{Yi2008}
-J.~S. Yi, Y.-a. Kang, J.~T. Stasko, and J.~a. Jacko.
+J.~S. Yi, Y.-A. Kang, J.~T. Stasko, and J.~A. Jacko.
 \newblock {Understanding and characterizing insights: How Do People Gain
   Insights Using Information Visualization?}
 \newblock {\em Proceedings of the 2008 conference on BEyond time and errors
@@ -635,7 +574,7 @@ E.~Zgraggen, S.~M. Drucker, D.~Fisher, and R.~DeLine.
 \newblock {(s|qu)eries: Visual Regular Expressions for Querying and Exploring
   Event Sequences}.
 \newblock {\em Proceedings of the 33rd Annual ACM Conference on Human Factors
-  in Computing Systems - CHI '15}, pp. 2683--2692, 2015. doi: {{%
+  in Computing Systems}, pp. 2683--2692, 2015. doi: {{%
 10\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}1145\discretionary{/}{%
 }{/}2702123\hspace{.1pt}\discretionary{.}{%

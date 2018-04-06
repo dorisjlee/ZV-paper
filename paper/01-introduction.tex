@@ -23,7 +23,7 @@ To explore their data, many scientists currently
 create visualizations, either programmatically using 
 tools (such as {\tt ggplot} or {\tt matplotlib}),
 or visualization construction interfaces (such as 
-Excel or Tableau)~\cite{Momcheva2015,Prabhu2011,Duck2016}. 
+Excel or Tableau)~\cite{Momcheva2015,Prabhu2011}.
 In either case, scientists are required to specify exactly what
 they want to visualize. \tvcg{From early discussions with analysts from twelve different application areas, we learned that analysts often need to search for some desired pattern or trend amongst large numbers of visualizations.} For example, when trying to find celestial objects
 corresponding to supernovae, which have a specific pattern
@@ -40,7 +40,7 @@ or interface, with the system automatically
 traversing all potential visualization candidates to find
 and return those that match the specification. 
 We define such systems to be {\em Visual Query Systems}, or VQSs for short.
-There are a number of VQSs that have been introduced in the literature~\cite{mohebbi2011google,Hochheiser2004,wattenberg2001sketching,Siddiqui2017VLDB,ryall2005querylines,holz2009relaxed}. 
+There are a number of VQSs that have been introduced in the literature~\cite{mohebbi2011google,Hochheiser2004,wattenberg2001sketching,Siddiqui2017VLDB,ryall2005querylines}. 
 \tvcg{For example, Google Correlate~\cite{mohebbi2011google} 
 and QuerySketch~\cite{wattenberg2001sketching} allow users to draw a trend of interest, with the system automating the search to find matching visualizations.}
 \par \tvcg{Not surprisingly, when asked about the potential viability of VQSs in aiding scientific data analysis,  many scientists indicated that VQSs could be useful in mitigating the challenge of visualization exploration described earlier---since it automates the painful manual exploration of visualizations to find desired patterns.}
@@ -50,9 +50,9 @@ VQSs are not very commonly used in practice.
 In this paper, we present findings from a series of interviews, cognitive walkthroughs, participatory design, and user studies with scientists from three different scientific 
 domains---{\em astronomy, genetics,} and {\em material science}---through a year-long collaboration.
 These scientific use cases present a diverse set of goals and datasets that could benefit from a VQS. Our three main research questions are as follows:
-\par \emph{RQ1: What are the challenges in existing scientific data analysis workflows that could be potentially addressed by a VQS?}
 
-Via cognitive walkthroughs and interviews,
+\noindent \emph{RQ1: What are the challenges in existing scientific data analysis workflows that could be potentially addressed by a VQS?}
+\par Via cognitive walkthroughs and interviews,
 we gained an understanding of the data analysis 
 workflows presently employed by the scientists, their needs,
 and the challenges they face. 
@@ -72,16 +72,13 @@ be most suitable for exploration on VQSs.
 \vspace{-10pt}
 \end{figure*}
 
-\par\emph{RQ2: What types of interface capabilities are necessary to develop VQSs into a useful component of data analysis?}
-
-Via participatory design, we distilled a set of key features that our scientist participants would
+\noindent \emph{RQ2: What types of interface capabilities are necessary to develop VQSs into a useful component of data analysis?}
+\par Via participatory design, we distilled a set of key features that our scientist participants would
 need for VQSs to be useful and usable within their data analysis workflows. 
 \tvcg{Based on our early interactions with scientists, 
 we started to build a VQS~\cite{Siddiqui2017VLDB,Siddiqui2017} that, similar to existing VQSs~\cite{wattenberg2001sketching}, allowed them to search for desired trends via drawing on a canvas. This early system served as a functional prototype for us to engage with scientists further in the participatory design process, understand how they envision themselves using a VQS, and gather feedback on feature designs that could make the VQS more useful. The features we developed address challenges shared across the three scientific domains, ranging from additional querying modalities, to features that support a more integrated workflow, to improving the interpretability of the system output, \tvcg{most of them missing in} prior VQSs in the literature. Our collaborative design experience culminated in a full-fledged VQS, \zv, capable of facilitating rapid hypothesis generation and insight discovery.}
 
-\noindent
-\emph{RQ3: How do VQSs accelerate scientific insights?} \tvcg{and} \\
-\emph{RQ4: How can VQSs fit within the context of existing data analysis workflows?}
+\noindent \emph{RQ3: How do VQSs accelerate scientific insights?} and \emph{RQ4: How can VQSs fit within the context of existing data analysis workflows?}
 \\ To evaluate our final system \zv, we conducted a user study with nine scientists (including those who had participated in the design process), all of whom had a vested interest in using a VQS to address their research questions on their datasets. In a 1.5-hour user study, our scientist participants were able to gain novel scientific insights, such as \emph{\tvcg{identifying a star with a transient pattern that was known to harbor a Jupiter-sized planet,} finding characteristic gene expression profiles that confirmed the results of a related publication, and learning that the dip in an astronomical light curve is caused by saturated imaging equipment overlooked by the existing error-detection pipeline}.  Participants also gained additional insights about their datasets, including debugging \tvcg{mislabelled features and 
 uncovering the erroneous data preprocessing procedure applied to a collaborator's dataset.}
 % that the way data is aggregated across multiple experiments is erroneous on a collaborator's dataset. 
