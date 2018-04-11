@@ -233,16 +233,16 @@ S.~Kandel, A.~Paepcke, J.~Hellerstein, and J.~Heer.
 }{.}\hspace{.4pt}1979444}}
 
 
-\bibitem{kandel2012profiler}
-S.~Kandel, R.~Parikh, A.~Paepcke, J.~M. Hellerstein, and J.~Heer.
-\newblock Profiler: integrated statistical analysis and visualization for data
-  quality assessment.
-\newblock In {\em Proceedings of the International Working Conference on
-  Advanced Visual Interfaces}, pp. 547--554. ACM, 2012. doi: {{%
+\bibitem{Kandel2012}
+S.~Kandel, A.~Paepcke, J.~M. Hellerstein, and J.~Heer.
+\newblock {Enterprise Data Analysis and Visualization: An Interview Study.}
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  18(12):2917--26, 2012. doi: {{%
 10\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}1145\discretionary{/}{%
-}{/}2254556\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}2254659}}
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TVCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2012\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}219}}
 
 
 \bibitem{Kersten2011}
@@ -312,11 +312,6 @@ T.~M. Michael~Sedlmair, Miriah~Meyer.
 D.~C. Miller, N.~J. Salkind, and D.~C. Miller.
 \newblock {\em Handbook of research design and social measurement}.
 \newblock SAGE, 2002.
-
-\bibitem{mohebbi2011google}
-{Mohebbi et al.}
-\newblock Google correlate whitepaper.
-\newblock 2011.
 
 \bibitem{Momcheva2015}
 I.~Momcheva and E.~Tollerud.
@@ -543,17 +538,6 @@ K.~Wongsuphasawat, D.~Moritz, A.~Anand, J.~Mackinlay, B.~Howe, and J.~Heer.
 }{/}TVCG\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}2015\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}2467191}}
-
-
-\bibitem{Wongsuphasawat2017}
-{Wongsuphasawat et al.}
-\newblock {Voyager 2 : Augmenting Visual Analysis with Partial View
-  Specifications}.
-\newblock 2017. doi: {{%
-10\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}1145\discretionary{/}{%
-}{/}3025453\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}3025768}}
 
 
 \bibitem{Yi2008}
