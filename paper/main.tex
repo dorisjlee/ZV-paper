@@ -1,8 +1,8 @@
-\documentclass[journal]{vgtc}                % final (journal style)
+%\documentclass[journal]{vgtc}                % final (journal style)
 %\documentclass[review,journal]{vgtc}         % review (journal style)
 %\documentclass[widereview]{vgtc}             % wide-spaced review
 %\documentclass[preprint,journal]{vgtc}       % preprint (journal style)
-
+\documentclass[journal,compsoc]{IEEEtran}
 
 \pagenumbering{arabic}
 
@@ -200,65 +200,27 @@
 \usepackage{cite}                      % needed to automatically sort the references
 \usepackage{tabu}                      % only used for the table example
 \usepackage{booktabs}                  % only used for the table example
-%% We encourage the use of mathptmx for consistent usage of times font
-%% throughout the proceedings. However, if you encounter conflicts
-%% with other math-related packages, you may want to disable it.
 
-%% In preprint mode you may define your own headline.
-%\preprinttext{To appear in IEEE Transactions on Visualization and Computer Graphics.}
-
-%% If you are submitting a paper to a conference for review with a double
-%% blind reviewing process, please replace the value ``0'' below with your
-%% OnlineID. Otherwise, you may safely leave it at ``0''.
-\onlineid{0}
-
-%% declare the category of your paper, only shown in review mode
-\vgtccategory{Research}
-%% please declare the paper type of your paper to help reviewers, only shown in review mode
-%% choices:
-%% * algorithm/technique
-%% * application/design study
-%% * evaluation
-%% * system
-%% * theory/model
-\vgtcpapertype{application/design study}
-
-%% Paper title.
-\title{Accelerating Scientific Data Exploration via Visual Query System}
-
-
-%% Abstract section.
-\abstract{The increasing availability of rich and complex data in a variety of scientific domains poses a pressing need for tools to enable scientists to rapidly make sense of and gather insights from data. One proposed solution is to design visual query systems (VQSs) that allow scientists to \tvcg{interactively} search for desired patterns in their datasets. While many existing VQSs promise to accelerate exploratory data analysis by facilitating this search, they are not widely used in practice. Through a year-long collaboration with scientists in three distinct domains---astronomy, genetics, and material science---we study the impact of various features within VQSs that can aid rapid visual data analysis, and how VQSs fit into a scientists' analysis workflow.  Our findings offer design guidelines for improving the usability and adoption of next-generation VQSs, paving the way for VQSs to be applied to a variety of scientific domains.} % end of abstract
-
-\keywords{Data visualization, exploratory data analysis, visual query, scientific data.}
-%% Copyright space is enabled by default as required by guidelines.
-%% It is disabled by the 'review' option or via the following command:
-% \nocopyrightspace
-
-\vgtcinsertpkg
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%% START OF THE PAPER %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\title{\plaintitle}
-
+\title{Accelerating Scientific Data Exploration via Visual Query System}
 \author{Doris Jung-Lin Lee, John Lee, Tarique Siddiqui,\\Jaewoo Kim, Karrie Karahalios, Aditya Parameswaran}
-\authorfooter{
-\item
- All authors are with University of Illinois, Urbana-Champaign. 
- \\ E-mail: jlee782, lee98, tsiddiq2, jkim475, kkarhal, adityagp@illinois.edu.
-}
+% \IEEEcompsocitemizethanks{\IEEEcompsocthanksitem All authors are with University of Illinois, Urbana-Champaign. \protect\\ E-mail: jlee782, lee98, tsiddiq2, jkim475, kkarhal, adityagp@illinois.edu.}
+\IEEEtitleabstractindextext{%
+\begin{abstract}
+The increasing availability of rich and complex data in a variety of scientific domains poses a pressing need for tools to enable scientists to rapidly make sense of and gather insights from data. One proposed solution is to design visual query systems (VQSs) that allow scientists to interactively search for desired patterns in their datasets. While many existing VQSs promise to accelerate exploratory data analysis by facilitating this search, they are not widely used in practice. Through a year-long collaboration with scientists in three distinct domains---astronomy, genetics, and material science---we study the impact of various features within VQSs that can aid rapid visual data analysis, and how VQSs fit into a scientists' analysis workflow. Our findings offer design guidelines for improving the usability and adoption of next-generation VQSs, paving the way for VQSs to be applied to a variety of scientific domains.
+\end{abstract}
 
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+Visual analytics, visualization, exploratory data analysis, visual query, scientific data.
+\end{IEEEkeywords}}
 \maketitle
 
-%\begin{abstract}
-%The increasing availability of rich and complex data in a variety of scientific domains poses a pressing need for tools to enable scientists to rapidly make sense of and gather insights from data. One proposed solution is to design visual query systems (VQSs) that allow scientists to search for desired patterns in their datasets. While many existing VQSs promise to accelerate exploratory data analysis by facilitating this search, they are unfortunately not widely used in practice. Through a year-long collaboration with scientists in three distinct domains---astronomy, genetics, and material science---we study the impact of various features within VQSs that can aid rapid visual data analysis, and how VQSs fit into a scientists' analysis workflow.  Our findings offer design guidelines for improving the usability and adoption of next-generation VQSs, paving the way for VQSs to be applied to a variety of scientific domains.
-%\raggedbottom
-%\end{abstract}
-
-%\redout{Some overstruck text}
 \input{01-introduction}
 \input{02-relatedwork}
 \input{03-methodology}
@@ -269,10 +231,43 @@
 \input{08-vqs-workflow-discussion}
 \input{09-methodology-discussion}
 \input{10-conclusion}
-\bibliographystyle{abbrv-doi}
+\bibliographystyle{IEEEtran}
+{\footnotesize \bibliography{reference}}
 %\bibliographystyle{abbrv-doi-narrow}
 %\bibliographystyle{abbrv-doi-hyperref}
 %\bibliographystyle{abbrv-doi-hyperref-narrow}
-{\footnotesize \bibliography{reference}}
+%{\footnotesize \bibliography{reference}}
+
+
+% biography section
+% 
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are1
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could create
+% your own custom macro containing the \includegraphics command to make things
+% simpler here.)
+%\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
+% or if you just want to reserve a space for a photo:
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/doris.jpg}}]{Doris Jung-Lin Lee} is a PhD student in the Databases and Information System (DAIS) Group at University of Illinois (UIUC). Her research interest lies in interactive data analytics, visualization, database usability, and human-computer interaction. She received her bachelor's degree in Physics and Astrophysics from University of California, Berkeley in 2016.
+\end{IEEEbiography}
+\vskip -2\baselineskip plus -1fil
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/john.jpg}}]{John Lee} received his masters degree in Computer Science from University of Illinois (UIUC) in 2014. His research interest broadly lies in data analytics and data visualization.
+\end{IEEEbiography}
+\vskip -2\baselineskip plus -1fil
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/tarique.jpg}}]{Tarique Siddiqui} received his masters degree in Computer Science from University of Illinois (UIUC) in 2016, and currently he is a PhD student in the Databases and Information System (DAIS) Group at UIUC. His research interest broadly lies in data management and analytics, with the focus on building expressive and scalable systems for interactive data exploration.
+\end{IEEEbiography}
+\vskip -2\baselineskip plus -1fil
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/jaewoo.jpg}}]{Jaewoo Kim} is an undergraduate student in Computer Science at University of Illinois (UIUC). His research interest lies in data analytics.
+\end{IEEEbiography}
+\vskip -2\baselineskip plus -1fil
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/karrie.jpg}}]{Karrie Karahalios} is an associate professor in computer science at the University of Illinois where she heads the Social Spaces Group. And she is a Senior Research Scientist at Adobe. Karahalios completed an S.B. in Electrical Engineering, an M.Eng. in Electrical Engineering and Computer Science, and an S.M. and Ph.D in Media Arts and Sciences at MIT. Her work focuses on the interaction between people and the social cues they perceive in networked electronic spaces. She is particularly interested in the design and analysis of social media systems, communication dynamics, and assistive technologies for communication in non-lab environments.
+\end{IEEEbiography}
+\vskip -2\baselineskip plus -1fil
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/aditya.jpg}}]{Aditya Parameswaran} is an Assistant Professor in Computer Science at the University of Illinois (UIUC), with affiliate appointments at the Institute for Genomic Biology and the Beckman Institute for Advanced Science and Technology. He spent a year as a PostDoc at MIT CSAIL following his PhD at Stanford University, before starting at Illinois in August 2014. He develops systems and algorithms for "human-in-the-loop" data analytics, synthesizing techniques from database systems, data mining, and human computation.
+\end{IEEEbiography}
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+%\enlargethispage{-5in}
 \end{document}
 
