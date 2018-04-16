@@ -3,18 +3,6 @@
 %\documentclass[widereview]{vgtc}             % wide-spaced review
 %\documentclass[preprint,journal]{vgtc}       % preprint (journal style)
 \documentclass[journal,compsoc]{IEEEtran}
-
-\pagenumbering{arabic}
-
-% Section Numbering, remove this in submission 
-% \setcounter{tocdepth}{4}
-% \setcounter{secnumdepth}{4}
-
-\makeatletter
-\def\@copyrightspace{\relax}
-\makeatother
-
-
 % Load basic packages
 \usepackage{balance}  % to better equalize the last page
 \usepackage{graphics} % for EPS, load graphicx instead 
@@ -44,6 +32,11 @@
 \usepackage[normalem]{ulem}
 \usepackage[sort,nocompress]{cite}
 \usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
+\AtBeginEnvironment{quote}{\small}% Step font down one size relative to current font.
+
+
 \def\plaintitle{Accelerating Scientific Data Exploration \\ via Visual Query Systems}
 
 \def\plainauthor{Doris Jung-Lin Lee, John Lee, Tarique Siddiqui, Jaewoo Kim, Karrie Karahalios, Aditya Parameswaran}
@@ -85,7 +78,7 @@
     }
 }
 \newcommand{\squishend}{\end{list}}
-
+\newcommand{\npar}{\par\noindent}
 % use extensively to toggle between paper and TR
 \newcommand{\eat}[1]{}
 % \newcommand{\papertext}[1]{{\leavevmode\color{blue}{#1}}}
@@ -144,13 +137,15 @@
 \newcommand{\kk}[1]{\textcolor{red}{Karrie: #1}} 
 \newcommand{\dor}[1]{\textcolor{violet}{Doris: #1}} 
 % Get rid of gaps between sections, subsections and subsubsections
-% \usepackage{titlesec}
-% \titlespacing*{\section}
-% {0pt}{0pt}{0pt}
-% \titlespacing*{\subsection}
-% {0pt}{0pt}{0pt}
-% \titlespacing*{\subsubsection}
-% {0pt}{0pt}{0pt}
+\newcommand{\subparagraph}{}
+\usepackage{titlesec}
+\titlespacing*{\section}
+{-5pt}{0pt}{0pt}
+\titlespacing*{\subsection}
+{-5pt}{0pt}{0pt}
+\titlespacing*{\subsubsection}
+{-5pt}{0pt}{0pt}
+
 % End of preamble. Here it comes the document.
 %% Uncomment one of the lines above depending on where your paper is
 %% in the conference process. ``review'' and ``widereview'' are for review
@@ -233,22 +228,7 @@ Visual analytics, visualization, exploratory data analysis, visual query, scient
 \input{10-conclusion}
 \bibliographystyle{IEEEtran}
 {\footnotesize \bibliography{reference}}
-%\bibliographystyle{abbrv-doi-narrow}
-%\bibliographystyle{abbrv-doi-hyperref}
-%\bibliographystyle{abbrv-doi-hyperref-narrow}
-%{\footnotesize \bibliography{reference}}
-
-
-% biography section
-% 
-% If you have an EPS/PDF photo (graphicx package needed) extra braces are1
-% needed around the contents of the optional argument to biography to prevent
-% the LaTeX parser from getting confused when it sees the complicated
-% \includegraphics command within an optional argument. (You could create
-% your own custom macro containing the \includegraphics command to make things
-% simpler here.)
-%\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
-% or if you just want to reserve a space for a photo:
+\newpage
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/doris.jpg}}]{Doris Jung-Lin Lee} is a PhD student in the Databases and Information System (DAIS) Group at University of Illinois (UIUC). Her research interest lies in interactive data analytics, visualization, database usability, and human-computer interaction. She received her bachelor's degree in Physics and Astrophysics from University of California, Berkeley in 2016.
 \end{IEEEbiography}
 \vskip -2\baselineskip plus -1fil
@@ -261,10 +241,10 @@ Visual analytics, visualization, exploratory data analysis, visual query, scient
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/jaewoo.jpg}}]{Jaewoo Kim} is an undergraduate student in Computer Science at University of Illinois (UIUC). His research interest lies in data analytics.
 \end{IEEEbiography}
 \vskip -2\baselineskip plus -1fil
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/karrie.jpg}}]{Karrie Karahalios} is an associate professor in computer science at the University of Illinois where she heads the Social Spaces Group. And she is a Senior Research Scientist at Adobe. Karahalios completed an S.B. in Electrical Engineering, an M.Eng. in Electrical Engineering and Computer Science, and an S.M. and Ph.D in Media Arts and Sciences at MIT. Her work focuses on the interaction between people and the social cues they perceive in networked electronic spaces. She is particularly interested in the design and analysis of social media systems, communication dynamics, and assistive technologies for communication in non-lab environments.
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/karrie.jpg}}]{Karrie Karahalios} is an associate professor in Computer Science at the University of Illinois (UIUC) where she heads the Social Spaces Group. Karahalios completed an S.B. in Electrical Engineering, an M.Eng. in Electrical Engineering and Computer Science, and an S.M. and Ph.D in Media Arts and Sciences at MIT. Her work focuses on the interaction between people and the social cues they perceive in networked electronic spaces. She is particularly interested in the design and analysis of social media systems, communication dynamics, and assistive technologies for communication in non-lab environments.
 \end{IEEEbiography}
 \vskip -2\baselineskip plus -1fil
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/aditya.jpg}}]{Aditya Parameswaran} is an Assistant Professor in Computer Science at the University of Illinois (UIUC), with affiliate appointments at the Institute for Genomic Biology and the Beckman Institute for Advanced Science and Technology. He spent a year as a PostDoc at MIT CSAIL following his PhD at Stanford University, before starting at Illinois in August 2014. He develops systems and algorithms for "human-in-the-loop" data analytics, synthesizing techniques from database systems, data mining, and human computation.
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/aditya.jpg}}]{Aditya Parameswaran} is an Assistant Professor in Computer Science at the University of Illinois (UIUC). He spent a year as a PostDoc at MIT CSAIL following his PhD at Stanford University, before starting at Illinois in August 2014. He develops systems and algorithms for ``human-in-the-loop" data analytics, synthesizing techniques from database systems, data mining, and human computation.
 \end{IEEEbiography}
 % Can be used to pull up biographies so that the bottom of the last one
 % is flush with the other column.

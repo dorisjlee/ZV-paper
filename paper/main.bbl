@@ -22,12 +22,9 @@
 \BIBdecl
 
 \bibitem{AustinNothaft2015}
-\BIBentryALTinterwordspacing
 {Austin Nothaft et al.}, ``{Rethinking Data-Intensive Science Using Scalable
   Analytics Systems},'' \emph{Proceedings of the 2015 ACM SIGMOD International
-  Conference on Management of Data}, pp. 631--646, 2015. [Online]. Available:
-  \url{http://dx.doi.org/10.1145/2723372.2742787.}
-\BIBentrySTDinterwordspacing
+  Conference on Management of Data}, pp. 631--646, 2015.
 
 \bibitem{Demchenko2013}
 Y.~Demchenko, P.~Grosso, and P.~Membrey, ``{Addressing Big Data Issues in
@@ -45,24 +42,17 @@ I.~Momcheva and E.~Tollerud, ``Software use in astronomy: an informal survey,''
   \emph{arXiv preprint arXiv:1507.03989}, 2015.
 
 \bibitem{Prabhu2011}
-\BIBentryALTinterwordspacing
 {Prabhu et al.}, ``A survey of the practice of computational science,'' in
   \emph{State of the Practice Reports}, ser. SC '11.\hskip 1em plus 0.5em minus
-  0.4em\relax New York, NY, USA: ACM, 2011, pp. 19:1--19:12. [Online].
-  Available: \url{http://doi.acm.org/10.1145/2063348.2063374}
-\BIBentrySTDinterwordspacing
+  0.4em\relax New York, NY, USA: ACM, 2011, pp. 19:1--19:12.
 
-\bibitem{googlecorrelate}
-``Google correlate,'' \url{https://www.google.com/trends/correlate/draw}, 2016,
-  accessed: August 30, 2016.
+\bibitem{mohebbi2011google}
+{Mohebbi et al.}, ``Google correlate whitepaper,'' 2011.
 
 \bibitem{Hochheiser2004}
-\BIBentryALTinterwordspacing
 H.~Hochheiser and B.~Shneiderman, ``{Dynamic query tools for time series data
   sets: Timebox widgets for interactive exploration},'' \emph{Information
-  Visualization}, vol.~3, no.~1, pp. 1--18, 2004. [Online]. Available:
-  \url{http://www.palgrave-journals.com/doifinder/10.1057/palgrave.ivs.9500061}
-\BIBentrySTDinterwordspacing
+  Visualization}, vol.~3, no.~1, pp. 1--18, 2004.
 
 \bibitem{wattenberg2001sketching}
 M.~Wattenberg, ``Sketching a graph to query a time-series database,'' in
@@ -117,13 +107,10 @@ M.~Correll and M.~Gleicher, ``The semantics of sketch: Flexibility in visual
   0.4em\relax IEEE, 2016, pp. 131--140.
 
 \bibitem{Zgraggen2015}
-\BIBentryALTinterwordspacing
 E.~Zgraggen, S.~M. Drucker, D.~Fisher, and R.~DeLine, ``{(s|qu)eries: Visual
   Regular Expressions for Querying and Exploring Event Sequences},''
   \emph{Proceedings of the 33rd Annual ACM Conference on Human Factors in
-  Computing Systems}, pp. 2683--2692, 2015. [Online]. Available:
-  \url{http://dl.acm.org/citation.cfm?doid=2702123.2702262}
-\BIBentrySTDinterwordspacing
+  Computing Systems}, pp. 2683--2692, 2015.
 
 \bibitem{Gao2015}
 T.~Gao, M.~Dontcheva, E.~Adar, Z.~Liu, and K.~G. Karahalios, ``Datatone:
@@ -133,13 +120,10 @@ T.~Gao, M.~Dontcheva, E.~Adar, Z.~Liu, and K.~G. Karahalios, ``Datatone:
   pp. 489--500.
 
 \bibitem{Setlur2016}
-\BIBentryALTinterwordspacing
 V.~Setlur, S.~E. Battersby, M.~Tory, R.~Gossweiler, and A.~X. Chang, ``{Eviza:
   A Natural Language Interface for Visual Analysis},'' \emph{Proceedings of the
   29th Annual Symposium on User Interface Software and Technology - UIST '16},
-  pp. 365--377, 2016. [Online]. Available:
-  \url{http://doi.acm.org/10.1145/2984511.2984588}
-\BIBentrySTDinterwordspacing
+  pp. 365--377, 2016.
 
 \bibitem{Plaisant2004}
 C.~Plaisant, ``The challenge of information visualization evaluation,'' in
@@ -151,14 +135,11 @@ C.~North, ``{Toward measuring visualization insight},'' \emph{IEEE Computer
   Graphics and Applications}, vol.~26, no.~3, pp. 6--9, 2006.
 
 \bibitem{Yi2008}
-\BIBentryALTinterwordspacing
 J.~S. Yi, Y.-A. Kang, J.~T. Stasko, and J.~A. Jacko, ``{Understanding and
   characterizing insights: How Do People Gain Insights Using Information
   Visualization?}'' \emph{Proceedings of the 2008 conference on BEyond time and
   errors novel evaLuation methods for Information Visualization - BELIV '08},
-  p.~1, 2008. [Online]. Available:
-  \url{http://portal.acm.org/citation.cfm?doid=1377966.1377971}
-\BIBentrySTDinterwordspacing
+  p.~1, 2008.
 
 \bibitem{kandel2011wrangler}
 S.~Kandel, A.~Paepcke, J.~Hellerstein, and J.~Heer, ``Wrangler: Interactive
@@ -202,29 +183,19 @@ S.~S. Poon, R.~C. Thomas, C.~R. Aragon, and B.~Lee, ``Context-linked virtual
   361--370.
 
 \bibitem{Chen2016}
-\BIBentryALTinterwordspacing
 N.~C. Chen, S.~Poon, L.~Ramakrishnan, and C.~R. Aragon, ``{Considering Time in
   Designing Large-Scale Systems for Scientific Computing},'' \emph{Proceedings
   of the 19th ACM Conference on Computer-Supported Cooperative Work {\&} Social
-  Computing - CSCW '16}, pp. 1533--1545, 2016. [Online]. Available:
-  \url{http://dl.acm.org/citation.cfm?doid=2818048.2819988}
-\BIBentrySTDinterwordspacing
+  Computing - CSCW '16}, pp. 1533--1545, 2016.
 
 \bibitem{Gould1983}
-\BIBentryALTinterwordspacing
 J.~D. Gould and C.~Lewis, ``{Designing for usability---key principles and what
   designers think},'' \emph{Proceedings of the SIGCHI conference on Human
-  Factors in Computing Systems}, vol.~28, no.~3, pp. 50--53, 1983. [Online].
-  Available:
-  \url{http://portal.acm.org/citation.cfm?id=800045.801579{\&}coll=portal{\&}dl=ACM{\&}CFID=67429272{\&}CFTOKEN=32437027}
-\BIBentrySTDinterwordspacing
+  Factors in Computing Systems}, vol.~28, no.~3, pp. 50--53, 1983.
 
 \bibitem{Muller1993}
-\BIBentryALTinterwordspacing
-M.~J. Muller and S.~Kuhn, ``Participatory design,'' \emph{Commun. ACM},
-  vol.~36, no.~6, pp. 24--28, Jun. 1993. [Online]. Available:
-  \url{http://doi.acm.org/10.1145/153571.255960}
-\BIBentrySTDinterwordspacing
+M.~J. Muller and S.~Kuhn, ``Participatory design,'' \emph{Communications of the
+  ACM}, vol.~36, no.~6, pp. 24--28, Jun. 1993.
 
 \bibitem{Aragon2008}
 C.~R. Aragon, S.~S. Poon, G.~S. Aldering, R.~C. Thomas, and R.~Quimby, ``Using
@@ -244,45 +215,31 @@ D.~C. Miller, N.~J. Salkind, and D.~C. Miller, \emph{Handbook of research
   2002.
 
 \bibitem{Ciolfi2016}
-\BIBentryALTinterwordspacing
 {Ciolfi et al.}, ``{Articulating Co-Design in Museums: Reflections on Two
   Participatory Processes},'' \emph{Proceedings of the 19th ACM Conference on
   Computer-Supported Cooperative Work {\&} Social Computing - CSCW '16}, pp.
-  13--25, 2016. [Online]. Available:
-  \url{http://dl.acm.org/citation.cfm?doid=2818048.2819967}
-\BIBentrySTDinterwordspacing
+  13--25, 2016.
 
 \bibitem{Drlica-Wagner2017}
-\BIBentryALTinterwordspacing
 {Drlica Wagner et al.}, ``{Dark Energy Survey Year 1 Results: Photometric Data
-  Set for Cosmology},'' 2017. [Online]. Available:
-  \url{http://arxiv.org/abs/1708.01531}
-\BIBentrySTDinterwordspacing
+  Set for Cosmology},'' 2017.
 
 \bibitem{Peng2016}
-\BIBentryALTinterwordspacing
 P.~C. Peng and S.~Sinha, ``Quantitative modeling of gene expression using dna
   shape features of binding sites,'' \emph{Nucleic Acids Research}, vol.~44,
-  no.~13, p. e120, 2016. [Online]. Available:
-  \url{http://dx.doi.org/10.1093/nar/gkw446}
-\BIBentrySTDinterwordspacing
+  no.~13, p. e120, 2016.
 
 \bibitem{Gloss2017}
-\BIBentryALTinterwordspacing
 B.~S. Gloss, B.~Signal, S.~W. Cheetham, F.~Gruhl, D.~C. Kaczorowski, A.~C.
   Perkins, and M.~E. Dinger, ``High resolution temporal transcriptomics of
   mouse embryoid body development reveals complex expression dynamics of coding
   and noncoding loci,'' \emph{Scientific Reports}, vol.~7, no.~1, p. 6731,
-  2017. [Online]. Available: \url{https://doi.org/10.1038/s41598-017-06110-5}
-\BIBentrySTDinterwordspacing
+  2017.
 
 \bibitem{Nielsen1994}
-\BIBentryALTinterwordspacing
 J.~Nielsen, ``Usability inspection methods,'' in \emph{Conference Companion on
   Human Factors in Computing Systems}, ser. CHI '94.\hskip 1em plus 0.5em minus
-  0.4em\relax New York, NY, USA: ACM, 1994, pp. 413--414. [Online]. Available:
-  \url{http://doi.acm.org/10.1145/259963.260531}
-\BIBentrySTDinterwordspacing
+  0.4em\relax New York, NY, USA: ACM, 1994, pp. 413--414.
 
 \bibitem{Amar2005}
 R.~Amar, J.~Eagan, and J.~Stasko, ``Low-level components of analytic activity
@@ -291,12 +248,9 @@ R.~Amar, J.~Eagan, and J.~Stasko, ``Low-level components of analytic activity
   IEEE, 2005, pp. 111--117.
 
 \bibitem{Heer2012}
-\BIBentryALTinterwordspacing
 J.~Heer and B.~Shneiderman, ``{A taxonomy of tools that support the fluent and
   flexible use of visualizations},'' \emph{Interactive Dynamics for Visual
-  Analysis}, vol.~10, pp. 1--26, 2012. [Online]. Available:
-  \url{http://queue.acm.org/detail.cfm?id=2146416}
-\BIBentrySTDinterwordspacing
+  Analysis}, vol.~10, pp. 1--26, 2012.
 
 \bibitem{Kery2017}
 M.~B. Kery, A.~Horvath, and B.~A. Myers, ``Variolite: Supporting exploratory
@@ -304,25 +258,18 @@ M.~B. Kery, A.~Horvath, and B.~A. Myers, ``Variolite: Supporting exploratory
   Conference on Human Factors in Computing Systems}, 2017, pp. 1265--1276.
 
 \bibitem{Kandel2012}
-\BIBentryALTinterwordspacing
 S.~Kandel, A.~Paepcke, J.~M. Hellerstein, and J.~Heer, ``{Enterprise Data
   Analysis and Visualization: An Interview Study.}'' \emph{IEEE transactions on
   visualization and computer graphics}, vol.~18, no.~12, pp. 2917--26, 2012.
-  [Online]. Available:
-  \url{http://www.computer.org/csdl/trans/tg/2012/12/ttg2012122917.html}
-\BIBentrySTDinterwordspacing
 
 \bibitem{Shneiderman1994}
 B.~Shneiderman, ``{Dynamic queries for visual information seeking},''
   \emph{IEEE Software}, vol.~11, no.~6, pp. 70--77, 1994.
 
 \bibitem{Shneiderman2007a}
-\BIBentryALTinterwordspacing
-------, ``{Creativity Support Tools: Accelerating Discovery and Innovation},''
-  \emph{Communications of the ACM}, vol.~50, no.~12, p.~20, 2007. [Online].
-  Available: \url{http://dl.acm.org/citation.cfm?doid=1323688.1323689
-  http://www.cs.umd.edu/{~}ben/papers/Shneiderman2007Creativity.pdf}
-\BIBentrySTDinterwordspacing
+{B. Shneiderman}, ``{Creativity Support Tools: Accelerating Discovery and
+  Innovation},'' \emph{Communications of the ACM}, vol.~50, no.~12, p.~20,
+  2007.
 
 \bibitem{zillow}
 ``Zillow,'' \url{https://www.zillow.com}, 2016, accessed: February 1, 2016.
