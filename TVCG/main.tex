@@ -1,0 +1,249 @@
+\documentclass[journal,compsoc]{IEEEtran}
+% Load basic packages
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead 
+\usepackage[T1]{fontenc}
+\usepackage{txfonts}
+\usepackage{mathptmx}
+\usepackage[pdftex]{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{textcomp}
+\usepackage{xspace}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[textsize=tiny]{todonotes}
+% Some optional stuff you might like/need.
+\usepackage{microtype} % Improved Tracking and Kerning
+% \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
+\usepackage{ccicons}  % Cite your images correctly!
+% \usepackage[utf8]{inputenc} % for a UTF8 editor only
+\usepackage{verbatim}
+\usepackage{relsize}
+\usepackage{etoolbox}
+\usepackage{lipsum}   % for filler text
+\usepackage{setspace} % for \onehalfspacing and \singlespacing macros
+\usepackage[normalem]{ulem}
+\usepackage[sort,nocompress]{cite}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
+\AtBeginEnvironment{quote}{\small}% Step font down one size relative to current font.
+
+
+\def\plaintitle{Accelerating Scientific Data Exploration \\ via Visual Query Systems}
+
+\def\plainauthor{Doris Jung-Lin Lee, John Lee, Tarique Siddiqui, Jaewoo Kim, Karrie Karahalios, Aditya Parameswaran}
+\def\emptyauthor{} 
+\def\plainkeywords{Data visualization, exploratory data analysis, visual query, scientific data.}
+\def\plaingeneralterms{Documentation, Standardization}
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{
+    \def\UrlFont{\sf}
+  }{
+    \def\UrlFont{\small\bf\ttfamily}
+  }}
+\makeatother
+
+\newenvironment{denselist}{
+    \begin{list}{\small{$\bullet$}}%
+    {\setlength{\itemsep}{0ex} \setlength{\topsep}{0ex}
+    \setlength{\parsep}{0pt} \setlength{\itemindent}{0pt}
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\partopsep}{0pt}}}%
+    {\end{list}}
+
+\newcommand{\squishlist}{
+   \begin{list}{$\bullet$}
+    { \setlength{\itemsep}{0pt}
+      \setlength{\parsep}{2pt}
+      \setlength{\topsep}{0pt}
+      \setlength{\partopsep}{0pt}
+      \leftmargin=25pt
+\rightmargin=0pt
+\labelsep=5pt
+\labelwidth=10pt
+\itemindent=0pt
+\listparindent=0pt
+\itemsep=\parsep
+    }
+}
+\newcommand{\squishend}{\end{list}}
+\newcommand{\npar}{\par\noindent}
+% use extensively to toggle between paper and TR
+\newcommand{\eat}[1]{}
+% \newcommand{\papertext}[1]{{\leavevmode\color{blue}{#1}}}
+% \newcommand{\techreport}[1]{{\leavevmode\color{red}{#1}}}
+\newcommand{\papertext}[1]{#1}
+\newcommand{\techreport}[1]{#1} % show up in tvcg
+\newcommand{\notvcgTR}[1]{#1} % things to remove from tvcg but include in TR
+\newcommand{\nonannon}[1]{#1}
+\newcommand{\annon}[1]{}
+\newcommand{\boldpara}[1]{\textbf{\paragraph{#1}}}
+% de-facto paragraph format
+\newcommand{\stitle}[1]{\noindent\textbf{#1}}
+% \newcommand{\tvcg}[1]{{\leavevmode\color{blue}{#1}}}
+\newcommand{\tvcg}[1]{#1}
+\newcommand{\cut}[1]{{\leavevmode\color{lightgray}{#1}}}
+\newcommand{\ccut}[1]{} %confirmed cut
+
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% Make sure hyperref comes last of your loaded packages, to give it a
+% fighting chance of not being over-written, since its job is to
+% redefine many LaTeX commands.
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={\plaintitle},
+% Use \plainauthor for final version.
+%  pdfauthor={\plainauthor},
+  pdfauthor={\emptyauthor},
+  pdfkeywords={\plainkeywords},
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true}
+
+% create a shortcut to typeset table headings
+% \newcommand\tabhead[1]{\small\textbf{#1}}
+\newcommand{\zv}{\textit{zenvisage}\xspace}
+\newcommand{\astro}{\textit{astro}\xspace}
+\newcommand{\bio}{\textit{genetics}\xspace}
+\newcommand{\matsci}{\textit{matsci}\xspace}
+
+\newcommand{\agp}[1]{\textcolor{teal}{Aditya: #1}}
+\newcommand{\kk}[1]{\textcolor{red}{Karrie: #1}} 
+\newcommand{\dor}[1]{\textcolor{violet}{Doris: #1}} 
+% Get rid of gaps between sections, subsections and subsubsections
+\newcommand{\subparagraph}{}
+\usepackage{titlesec}
+\titlespacing*{\section}
+{-5pt}{0pt}{0pt}
+\titlespacing*{\subsection}
+{-5pt}{0pt}{0pt}
+\titlespacing*{\subsubsection}
+{-5pt}{0pt}{0pt}
+
+% End of preamble. Here it comes the document.
+%% Uncomment one of the lines above depending on where your paper is
+%% in the conference process. ``review'' and ``widereview'' are for review
+%% submission, ``preprint'' is for pre-publication, and the final version
+%% doesn't use a specific qualifier.
+
+%% Please use one of the ``review'' options in combination with the
+%% assigned online id (see below) ONLY if your paper uses a double blind
+%% review process. Some conferences, like IEEE Vis and InfoVis, have NOT
+%% in the past.
+
+%% Please note that the use of figures other than the optional teaser is not permitted on the first page
+%% of the journal version.  Figures should begin on the second page and be
+%% in CMYK or Grey scale format, otherwise, colour shifting may occur
+%% during the printing process.  Papers submitted with figures other than the optional teaser on the
+%% first page will be refused. Also, the teaser figure should only have the
+%% width of the abstract as the template enforces it.
+
+%% These few lines make a distinction between latex and pdflatex calls and they
+%% bring in essential packages for graphics and font handling.
+%% Note that due to the \DeclareGraphicsExtensions{} call it is no longer necessary
+%% to provide the the path and extension of a graphics file:
+%% \includegraphics{diamondrule} is completely sufficient.
+%%
+\ifpdf%                                % if we use pdflatex
+  \pdfoutput=1\relax                   % create PDFs from pdfLaTeX
+  \pdfcompresslevel=9                  % PDF Compression
+  \pdfoptionpdfminorversion=7          % create PDF 1.7
+  \ExecuteOptions{pdftex}
+  \usepackage{graphicx}                % allow us to embed graphics files
+  \DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg} % for pdflatex we expect .pdf, .png, or .jpg files
+\else%                                 % else we use pure latex
+  \ExecuteOptions{dvips}
+  \usepackage{graphicx}                % allow us to embed graphics files
+  \DeclareGraphicsExtensions{.eps}     % for  pure latex we expect eps files
+\fi%
+
+%% it is recomended to use ``\autoref{sec:bla}'' instead of ``Figure ~\ref{sec:bla}''
+\graphicspath{{figures/}{pictures/}{images/}{./}} % where to search for the images
+
+\usepackage{microtype}                 % use micro-typography (slightly more compact, better to read)
+\PassOptionsToPackage{warn}{textcomp}  % to address font issues with \textrightarrow
+\usepackage{textcomp}                  % use better special symbols
+\usepackage{mathptmx}                  % use matching math font
+\usepackage{times}                     % we use Times as the main font
+\renewcommand*\ttdefault{txtt}         % a nicer typewriter font
+\usepackage{cite}                      % needed to automatically sort the references
+\usepackage{tabu}                      % only used for the table example
+\usepackage{booktabs}                  % only used for the table example
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% START OF THE PAPER %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\title{Accelerating Scientific Data Exploration via Visual Query System}
+\author{Doris Jung-Lin Lee, John Lee, Tarique Siddiqui,\\Jaewoo Kim, Karrie Karahalios, Aditya Parameswaran}
+% \IEEEcompsocitemizethanks{\IEEEcompsocthanksitem All authors are with University of Illinois, Urbana-Champaign. \protect\\ E-mail: jlee782, lee98, tsiddiq2, jkim475, kkarhal, adityagp@illinois.edu.}
+\IEEEtitleabstractindextext{%
+\begin{abstract}
+The increasing availability of rich and complex data in a variety of scientific domains poses a pressing need for tools to enable scientists to rapidly make sense of and gather insights from data. One proposed solution is to design visual query systems (VQSs) that allow scientists to interactively search for desired patterns in their datasets. While many existing VQSs promise to accelerate exploratory data analysis by facilitating this search, they are not widely used in practice. Through a year-long collaboration with scientists in three distinct domains---astronomy, genetics, and material science---we study the impact of various features within VQSs that can aid rapid visual data analysis, and how VQSs fit into scientists' analysis workflow. Our findings offer design guidelines for improving the usability and adoption of next-generation VQSs, paving the way for VQSs to be applied to a variety of scientific domains.
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+Visual analytics, visualization, exploratory data analysis, visual query, scientific data.
+\end{IEEEkeywords}}
+\maketitle
+
+\input{01-introduction}
+\input{02-relatedwork}
+\input{03-methodology}
+\input{04-understanding_scidata}
+\input{05-pd_findings}
+\input{06-evaluation}
+\input{07-vqs-discussion}
+\input{08-vqs-workflow-discussion}
+\input{09-methodology-discussion}
+\input{10-conclusion}
+\bibliographystyle{IEEEtran}
+{\footnotesize \bibliography{reference}}
+\newpage
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/doris.jpg}}]{Doris Jung-Lin Lee} is a PhD student in the Databases and Information System (DAIS) Group at University of Illinois (UIUC). Her research interest lies in interactive data analytics, visualization, database usability, and human-computer interaction. She received her bachelor's degree in Physics and Astrophysics from University of California, Berkeley in 2016.
+\end{IEEEbiography}
+\vskip -2\baselineskip plus -1fil
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/john.jpg}}]{John Lee} received his masters degree in Computer Science from University of Illinois (UIUC) in 2014. His research interest broadly lies in data analytics and data visualization.
+\end{IEEEbiography}
+\vskip -2\baselineskip plus -1fil
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/tarique.jpg}}]{Tarique Siddiqui} received his masters degree in Computer Science from University of Illinois (UIUC) in 2016, and currently he is a PhD student in the Databases and Information System (DAIS) Group at UIUC. His research interest broadly lies in data management and analytics, with the focus on building expressive and scalable systems for interactive data exploration.
+\end{IEEEbiography}
+\vskip -2\baselineskip plus -1fil
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/jaewoo.jpg}}]{Jaewoo Kim} is an undergraduate student in Computer Science at University of Illinois (UIUC). His research interest lies in data analytics.
+\end{IEEEbiography}
+\vskip -2\baselineskip plus -1fil
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/karrie.jpg}}]{Karrie Karahalios} is a Professor in Computer Science at the University of Illinois (UIUC) where she heads the Social Spaces Group. Karahalios completed an S.B. in Electrical Engineering, an M.Eng. in Electrical Engineering and Computer Science, and an S.M. and Ph.D in Media Arts and Sciences at MIT. Her work focuses on the interaction between people and the social cues they perceive and emit in networked electronic spaces. This is operationalized through the design and analysis of social media systems, the visualization of communication dynamics, and the creation of assistive technologies for communication in non-lab environments.
+\end{IEEEbiography}
+\vskip -2\baselineskip plus -1fil
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{authorbio/aditya.jpg}}]{Aditya Parameswaran} is an Assistant Professor in Computer Science at the University of Illinois (UIUC). He spent a year as a PostDoc at MIT CSAIL following his PhD at Stanford University, before starting at Illinois in August 2014. He develops systems and algorithms for ``human-in-the-loop" data analytics, synthesizing techniques from database systems, data mining, and human computation.
+\end{IEEEbiography}
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+%\enlargethispage{-5in}
+\end{document}
+

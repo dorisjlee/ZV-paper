@@ -1,0 +1,159 @@
+%\documentclass[sigchi, review]{acmart}
+\documentclass[sigchi]{acmart}
+% Load basic packages
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead 
+\usepackage[T1]{fontenc}
+\usepackage{txfonts}
+\usepackage{mathptmx}
+% \usepackage[pdftex]{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{textcomp}
+\usepackage{xspace}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[textsize=tiny]{todonotes}
+% Some optional stuff you might like/need.
+\usepackage{microtype} % Improved Tracking and Kerning
+% \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
+\usepackage{ccicons}  % Cite your images correctly!
+% \usepackage[utf8]{inputenc} % for a UTF8 editor only
+\usepackage{verbatim}
+\usepackage{relsize}
+\usepackage{etoolbox}
+\usepackage{lipsum}   % for filler text
+\usepackage{setspace} % for \onehalfspacing and \singlespacing macros
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
+\AtBeginEnvironment{quote}{\small}% Step font down one size relative to current font.
+\setcopyright{none}
+
+% DOI
+\acmDOI{10.475/123_4}
+
+% ISBN
+\acmISBN{123-4567-24-567/08/06}
+
+%Conference
+\acmConference[WOODSTOCK'97]{ACM Woodstock conference}{July 1997}{El
+  Paso, Texas USA}
+\acmYear{1997}
+\copyrightyear{2016}
+
+\acmPrice{15.00}
+
+\def\plaintitle{Accelerating Scientific Data Exploration \\ via Visual Query Systems}
+
+\def\plainauthor{Doris Jung-Lin Lee, John Lee, Tarique Siddiqui, Jaewoo Kim, Karrie Karahalios, Aditya Parameswaran}
+\def\emptyauthor{} 
+\def\plainkeywords{Data visualization, exploratory data analysis, visual query, scientific data.}
+\def\plaingeneralterms{Documentation, Standardization}
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{
+    \def\UrlFont{\sf}
+  }{
+    \def\UrlFont{\small\bf\ttfamily}
+  }}
+\makeatother
+
+\newenvironment{denselist}{
+    \begin{list}{\small{$\bullet$}}%
+    {\setlength{\itemsep}{0ex} \setlength{\topsep}{0ex}
+    \setlength{\parsep}{0pt} \setlength{\itemindent}{0pt}
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\partopsep}{0pt}}}%
+    {\end{list}}
+
+\newcommand{\squishlist}{
+   \begin{list}{$\bullet$}
+    { \setlength{\itemsep}{0pt}
+      \setlength{\parsep}{2pt}
+      \setlength{\topsep}{0pt}
+      \setlength{\partopsep}{0pt}
+      \leftmargin=25pt
+\rightmargin=0pt
+\labelsep=5pt
+\labelwidth=10pt
+\itemindent=0pt
+\listparindent=0pt
+\itemsep=\parsep
+    }
+}
+\newcommand{\squishend}{\end{list}}
+\newcommand{\npar}{\par\noindent}
+% use extensively to toggle between paper and TR
+\newcommand{\eat}[1]{}
+% \newcommand{\papertext}[1]{{\leavevmode\color{blue}{#1}}}
+% \newcommand{\techreport}[1]{{\leavevmode\color{red}{#1}}}
+\newcommand{\papertext}[1]{#1}
+\newcommand{\techreport}[1]{#1} % show up in tvcg
+\newcommand{\notvcgTR}[1]{#1} % things to remove from tvcg but include in TR
+\newcommand{\nonannon}[1]{#1}
+\newcommand{\annon}[1]{}
+\newcommand{\boldpara}[1]{\textbf{\paragraph{#1}}}
+% de-facto paragraph format
+\newcommand{\stitle}[1]{\noindent\textbf{#1}}
+% \newcommand{\tvcg}[1]{{\leavevmode\color{blue}{#1}}}
+\newcommand{\tvcg}[1]{#1}
+\newcommand{\cut}[1]{{\leavevmode\color{lightgray}{#1}}}
+\newcommand{\ccut}[1]{} %confirmed cut
+
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% create a shortcut to typeset table headings
+% \newcommand\tabhead[1]{\small\textbf{#1}}
+\newcommand{\zv}{\textit{zenvisage}\xspace}
+\newcommand{\astro}{\textit{astro}\xspace}
+\newcommand{\bio}{\textit{genetics}\xspace}
+\newcommand{\matsci}{\textit{matsci}\xspace}
+
+\newcommand{\agp}[1]{\textcolor{teal}{Aditya: #1}}
+\newcommand{\kk}[1]{\textcolor{red}{Karrie: #1}} 
+\newcommand{\dor}[1]{\textcolor{violet}{Doris: #1}} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% START OF THE PAPER %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\title{Accelerating Scientific Data Exploration via Visual Query System}
+% \author{Doris Jung-Lin Lee, John Lee, Tarique Siddiqui,\\Jaewoo Kim, Karrie Karahalios, Aditya Parameswaran}
+
+\begin{abstract}
+The increasing availability of rich and complex data in a variety of scientific domains poses a pressing need for tools to enable scientists to rapidly make sense of and gather insights from data. One proposed solution is to design visual query systems (VQSs) that allow scientists to interactively search for desired patterns in their datasets. While many existing VQSs promise to accelerate exploratory data analysis by facilitating this search, they are not widely used in practice. Through a year-long collaboration with scientists in three distinct domains---astronomy, genetics, and material science---we study the impact of various features within VQSs that can aid rapid visual data analysis, and how VQSs fit into scientists' analysis workflow. Our findings offer design guidelines for improving the usability and adoption of next-generation VQSs, paving the way for VQSs to be applied to a variety of scientific domains.
+\end{abstract}
+\keywords{Visual analytics, visualization, exploratory data analysis, visual query, scientific data.}
+% Note that keywords are not normally used for peerreview papers.
+\maketitle
+
+\input{01-introduction}
+\input{02-relatedwork}
+\input{03-methodology}
+\input{04-understanding_scidata}
+\input{05-pd_findings}
+\input{06-evaluation}
+\input{07-vqs-discussion}
+\input{08-vqs-workflow-discussion}
+\input{09-methodology-discussion}
+\input{10-conclusion}
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{reference}
+\end{document}
+

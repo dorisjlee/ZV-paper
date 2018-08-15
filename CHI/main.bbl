@@ -1,0 +1,841 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{52}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{??}{zil}{2016}]%
+        {zillow}
+ \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{Zillow}.
+\newblock \bibinfo{howpublished}{\url{https://www.zillow.com}}.
+\newblock
+\newblock
+\shownote{Accessed: February 1, 2016.}
+
+
+\bibitem[\protect\citeauthoryear{??}{tab}{2017}]%
+        {tableau}
+ \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{Tableau}.
+\newblock \bibinfo{howpublished}{\url{https://www.tableau.com}}.
+\newblock
+\newblock
+\shownote{Accessed: August 5, 2017.}
+
+
+\bibitem[\protect\citeauthoryear{Amar, Eagan, and Stasko}{Amar
+  et~al\mbox{.}}{2005}]%
+        {Amar2005}
+\bibfield{author}{\bibinfo{person}{Robert Amar}, \bibinfo{person}{James Eagan},
+  {and} \bibinfo{person}{John Stasko}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Low-level components of analytic activity in
+  information visualization}. In \bibinfo{booktitle}{\emph{Information
+  Visualization, 2005. INFOVIS 2005. IEEE Symposium on}}. IEEE,
+  \bibinfo{pages}{111--117}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/INFOVIS.2005.24}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Aragon, Poon, Aldering, Thomas, and
+  Quimby}{Aragon et~al\mbox{.}}{2008}]%
+        {Aragon2008}
+\bibfield{author}{\bibinfo{person}{Cecilia~R Aragon}, \bibinfo{person}{Sarah~S
+  Poon}, \bibinfo{person}{Gregory~S Aldering}, \bibinfo{person}{Rollin~C
+  Thomas}, {and} \bibinfo{person}{Robert Quimby}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Using visual analytics to maintain situation
+  awareness in astrophysics}. In \bibinfo{booktitle}{\emph{Visual Analytics
+  Science and Technology, 2008. VAST'08. IEEE Symposium on}}. IEEE,
+  \bibinfo{pages}{27--34}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1088/1742-6596/125/1/012091}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Austin Nothaft et al.}}{{Austin Nothaft et
+  al.}}{2015}]%
+        {AustinNothaft2015}
+\bibfield{author}{\bibinfo{person}{{Austin Nothaft et al.}}}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{{Rethinking Data-Intensive Science Using Scalable
+  Analytics Systems}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the 2015 ACM SIGMOD
+  International Conference on Management of Data}} (\bibinfo{year}{2015}),
+  \bibinfo{pages}{631--646}.
+\newblock
+\showISBNx{9781450327589}
+\showISSN{07308078}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2723372.2742787}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{B. Shneiderman}}{{B. Shneiderman}}{2007}]%
+        {Shneiderman2007a}
+\bibfield{author}{\bibinfo{person}{{B. Shneiderman}}.}
+  \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{{Creativity Support Tools: Accelerating Discovery
+  and Innovation}}.
+\newblock \bibinfo{journal}{\emph{Commun. ACM}} \bibinfo{volume}{50},
+  \bibinfo{number}{12} (\bibinfo{year}{2007}), \bibinfo{pages}{20}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1323688.1323689}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Barsky, Munzner, Gardy, and Kincaid}{Barsky
+  et~al\mbox{.}}{2008}]%
+        {Barsky2008}
+\bibfield{author}{\bibinfo{person}{A. Barsky}, \bibinfo{person}{T. Munzner},
+  \bibinfo{person}{J. Gardy}, {and} \bibinfo{person}{R. Kincaid}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Cerebral: Visualizing Multiple Experimental
+  Conditions on a Graph with Biological Context}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Visualization and
+  Computer Graphics}} \bibinfo{volume}{14}, \bibinfo{number}{6}
+  (\bibinfo{date}{Nov} \bibinfo{year}{2008}), \bibinfo{pages}{1253--1260}.
+\newblock
+\showISSN{1077-2626}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TVCG.2008.117}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Chen, Poon, Ramakrishnan, and Aragon}{Chen
+  et~al\mbox{.}}{2016}]%
+        {Chen2016}
+\bibfield{author}{\bibinfo{person}{Nan~Chen Chen}, \bibinfo{person}{Sarah
+  Poon}, \bibinfo{person}{Lavanya Ramakrishnan}, {and}
+  \bibinfo{person}{Cecilia~R. Aragon}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{{Considering Time in Designing Large-Scale Systems
+  for Scientific Computing}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the 19th ACM Conference on
+  Computer-Supported Cooperative Work {\&} Social Computing - CSCW '16}}
+  (\bibinfo{year}{2016}), \bibinfo{pages}{1533--1545}.
+\newblock
+\showISBNx{9781450335928}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2818048.2819988}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Chuang, Ramage, Manning, and Heer}{Chuang
+  et~al\mbox{.}}{2012}]%
+        {Chuang2012}
+\bibfield{author}{\bibinfo{person}{Jason Chuang}, \bibinfo{person}{Daniel
+  Ramage}, \bibinfo{person}{Christopher Manning}, {and}
+  \bibinfo{person}{Jeffrey Heer}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Interpretation and trust: Designing model-driven
+  visualizations for text analysis}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the SIGCHI Conference on Human Factors in Computing Systems}}. ACM,
+  \bibinfo{pages}{443--452}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2207676.2207738}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Ciolfi et al.}}{{Ciolfi et al.}}{2016}]%
+        {Ciolfi2016}
+\bibfield{author}{\bibinfo{person}{{Ciolfi et al.}}}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{{Articulating Co-Design in Museums: Reflections on
+  Two Participatory Processes}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the 19th ACM Conference on
+  Computer-Supported Cooperative Work {\&} Social Computing - CSCW '16}}
+  (\bibinfo{year}{2016}), \bibinfo{pages}{13--25}.
+\newblock
+\showISBNx{9781450335928}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2818048.2819967}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Correll and Gleicher}{Correll and
+  Gleicher}{2016}]%
+        {correll2016semantics}
+\bibfield{author}{\bibinfo{person}{Michael Correll} {and}
+  \bibinfo{person}{Michael Gleicher}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{The semantics of sketch: Flexibility in visual
+  query systems for time series data}. In \bibinfo{booktitle}{\emph{Visual
+  Analytics Science and Technology (VAST), 2016 IEEE Conference on}}. IEEE,
+  \bibinfo{pages}{131--140}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/VAST.2016.7883519}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Craig and Kennedy}{Craig and Kennedy}{2003}]%
+        {Craig2003}
+\bibfield{author}{\bibinfo{person}{Paul Craig} {and} \bibinfo{person}{Jessie
+  Kennedy}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{{Coordinated graph and scatter-plot views for the
+  visual exploration of microarray time-series data}}.
+\newblock \bibinfo{journal}{\emph{Proceedings - IEEE Symposium on Information
+  Visualization, INFO VIS}} (\bibinfo{year}{2003}), \bibinfo{pages}{173--180}.
+\newblock
+\showISBNx{0780381548}
+\showISSN{1522404X}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/INFVIS.2003.1249023}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Demchenko, Grosso, and Membrey}{Demchenko
+  et~al\mbox{.}}{2013}]%
+        {Demchenko2013}
+\bibfield{author}{\bibinfo{person}{Yuri Demchenko}, \bibinfo{person}{Paola
+  Grosso}, {and} \bibinfo{person}{Peter Membrey}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{{Addressing Big Data Issues in Scientific Data
+  Infrastructure}}.
+\newblock \bibinfo{journal}{\emph{Collaboration Technologies and Systems (CTS),
+  2013 International Conference on (pp. 48-55). IEEE.}} (\bibinfo{year}{2013}),
+  \bibinfo{pages}{48--55}.
+\newblock
+\showISBNx{978-1-4673-6404-1; 978-1-4673-6403-4}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CTS.2013.6567203}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Drlica Wagner et al.}}{{Drlica Wagner et
+  al.}}{2017}]%
+        {Drlica-Wagner2017}
+\bibfield{author}{\bibinfo{person}{{Drlica Wagner et al.}}}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{{Dark Energy Survey Year 1 Results: Photometric
+  Data Set for Cosmology}}.
+\newblock  (\bibinfo{year}{2017}).
+\newblock
+\showeprint[arxiv]{1708.01531}
+
+
+\bibitem[\protect\citeauthoryear{Gao, Dontcheva, Adar, Liu, and Karahalios}{Gao
+  et~al\mbox{.}}{2015}]%
+        {Gao2015}
+\bibfield{author}{\bibinfo{person}{Tong Gao}, \bibinfo{person}{Mira Dontcheva},
+  \bibinfo{person}{Eytan Adar}, \bibinfo{person}{Zhicheng Liu}, {and}
+  \bibinfo{person}{Karrie~G Karahalios}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Datatone: Managing ambiguity in natural language
+  interfaces for data visualization}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the 28th Annual ACM Symposium on User Interface Software \& Technology}}.
+  ACM, \bibinfo{pages}{489--500}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2807442.2807478}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Gloss, Signal, Cheetham, Gruhl, Kaczorowski,
+  Perkins, and Dinger}{Gloss et~al\mbox{.}}{2017}]%
+        {Gloss2017}
+\bibfield{author}{\bibinfo{person}{Brian~S. Gloss}, \bibinfo{person}{Bethany
+  Signal}, \bibinfo{person}{Seth~W. Cheetham}, \bibinfo{person}{Franziska
+  Gruhl}, \bibinfo{person}{Dominik~C. Kaczorowski}, \bibinfo{person}{Andrew~C.
+  Perkins}, {and} \bibinfo{person}{Marcel~E. Dinger}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{High resolution temporal transcriptomics of mouse
+  embryoid body development reveals complex expression dynamics of coding and
+  noncoding loci}.
+\newblock \bibinfo{journal}{\emph{Scientific Reports}} \bibinfo{volume}{7},
+  \bibinfo{number}{1} (\bibinfo{year}{2017}), \bibinfo{pages}{6731}.
+\newblock
+\showISSN{2045-2322}
+\urldef\tempurl%
+\url{https://doi.org/10.1038/s41598-017-06110-5}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Gotz and Wen}{Gotz and Wen}{2009}]%
+        {gotz2009behavior}
+\bibfield{author}{\bibinfo{person}{David Gotz} {and} \bibinfo{person}{Zhen
+  Wen}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Behavior-driven visualization recommendation}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 14th international conference on
+  Intelligent user interfaces}}. ACM, \bibinfo{pages}{315--324}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1502650.1502695}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Gould and Lewis}{Gould and Lewis}{1983}]%
+        {Gould1983}
+\bibfield{author}{\bibinfo{person}{John~D Gould} {and} \bibinfo{person}{Clayton
+  Lewis}.} \bibinfo{year}{1983}\natexlab{}.
+\newblock \showarticletitle{{Designing for usability---key principles and what
+  designers think}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the SIGCHI conference on Human
+  Factors in Computing Systems}} \bibinfo{volume}{28}, \bibinfo{number}{3}
+  (\bibinfo{year}{1983}), \bibinfo{pages}{50--53}.
+\newblock
+\showISBNx{0897911210}
+\showISSN{00010782}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/800045.801579}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Heer and Shneiderman}{Heer and
+  Shneiderman}{2012}]%
+        {Heer2012}
+\bibfield{author}{\bibinfo{person}{Jeffrey Heer} {and} \bibinfo{person}{Ben
+  Shneiderman}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{{A taxonomy of tools that support the fluent and
+  flexible use of visualizations}}.
+\newblock \bibinfo{journal}{\emph{Interactive Dynamics for Visual Analysis}}
+  \bibinfo{volume}{10} (\bibinfo{year}{2012}), \bibinfo{pages}{1--26}.
+\newblock
+\showISBNx{1542-7730}
+\showISSN{1542-7730}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2133416.2146416}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Hochheiser and Shneiderman}{Hochheiser and
+  Shneiderman}{2004}]%
+        {Hochheiser2004}
+\bibfield{author}{\bibinfo{person}{Harry Hochheiser} {and} \bibinfo{person}{Ben
+  Shneiderman}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{{Dynamic query tools for time series data sets:
+  Timebox widgets for interactive exploration}}.
+\newblock \bibinfo{journal}{\emph{Information Visualization}}
+  \bibinfo{volume}{3}, \bibinfo{number}{1} (\bibinfo{year}{2004}),
+  \bibinfo{pages}{1--18}.
+\newblock
+\showISSN{1473-8716}
+
+
+\bibitem[\protect\citeauthoryear{Kandel, Paepcke, Hellerstein, and Heer}{Kandel
+  et~al\mbox{.}}{2011}]%
+        {kandel2011wrangler}
+\bibfield{author}{\bibinfo{person}{Sean Kandel}, \bibinfo{person}{Andreas
+  Paepcke}, \bibinfo{person}{Joseph Hellerstein}, {and}
+  \bibinfo{person}{Jeffrey Heer}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Wrangler: Interactive visual specification of data
+  transformation scripts}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  SIGCHI Conference on Human Factors in Computing Systems}}. ACM,
+  \bibinfo{pages}{3363--3372}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1978942.1979444}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kandel, Paepcke, Hellerstein, and Heer}{Kandel
+  et~al\mbox{.}}{2012}]%
+        {Kandel2012}
+\bibfield{author}{\bibinfo{person}{S Kandel}, \bibinfo{person}{A Paepcke},
+  \bibinfo{person}{J~M Hellerstein}, {and} \bibinfo{person}{J Heer}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{{Enterprise Data Analysis and Visualization: An
+  Interview Study.}}
+\newblock \bibinfo{journal}{\emph{IEEE transactions on visualization and
+  computer graphics}} \bibinfo{volume}{18}, \bibinfo{number}{12}
+  (\bibinfo{year}{2012}), \bibinfo{pages}{2917--26}.
+\newblock
+\showISBNx{1077-2626}
+\showISSN{1941-0506}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TVCG.2012.219}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kersten, Idreos, Manegold, and Liarou}{Kersten
+  et~al\mbox{.}}{2011}]%
+        {Kersten2011}
+\bibfield{author}{\bibinfo{person}{M Kersten}, \bibinfo{person}{S Idreos},
+  \bibinfo{person}{S Manegold}, {and} \bibinfo{person}{E Liarou}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{{The Researcher's Guide to the Data Deluge:
+  Querying a Scientific Database in Just a Few Seconds}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the VLDB Endowment,}}
+  (\bibinfo{year}{2011}), \bibinfo{pages}{1474}.
+\newblock
+\showISBNx{0000000000000}
+\showISSN{21508097}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1409360.1409380}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kery, Horvath, and Myers}{Kery
+  et~al\mbox{.}}{2017}]%
+        {Kery2017}
+\bibfield{author}{\bibinfo{person}{Mary~Beth Kery}, \bibinfo{person}{Amber
+  Horvath}, {and} \bibinfo{person}{Brad~A Myers}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Variolite: Supporting Exploratory Programming by
+  Data Scientists.}. In \bibinfo{booktitle}{\emph{Proceedings of the SIGCHI
+  Conference on Human Factors in Computing Systems}}.
+  \bibinfo{pages}{1265--1276}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3025453.3025626}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Key, Howe, Perry, and Aragon}{Key
+  et~al\mbox{.}}{2012}]%
+        {key2012vizdeck}
+\bibfield{author}{\bibinfo{person}{Alicia Key}, \bibinfo{person}{Bill Howe},
+  \bibinfo{person}{Daniel Perry}, {and} \bibinfo{person}{Cecilia Aragon}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Vizdeck: self-organizing dashboards for visual
+  analytics}. In \bibinfo{booktitle}{\emph{Proceedings of the 2012 ACM SIGMOD
+  International Conference on Management of Data}}. ACM,
+  \bibinfo{pages}{681--684}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2213836.2213931}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Lam, Bertini, Isenberg, Plaisant, and
+  Carpendale}{Lam et~al\mbox{.}}{2012}]%
+        {lam2012empirical}
+\bibfield{author}{\bibinfo{person}{Heidi Lam}, \bibinfo{person}{Enrico
+  Bertini}, \bibinfo{person}{Petra Isenberg}, \bibinfo{person}{Catherine
+  Plaisant}, {and} \bibinfo{person}{Sheelagh Carpendale}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Empirical studies in information visualization:
+  Seven scenarios}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Visualization and
+  Computer Graphics}} \bibinfo{volume}{18}, \bibinfo{number}{9}
+  (\bibinfo{year}{2012}), \bibinfo{pages}{1520--1536}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TVCG.2011.279}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{M{\'{e}}ndez, Hinrichs, and
+  Nacenta}{M{\'{e}}ndez et~al\mbox{.}}{2017}]%
+        {Mendez2017}
+\bibfield{author}{\bibinfo{person}{Gonzalo~Gabriel M{\'{e}}ndez},
+  \bibinfo{person}{Uta Hinrichs}, {and} \bibinfo{person}{Miguel Nacenta}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{{Bottom-up vs . Top-down : Trade-offs in Efficiency
+  , Understanding , Freedom and Creativity with InfoVis Tools}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the SIGCHI Conference on Human
+  Factors in Computing Systems}} (\bibinfo{year}{2017}).
+\newblock
+\showISBNx{9781450346559}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3025453.3025942}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Michael~Sedlmair}{Michael~Sedlmair}{2012}]%
+        {Sedlmair2012}
+\bibfield{author}{\bibinfo{person}{Tamara~Munzner Michael~Sedlmair,
+  Miriah~Meyer}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{{Design Study Methodolgy: Reflections from the
+  Trenches and the Stacks}}.
+\newblock  \bibinfo{volume}{1}, \bibinfo{number}{12} (\bibinfo{year}{2012}),
+  \bibinfo{pages}{2431--2440}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Miller, Salkind, and Miller}{Miller
+  et~al\mbox{.}}{2002}]%
+        {miller_salkind_miller_2002}
+\bibfield{author}{\bibinfo{person}{Delbert~C. Miller}, \bibinfo{person}{Neil~J.
+  Salkind}, {and} \bibinfo{person}{Delbert~C. Miller}.}
+  \bibinfo{year}{2002}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Handbook of research design and social
+  measurement}}.
+\newblock \bibinfo{publisher}{SAGE}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{{Mohebbi et al.}}{{Mohebbi et al.}}{2011}]%
+        {mohebbi2011google}
+\bibfield{author}{\bibinfo{person}{{Mohebbi et al.}}}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Google correlate whitepaper}.
+\newblock  (\bibinfo{year}{2011}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Momcheva and Tollerud}{Momcheva and
+  Tollerud}{2015}]%
+        {Momcheva2015}
+\bibfield{author}{\bibinfo{person}{Ivelina Momcheva} {and}
+  \bibinfo{person}{Erik Tollerud}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Software use in astronomy: an informal survey}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1507.03989}}
+  (\bibinfo{year}{2015}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Muller and Kuhn}{Muller and Kuhn}{1993}]%
+        {Muller1993}
+\bibfield{author}{\bibinfo{person}{Michael~J. Muller} {and}
+  \bibinfo{person}{Sarah Kuhn}.} \bibinfo{year}{1993}\natexlab{}.
+\newblock \showarticletitle{Participatory Design}.
+\newblock \bibinfo{journal}{\emph{Commun. ACM}} \bibinfo{volume}{36},
+  \bibinfo{number}{6} (\bibinfo{date}{June} \bibinfo{year}{1993}),
+  \bibinfo{pages}{24--28}.
+\newblock
+\showISSN{0001-0782}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/153571.255960}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Munzner}{Munzner}{2009}]%
+        {munzner2009nested}
+\bibfield{author}{\bibinfo{person}{Tamara Munzner}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{A nested model for visualization design and
+  validation}.
+\newblock \bibinfo{journal}{\emph{IEEE transactions on visualization and
+  computer graphics}} \bibinfo{volume}{15}, \bibinfo{number}{6}
+  (\bibinfo{year}{2009}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TVCG.2009.111}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Nielsen}{Nielsen}{1994}]%
+        {Nielsen1994}
+\bibfield{author}{\bibinfo{person}{Jakob Nielsen}.}
+  \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{Usability Inspection Methods}. In
+  \bibinfo{booktitle}{\emph{Conference Companion on Human Factors in Computing
+  Systems}} \emph{(\bibinfo{series}{CHI '94})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{413--414}.
+\newblock
+\showISBNx{0-89791-651-4}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/259963.260531}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{North}{North}{2006}]%
+        {North2006}
+\bibfield{author}{\bibinfo{person}{Chris North}.}
+  \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{{Toward measuring visualization insight}}.
+\newblock \bibinfo{journal}{\emph{IEEE Computer Graphics and Applications}}
+  \bibinfo{volume}{26}, \bibinfo{number}{3} (\bibinfo{year}{2006}),
+  \bibinfo{pages}{6--9}.
+\newblock
+\showISBNx{1541931203}
+\showISSN{02721716}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/MCG.2006.70}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Patel et al.}}{{Patel et al.}}{2010}]%
+        {Patel2010}
+\bibfield{author}{\bibinfo{person}{{Patel et al.}}}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Gestalt: integrated support for implementation and
+  analysis in machine learning}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the 23nd annual ACM symposium on User Interface Software and Technology}}.
+  ACM, \bibinfo{pages}{37--46}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1866029.1866038}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Peng and Sinha}{Peng and Sinha}{2016}]%
+        {Peng2016}
+\bibfield{author}{\bibinfo{person}{Pei~Chen Peng} {and}
+  \bibinfo{person}{Saurabh Sinha}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Quantitative modeling of gene expression using DNA
+  shape features of binding sites}.
+\newblock \bibinfo{journal}{\emph{Nucleic Acids Research}}
+  \bibinfo{volume}{44}, \bibinfo{number}{13} (\bibinfo{year}{2016}),
+  \bibinfo{pages}{e120}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1093/nar/gkw446}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Pirolli and Card}{Pirolli and Card}{2005}]%
+        {Pirolli}
+\bibfield{author}{\bibinfo{person}{Peter Pirolli} {and} \bibinfo{person}{Stuart
+  Card}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{The sensemaking process and leverage points for
+  analyst technology as identified through cognitive task analysis}. In
+  \bibinfo{booktitle}{\emph{Proceedings of International Conference on
+  Intelligence Analysis}}, Vol.~\bibinfo{volume}{5}. \bibinfo{pages}{2--4}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Plaisant}{Plaisant}{2004}]%
+        {Plaisant2004}
+\bibfield{author}{\bibinfo{person}{Catherine Plaisant}.}
+  \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{The challenge of information visualization
+  evaluation}. In \bibinfo{booktitle}{\emph{Proceedings of the Working
+  Conference on Advanced Visual Interfaces}}. ACM, \bibinfo{pages}{109--116}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/989863.989880}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Poon, Thomas, Aragon, and Lee}{Poon
+  et~al\mbox{.}}{2008}]%
+        {Poon2008}
+\bibfield{author}{\bibinfo{person}{Sarah~S Poon}, \bibinfo{person}{Rollin~C
+  Thomas}, \bibinfo{person}{Cecilia~R Aragon}, {and} \bibinfo{person}{Brian
+  Lee}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Context-linked virtual assistants for distributed
+  teams: an astrophysics case study}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the 2008 ACM Conference on Computer supported Cooperative Work}}. ACM,
+  \bibinfo{pages}{361--370}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1460563.1460623}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Prabhu et al.}}{{Prabhu et al.}}{2011}]%
+        {Prabhu2011}
+\bibfield{author}{\bibinfo{person}{{Prabhu et al.}}}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{A Survey of the Practice of Computational Science}.
+  In \bibinfo{booktitle}{\emph{State of the Practice Reports}}
+  \emph{(\bibinfo{series}{SC '11})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, Article \bibinfo{articleno}{19},
+  \bibinfo{numpages}{12}~pages.
+\newblock
+\showISBNx{978-1-4503-1139-7}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2063348.2063374}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Ryall et al.}}{{Ryall et al.}}{2005}]%
+        {ryall2005querylines}
+\bibfield{author}{\bibinfo{person}{{Ryall et al.}}}
+  \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Querylines: approximate query for visual browsing}.
+  In \bibinfo{booktitle}{\emph{CHI'05 Extended Abstracts on Human Factors in
+  Computing Systems}}. ACM, \bibinfo{pages}{1765--1768}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1056808.1057017}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Setlur, Battersby, Tory, Gossweiler, and
+  Chang}{Setlur et~al\mbox{.}}{2016}]%
+        {Setlur2016}
+\bibfield{author}{\bibinfo{person}{Vidya Setlur}, \bibinfo{person}{Sarah~E
+  Battersby}, \bibinfo{person}{Melanie Tory}, \bibinfo{person}{Rich
+  Gossweiler}, {and} \bibinfo{person}{Angel~X Chang}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{{Eviza: A Natural Language Interface for Visual
+  Analysis}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the 29th Annual Symposium on
+  User Interface Software and Technology - UIST '16}} (\bibinfo{year}{2016}),
+  \bibinfo{pages}{365--377}.
+\newblock
+\showISBNx{978-1-4503-4189-9}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2984511.2984588}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Shneiderman}{Shneiderman}{1994}]%
+        {Shneiderman1994}
+\bibfield{author}{\bibinfo{person}{Ben Shneiderman}.}
+  \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{{Dynamic queries for visual information seeking}}.
+\newblock \bibinfo{journal}{\emph{IEEE Software}} \bibinfo{volume}{11},
+  \bibinfo{number}{6} (\bibinfo{year}{1994}), \bibinfo{pages}{70--77}.
+\newblock
+\showISBNx{0740-7459}
+\showISSN{07407459}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/52.329404}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Shneiderman and Plaisant}{Shneiderman and
+  Plaisant}{2006}]%
+        {shneiderman2006strategies}
+\bibfield{author}{\bibinfo{person}{Ben Shneiderman} {and}
+  \bibinfo{person}{Catherine Plaisant}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{Strategies for evaluating information visualization
+  tools: multi-dimensional in-depth long-term case studies}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2006 AVI workshop on BEyond time
+  and errors: novel evaluation methods for information visualization}}. ACM,
+  \bibinfo{pages}{1--7}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1168149.1168158}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Siddiqui, Lee, Kim, Xue, Wang, Zou, Guo, Liu,
+  Yu, Karahalios, and Parameswaran}{Siddiqui et~al\mbox{.}}{2017}]%
+        {Siddiqui2017}
+\bibfield{author}{\bibinfo{person}{Tarique Siddiqui}, \bibinfo{person}{John
+  Lee}, \bibinfo{person}{Albert Kim}, \bibinfo{person}{Edward Xue},
+  \bibinfo{person}{Chaoran Wang}, \bibinfo{person}{Yuxuan Zou},
+  \bibinfo{person}{Lijin Guo}, \bibinfo{person}{Changfeng Liu},
+  \bibinfo{person}{Xiaofo Yu}, \bibinfo{person}{Karrie Karahalios}, {and}
+  \bibinfo{person}{Aditya Parameswaran}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{{Fast-Forwarding to Desired Visualizations with
+  zenvisage}}.
+\newblock  (\bibinfo{year}{2017}).
+\newblock
+\showISBNx{9781450321389}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1235}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Siddiqui et al.}}{{Siddiqui et al.}}{2016}]%
+        {Siddiqui2017VLDB}
+\bibfield{author}{\bibinfo{person}{{Siddiqui et al.}}}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Effortless data exploration with zenvisage: an
+  expressive and interactive visual analytics system}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the VLDB Endowment}}
+  \bibinfo{volume}{10}, \bibinfo{number}{4} (\bibinfo{year}{2016}),
+  \bibinfo{pages}{457--468}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.14778/3025111.3025126}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Vartak, Rahman, Madden, Parameswaran, and
+  Polyzotis}{Vartak et~al\mbox{.}}{2015}]%
+        {Vartak2015}
+\bibfield{author}{\bibinfo{person}{Manasi Vartak}, \bibinfo{person}{Sajjadur
+  Rahman}, \bibinfo{person}{Samuel Madden}, \bibinfo{person}{Aditya
+  Parameswaran}, {and} \bibinfo{person}{Neoklis Polyzotis}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{SeeDB: efficient data-driven visualization
+  recommendations to support visual analytics}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the VLDB Endowment}}
+  \bibinfo{volume}{8}, \bibinfo{number}{13} (\bibinfo{year}{2015}),
+  \bibinfo{pages}{2182--2193}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.14778/2831360.2831371}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wattenberg}{Wattenberg}{2001}]%
+        {wattenberg2001sketching}
+\bibfield{author}{\bibinfo{person}{Martin Wattenberg}.}
+  \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{Sketching a graph to query a time-series database}.
+  In \bibinfo{booktitle}{\emph{CHI'01 Extended Abstracts on Human factors in
+  Computing Systems}}. ACM, \bibinfo{pages}{381--382}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/634067.634292}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wongsuphasawat, Moritz, Anand, Mackinlay,
+  Howe, and Heer}{Wongsuphasawat et~al\mbox{.}}{2016}]%
+        {Wongsuphasawat2016}
+\bibfield{author}{\bibinfo{person}{Kanit Wongsuphasawat},
+  \bibinfo{person}{Dominik Moritz}, \bibinfo{person}{Anushka Anand},
+  \bibinfo{person}{Jock Mackinlay}, \bibinfo{person}{Bill Howe}, {and}
+  \bibinfo{person}{Jeffrey Heer}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Voyager: Exploratory analysis via faceted browsing
+  of visualization recommendations}.
+\newblock \bibinfo{journal}{\emph{IEEE transactions on visualization and
+  computer graphics}} \bibinfo{volume}{22}, \bibinfo{number}{1}
+  (\bibinfo{year}{2016}), \bibinfo{pages}{649--658}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TVCG.2015.2467191}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Yi, Kang, Stasko, and Jacko}{Yi
+  et~al\mbox{.}}{2008}]%
+        {Yi2008}
+\bibfield{author}{\bibinfo{person}{Ji~Soo Yi}, \bibinfo{person}{Youn-Ah Kang},
+  \bibinfo{person}{John~T Stasko}, {and} \bibinfo{person}{Julie~A Jacko}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{{Understanding and characterizing insights: How Do
+  People Gain Insights Using Information Visualization?}}
+\newblock \bibinfo{journal}{\emph{Proceedings of the 2008 conference on BEyond
+  time and errors novel evaLuation methods for Information Visualization -
+  BELIV '08}} (\bibinfo{year}{2008}), \bibinfo{pages}{1}.
+\newblock
+\showISBNx{9781605580166}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1377966.1377971}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Zgraggen, Drucker, Fisher, and
+  DeLine}{Zgraggen et~al\mbox{.}}{2015}]%
+        {Zgraggen2015}
+\bibfield{author}{\bibinfo{person}{Emanuel Zgraggen}, \bibinfo{person}{Steven~M
+  Drucker}, \bibinfo{person}{Danyel Fisher}, {and} \bibinfo{person}{Robert
+  DeLine}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{{(s|qu)eries: Visual Regular Expressions for
+  Querying and Exploring Event Sequences}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the 33rd Annual ACM Conference
+  on Human Factors in Computing Systems}} (\bibinfo{year}{2015}),
+  \bibinfo{pages}{2683--2692}.
+\newblock
+\showISBNx{9781450331456}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2702123.2702262}
+\showDOI{\tempurl}
+
+
+\end{thebibliography}
