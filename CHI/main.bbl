@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{18}
+\begin{thebibliography}{25}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -37,6 +37,31 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
+\bibitem[\protect\citeauthoryear{??}{zil}{2016}]%
+        {zillow}
+ \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{Zillow}.
+\newblock \bibinfo{howpublished}{\url{https://www.zillow.com}}.
+\newblock
+\newblock
+\shownote{Accessed: February 1, 2016.}
+
+
+\bibitem[\protect\citeauthoryear{Amar, Eagan, and Stasko}{Amar
+  et~al\mbox{.}}{2005}]%
+        {Amar2005}
+\bibfield{author}{\bibinfo{person}{Robert Amar}, \bibinfo{person}{James Eagan},
+  {and} \bibinfo{person}{John Stasko}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Low-level components of analytic activity in
+  information visualization}. In \bibinfo{booktitle}{\emph{Information
+  Visualization, 2005. INFOVIS 2005. IEEE Symposium on}}. IEEE,
+  \bibinfo{pages}{111--117}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/INFOVIS.2005.24}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Aragon, Poon, Aldering, Thomas, and
   Quimby}{Aragon et~al\mbox{.}}{2008}]%
         {Aragon2008}
@@ -51,6 +76,20 @@
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1088/1742-6596/125/1/012091}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{B. Shneiderman}}{{B. Shneiderman}}{2007}]%
+        {Shneiderman2007a}
+\bibfield{author}{\bibinfo{person}{{B. Shneiderman}}.}
+  \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{{Creativity Support Tools: Accelerating Discovery
+  and Innovation}}.
+\newblock \bibinfo{journal}{\emph{Commun. ACM}} \bibinfo{volume}{50},
+  \bibinfo{number}{12} (\bibinfo{year}{2007}), \bibinfo{pages}{20}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1323688.1323689}
 \showDOI{\tempurl}
 
 
@@ -118,6 +157,23 @@
 \showDOI{\tempurl}
 
 
+\bibitem[\protect\citeauthoryear{Heer and Shneiderman}{Heer and
+  Shneiderman}{2012}]%
+        {Heer2012}
+\bibfield{author}{\bibinfo{person}{Jeffrey Heer} {and} \bibinfo{person}{Ben
+  Shneiderman}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{{A taxonomy of tools that support the fluent and
+  flexible use of visualizations}}.
+\newblock \bibinfo{journal}{\emph{Interactive Dynamics for Visual Analysis}}
+  \bibinfo{volume}{10} (\bibinfo{year}{2012}), \bibinfo{pages}{1--26}.
+\newblock
+\showISBNx{1542-7730}
+\showISSN{1542-7730}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2133416.2146416}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Kandel, Paepcke, Hellerstein, and Heer}{Kandel
   et~al\mbox{.}}{2011}]%
         {kandel2011wrangler}
@@ -131,6 +187,41 @@
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1145/1978942.1979444}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kandel, Paepcke, Hellerstein, and Heer}{Kandel
+  et~al\mbox{.}}{2012}]%
+        {Kandel2012}
+\bibfield{author}{\bibinfo{person}{S Kandel}, \bibinfo{person}{A Paepcke},
+  \bibinfo{person}{J~M Hellerstein}, {and} \bibinfo{person}{J Heer}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{{Enterprise Data Analysis and Visualization: An
+  Interview Study.}}
+\newblock \bibinfo{journal}{\emph{IEEE transactions on visualization and
+  computer graphics}} \bibinfo{volume}{18}, \bibinfo{number}{12}
+  (\bibinfo{year}{2012}), \bibinfo{pages}{2917--26}.
+\newblock
+\showISBNx{1077-2626}
+\showISSN{1941-0506}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TVCG.2012.219}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kery, Horvath, and Myers}{Kery
+  et~al\mbox{.}}{2017}]%
+        {Kery2017}
+\bibfield{author}{\bibinfo{person}{Mary~Beth Kery}, \bibinfo{person}{Amber
+  Horvath}, {and} \bibinfo{person}{Brad~A Myers}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Variolite: Supporting Exploratory Programming by
+  Data Scientists.}. In \bibinfo{booktitle}{\emph{Proceedings of the SIGCHI
+  Conference on Human Factors in Computing Systems}}.
+  \bibinfo{pages}{1265--1276}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3025453.3025626}
 \showDOI{\tempurl}
 
 
@@ -259,6 +350,21 @@
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1145/989863.989880}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Shneiderman}{Shneiderman}{1994}]%
+        {Shneiderman1994}
+\bibfield{author}{\bibinfo{person}{Ben Shneiderman}.}
+  \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{{Dynamic queries for visual information seeking}}.
+\newblock \bibinfo{journal}{\emph{IEEE Software}} \bibinfo{volume}{11},
+  \bibinfo{number}{6} (\bibinfo{year}{1994}), \bibinfo{pages}{70--77}.
+\newblock
+\showISBNx{0740-7459}
+\showISSN{07407459}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/52.329404}
 \showDOI{\tempurl}
 
 
