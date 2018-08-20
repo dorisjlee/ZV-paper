@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{27}
+\begin{thebibliography}{36}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -125,6 +125,21 @@
 \showDOI{\tempurl}
 
 
+\bibitem[\protect\citeauthoryear{Correll and Gleicher}{Correll and
+  Gleicher}{2016}]%
+        {correll2016semantics}
+\bibfield{author}{\bibinfo{person}{Michael Correll} {and}
+  \bibinfo{person}{Michael Gleicher}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{The semantics of sketch: Flexibility in visual
+  query systems for time series data}. In \bibinfo{booktitle}{\emph{Visual
+  Analytics Science and Technology (VAST), 2016 IEEE Conference on}}. IEEE,
+  \bibinfo{pages}{131--140}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/VAST.2016.7883519}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{{Drlica Wagner et al.}}{{Drlica Wagner et
   al.}}{2017}]%
         {Drlica-Wagner2017}
@@ -135,6 +150,23 @@
 \newblock  (\bibinfo{year}{2017}).
 \newblock
 \showeprint[arxiv]{1708.01531}
+
+
+\bibitem[\protect\citeauthoryear{Eichmann and Zgraggen}{Eichmann and
+  Zgraggen}{2015}]%
+        {Eichmann2015}
+\bibfield{author}{\bibinfo{person}{Philipp Eichmann} {and}
+  \bibinfo{person}{Emanuel Zgraggen}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{{Evaluating Subjective Accuracy in Time Series
+  Pattern-Matching Using Human-Annotated Rankings}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the 20th International
+  Conference on Intelligent User Interfaces - IUI '15}} (\bibinfo{year}{2015}),
+  \bibinfo{pages}{28--37}.
+\newblock
+\showISBNx{9781450333061}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2678025.2701379}
+\showDOI{\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Gloss, Signal, Cheetham, Gruhl, Kaczorowski,
@@ -171,6 +203,51 @@
 \showISSN{1542-7730}
 \urldef\tempurl%
 \url{https://doi.org/10.1145/2133416.2146416}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Hochheiser and Shneiderman}{Hochheiser and
+  Shneiderman}{2001}]%
+        {Hochheiser2001}
+\bibfield{author}{\bibinfo{person}{Harry Hochheiser} {and} \bibinfo{person}{Ben
+  Shneiderman}.} \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{Interactive Exploration of Time Series Data}. In
+  \bibinfo{booktitle}{\emph{Discovery Science}},
+  \bibfield{editor}{\bibinfo{person}{Klaus~P. Jantke} {and}
+  \bibinfo{person}{Ayumi Shinohara}} (Eds.). \bibinfo{publisher}{Springer
+  Berlin Heidelberg}, \bibinfo{address}{Berlin, Heidelberg},
+  \bibinfo{pages}{441--446}.
+\newblock
+\showISBNx{978-3-540-45650-6}
+
+
+\bibitem[\protect\citeauthoryear{Hochheiser and Shneiderman}{Hochheiser and
+  Shneiderman}{2004}]%
+        {Hochheiser2004}
+\bibfield{author}{\bibinfo{person}{Harry Hochheiser} {and} \bibinfo{person}{Ben
+  Shneiderman}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{{Dynamic query tools for time series data sets:
+  Timebox widgets for interactive exploration}}.
+\newblock \bibinfo{journal}{\emph{Information Visualization}}
+  \bibinfo{volume}{3}, \bibinfo{number}{1} (\bibinfo{year}{2004}),
+  \bibinfo{pages}{1--18}.
+\newblock
+\showISSN{1473-8716}
+
+
+\bibitem[\protect\citeauthoryear{Holz and Feiner}{Holz and Feiner}{2009}]%
+        {Holz2009}
+\bibfield{author}{\bibinfo{person}{Christian Holz} {and}
+  \bibinfo{person}{Steven Feiner}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Relaxed Selection Techniques for Querying
+  Time-series Graphs}. In \bibinfo{booktitle}{\emph{Proceedings of the 22Nd
+  Annual ACM Symposium on User Interface Software and Technology}}
+  \emph{(\bibinfo{series}{UIST '09})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{213--222}.
+\newblock
+\showISBNx{978-1-60558-745-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1622176.1622217}
 \showDOI{\tempurl}
 
 
@@ -243,6 +320,21 @@
 \showDOI{\tempurl}
 
 
+\bibitem[\protect\citeauthoryear{Mannino and Abouzied}{Mannino and
+  Abouzied}{2018}]%
+        {Mannino2018}
+\bibfield{author}{\bibinfo{person}{Miro Mannino} {and} \bibinfo{person}{Azza
+  Abouzied}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{Expressive Time Series Querying with Hand-Drawn
+  Scale-Free Sketches}}.
+\newblock  (\bibinfo{year}{2018}), \bibinfo{pages}{1--12}.
+\newblock
+\showISBNx{9781450356206}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3173574.3173962}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{M{\'{e}}ndez, Hinrichs, and
   Nacenta}{M{\'{e}}ndez et~al\mbox{.}}{2017}]%
         {Mendez2017}
@@ -280,6 +372,15 @@
 \newblock \bibinfo{booktitle}{\emph{Handbook of research design and social
   measurement}}.
 \newblock \bibinfo{publisher}{SAGE}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{{Mohebbi et al.}}{{Mohebbi et al.}}{2011}]%
+        {mohebbi2011google}
+\bibfield{author}{\bibinfo{person}{{Mohebbi et al.}}}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Google correlate whitepaper}.
+\newblock  (\bibinfo{year}{2011}).
 \newblock
 
 
@@ -383,6 +484,19 @@
 \showDOI{\tempurl}
 
 
+\bibitem[\protect\citeauthoryear{{Ryall et al.}}{{Ryall et al.}}{2005}]%
+        {ryall2005querylines}
+\bibfield{author}{\bibinfo{person}{{Ryall et al.}}}
+  \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Querylines: approximate query for visual browsing}.
+  In \bibinfo{booktitle}{\emph{CHI'05 Extended Abstracts on Human Factors in
+  Computing Systems}}. ACM, \bibinfo{pages}{1765--1768}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1056808.1057017}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Shneiderman}{Shneiderman}{1994}]%
         {Shneiderman1994}
 \bibfield{author}{\bibinfo{person}{Ben Shneiderman}.}
@@ -445,6 +559,19 @@
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.14778/3025111.3025126}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wattenberg}{Wattenberg}{2001}]%
+        {wattenberg2001sketching}
+\bibfield{author}{\bibinfo{person}{Martin Wattenberg}.}
+  \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{Sketching a graph to query a time-series database}.
+  In \bibinfo{booktitle}{\emph{CHI'01 Extended Abstracts on Human factors in
+  Computing Systems}}. ACM, \bibinfo{pages}{381--382}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/634067.634292}
 \showDOI{\tempurl}
 
 

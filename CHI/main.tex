@@ -1,4 +1,5 @@
 %\documentclass[sigchi, review]{acmart}
+\PassOptionsToPackage{table}{xcolor}
 \documentclass[sigchi]{acmart}
 % Load basic packages
 \usepackage{balance}  % to better equalize the last page
@@ -7,9 +8,9 @@
 \usepackage{txfonts}
 \usepackage{mathptmx}
 % \usepackage[pdftex]{hyperref}
-\usepackage{xcolor}
-\usepackage{booktabs}
-\usepackage{textcomp}
+
+% \usepackage{booktabs}
+% \usepackage{textcomp}
 \usepackage{xspace}
 \usepackage{setspace}
 \usepackage{graphicx}
@@ -26,9 +27,12 @@
 \usepackage{lipsum}   % for filler text
 \usepackage{setspace} % for \onehalfspacing and \singlespacing macros
 \usepackage[normalem]{ulem}
-\usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
+\usepackage{makecell}
+\renewcommand\theadalign{bc}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
 \AtBeginEnvironment{quote}{\small}% Step font down one size relative to current font.
 \setcopyright{none}
 
