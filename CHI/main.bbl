@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{36}
+\begin{thebibliography}{35}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -264,41 +264,6 @@
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1145/1978942.1979444}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Kandel, Paepcke, Hellerstein, and Heer}{Kandel
-  et~al\mbox{.}}{2012}]%
-        {Kandel2012}
-\bibfield{author}{\bibinfo{person}{S Kandel}, \bibinfo{person}{A Paepcke},
-  \bibinfo{person}{J~M Hellerstein}, {and} \bibinfo{person}{J Heer}.}
-  \bibinfo{year}{2012}\natexlab{}.
-\newblock \showarticletitle{{Enterprise Data Analysis and Visualization: An
-  Interview Study.}}
-\newblock \bibinfo{journal}{\emph{IEEE transactions on visualization and
-  computer graphics}} \bibinfo{volume}{18}, \bibinfo{number}{12}
-  (\bibinfo{year}{2012}), \bibinfo{pages}{2917--26}.
-\newblock
-\showISBNx{1077-2626}
-\showISSN{1941-0506}
-\urldef\tempurl%
-\url{https://doi.org/10.1109/TVCG.2012.219}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Kery, Horvath, and Myers}{Kery
-  et~al\mbox{.}}{2017}]%
-        {Kery2017}
-\bibfield{author}{\bibinfo{person}{Mary~Beth Kery}, \bibinfo{person}{Amber
-  Horvath}, {and} \bibinfo{person}{Brad~A Myers}.}
-  \bibinfo{year}{2017}\natexlab{}.
-\newblock \showarticletitle{Variolite: Supporting Exploratory Programming by
-  Data Scientists.}. In \bibinfo{booktitle}{\emph{Proceedings of the SIGCHI
-  Conference on Human Factors in Computing Systems}}.
-  \bibinfo{pages}{1265--1276}.
-\newblock
-\urldef\tempurl%
-\url{https://doi.org/10.1145/3025453.3025626}
 \showDOI{\tempurl}
 
 
@@ -572,6 +537,24 @@
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1145/634067.634292}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Zgraggen, Drucker, Fisher, and
+  DeLine}{Zgraggen et~al\mbox{.}}{2015}]%
+        {Zgraggen2015}
+\bibfield{author}{\bibinfo{person}{Emanuel Zgraggen}, \bibinfo{person}{Steven~M
+  Drucker}, \bibinfo{person}{Danyel Fisher}, {and} \bibinfo{person}{Robert
+  DeLine}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{{(s|qu)eries: Visual Regular Expressions for
+  Querying and Exploring Event Sequences}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the 33rd Annual ACM Conference
+  on Human Factors in Computing Systems}} (\bibinfo{year}{2015}),
+  \bibinfo{pages}{2683--2692}.
+\newblock
+\showISBNx{9781450331456}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2702123.2702262}
 \showDOI{\tempurl}
 
 
