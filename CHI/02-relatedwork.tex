@@ -1,13 +1,8 @@
 %!TEX root = main.tex
 \section{Related Works \label{sec:relatedworks}}
-There has been a range of work primarily focused on locating visualizations
-matching certain patterns, including the influential work on TimeSearcher~\cite{hochheiser2004dynamic}, where the query is
-specified as a box constraint, and QuerySketch~\cite{wattenberg2001sketching}, where the query is sketched as a pattern.
-This was applied to search queries within Google Correlate~\cite{mohebbi2011google}.
-Recent work has also extended this to querying using regular
-expressions~\cite{Zgraggen2015}, while
-others have analyzed the semantics
-of sketches~\cite{correll2016semantics,Mannino2018}.
+Visual query systems enable users to directly search for visualizations matching certain patterns through an intuitive specification interface. In the influential work on TimeSearcher~\cite{hochheiser2004dynamic}, the query is composed of one or more box constraints. Similarly, in QuerySketch~\cite{wattenberg2001sketching} and Google Correlate~\cite{mohebbi2011google}, the query is sketched as a pattern. Subsequent work have focussed on improving the expressiveness and flexibility of sketched queries through finer specification interface and pattern-matching algorithms, including specification of soft constraints~\cite{ryall2005querylines} and implicit relaxed selection techniques~\cite{Holz2009}. Recent work have also performed crowdsourced perceptual studies to how humans rank similarity in patterns subjectively to develop novel specification interface and algorithms that are evaluated against existing `flexible' metrics, such as Dynamic Time Warping (DTW)~\cite{Eichmann2015,correll2016semantics,Mannino2018}. While these systems have shown to be effective for visual querying in controlled lab studies, they have not been evaluated in-situ on real-world use cases. In this work, we identify key components of VQSs beyond the sketch specification focus taken by existing work and develop an end-to-end process model for how analysts interact with VQSs in practice.
+\input{relatedworktable}
+
 
 % TimeSearcher
 % [Hochheiser & Shneiderman 2001, 2004]
@@ -19,9 +14,6 @@ of sketches~\cite{correll2016semantics,Mannino2018}.
 % SoftSelect [Holz & Feiner, 2009]
 % System that allow users to implicitly define a level of similarity that can
 % vary across the search pattern depending on how they sketch
-% Google Correlate
-% [Mohebbi et al 2011]
-% scalable public interface for specifying query terms or patterns, then system displays ranked list of other highly correlated time series
 % TimeSketch
 % [Eichmann & Zgraggen 2015]
 % Collect dataset and evaluate how people perceive accuracy in pattern matching
@@ -35,5 +27,4 @@ of sketches~\cite{correll2016semantics,Mannino2018}.
 % Full-fledge sketch-based visual query system
 
 % \par \tvcg{Visual analytics systems, such as Tableau\cite{tableau}, support powerful visualization construction interfaces that enable users to specify their desired visual encoding and data subset for generating a visualization. However, during data exploration, users might only have a vague, high-level idea of what they want to address, rather than specific instances of what they want to visualize.} To address this issue, recent studies have explored the use of visualization recommendations to accelerate data exploration. The techniques used include using statistical and perceptual measures~\cite{key2012vizdeck,Wongsuphasawat2016}, past user history~\cite{gotz2009behavior}, and visualizations that look ``different'' from the rest~\cite{Vartak2015}.
-% \par \tvcg{Instead of providing generic visualization recommendations, VQSs are a special class of visualization systems that enable users to more directly search for visualizations through an intuitive interface. We elaborate on our description of VQSs in the introduction and define VQSs as \emph{systems that allow users to specify the desired pattern via some high-level specification language or interface, with the system returning recommendations of visualizations that match the specified pattern.} One instantiation of VQSs are sketch-to-query interfaces that allows users to sketch the desired ``shape'' of a visualization with the system returning visualizations that look similar}~\cite{mohebbi2011google, wattenberg2001sketching,ryall2005querylines}. Other work has explored the types of shape features a user may be interested in for issuing more specific queries~\cite{correll2016semantics}. Additionally, some VQSs support specifying patterns through boxed constraints for range-queries~\cite{Hochheiser2004}, regular expressions~\cite{Zgraggen2015}, and natural language \cite{Gao2015,Setlur2016}. While these systems have shown to be effective for dynamic querying in controlled lab studies, they have not been evaluated in-situ on real-world use cases. In this work, we additionally investigate how VQSs complement other common interactions in visual data analysis, and scientists' existing workflows.
-\input{relatedworktable}
+% \par \tvcg{Instead of providing generic visualization recommendations, VQSs are a special class of visualization systems that enable users to more directly search for visualizations through an intuitive interface. We elaborate on our description of VQSs in the introduction and define VQSs as \emph{systems that allow users to specify the desired pattern via some high-level specification language or interface, with the system returning recommendations of visualizations that match the specified pattern.} One instantiation of VQSs are sketch-to-query interfaces that allows users to sketch the desired ``shape'' of a visualization with the system returning visualizations that look similar}~\cite{mohebbi2011google, wattenberg2001sketching,ryall2005querylines}. Other work has explored the types of shape features a user may be interested in for issuing more specific queries~\cite{correll2016semantics}. Additionally, some VQSs support specifying patterns through boxed constraints for range-queries~\cite{Hochheiser2004}, regular expressions~\cite{Zgraggen2015}, and natural language \cite{Gao2015,Setlur2016}.
