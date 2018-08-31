@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{35}
+\begin{thebibliography}{31}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -76,20 +76,6 @@
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1088/1742-6596/125/1/012091}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{{B. Shneiderman}}{{B. Shneiderman}}{2007}]%
-        {Shneiderman2007a}
-\bibfield{author}{\bibinfo{person}{{B. Shneiderman}}.}
-  \bibinfo{year}{2007}\natexlab{}.
-\newblock \showarticletitle{{Creativity Support Tools: Accelerating Discovery
-  and Innovation}}.
-\newblock \bibinfo{journal}{\emph{Commun. ACM}} \bibinfo{volume}{50},
-  \bibinfo{number}{12} (\bibinfo{year}{2007}), \bibinfo{pages}{20}.
-\newblock
-\urldef\tempurl%
-\url{https://doi.org/10.1145/1323688.1323689}
 \showDOI{\tempurl}
 
 
@@ -300,23 +286,6 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{M{\'{e}}ndez, Hinrichs, and
-  Nacenta}{M{\'{e}}ndez et~al\mbox{.}}{2017}]%
-        {Mendez2017}
-\bibfield{author}{\bibinfo{person}{Gonzalo~Gabriel M{\'{e}}ndez},
-  \bibinfo{person}{Uta Hinrichs}, {and} \bibinfo{person}{Miguel Nacenta}.}
-  \bibinfo{year}{2017}\natexlab{}.
-\newblock \showarticletitle{{Bottom-up vs . Top-down : Trade-offs in Efficiency
-  , Understanding , Freedom and Creativity with InfoVis Tools}}.
-\newblock \bibinfo{journal}{\emph{Proceedings of the SIGCHI Conference on Human
-  Factors in Computing Systems}} (\bibinfo{year}{2017}).
-\newblock
-\showISBNx{9781450346559}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/3025453.3025942}
-\showDOI{\tempurl}
-
-
 \bibitem[\protect\citeauthoryear{Michael~Sedlmair}{Michael~Sedlmair}{2012}]%
         {Sedlmair2012}
 \bibfield{author}{\bibinfo{person}{Tamara~Munzner Michael~Sedlmair,
@@ -395,23 +364,6 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{Olston and Chi}{Olston and Chi}{2003}]%
-        {Olston2003}
-\bibfield{author}{\bibinfo{person}{Christopher Olston} {and}
-  \bibinfo{person}{Ed~H. Chi}.} \bibinfo{year}{2003}\natexlab{}.
-\newblock \showarticletitle{{ScentTrails: Integrating Browsing and Searching on
-  the Web}}.
-\newblock \bibinfo{journal}{\emph{ACM Transactions on Computer-Human
-  Interaction}} \bibinfo{volume}{10}, \bibinfo{number}{3}
-  (\bibinfo{year}{2003}), \bibinfo{pages}{177--197}.
-\newblock
-\showISBNx{1073-0516}
-\showISSN{10730516}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/937549.937550}
-\showDOI{\tempurl}
-
-
 \bibitem[\protect\citeauthoryear{{Patel et al.}}{{Patel et al.}}{2010}]%
         {Patel2010}
 \bibfield{author}{\bibinfo{person}{{Patel et al.}}}
@@ -475,21 +427,6 @@
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1145/1056808.1057017}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Shneiderman}{Shneiderman}{1994}]%
-        {Shneiderman1994}
-\bibfield{author}{\bibinfo{person}{Ben Shneiderman}.}
-  \bibinfo{year}{1994}\natexlab{}.
-\newblock \showarticletitle{{Dynamic queries for visual information seeking}}.
-\newblock \bibinfo{journal}{\emph{IEEE Software}} \bibinfo{volume}{11},
-  \bibinfo{number}{6} (\bibinfo{year}{1994}), \bibinfo{pages}{70--77}.
-\newblock
-\showISBNx{0740-7459}
-\showISSN{07407459}
-\urldef\tempurl%
-\url{https://doi.org/10.1109/52.329404}
 \showDOI{\tempurl}
 
 
