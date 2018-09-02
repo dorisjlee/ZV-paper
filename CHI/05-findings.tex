@@ -1,7 +1,7 @@
 %!TEX root = main.tex
 \section{Study Findings}
 \subsection{Themes Emerging from Participatory Design\label{pd_findings}}
-\begin{figure*}[ht!]
+\begin{figure*}[t!]
 \centering
 \vspace{-15pt}
 \includegraphics[width=\linewidth]{figures/system.pdf} %5.5
@@ -44,7 +44,17 @@ While input equations are useful when simple analytical models exist, this may n
 \boldpara{Result querying} allows users to submit a query based on the results, essentially asking for patterns that are similar to the selected data pattern. TimeSearcher allows users instantiate timebox queries by dragging a result visualization and dropping into the query space; QuerySketch does so similarly through double clicking on the visualization. Similarly in \zv, users can drag and drop a visualization in either the results pane or the representative and outliers to the query canvas (Figure \ref{zvOverview}j). The distinction between concept querying and result querying is that concept querying loads in data that are external to the dataset from a reference source, whereas result querying initiates the query using visualizations created from the queried data source.
 \boldpara{Recommendation} displays visualizations that may be of interest to the users based on the context of the data. The recommendation feature is unique to \zv, which provides visualizations of representative trends based on clustering and highlights outlier instances that looks different from the rest of the visualizations (Figure \ref{zvOverview}k,l).
 \subsection{Evaluation Study Results\label{eval_findings}}
-We recorded audio, video screen captures, and click-stream logs of the participant's actions during the evaluation study. We analyzed the transcriptions of these recordings through open-coding and categorized every event in the user study as either a feature usage or via the coding labels:
+\begin{figure*}[t!]
+\minipage{0.6\textwidth}
+  \includegraphics[width=\linewidth]{figures/evalstudytimeline.pdf}
+  \caption{Timeline of event code and component usage. Black vertical tick indicates a session break, signaling the beginning of a new line of inquiry.}\label{fig:evalstudytimeline}
+\endminipage\hfill
+\minipage{0.4\textwidth}
+  \includegraphics[width=0.8\linewidth]{figures/PENcoding.pdf}
+  \caption{Heatmap of features categorized as practical usage (P), envisioned usage (E), and not useful (N).  \techreport{We find that participants preferred to query using bottom-up methods such as drag-and-drop over top-down approaches such as sketching or input equations. Participants found that data faceting via filter constraints and dynamic class creation were powerful ways to compare between subgroups or filtered subsets. The columns are arranged in the order of subject areas and the features are arranged in the order of the three foraging acts.}}\label{fig:feature_heatmap}
+\endminipage
+\end{figure*}
+We recorded audio, video screen captures, and click-stream logs of the participant's actions during the evaluation study. We analyzed transcriptions of these recordings through open-coding and categorized every event in the user study as either a feature usage or via the coding labels:
 \begin{denselist}
     \item Insight (Science) \textbf{[IS]}: Insight that connected back to the science (e.g. ``This cluster resembles a repressed gene.'')
     \item Insight (Data) \textbf{[ID]}: Data-related insights (e.g. ``A bug in my data cleaning code generated this peak artifact.'')
@@ -54,30 +64,20 @@ We recorded audio, video screen captures, and click-stream logs of the participa
     \item Want \textbf{[W]}: Additional features that participant wants, which is not currently available on the system.
     \item External Tools \textbf{[E]}: The use of external tools outside of \zv to complement the analysis process.
 \end{denselist}
-Figure~\ref{evalstudytimeline} shows the timeline of event codes and component usage for each participant.
-\begin{figure*}[ht!]
-    \centering
-    \includegraphics[width=0.4\linewidth]{figures/evalstudytimeline.pdf}
-    \includegraphics[width=0.3\linewidth]{figures/usagefreqbysubject.pdf}
-    \includegraphics[width=0.25\linewidth]{figures/PENcoding.pdf}
-    % \label{evalstudytimeline}
-    % \label{usagefreqbysubject}
-    % \caption{Heatmap of features categorized as practical usage (P), envisioned usage (E), and not useful (N). We find that participants preferred to query using bottom-up methods such as drag-and-drop over top-down approaches such as sketching or input equations. Participants found that data faceting via filter constraints and dynamic class creation were powerful ways to compare between subgroups or filtered subsets. The columns are arranged in the order of subject areas and the features are arranged in the order of the three foraging acts.}
-    % \label{feature_heatmap}
-
-    % \caption{Timeline of event code and component usage. Black vertical tick indicates a session break, signaling the beginning of a new line of inquiry. }
-
-\end{figure*}
-\par In addition to the usage frequency, to characterize the usefulness of each feature, we also categorized the features into one of the three usage types based on how each feature was used during the study:
+We map the features to components based on the taxonomy described in Figure~\ref{fig:taxonomy} to obtain Figure~\ref{fig:evalstudytimeline}, which shows the timeline of event codes and component usage for each participant.
+\par As shown in Figure \ref{fig:action_heatmap}, to characterize the usefulness of each feature, we also categorized the features into one of the three usage types based on how each feature was used during the study:
 \begin{denselist}
     \item Practical usage \textbf{[P]}: Features used in a sensible and meaningful way.
     \item Envisioned usage \textbf{[E]}: Features which could be used practically if the envisioned data was available or if they conducted downstream analysis, but was not performed due to the limited time during the user study.
     \item Not useful \textbf{[N]}: Features that are not useful or do not make sense for the participant's research question and dataset.
 \end{denselist}
-We chose to derive these labels from the user study transcription rather than through self-reporting to circumvent the bias that users may have when self-reporting, which can often artificially inflate the usefulness of the feature or tool under examination.
-
-\par The audio recordings and transcriptions of pre- and post-study interview questions are thematically encoded and summarized in Figure \ref{action_heatmap} and \ref{feature_heatmap}. Overall, we find that VQSs can enable rapid, fluid iteration, catalyzing new questions or insights, different querying modalities in VQSs support different forms of exploration, and that expressive querying allowed participants to compose novel analysis patterns. In addition, we find that VQSs can be used for a range of tasks that go beyond just exploration, that participants used the outputs from VQSs in various way, and that VQSs are most appropriate for certain types of datasets. For the remaining paper, we will focus on developing a process model and design guideline for insight formation in VQSs and divert our thematic analysis of how VQSs fit into the context of an analysis workflow to our technical report.
-
+We chose to derive these labels from the study transcription to circumvent self-reporting bias, which can often artificially inflate the usefulness of the feature or tool under examination. For the remaining paper, we will focus on understanding the design space of VQSs and highlight the takeaways of our study.%developing a process model and design guideline for insight formation in VQSs and divert our thematic analysis of how VQSs fit into the context of an analysis workflow to our technical report.
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{figures/usagefreqbysubject.pdf}
+  \caption{A really Awesome Image}\label{fig:usagefreqbysubject}
+  % \includegraphics[width=0.8\linewidth]{figures/PENcoding.pdf}
+  % \caption{Heatmap of features categorized as practical usage (P), envisioned usage (E), and not useful (N).  \techreport{We find that participants preferred to query using bottom-up methods such as drag-and-drop over top-down approaches such as sketching or input equations. Participants found that data faceting via filter constraints and dynamic class creation were powerful ways to compare between subgroups or filtered subsets. The columns are arranged in the order of subject areas and the features are arranged in the order of the three foraging acts.}}\label{fig:feature_heatmap}
+\end{figure}
 % These observation inform our ----- search-browse paradigm
 % \subsubsection{Discovery of Real-world insights}
 % \par Our participants' original workflow often required them to compare between many visualizations manually through separate analysis and visualization steps. Three of the participants cited that this segmented analyze-then-visualize workflow was one of their chief bottlenecks. The cognitive overhead from the segmented workflow made them more hesitant to visualize the results of different parameters and data operations, as A2 noted:
