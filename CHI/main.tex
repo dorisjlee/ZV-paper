@@ -1,12 +1,16 @@
 %\documentclass[sigchi, review]{acmart}
 \PassOptionsToPackage{table}{xcolor}
 \documentclass[sigchi]{acmart}
+\settopmatter{printacmref=false} % Removes citation information below abstract
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+\pagestyle{plain} % removes running headers
 % Load basic packages
 \usepackage{balance}  % to better equalize the last page
 \usepackage{graphics} % for EPS, load graphicx instead
 \usepackage[T1]{fontenc}
 \usepackage{txfonts}
 \usepackage{mathptmx}
+\usepackage[htt]{hyphenat}
 % \usepackage[pdftex]{hyperref}
 
 % \usepackage{booktabs}
