@@ -91,6 +91,15 @@
 \itemsep=\parsep
     }
 }
+\newcommand*{\img}[1]{%
+    \raisebox{-.3\baselineskip}{%
+        \includegraphics[
+        height=\baselineskip,
+        width=\baselineskip,
+        keepaspectratio,
+        ]{#1}%
+    }%
+}
 \newcommand{\squishend}{\end{list}}
 \newcommand{\npar}{\par\noindent}
 % use extensively to toggle between paper and TR
