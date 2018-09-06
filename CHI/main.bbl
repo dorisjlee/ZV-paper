@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{31}
+\begin{thebibliography}{36}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -79,6 +79,24 @@
 \showDOI{\tempurl}
 
 
+\bibitem[\protect\citeauthoryear{{Austin Nothaft et al.}}{{Austin Nothaft et
+  al.}}{2015}]%
+        {AustinNothaft2015}
+\bibfield{author}{\bibinfo{person}{{Austin Nothaft et al.}}}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{{Rethinking Data-Intensive Science Using Scalable
+  Analytics Systems}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the 2015 ACM SIGMOD
+  International Conference on Management of Data}} (\bibinfo{year}{2015}),
+  \bibinfo{pages}{631--646}.
+\newblock
+\showISBNx{9781450327589}
+\showISSN{07308078}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2723372.2742787}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Chuang, Ramage, Manning, and Heer}{Chuang
   et~al\mbox{.}}{2012}]%
         {Chuang2012}
@@ -123,6 +141,24 @@
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1109/VAST.2016.7883519}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Demchenko, Grosso, and Membrey}{Demchenko
+  et~al\mbox{.}}{2013}]%
+        {Demchenko2013}
+\bibfield{author}{\bibinfo{person}{Yuri Demchenko}, \bibinfo{person}{Paola
+  Grosso}, {and} \bibinfo{person}{Peter Membrey}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{{Addressing Big Data Issues in Scientific Data
+  Infrastructure}}.
+\newblock \bibinfo{journal}{\emph{Collaboration Technologies and Systems (CTS),
+  2013 International Conference on (pp. 48-55). IEEE.}} (\bibinfo{year}{2013}),
+  \bibinfo{pages}{48--55}.
+\newblock
+\showISBNx{978-1-4673-6404-1; 978-1-4673-6403-4}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CTS.2013.6567203}
 \showDOI{\tempurl}
 
 
@@ -253,6 +289,24 @@
 \showDOI{\tempurl}
 
 
+\bibitem[\protect\citeauthoryear{Kersten, Idreos, Manegold, and Liarou}{Kersten
+  et~al\mbox{.}}{2011}]%
+        {Kersten2011}
+\bibfield{author}{\bibinfo{person}{M Kersten}, \bibinfo{person}{S Idreos},
+  \bibinfo{person}{S Manegold}, {and} \bibinfo{person}{E Liarou}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{{The Researcher's Guide to the Data Deluge:
+  Querying a Scientific Database in Just a Few Seconds}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the VLDB Endowment,}}
+  (\bibinfo{year}{2011}), \bibinfo{pages}{1474}.
+\newblock
+\showISBNx{0000000000000}
+\showISSN{21508097}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1409360.1409380}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Lam, Bertini, Isenberg, Plaisant, and
   Carpendale}{Lam et~al\mbox{.}}{2012}]%
         {lam2012empirical}
@@ -315,6 +369,17 @@
   \bibinfo{year}{2011}\natexlab{}.
 \newblock \showarticletitle{Google correlate whitepaper}.
 \newblock  (\bibinfo{year}{2011}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Momcheva and Tollerud}{Momcheva and
+  Tollerud}{2015}]%
+        {Momcheva2015}
+\bibfield{author}{\bibinfo{person}{Ivelina Momcheva} {and}
+  \bibinfo{person}{Erik Tollerud}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Software use in astronomy: an informal survey}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1507.03989}}
+  (\bibinfo{year}{2015}).
 \newblock
 
 
@@ -414,6 +479,22 @@
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1145/989863.989880}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Prabhu et al.}}{{Prabhu et al.}}{2011}]%
+        {Prabhu2011}
+\bibfield{author}{\bibinfo{person}{{Prabhu et al.}}}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{A Survey of the Practice of Computational Science}.
+  In \bibinfo{booktitle}{\emph{State of the Practice Reports}}
+  \emph{(\bibinfo{series}{SC '11})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, Article \bibinfo{articleno}{19},
+  \bibinfo{numpages}{12}~pages.
+\newblock
+\showISBNx{978-1-4503-1139-7}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2063348.2063374}
 \showDOI{\tempurl}
 
 
