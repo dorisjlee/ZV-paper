@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{35}
+\begin{thebibliography}{30}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -41,7 +41,7 @@
         {zillow}
  \bibinfo{year}{2016}\natexlab{}.
 \newblock \bibinfo{title}{Zillow}.
-\newblock \bibinfo{howpublished}{\url{https://www.zillow.com}}.
+\newblock \bibinfo{howpublished}{\url{www.zillow.com}}.
 \newblock
 \newblock
 \shownote{Accessed: February 1, 2016.}
@@ -162,18 +162,6 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{{Drlica Wagner et al.}}{{Drlica Wagner et
-  al.}}{2017}]%
-        {Drlica-Wagner2017}
-\bibfield{author}{\bibinfo{person}{{Drlica Wagner et al.}}}
-  \bibinfo{year}{2017}\natexlab{}.
-\newblock \showarticletitle{{Dark Energy Survey Year 1 Results: Photometric
-  Data Set for Cosmology}}.
-\newblock  (\bibinfo{year}{2017}).
-\newblock
-\showeprint[arxiv]{1708.01531}
-
-
 \bibitem[\protect\citeauthoryear{Eichmann and Zgraggen}{Eichmann and
   Zgraggen}{2015}]%
         {Eichmann2015}
@@ -273,22 +261,6 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{Kandel, Paepcke, Hellerstein, and Heer}{Kandel
-  et~al\mbox{.}}{2011}]%
-        {kandel2011wrangler}
-\bibfield{author}{\bibinfo{person}{Sean Kandel}, \bibinfo{person}{Andreas
-  Paepcke}, \bibinfo{person}{Joseph Hellerstein}, {and}
-  \bibinfo{person}{Jeffrey Heer}.} \bibinfo{year}{2011}\natexlab{}.
-\newblock \showarticletitle{Wrangler: Interactive visual specification of data
-  transformation scripts}. In \bibinfo{booktitle}{\emph{Proceedings of the
-  SIGCHI Conference on Human Factors in Computing Systems}}. ACM,
-  \bibinfo{pages}{3363--3372}.
-\newblock
-\urldef\tempurl%
-\url{https://doi.org/10.1145/1978942.1979444}
-\showDOI{\tempurl}
-
-
 \bibitem[\protect\citeauthoryear{Kersten, Idreos, Manegold, and Liarou}{Kersten
   et~al\mbox{.}}{2011}]%
         {Kersten2011}
@@ -351,18 +323,6 @@
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Miller, Salkind, and Miller}{Miller
-  et~al\mbox{.}}{2002}]%
-        {miller_salkind_miller_2002}
-\bibfield{author}{\bibinfo{person}{Delbert~C. Miller}, \bibinfo{person}{Neil~J.
-  Salkind}, {and} \bibinfo{person}{Delbert~C. Miller}.}
-  \bibinfo{year}{2002}\natexlab{}.
-\newblock \bibinfo{booktitle}{\emph{Handbook of research design and social
-  measurement}}.
-\newblock \bibinfo{publisher}{SAGE}.
-\newblock
-
-
 \bibitem[\protect\citeauthoryear{{Mohebbi et al.}}{{Mohebbi et al.}}{2011}]%
         {mohebbi2011google}
 \bibfield{author}{\bibinfo{person}{{Mohebbi et al.}}}
@@ -411,35 +371,6 @@
 \showISSN{0004-637X}
 \urldef\tempurl%
 \url{https://doi.org/10.1086/304459}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{{Patel et al.}}{{Patel et al.}}{2010}]%
-        {Patel2010}
-\bibfield{author}{\bibinfo{person}{{Patel et al.}}}
-  \bibinfo{year}{2010}\natexlab{}.
-\newblock \showarticletitle{Gestalt: integrated support for implementation and
-  analysis in machine learning}. In \bibinfo{booktitle}{\emph{Proceedings of
-  the 23nd annual ACM symposium on User Interface Software and Technology}}.
-  ACM, \bibinfo{pages}{37--46}.
-\newblock
-\urldef\tempurl%
-\url{https://doi.org/10.1145/1866029.1866038}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Peng and Sinha}{Peng and Sinha}{2016}]%
-        {Peng2016}
-\bibfield{author}{\bibinfo{person}{Pei~Chen Peng} {and}
-  \bibinfo{person}{Saurabh Sinha}.} \bibinfo{year}{2016}\natexlab{}.
-\newblock \showarticletitle{Quantitative modeling of gene expression using DNA
-  shape features of binding sites}.
-\newblock \bibinfo{journal}{\emph{Nucleic Acids Research}}
-  \bibinfo{volume}{44}, \bibinfo{number}{13} (\bibinfo{year}{2016}),
-  \bibinfo{pages}{e120}.
-\newblock
-\urldef\tempurl%
-\url{https://doi.org/10.1093/nar/gkw446}
 \showDOI{\tempurl}
 
 
