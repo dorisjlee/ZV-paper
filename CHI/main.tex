@@ -139,7 +139,14 @@
 \newcommand{\kk}[1]{\textcolor{red}{Karrie: #1}}
 \newcommand{\dor}[1]{\textcolor{violet}{Doris: #1}}
 
-
+\renewenvironment{quote}{%
+   \list{}{%
+     \leftmargin0.15cm   
+     \rightmargin\leftmargin
+   }
+   \item\relax
+}
+{\endlist}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%% START OF THE PAPER %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -169,7 +176,7 @@ The increasing availability of rich and complex data in a variety of scientific 
 \input{03-participants-datasets}
 \input{04-pd-findings}
 \input{05-evaluation-study-findings-discussion}
-\input{06-conclusion}
+% \input{06-conclusion}
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{reference}
 \end{document}
