@@ -1,0 +1,25 @@
+\begin{table} \centering
+    \begin{tabular}{@{} cl*{6}c @{}}
+        % & & \multicolumn{6}{c}{Functionality Supported} \\[1ex]
+        % & & \rot{\cellcolor[HTML]{DAE8FC}{\thead{Pattern\\ Specification}}} & \rot{\cellcolor[HTML]{DAE8FC}{\thead{Match\\Specification}}} & \rot{\cellcolor[HTML]{FFCE93}{\thead{View\\ Specification}}} & \rot{\cellcolor[HTML]{FFCE93}{Slice-and-Dice}}
+        % & \rot{\cellcolor[HTML]{FFFFC7}{\thead{Result\\Querying}}} & \rot{\cellcolor[HTML]{FFFFC7}{\thead{Recommend\\Results}}}\\
+
+        % & & \multicolumn{6}{c}{Functionality Supported} \\[1ex]
+        & & \rot{\cellcolor[HTML]{DAE8FC}{Pattern Specification}} & \rot{\cellcolor[HTML]{DAE8FC}{Match Specification}} & \rot{\cellcolor[HTML]{FFCE93}{View Specification}} & \rot{\cellcolor[HTML]{FFCE93}{Slice-and-Dice}}
+        & \rot{\cellcolor[HTML]{FFFFC7}{Result Querying}} & \rot{\cellcolor[HTML]{FFFFC7}{Recommendation}}\\
+        \cmidrule{2-8}
+        & Timesearcher \cite{Hochheiser2001,Hochheiser2004} &  &\OK   &\OK  &     &\OK  &   \\
+        & QuerySketch \cite{wattenberg2001sketching} &\OK   &\OK  &  &   &    &   \\
+        & QueryLines \cite{ryall2005querylines} &\OK   &\OK  &  &   &    &   \\
+        & SoftSelect \cite{Holz2009} &\OK   &\OK  &  &   &    &   \\
+        & Google Correlate \cite{mohebbi2011google} &\OK   &\OK  &  &   &    &   \\
+        & TimeSketch \cite{Eichmann2015} &\OK   &\OK  &  &   &    &   \\
+        & SketchQuery \cite{correll2016semantics} &\OK   &\OK  &  &   &\OK     &   \\
+        & Qetch \cite{Mannino2018} &\OK   &\OK  &  &   &    &\OK    \\
+        & Zenvisage (prototype) \cite{Siddiqui2017} &\OK   &\OK  &  &   &\OK     & \OK   \\
+        & Zenvisage (after design study) &\OK   &\OK  & \OK  & \OK   &\OK     & \OK   \\
+        \cmidrule[1pt]{2-8}
+    \end{tabular}
+    \caption{Table summarizing the component functionalities in VQSs (columns) covered by past systems (row). Checked cell indicates this feature exist in the system. Column header colors blue, orange, yellow represents processes: top-down querying, search with context, and bottom-up querying respectively, described in Section~\ref{sec:pd_findings}.}
+    \label{table:relatedwork}
+\end{table}

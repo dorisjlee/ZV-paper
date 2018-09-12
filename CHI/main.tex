@@ -15,6 +15,9 @@
 
 % \usepackage{booktabs}
 % \usepackage{textcomp}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{pifont}
 \usepackage{xspace}
 \usepackage{setspace}
 \usepackage{graphicx}
@@ -138,10 +141,11 @@
 \newcommand{\agp}[1]{\textcolor{teal}{Aditya: #1}}
 \newcommand{\kk}[1]{\textcolor{red}{Karrie: #1}}
 \newcommand{\dor}[1]{\textcolor{violet}{Doris: #1}}
-
+\newcommand*\rot{\rotatebox{90}}
+\newcommand*\OK{\ding{51}}
 \renewenvironment{quote}{%
    \list{}{%
-     \leftmargin0.15cm   
+     \leftmargin0.15cm
      \rightmargin\leftmargin
    }
    \item\relax

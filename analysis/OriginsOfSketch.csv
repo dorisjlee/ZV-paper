@@ -19,12 +19,12 @@ PD,filter,W,BR,ID,BR,PD,BR,IS
 reverse-y,E,W,control-kmeans-clustersize,BR,representative-outlier,IS,sketch-to-query,BR
 E,representative-outlier,filter,C,sketch-to-query,IS,BR,C,change-axis
 PS,drag-and-drop (cluster),ID,W,ID,ignore-xrange,filter,sketch-to-modify,sketch-to-query
-BR,change-number-of-results,BR,drag-and-drop (cluster),W,IS,sketch-to-query,BR,sketch-to-query
+BR,change-number-of-results,BR,drag-and-drop (cluster),W,IS,sketch-to-query,BR,sketch-to-modify
 drag-and-drop (result),export,change-axis,drag-and-drop (outlier),ignore-xrange,BR,show-scatter,change-axis,BR
 C,filter,ID,ID,sketch-to-query,,BR,sketch-to-modify,PS
 filter,E,filter,control-kmeans-clustersize,filter,,W,drag-and-drop (result),drag-and-drop (cluster)
 BR,representative-outlier,W,C,IS,,filter,sketch-to-modify,ID
-filter,drag-and-drop (RO),BR,W,filter,,filter,ID,W
+filter,drag-and-drop (cluster),BR,W,filter,,filter,ID,W
 PS,change-number-of-results,change-axis,PS,BR,,filter,C,IS
 E,export,PS,W,filter,,ID,drag-and-drop (result),BR
 E,ID,BR,,PS,,BR,sketch-to-modify,change-axis

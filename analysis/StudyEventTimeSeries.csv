@@ -19,7 +19,7 @@ reverse-y,filter,W,control-kmeans-clustersize,ID,BR,PD,BR,IS
 E,E,W,C,BR,representative-outlier,IS,sketch-to-query,BR
 PS,representative-outlier,filter,W,sketch-to-query,IS,BR,C,change-axis
 BR,drag-and-drop,ID,drag-and-drop,ID,ignore-xrange,filter,sketch-to-modify,sketch-to-query
-drag-and-drop,change-number-of-results,BR,drag-and-drop,W,IS,sketch-to-query,BR,sketch-to-query
+drag-and-drop,change-number-of-results,BR,drag-and-drop,W,IS,sketch-to-query,BR,sketch-to-modify
 C,export,change-axis,ID,ignore-xrange,BR,show-scatter,change-axis,BR
 filter,filter,ID,control-kmeans-clustersize,sketch-to-query,,BR,sketch-to-modify,PS
 BR,E,filter,C,filter,,W,drag-and-drop,drag-and-drop
