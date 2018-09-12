@@ -1,0 +1,71 @@
+A1,A2,A3,G1,G2,G3,M1,M2,M3
+filter,filter,drag-and-drop (result),representative-outlier,representative-outlier,ID,PD,show-scatter,dynamic-class
+filter,E,drag-and-drop (result),control-kmeans-clustersize,IS,C,sketch-to-query,change-axis,ID
+filter,E,sketch-to-modify,representative-outlier,BR,W,ignore-xrange,PS,show-scatter
+filter,representative-outlier,ignore-xrange,control-kmeans-clustersize,representative-outlier,show-scatter,C,dynamic-class,IS
+BR,drag-and-drop (cluster),BR,W,control-kmeans-clustersize,upload-dataset,change-axis,dynamic-class,dynamic-class
+IS,W,drag-and-drop (result),IS,representative-outlier,BR,W,dynamic-class,PS
+E,ID,ignore-xrange,BR,filter,representative-outlier,W,dynamic-class,dynamic-class
+E,E,change-metric,drag-and-drop (cluster),C,W,W,PS,ID
+drag-and-drop (OOI),ID,C,IS,BR,change-metric,BR,dynamic-class,change-axis
+ID,BR,brush-xrange,W,W,control-kmeans-clustersize,brush-xrange,IS,IS
+filter,filter,change-metric,BR,drag-and-drop (cluster),representative-outlier,change-axis,IS,drag-and-drop (result)
+E,E,ID,drag-and-drop (cluster),W,ID,IS,C,dynamic-class
+IS,representative-outlier,change-metric,drag-and-drop (OOI),filter,drag-and-drop (cluster),representative-outlier,BR,IS
+PS,drag-and-drop (cluster),W,min-similarity-cutoff,PS,IS,W,W,change-metric
+E,change-number-of-results,BR,brush-xrange,BR,BR,PS,dynamic-class,C
+PS,export,filter,export,show-scatter,export,dynamic-class,IS,drag-and-drop (result)
+PD,filter,W,BR,ID,BR,PD,BR,IS
+reverse-y,E,W,control-kmeans-clustersize,BR,representative-outlier,IS,sketch-to-query,BR
+E,representative-outlier,filter,C,sketch-to-query,IS,BR,C,change-axis
+PS,drag-and-drop (cluster),ID,W,ID,ignore-xrange,filter,sketch-to-modify,sketch-to-query
+BR,change-number-of-results,BR,drag-and-drop (cluster),W,IS,sketch-to-query,BR,sketch-to-query
+drag-and-drop (result),export,change-axis,drag-and-drop (outlier),ignore-xrange,BR,show-scatter,change-axis,BR
+C,filter,ID,ID,sketch-to-query,,BR,sketch-to-modify,PS
+filter,E,filter,control-kmeans-clustersize,filter,,W,drag-and-drop (result),drag-and-drop (cluster)
+BR,representative-outlier,W,C,IS,,filter,sketch-to-modify,ID
+filter,drag-and-drop (RO),BR,W,filter,,filter,ID,W
+PS,change-number-of-results,change-axis,PS,BR,,filter,C,IS
+E,export,PS,W,filter,,ID,drag-and-drop (result),BR
+E,ID,BR,,PS,,BR,sketch-to-modify,change-axis
+PS,E,input-equation,,filter,,W,IS,W
+brush-xrange,BR,BR,,W,,export,C,W
+W,PS,export,,representative-outlier,,E,C,
+ID,E,W,,BR,,W,BR,
+W,E,,,smoothing,,E,dynamic-class,
+W,dynamic-class,,,smoothing,,BR,IS,
+ID,W,,,BR,,,IS,
+BR,E,,,pattern-upload,,,representative-outlier,
+filter,change-axis,,,PD,,,filter,
+filter,ignore-xrange,,,E,,,IS,
+BR,IS,,,filter,,,change-axis,
+smoothing,PD,,,drag-and-drop (OOI),,,ID,
+sketch-to-query,BR,,,IS,,,,
+sketch-to-query,W,,,W,,,,
+filter,PS,,,export,,,,
+E,drag-and-drop (result),,,representative-outlier,,,,
+PS,W,,,ID,,,,
+W,brush-xrange,,,export,,,,
+W,PS,,,BR,,,,
+W,BR,,,brush-xrange,,,,
+IS,,,,PS,,,,
+BR,,,,upload-dataset,,,,
+dynamic-class,,,,smoothing,,,,
+dynamic-class,,,,control-kmeans-clustersize,,,,
+W,,,,representative-outlier,,,,
+dynamic-class,,,,ID,,,,
+BR,,,,ID,,,,
+filter,,,,PS,,,,
+E,,,,,,,,
+ID,,,,,,,,
+pattern-upload,,,,,,,,
+export,,,,,,,,
+W,,,,,,,,
+dynamic-class,,,,,,,,
+BR,,,,,,,,
+filter,,,,,,,,
+E,,,,,,,,
+ID,,,,,,,,
+pattern-upload,,,,,,,,
+export,,,,,,,,
+W,,,,,,,,
