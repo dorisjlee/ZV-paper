@@ -1,0 +1,14 @@
+digraph  {
+"top-down";
+"context creation";
+"bottom-up";
+"top-down" -> "top-down"  [weight=3, label=3];
+"top-down" -> "context creation"  [weight=3, label=3];
+"top-down" -> "bottom-up"  [weight=3, label=3];
+"context creation" -> "top-down"  [weight=4, label=4];
+"context creation" -> "context creation"  [weight=15, label=15];
+"context creation" -> "bottom-up"  [weight=3, label=3];
+"bottom-up" -> "top-down"  [weight=2, label=2];
+"bottom-up" -> "context creation"  [weight=3, label=3];
+"bottom-up" -> "bottom-up"  [weight=1, label=1];
+}

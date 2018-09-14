@@ -1,0 +1,26 @@
+digraph  {
+"Pattern Specification";
+"Match Specification";
+"View Specification";
+"Slice-and-Dice";
+"Result Querying";
+Recommendation;
+"Pattern Specification" -> "Match Specification"  [weight=2, label=2];
+"Pattern Specification" -> "Slice-and-Dice"  [weight=2, label=2];
+"Match Specification" -> "Pattern Specification"  [weight=2, label=2];
+"Match Specification" -> "Match Specification"  [weight=2, label=2];
+"Match Specification" -> Recommendation  [weight=2, label=2];
+"View Specification" -> "Pattern Specification"  [weight=1, label=1];
+"View Specification" -> "View Specification"  [weight=1, label=1];
+"Slice-and-Dice" -> "Slice-and-Dice"  [weight=2, label=2];
+"Slice-and-Dice" -> "Result Querying"  [weight=1, label=1];
+"Slice-and-Dice" -> Recommendation  [weight=1, label=1];
+"Result Querying" -> "Match Specification"  [weight=1, label=1];
+"Result Querying" -> "Slice-and-Dice"  [weight=1, label=1];
+"Result Querying" -> "Result Querying"  [weight=2, label=2];
+"Result Querying" -> Recommendation  [weight=2, label=2];
+Recommendation -> "Match Specification"  [weight=2, label=2];
+Recommendation -> "Slice-and-Dice"  [weight=1, label=1];
+Recommendation -> "Result Querying"  [weight=2, label=2];
+Recommendation -> Recommendation  [weight=8, label=8];
+}

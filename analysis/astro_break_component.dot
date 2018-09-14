@@ -1,0 +1,28 @@
+digraph  {
+"Pattern Specification";
+"Match Specification";
+"View Specification";
+"Slice-and-Dice";
+"Result Querying";
+Recommendation;
+"Pattern Specification" -> "Pattern Specification"  [weight="0.4", label="0.4"];
+"Pattern Specification" -> "Match Specification"  [weight="0.2", label="0.2"];
+"Pattern Specification" -> "Slice-and-Dice"  [weight="0.4", label="0.4"];
+"Match Specification" -> "Pattern Specification"  [weight="0.14285714285714285", label="0.14"];
+"Match Specification" -> "Match Specification"  [weight="0.5714285714285714", label="0.57"];
+"Match Specification" -> "Slice-and-Dice"  [weight="0.2857142857142857", label="0.29"];
+"View Specification" -> "Match Specification"  [weight="0.3333333333333333", label="0.33"];
+"View Specification" -> "View Specification"  [weight="0.3333333333333333", label="0.33"];
+"View Specification" -> "Slice-and-Dice"  [weight="0.3333333333333333", label="0.33"];
+"Slice-and-Dice" -> "Pattern Specification"  [weight="0.11764705882352941", label="0.12"];
+"Slice-and-Dice" -> "Match Specification"  [weight="0.058823529411764705", label="0.059"];
+"Slice-and-Dice" -> "View Specification"  [weight="0.11764705882352941", label="0.12"];
+"Slice-and-Dice" -> "Slice-and-Dice"  [weight="0.4117647058823529", label="0.41"];
+"Slice-and-Dice" -> "Result Querying"  [weight="0.058823529411764705", label="0.059"];
+"Slice-and-Dice" -> Recommendation  [weight="0.23529411764705882", label="0.24"];
+"Result Querying" -> "Pattern Specification"  [weight="0.1111111111111111", label="0.11"];
+"Result Querying" -> "Match Specification"  [weight="0.5555555555555556", label="0.56"];
+"Result Querying" -> "Slice-and-Dice"  [weight="0.2222222222222222", label="0.22"];
+"Result Querying" -> "Result Querying"  [weight="0.1111111111111111", label="0.11"];
+Recommendation -> "Result Querying"  [weight="1.0", label=1];
+}

@@ -1,10 +1,10 @@
-User ID,Sketch-to-query,Sketch-to-modify,Input Equation,Smoothing,Ignore x-range,Narrow x-range,Change Similarity Metric,Controls,Filter,Dynamic Class,Pattern Upload,Drag and Drop,Representative and Outlier
-A1,P,N,N,P,N,P,N,P,P,P,P,P,N
-A2,N,N,N,N,P,P,N,P,P,E,N,P,P
-A3,N,P,N,N,P,P,P,P,P,N,N,P,N
-M1,N,N,N,N,P,N,N,P,P,P,N,N,P
-M2,N,P,N,N,N,N,N,P,P,P,N,P,P
-M3,N,N,N,N,N,N,N,P,E,P,N,P,P
-G1,N,N,N,E,N,N,N,P,E,N,E,P,P
-G2,P,N,N,P,P,N,N,P,E,N,E,P,P
-G3,N,N,N,E,P,N,N,P,E,N,E,P,P
+User ID,Sketch-to-query,Sketch-to-modify,Pattern Upload,Input Equation,Smoothing,Ignore x-range,Narrow x-range,Change Similarity Metric,Change Axis,Filter,Dynamic Class,Drag and Drop,Change Cluster Size,Representative and Outlier
+A1,P,N,E,N,P,N,P,N,P,P,P,P,N,N
+A2,N,N,N,N,N,P,P,N,N,P,E,P,P,P
+A3,N,P,N,N,N,P,P,P,N,P,N,P,N,N
+M1,N,N,N,N,N,P,N,N,P,P,P,N,N,P
+M2,N,P,N,N,N,N,N,N,P,P,P,P,N,P
+M3,N,N,N,N,N,N,N,N,P,E,P,P,N,P
+G1,N,N,E,N,E,N,N,N,N,E,N,P,P,P
+G2,P,N,E,N,P,P,N,N,N,E,N,P,P,P
+G3,N,N,E,N,E,P,N,N,N,E,N,P,P,P

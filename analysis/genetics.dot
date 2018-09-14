@@ -1,0 +1,14 @@
+digraph  {
+"top-down";
+"context creation";
+"bottom-up";
+"top-down" -> "top-down"  [weight="0.5384615384615384", label="0.54"];
+"top-down" -> "context creation"  [weight="0.15384615384615385", label="0.15"];
+"top-down" -> "bottom-up"  [weight="0.3076923076923077", label="0.31"];
+"context creation" -> "top-down"  [weight="0.2222222222222222", label="0.22"];
+"context creation" -> "context creation"  [weight="0.4444444444444444", label="0.44"];
+"context creation" -> "bottom-up"  [weight="0.3333333333333333", label="0.33"];
+"bottom-up" -> "top-down"  [weight="0.21739130434782608", label="0.22"];
+"bottom-up" -> "context creation"  [weight="0.08695652173913043", label="0.087"];
+"bottom-up" -> "bottom-up"  [weight="0.6956521739130435", label="0.7"];
+}
