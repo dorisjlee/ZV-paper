@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{30}
+\begin{thebibliography}{28}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -62,23 +62,6 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{Aragon, Poon, Aldering, Thomas, and
-  Quimby}{Aragon et~al\mbox{.}}{2008}]%
-        {Aragon2008}
-\bibfield{author}{\bibinfo{person}{Cecilia~R Aragon}, \bibinfo{person}{Sarah~S
-  Poon}, \bibinfo{person}{Gregory~S Aldering}, \bibinfo{person}{Rollin~C
-  Thomas}, {and} \bibinfo{person}{Robert Quimby}.}
-  \bibinfo{year}{2008}\natexlab{}.
-\newblock \showarticletitle{Using visual analytics to maintain situation
-  awareness in astrophysics}. In \bibinfo{booktitle}{\emph{Visual Analytics
-  Science and Technology, 2008. VAST'08. IEEE Symposium on}}. IEEE,
-  \bibinfo{pages}{27--34}.
-\newblock
-\urldef\tempurl%
-\url{https://doi.org/10.1088/1742-6596/125/1/012091}
-\showDOI{\tempurl}
-
-
 \bibitem[\protect\citeauthoryear{{Austin Nothaft et al.}}{{Austin Nothaft et
   al.}}{2015}]%
         {AustinNothaft2015}
@@ -94,38 +77,6 @@
 \showISSN{07308078}
 \urldef\tempurl%
 \url{https://doi.org/10.1145/2723372.2742787}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Chuang, Ramage, Manning, and Heer}{Chuang
-  et~al\mbox{.}}{2012}]%
-        {Chuang2012}
-\bibfield{author}{\bibinfo{person}{Jason Chuang}, \bibinfo{person}{Daniel
-  Ramage}, \bibinfo{person}{Christopher Manning}, {and}
-  \bibinfo{person}{Jeffrey Heer}.} \bibinfo{year}{2012}\natexlab{}.
-\newblock \showarticletitle{Interpretation and trust: Designing model-driven
-  visualizations for text analysis}. In \bibinfo{booktitle}{\emph{Proceedings
-  of the SIGCHI Conference on Human Factors in Computing Systems}}. ACM,
-  \bibinfo{pages}{443--452}.
-\newblock
-\urldef\tempurl%
-\url{https://doi.org/10.1145/2207676.2207738}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{{Ciolfi et al.}}{{Ciolfi et al.}}{2016}]%
-        {Ciolfi2016}
-\bibfield{author}{\bibinfo{person}{{Ciolfi et al.}}}
-  \bibinfo{year}{2016}\natexlab{}.
-\newblock \showarticletitle{{Articulating Co-Design in Museums: Reflections on
-  Two Participatory Processes}}.
-\newblock \bibinfo{journal}{\emph{Proceedings of the 19th ACM Conference on
-  Computer-Supported Cooperative Work {\&} Social Computing - CSCW '16}}
-  (\bibinfo{year}{2016}), \bibinfo{pages}{13--25}.
-\newblock
-\showISBNx{9781450335928}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/2818048.2819967}
 \showDOI{\tempurl}
 
 
@@ -261,6 +212,24 @@
 \showDOI{\tempurl}
 
 
+\bibitem[\protect\citeauthoryear{Isenberg, Zuk, Collins, and
+  Carpendale}{Isenberg et~al\mbox{.}}{2008}]%
+        {Isenberg2008}
+\bibfield{author}{\bibinfo{person}{Petra Isenberg}, \bibinfo{person}{Torre
+  Zuk}, \bibinfo{person}{Christopher Collins}, {and} \bibinfo{person}{Sheelagh
+  Carpendale}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{{Grounded Evaluation of Information
+  Visualization}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the 2008 conference on BEyond
+  time and errors novel evaLuation methods for Information Visualization -
+  BELIV '08}} (\bibinfo{year}{2008}), \bibinfo{pages}{1}.
+\newblock
+\showISBNx{9781605580166}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1377966.1377974}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Kersten, Idreos, Manegold, and Liarou}{Kersten
   et~al\mbox{.}}{2011}]%
         {Kersten2011}
@@ -343,18 +312,18 @@
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Muller and Kuhn}{Muller and Kuhn}{1993}]%
-        {Muller1993}
-\bibfield{author}{\bibinfo{person}{Michael~J. Muller} {and}
-  \bibinfo{person}{Sarah Kuhn}.} \bibinfo{year}{1993}\natexlab{}.
-\newblock \showarticletitle{Participatory Design}.
-\newblock \bibinfo{journal}{\emph{Commun. ACM}} \bibinfo{volume}{36},
-  \bibinfo{number}{6} (\bibinfo{date}{June} \bibinfo{year}{1993}),
-  \bibinfo{pages}{24--28}.
+\bibitem[\protect\citeauthoryear{Munzner}{Munzner}{2009}]%
+        {munzner2009nested}
+\bibfield{author}{\bibinfo{person}{Tamara Munzner}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{A nested model for visualization design and
+  validation}.
+\newblock \bibinfo{journal}{\emph{IEEE transactions on visualization and
+  computer graphics}} \bibinfo{volume}{15}, \bibinfo{number}{6}
+  (\bibinfo{year}{2009}).
 \newblock
-\showISSN{0001-0782}
 \urldef\tempurl%
-\url{https://doi.org/10.1145/153571.255960}
+\url{https://doi.org/10.1109/TVCG.2009.111}
 \showDOI{\tempurl}
 
 
