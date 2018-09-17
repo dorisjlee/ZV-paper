@@ -173,11 +173,8 @@
 \bibfield{author}{\bibinfo{person}{Harry Hochheiser} {and} \bibinfo{person}{Ben
   Shneiderman}.} \bibinfo{year}{2001}\natexlab{}.
 \newblock \showarticletitle{Interactive Exploration of Time Series Data}. In
-  \bibinfo{booktitle}{\emph{Discovery Science}},
-  \bibfield{editor}{\bibinfo{person}{Klaus~P. Jantke} {and}
-  \bibinfo{person}{Ayumi Shinohara}} (Eds.). \bibinfo{publisher}{Springer
-  Berlin Heidelberg}, \bibinfo{address}{Berlin, Heidelberg},
-  \bibinfo{pages}{441--446}.
+  \bibinfo{booktitle}{\emph{Discovery Science}}. \bibinfo{publisher}{Springer},
+  \bibinfo{address}{Berlin, Heidelberg}, \bibinfo{pages}{441--446}.
 \newblock
 \showISBNx{978-3-540-45650-6}
 
@@ -233,9 +230,9 @@
 \bibitem[\protect\citeauthoryear{Kersten, Idreos, Manegold, and Liarou}{Kersten
   et~al\mbox{.}}{2011}]%
         {Kersten2011}
-\bibfield{author}{\bibinfo{person}{M Kersten}, \bibinfo{person}{S Idreos},
-  \bibinfo{person}{S Manegold}, {and} \bibinfo{person}{E Liarou}.}
-  \bibinfo{year}{2011}\natexlab{}.
+\bibfield{author}{\bibinfo{person}{Martin Kersten}, \bibinfo{person}{Stratos
+  Idreos}, \bibinfo{person}{Stefan Manegold}, {and} \bibinfo{person}{Erietta
+  Liarou}.} \bibinfo{year}{2011}\natexlab{}.
 \newblock \showarticletitle{{The Researcher's Guide to the Data Deluge:
   Querying a Scientific Database in Just a Few Seconds}}.
 \newblock \bibinfo{journal}{\emph{Proceedings of the VLDB Endowment,}}
@@ -285,17 +282,25 @@
         {Sedlmair2012}
 \bibfield{author}{\bibinfo{person}{Tamara~Munzner Michael~Sedlmair,
   Miriah~Meyer}.} \bibinfo{year}{2012}\natexlab{}.
-\newblock \showarticletitle{{Design Study Methodolgy: Reflections from the
-  Trenches and the Stacks}}.
-\newblock  \bibinfo{volume}{1}, \bibinfo{number}{12} (\bibinfo{year}{2012}),
-  \bibinfo{pages}{2431--2440}.
+\newblock \showarticletitle{Design Study Methodology: Reflections from the
+  Trenches and the Stacks}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Visualization and
+  Computer Graphics}} \bibinfo{volume}{18}, \bibinfo{number}{12}
+  (\bibinfo{date}{Dec} \bibinfo{year}{2012}), \bibinfo{pages}{2431--2440}.
 \newblock
+\showISSN{1077-2626}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TVCG.2012.213}
+\showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{{Mohebbi et al.}}{{Mohebbi et al.}}{2011}]%
+\bibitem[\protect\citeauthoryear{Mohebbi, Vanderkam, Kodysh, Schonberger, Choi,
+  and Kumar}{Mohebbi et~al\mbox{.}}{2011}]%
         {mohebbi2011google}
-\bibfield{author}{\bibinfo{person}{{Mohebbi et al.}}}
-  \bibinfo{year}{2011}\natexlab{}.
+\bibfield{author}{\bibinfo{person}{Matt Mohebbi}, \bibinfo{person}{Dan
+  Vanderkam}, \bibinfo{person}{Julia Kodysh}, \bibinfo{person}{Rob
+  Schonberger}, \bibinfo{person}{Hyunyoung Choi}, {and} \bibinfo{person}{Sanjiv
+  Kumar}.} \bibinfo{year}{2011}\natexlab{}.
 \newblock \showarticletitle{Google correlate whitepaper}.
 \newblock  (\bibinfo{year}{2011}).
 \newblock
@@ -412,23 +417,18 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{Siddiqui, Lee, Kim, Xue, Wang, Zou, Guo, Liu,
-  Yu, Karahalios, and Parameswaran}{Siddiqui et~al\mbox{.}}{2017}]%
+\bibitem[\protect\citeauthoryear{Siddiqui, Lee, Kim, Xue, Yu, Zou, Guo, Liu,
+  Wang, Karahalios, and Parameswaran}{Siddiqui et~al\mbox{.}}{2017}]%
         {Siddiqui2017}
 \bibfield{author}{\bibinfo{person}{Tarique Siddiqui}, \bibinfo{person}{John
   Lee}, \bibinfo{person}{Albert Kim}, \bibinfo{person}{Edward Xue},
-  \bibinfo{person}{Chaoran Wang}, \bibinfo{person}{Yuxuan Zou},
+  \bibinfo{person}{Xiaofo Yu}, \bibinfo{person}{Sean Zou},
   \bibinfo{person}{Lijin Guo}, \bibinfo{person}{Changfeng Liu},
-  \bibinfo{person}{Xiaofo Yu}, \bibinfo{person}{Karrie Karahalios}, {and}
+  \bibinfo{person}{Chaoran Wang}, \bibinfo{person}{Karrie Karahalios}, {and}
   \bibinfo{person}{Aditya Parameswaran}.} \bibinfo{year}{2017}\natexlab{}.
-\newblock \showarticletitle{{Fast-Forwarding to Desired Visualizations with
-  zenvisage}}.
-\newblock  (\bibinfo{year}{2017}).
+\newblock \showarticletitle{Fast-Forwarding to Desired Visualizations with
+  Zenvisage}. In \bibinfo{booktitle}{\emph{CIDR}}.
 \newblock
-\showISBNx{9781450321389}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/1235}
-\showDOI{\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{{Siddiqui et al.}}{{Siddiqui et al.}}{2016}]%
