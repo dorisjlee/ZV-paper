@@ -4,5 +4,5 @@ digraph  {
 "bottom-up";
 "top-down" -> "top-down"  [weight=1, label=1];
 "bottom-up" -> "top-down"  [weight=1, label=1];
-"bottom-up" -> "bottom-up"  [weight=7, label=7];
+"bottom-up" -> "bottom-up"  [weight=6, label=6];
 }
