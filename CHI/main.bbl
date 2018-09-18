@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{28}
+\begin{thebibliography}{23}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -62,24 +62,6 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{{Austin Nothaft et al.}}{{Austin Nothaft et
-  al.}}{2015}]%
-        {AustinNothaft2015}
-\bibfield{author}{\bibinfo{person}{{Austin Nothaft et al.}}}
-  \bibinfo{year}{2015}\natexlab{}.
-\newblock \showarticletitle{{Rethinking Data-Intensive Science Using Scalable
-  Analytics Systems}}.
-\newblock \bibinfo{journal}{\emph{Proceedings of the 2015 ACM SIGMOD
-  International Conference on Management of Data}} (\bibinfo{year}{2015}),
-  \bibinfo{pages}{631--646}.
-\newblock
-\showISBNx{9781450327589}
-\showISSN{07308078}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/2723372.2742787}
-\showDOI{\tempurl}
-
-
 \bibitem[\protect\citeauthoryear{Correll and Gleicher}{Correll and
   Gleicher}{2016}]%
         {correll2016semantics}
@@ -92,24 +74,6 @@
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1109/VAST.2016.7883519}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Demchenko, Grosso, and Membrey}{Demchenko
-  et~al\mbox{.}}{2013}]%
-        {Demchenko2013}
-\bibfield{author}{\bibinfo{person}{Yuri Demchenko}, \bibinfo{person}{Paola
-  Grosso}, {and} \bibinfo{person}{Peter Membrey}.}
-  \bibinfo{year}{2013}\natexlab{}.
-\newblock \showarticletitle{{Addressing Big Data Issues in Scientific Data
-  Infrastructure}}.
-\newblock \bibinfo{journal}{\emph{Collaboration Technologies and Systems (CTS),
-  2013 International Conference on (pp. 48-55). IEEE.}} (\bibinfo{year}{2013}),
-  \bibinfo{pages}{48--55}.
-\newblock
-\showISBNx{978-1-4673-6404-1; 978-1-4673-6403-4}
-\urldef\tempurl%
-\url{https://doi.org/10.1109/CTS.2013.6567203}
 \showDOI{\tempurl}
 
 
@@ -130,13 +94,9 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{Gloss, Signal, Cheetham, Gruhl, Kaczorowski,
-  Perkins, and Dinger}{Gloss et~al\mbox{.}}{2017}]%
+\bibitem[\protect\citeauthoryear{{Gloss et al.}}{{Gloss et al.}}{2017}]%
         {Gloss2017}
-\bibfield{author}{\bibinfo{person}{Brian~S. Gloss}, \bibinfo{person}{Bethany
-  Signal}, \bibinfo{person}{Seth~W. Cheetham}, \bibinfo{person}{Franziska
-  Gruhl}, \bibinfo{person}{Dominik~C. Kaczorowski}, \bibinfo{person}{Andrew~C.
-  Perkins}, {and} \bibinfo{person}{Marcel~E. Dinger}.}
+\bibfield{author}{\bibinfo{person}{{Gloss et al.}}}
   \bibinfo{year}{2017}\natexlab{}.
 \newblock \showarticletitle{High resolution temporal transcriptomics of mouse
   embryoid body development reveals complex expression dynamics of coding and
@@ -227,24 +187,6 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{Kersten, Idreos, Manegold, and Liarou}{Kersten
-  et~al\mbox{.}}{2011}]%
-        {Kersten2011}
-\bibfield{author}{\bibinfo{person}{Martin Kersten}, \bibinfo{person}{Stratos
-  Idreos}, \bibinfo{person}{Stefan Manegold}, {and} \bibinfo{person}{Erietta
-  Liarou}.} \bibinfo{year}{2011}\natexlab{}.
-\newblock \showarticletitle{{The Researcher's Guide to the Data Deluge:
-  Querying a Scientific Database in Just a Few Seconds}}.
-\newblock \bibinfo{journal}{\emph{Proceedings of the VLDB Endowment,}}
-  (\bibinfo{year}{2011}), \bibinfo{pages}{1474}.
-\newblock
-\showISBNx{0000000000000}
-\showISSN{21508097}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/1409360.1409380}
-\showDOI{\tempurl}
-
-
 \bibitem[\protect\citeauthoryear{Lam, Bertini, Isenberg, Plaisant, and
   Carpendale}{Lam et~al\mbox{.}}{2012}]%
         {lam2012empirical}
@@ -306,17 +248,6 @@
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Momcheva and Tollerud}{Momcheva and
-  Tollerud}{2015}]%
-        {Momcheva2015}
-\bibfield{author}{\bibinfo{person}{Ivelina Momcheva} {and}
-  \bibinfo{person}{Erik Tollerud}.} \bibinfo{year}{2015}\natexlab{}.
-\newblock \showarticletitle{Software use in astronomy: an informal survey}.
-\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1507.03989}}
-  (\bibinfo{year}{2015}).
-\newblock
-
-
 \bibitem[\protect\citeauthoryear{Munzner}{Munzner}{2009}]%
         {munzner2009nested}
 \bibfield{author}{\bibinfo{person}{Tamara Munzner}.}
@@ -372,22 +303,6 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{{Prabhu et al.}}{{Prabhu et al.}}{2011}]%
-        {Prabhu2011}
-\bibfield{author}{\bibinfo{person}{{Prabhu et al.}}}
-  \bibinfo{year}{2011}\natexlab{}.
-\newblock \showarticletitle{A Survey of the Practice of Computational Science}.
-  In \bibinfo{booktitle}{\emph{State of the Practice Reports}}
-  \emph{(\bibinfo{series}{SC '11})}. \bibinfo{publisher}{ACM},
-  \bibinfo{address}{New York, NY, USA}, Article \bibinfo{articleno}{19},
-  \bibinfo{numpages}{12}~pages.
-\newblock
-\showISBNx{978-1-4503-1139-7}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/2063348.2063374}
-\showDOI{\tempurl}
-
-
 \bibitem[\protect\citeauthoryear{{Ryall et al.}}{{Ryall et al.}}{2005}]%
         {ryall2005querylines}
 \bibfield{author}{\bibinfo{person}{{Ryall et al.}}}
@@ -417,24 +332,12 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{Siddiqui, Lee, Kim, Xue, Yu, Zou, Guo, Liu,
-  Wang, Karahalios, and Parameswaran}{Siddiqui et~al\mbox{.}}{2017}]%
-        {Siddiqui2017}
-\bibfield{author}{\bibinfo{person}{Tarique Siddiqui}, \bibinfo{person}{John
-  Lee}, \bibinfo{person}{Albert Kim}, \bibinfo{person}{Edward Xue},
-  \bibinfo{person}{Xiaofo Yu}, \bibinfo{person}{Sean Zou},
-  \bibinfo{person}{Lijin Guo}, \bibinfo{person}{Changfeng Liu},
-  \bibinfo{person}{Chaoran Wang}, \bibinfo{person}{Karrie Karahalios}, {and}
-  \bibinfo{person}{Aditya Parameswaran}.} \bibinfo{year}{2017}\natexlab{}.
-\newblock \showarticletitle{Fast-Forwarding to Desired Visualizations with
-  Zenvisage}. In \bibinfo{booktitle}{\emph{CIDR}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{{Siddiqui et al.}}{{Siddiqui et al.}}{2016}]%
+\bibitem[\protect\citeauthoryear{Siddiqui, Kim, Lee, Karahalios, and
+  Parameswaran}{Siddiqui et~al\mbox{.}}{2016}]%
         {Siddiqui2017VLDB}
-\bibfield{author}{\bibinfo{person}{{Siddiqui et al.}}}
-  \bibinfo{year}{2016}\natexlab{}.
+\bibfield{author}{\bibinfo{person}{Tarique Siddiqui}, \bibinfo{person}{Albert
+  Kim}, \bibinfo{person}{John Lee}, \bibinfo{person}{Karrie Karahalios}, {and}
+  \bibinfo{person}{Aditya Parameswaran}.} \bibinfo{year}{2016}\natexlab{}.
 \newblock \showarticletitle{Effortless data exploration with zenvisage: an
   expressive and interactive visual analytics system}.
 \newblock \bibinfo{journal}{\emph{Proceedings of the VLDB Endowment}}
@@ -444,6 +347,15 @@
 \urldef\tempurl%
 \url{https://doi.org/10.14778/3025111.3025126}
 \showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Siddiqui et al.}}{{Siddiqui et al.}}{2017}]%
+        {Siddiqui2017}
+\bibfield{author}{\bibinfo{person}{{Siddiqui et al.}}}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Fast-Forwarding to Desired Visualizations with
+  Zenvisage}. In \bibinfo{booktitle}{\emph{CIDR}}.
+\newblock
 
 
 \bibitem[\protect\citeauthoryear{Wattenberg}{Wattenberg}{2001}]%
