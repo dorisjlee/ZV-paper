@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{23}
+\begin{thebibliography}{24}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -75,6 +75,18 @@
 \urldef\tempurl%
 \url{https://doi.org/10.1109/VAST.2016.7883519}
 \showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Drlica Wagner et al.}}{{Drlica Wagner et
+  al.}}{2017}]%
+        {Drlica-Wagner2017}
+\bibfield{author}{\bibinfo{person}{{Drlica Wagner et al.}}}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{{Dark Energy Survey Year 1 Results: Photometric
+  Data Set for Cosmology}}.
+\newblock  (\bibinfo{year}{2017}).
+\newblock
+\showeprint[arxiv]{1708.01531}
 
 
 \bibitem[\protect\citeauthoryear{Eichmann and Zgraggen}{Eichmann and
