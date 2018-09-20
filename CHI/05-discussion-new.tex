@@ -10,7 +10,16 @@
 %   \caption{Heatmap of features categorized as practical usage (P), envisioned usage (E), and not useful (N).  \techreport{We find that participants preferred to query using bottom-up methods such as drag-and-drop over top-down approaches such as sketching or input equations. Participants found that data faceting via filter constraints and dynamic class creation were powerful ways to compare between subgroups or filtered subsets. The columns are arranged in the order of subject areas and the features are arranged in the order of the three foraging acts.}}\label{fig:feature_heatmap}
 % \endminipage
 % \end{figure*}
-Based on the audio, video screen captures, and click-stream logs recorded during the evaluation study, we performed thematic analysis through open-coding and categorized every event in the user study with a coded label. Event codes included specific feature usages, insights, provoked actions, confusion regarding a system feature, request for functionalities unaddressed by the system and the use of external tools.
+Based on audio, video screen capture, 
+and click-stream logs recorded 
+during our evaluation study, 
+we performed thematic analysis via open coding
+and categorized every event with a coded label. 
+Event codes included specific feature usage, 
+insights, 
+provoked actions, confusion regarding a system feature, 
+request for functionalities unaddressed 
+by the system, and the use of external tools.
 % \begin{denselist}
 %     \item Insight (Science): Insight that connected back to the science (e.g. ``This cluster resembles a repressed gene.'')
 %     \item Insight (Data): Data-related insights (e.g. ``A bug in my data cleaning code generated this peak artifact.'')
@@ -20,7 +29,24 @@ Based on the audio, video screen captures, and click-stream logs recorded during
 %     \item Want: Additional features that participant wants, which is not currently available on the system.
 %     \item External Tools: The use of external tools outside of \zv to complement the analysis process.
 % \end{denselist}
-To characterize the usefulness of each feature, we further labeled whether each feature was useful to a particular user's analysis. We regard a feature as \textit{useful} if the feature was either used in a sensible and meaningful way during the user study, or has envisioned usage outside of the constrained time limit during the study (e.g. if data was available or downstream analysis was conducted). We derived these labels from the study transcription to circumvent self-reporting bias, which can often artificially inflate the usefulness of the feature or tool under examination. For the remaining paper, we will make use of results from thematic analysis to understand how feature usage informs the roles of each sensemaking paradigms in real-world analytic tasks.
+To characterize the usefulness 
+of each feature, 
+we further labeled whether each 
+feature was useful to a particular user's analysis. 
+We regard a feature as \textit{useful} 
+if the feature was either used in a sensible 
+and meaningful way during the study, 
+or has envisioned usage outside of the constrained 
+time limit during the study 
+(e.g. if data was available or downstream analysis was conducted). 
+We derived these labels from the study transcript 
+to circumvent self-reporting bias, 
+which can often artificially inflate 
+the usefulness of the feature under examination. 
+Next, 
+we will make use of the results from this 
+thematic analysis to understand how feature usage informs the roles of each sensemaking paradigms in real-world analytic tasks.
+\agp{Can't parse the previous sentence}
 %categorized the features based on whether there was a sensible usage of the feature 
 % into one of the three usage types based on how each feature was used during the study:
 % \begin{denselist}
@@ -43,14 +69,42 @@ To characterize the usefulness of each feature, we further labeled whether each 
 %   \includegraphics[width=\linewidth]{figures/usagefreqbysubject.pdf}
 %   \caption{The number of times each component is used during the evaluation study, broken down by subject areas.}\label{fig:usagefreqbysubject}
 % \end{figure}
-\subsection{The Inefficiency of Sketching}
+\subsection{The Ineffectiveness of Sketch}
 % \subsection{DC3: Closing the loop in VQS sense-making cycle with bottom-up data-driven inquries}
-\par To our surprise, despite the prevalence of sketch-to-query systems in literature, \techreport{Figure \ref{fig:feature_heatmap} shows} that only two out of our nine users had a practical usage for querying by sketching. %Overall, bottom-up querying via drag-and-drop was more intuitive and more commonly used than top-down querying methods, such as sketching or input equations.
-The main reason why participants did not find sketching useful was that they often do not start their analysis with a pattern in mind. Later, their intuition about what to query is derived from other visualizations that they see in the VQS, in which case it made more sense to query using those visualizations as examples directly. In addition, even if a user has a query pattern in mind, sketch queries can be ambiguous or even impossible to draw by sketching (e.g. A2 looked for a highly-varying signal enveloped by a sinusoidal pattern indicating planetary rotation \includegraphics[width=2\baselineskip,keepaspectratio]{figures/impossible_sketch.png}).
-\par Given these initial findings, we further investigate where the `sketch' (pattern on the canvas) originates. In particular, Figure~\ref{fig:origins_of_sketch} shows that pattern queries can originate from either top-down (sketching) or bottom-up (drag-and-drop) approaches. Within these actions, there can be different intentions behind the sketch. While all visualizations that could be drag-and-dropped must come from the result or recommendation pane, a query can come from a particular object that the participant is interested in or simply through peripheral browsing of visualization results.%, described in the next section. 
+\par To our surprise, 
+despite the prevalence of sketch-to-query 
+systems in the literature, \techreport{Figure \ref{fig:feature_heatmap} shows that} only two out of our nine participants 
+found it useful to directly
+sketch their pattern onto the canvas (Figure~\ref{zvOverview}a). %Overall, bottom-up querying via drag-and-drop was more intuitive and more commonly used than top-down querying methods, such as sketching or input equations.
+The main reason why participants 
+did not find sketching useful was that 
+they often do not start their analysis with a specific pattern in mind. 
+Instead, their intuition about what to query is derived
+from other visualizations they encounter
+during exploration, in which case it makes
+more sense to query using those visualizations
+as examples directly (e.g., by dragging and dropping
+that visualization onto the sketch canvas via an action like
+Figure~\ref{zvOverview}j). 
+Even if a user has a pattern in mind,
+translating that pattern into a sketch is often hard
+to do. For example, 
+A2 wanted to search for a highly-varying signal 
+enveloped by a sinusoidal pattern indicating 
+planetary rotation \includegraphics[width=2\baselineskip,keepaspectratio]{figures/impossible_sketch.png}, which is hard to draw by hand.
+
+\par 
+Given these initial findings,
+we further investigated where the 
+pattern on the canvas typically originates. 
+Figure~\ref{fig:origins_of_sketch} shows that 
+pattern queries originate from either top-down (sketching) or bottom-up (drag-and-drop) approaches. 
+\agp{We don't really define what the various origins are clearly: what is sketch-to-query? what is sketch-to-modify?. Always describe what is going on in a figure clearly. I am left confused as I read through the rest. We shouldn't call it a sketch -- let's call it a pattern query. Delete the title from figure 5}
+\agp{got until here. for any changes for the previous text, please do it in color.}
+Within these actions, there can be different intentions behind the sketch. While all visualizations that could be drag-and-dropped must come from the result or recommendation pane, a query can come from a particular object that the participant is interested in or simply through peripheral browsing of visualization results.%, described in the next section. 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{figures/the_origins_of_sketch.pdf}
-  \caption{The number of times each sketch is generated by one of the workflows.}\label{fig:origins_of_sketch}
+  \caption{The number of times each pattern query is generated by one of the workflows.}\label{fig:origins_of_sketch}
 \end{figure}
 %\par The latter case is also supported by the 
 \par There are also many unexpected use cases where sketching was simply used as a mechanism to modify an existing pattern query. For example, M2 first sketched a pattern to find solvent classes with anticorrelated properties without much success in returning a desired match.
