@@ -1,11 +1,31 @@
 %!TEX root=main.tex
 \section{Introduction\label{sec:intro}}
 % one for each key finding: a) many features deemed to be of importance to VQSs by domain experts, not all supported by present-day VQSs b) sketch is inefficient, perhaps explaining why present-day VQSs are not popular c) identify 3 typical workflows involving various sensemaking modalities in different proportions, depending on the application
-Two-dimensional line charts are one of the most ubiquitous visualization types, due to how the simple and intuitive patterns often illustrate complex underlying processes and narrate interpretable and visually-compelling data-driven stories.%----- attractive visually portraying trends, patterns , etc,observable ----, underlying complex physical process.%and narrate rich and --- story ---. 
-To discover these patterns, analysts currently create visualizations, either programmatically using tools (such as {\tt ggplot} or {\tt matplotlib}), or visualization construction interfaces (such as Excel or Tableau) by specifying \textit{exactly} what they want to visualize. For example, when trying to find celestial objects corresponding to supernovae, which have a specific pattern
-of brightness over time, scientists need to individually inspect the visualizations of each object (often numbering in the thousands) until they find ones that match the pattern. \ccut{Similarly, when trying to infer relationships between two physical properties for different subsets of battery electrolytes, scientists need to individually visualize these properties
+
+Line charts are one of the most ubiquitous types
+of visualizations employed during data exploration---the 
+intuitive connected patterns 
+often illustrate complex underlying processes
+and yield interpretable and visually compelling data-driven
+narratives. 
+To discover patterns in line charts,
+analysts create them
+using toolkits like {\tt ggplot} or {\tt matplotlib},
+or visualization construction interfaces
+like Excel or Tableau, specifying 
+{\em exactly} what they want to visualize.
+For example, when trying to find celestial objects 
+corresponding to supernovae, which have a specific pattern
+of brightness over time, astrophysicists 
+individually inspect the corresponding line chart 
+for each object (often numbering in the hundreds) 
+until they find ones that match the pattern. \ccut{Similarly, when trying to infer relationships between two physical properties for different subsets of battery electrolytes, scientists need to individually visualize these properties
 for each subset (out of an unbounded number of such subsets)
-until they identify relationships that make sense to them.} This process of manually exploring large numbers of visualizations is not only error-prone, but also overwhelming for analysts who do not have extensive knowledge about their dataset.
+until they identify relationships that make sense to them.} 
+This process of manual exploration of
+large numbers of line charts 
+is not only error-prone, but also overwhelming for 
+analysts.
 %, not only for time series but also for understanding the relationships between multiple measures variables.
 
 % From high-throughput genome sequencing,
@@ -26,22 +46,139 @@ until they identify relationships that make sense to them.} This process of manu
 % often lack the extensive experience to deal
 % with data of this scale and complexity
 % in a way that can facilitate rapid insight discovery~\cite{Kersten2011}.with the system automatically traversing all potential visualization candidates to find those that match the specification
-\par To address this challenge, there has been a large number of work dedicated to building {\em Visual Query Systems} (VQSs), that allow users to specify desired visual patterns via an interactive interface~\cite{mohebbi2011google,Hochheiser2004,wattenberg2001sketching,Siddiqui2017VLDB,ryall2005querylines,correll2016semantics,Mannino2018,Eichmann2015,Holz2009}. Most of these systems has a sketching interface for drawing a trend of interest, with the system automatically traversing all potential visualization candidates to find those that match the specification. Since sketches can be ambiguous, many have also developed finer-grained specification techniques for enabling users to clarify how a sketch should be interpreted~\cite{ryall2005querylines,correll2016semantics,Mannino2018,Eichmann2015,Holz2009}. 
-\par While these intuitive interface seem to be the solution to the problem of painful manual exploration of visualizations, to the best of our knowledge, VQSs are not very commonly used in practice. {\em Our paper seeks to bridge this gap between current research to understand how VQSs can actually be used in practice, as a first step towards the broad adoption of VQSs in data analysis}. In this paper, we present findings from a series of interviews, cognitive walkthroughs, participatory design, and user studies with scientists from three different scientific domains---{\em astronomy, genetics,} and {\em material science}---through a year-long collaboration. These scientific use cases represent a diverse set of goals and datasets where VQSs can help address important scientific questions, such as: How does a treatment affect the expression of a gene in a breast cancer cell-line? Which battery components have sustainable levels of energy-efficiency and are safe and cheap to manufacture in production?
-\par Via cognitive walkthroughs and interviews, we first learned about the challenges in participant's existing data analysis workflows that could be potentially addressed by a VQS, described in Section~\ref{sec:participantdatasets}. %By collaborating closely with the scientists during participatory design, we identified a set of key features required for VQSs to be useful and usable within their data analysis workflows. 
-%address challenges shared across the three scientific domains and 
-Building on top of the existing, open-source VQS, \zv~\cite{Siddiqui2017,Siddiqui2017VLDB}, we collaborated closely with scientists to gather feedback and iterate on VQS feature designs. The features we developed are organized into a taxonomy of functionalities in VQSs. The taxonomy introduces three sensemaking processes spanning over the problem space for VQSs. We find that prior VQS have focussed largely on top-down processes, such as mechanisms for specifying a pattern or how matching should be done, while largely missing out on two sensemaking process (context creation and bottom-up inquiries) that are crucial for the needs of the analysts in our study. 
-\par To study how various VQSs functionalities are used in practice, we conducted a user study with nine scientists using our final VQS prototype, \zvpp, to address their research questions on their own datasets. In a 1.5-hour user study, participants were able to gain novel scientific insights, such as identifying a star with a transient pattern that was known to harbor a Jupiter-sized planet and finding characteristic gene expression profiles confirming the results of a related publication.\techreport{, and discovering that the dip in an astronomical light curve is caused by saturated imaging equipment overlooked by the existing error-detection pipeline.} \techreport{Participants also gain additional insights about their datasets, including debugging mislabeled features and uncovering erroneous data preprocessing procedure applied to a collaborator's dataset.} 
+\par To address this challenge, 
+there has been a large number of papers 
+dedicated to building {\em Visual Query Systems} (VQSs), 
+that allow users to specify 
+desired visual patterns 
+via an interactive interface~\cite{mohebbi2011google,Hochheiser2004,wattenberg2001sketching,Siddiqui2017VLDB,ryall2005querylines,correll2016semantics,Mannino2018,Eichmann2015,Holz2009}. 
+This interactive interface is typically 
+a sketching interface or canvas
+where users can draw a trend of interest,
+with the system system automatically traversing 
+all potential visualization candidates 
+to find those that match the specification. 
+Since the intent of a sketch can be ambiguous, 
+some work has developed mechanisms to
+enable users to clarify 
+how a sketch should be interpreted~\cite{ryall2005querylines,correll2016semantics,Mannino2018,Eichmann2015,Holz2009}. 
+
+\par 
+While this intuitive 
+specification interface 
+seems to be the solution 
+to the problem of painful manual exploration of visualizations, 
+to the best of our knowledge, VQSs are not very commonly used in practice. 
+{\em Our paper seeks to bridge this gap 
+to understand how VQSs can actually be used in practice, 
+as a first step towards the broad adoption of VQSs in data analysis}.
+Unlike prior work on VQSs,
+we set out to not only evaluate VQSs in-situ on
+real problem domains, but also involve participants
+from these domains in the VQS design. 
+We present findings from a series of interviews, 
+cognitive walkthroughs, participatory design, 
+and user studies with scientists from three different domains---{\em astronomy, genetics,} and {\em material science}---over the course of 
+a year-long collaboration. 
+These domains were selected to capture 
+a diverse set of goals 
+and datasets wherein VQSs can help address 
+important scientific questions, such as: 
+How does a treatment affect the expression 
+of a gene in a breast cancer cell-line? 
+Which battery components have sustainable 
+levels of energy-efficiency and are safe and 
+cheap to manufacture in production?
+
+
+\par 
+ Via cognitive walkthroughs and interviews, 
+ we first identified challenges
+in existing data analysis workflows in these domains
+that could be potentially 
+addressed by a VQS. 
+Building on top of an existing, 
+open-source VQS, \zv~\cite{Siddiqui2017,Siddiqui2017VLDB}, 
+we collaborated closely with our participants
+to gather feedback and iterate on VQS feature designs. 
+We organized these features into a taxonomy of VQS functionalities,
+involving three sensemaking processes inspired by X et al.,
+\agp{}---top-down, bottom-up,
+and context-creation.\agp{A one line explanation of this would
+be valuable.}
+We find that prior VQSs have focused
+largely on top-down processes,
+while largely ignoring the other two processes
+that are crucial for the needs of all three domains.
+
+
+\par 
+To study how various VQS features 
+are used in practice, 
+we conducted a final evaluation study with nine participants 
+using our final VQS prototype, \zvpp, 
+to address their research questions 
+on their own datasets. 
+In a 1.5-hour user study, participants were able to 
+gain novel scientific insights, 
+such as identifying a star with a transient pattern 
+that was known to harbor a Jupiter-sized planet 
+and finding characteristic gene expression profiles confirming the results of a related publication.\techreport{, and discovering that the dip in an astronomical light curve is caused by saturated imaging equipment overlooked by the existing error-detection pipeline.} \techreport{Participants also gain additional insights about their datasets, including debugging mislabeled features and uncovering erroneous data preprocessing procedure applied to a collaborator's dataset.} 
 %that goes from a pattern in-the-head to a desired visualization 
-\par By analyzing the evaluation study results, we discovered how sketching is impractical in most use cases. This is in part due to how top-down processes, such as sketching, adopts a problematic assumption that analysts start with a {\em known} and {\em easy-to-specify} search pattern in mind. In practice, users may not always know what pattern they want to sketch, nor are the patterns easily sketchable. While it is often easy for analysts to interpret a visualization once they see it, coming up with a pattern to query in an ad-hoc manner can often be challenging. We suspect this is why sketch-based systems have not been widely adopted in practice, pointing to the need for two other sensemaking processes, described more in Section~\ref{sec:eval_findings}.
-\par Further analysis on how participants transition between different sensemaking processes illustrated how participants adopt a diverse set of workflows tailored to their problem contexts. For example, participants often construct a central workflow around a main sensemaking process, while interleaving variations with the two other processes as they iterate on an analytic task. This points to how all three sensemaking processes are essential for enabling users to transition smoothly between different workflows within the sensemaking loop. Our contributions include: 
+
+\par By analyzing the evaluation study results, 
+we discovered that sketching a pattern on a canvas
+is often ineffective. 
+This is due to the fact that sketching makes the problematic
+assumptions that 
+users know the pattern that they want to sketch,
+and are able to sketch it precisely. 
+Instead, participants typically
+opted for other means of pattern specification---one
+common mechanism was to drag-and-drop a known pattern
+onto the canvas,
+and then modify it (e.g., by smoothing it out).
+However, most VQSs do not support
+these other mechanisms (as we argued earlier,
+they typically focus only on top-down sensemaking processes,
+without covering bottom-up and context creation), 
+partially explaining
+why they have not been widely adopted in practice.
+
+
+\par Further analysis of how participants
+transition between different sensemaking processes
+during analysis---including the construction of a Markov Model---illustrated
+how participants
+adopt a diverse set of workflows tailored
+to their domains. 
+For example, participants
+often center on a main sensemaking process,
+while interleaving variations with other
+two processes as they iterate on an analytic task\agp{mirroring findings in X et al?}.
+This finding points to how all three sensemaking processes,
+along with seamless transitions between them,
+are essential for enabling users to effectively
+use VQSs for data exploration. 
+
+\par 
+To the best of our knowledge, 
+our study is the \emph{first to holistically 
+examine how VQSs can be designed to fit the needs of real-world 
+analysts and how they are actually used in practice}. 
+Our work not only opens up a new space of 
+opportunities beyond the narrow use cases 
+considered by prior studies, but also advocates 
+common design guidelines and end-user 
+considerations for building next-generation VQSs.
+Our contributions include: 
 \begin{denselist}
-\item domain problem characterization of visual querying through design studies with three different subject areas,
-\item abstraction of taxonomy and problem space of VQSs grounded in participatory design findings,
-\item a full-fledge VQS, \zvpp, capable of facilitating rapid hypothesis generation and insight discovery,
-\item evaluation study findings regarding how VQSs are used in practice, leading to the formation of a novel sensemaking model for VQSs. %including the ineffectiveness of sketching and the ---- workflow  
+\item a characterization of the problems addressable by VQSs through design studies with three different subject areas,
+\item the construction of a taxonomy of functionalities within VQSs, as well as an articulation of the problem space that is amenable to VQSs, both grounded in participatory design findings,
+\item a full-fledged VQS, \zvpp, capable of facilitating rapid hypothesis generation and insight discovery,
+\item evaluation study findings on how VQSs are used in practice, leading to the construction of a novel sensemaking model for VQSs. %including the ineffectiveness of sketching and the ---- workflow  
 \end{denselist}
-To the best of our knowledge, our study is the \emph{first to holistically examine how VQSs can be designed to fit the needs of real-world analysts and how they are actually used in practice}. Our work not only opens up a new space of opportunities beyond the narrow use cases considered by prior studies, but also advocates common design guidelines and end-user considerations for building next generation VQSs. %From these experiences, we  advocate visualization researchers and tool designers to ---- future VQS opportunities  Understanding the design space and opportunities for VQS
+ %From these experiences, we  advocate visualization researchers and tool designers to ---- future VQS opportunities  Understanding the design space and opportunities for VQS
 % Our three main research questions are as follows:
 
 %and not as commonly ---- due to the --- challenges ----. that ----- characteristic workflows ---- iterative sensemaking loop.
