@@ -10,8 +10,26 @@
 % we developed features that addresses the challenges they pose on VQSs, described first in this section. From these experiences, we develop a taxonomy for summarizing key functionalities in VQSs. 
 % From participatory design, 
 \section{Participatory Design Findings\label{sec:pd_findings}}
-Given that all aforementioned use cases recognized the need for a tool to facilitate pattern search, as discussed in Section~\ref{sec:methods}, we worked closely with the scientists to develop features that addresses their characteristic problems and challenges. %We first describe features that we have developed to addresses these challenges.
-In the following section, we will describe features that we have developed in our improved VQS, \zvpp, thematically organized by components. Then, we introduce a taxonomy for organizing these feature components into three sensemaking process, spanning across different areas in the VQS design space.
+Given that 
+participants from 
+all of the aforementioned domains 
+recognized the need for a tool
+for visual pattern search,
+we worked closely
+with them to develop features
+to address their characteristic
+problems and challenges.
+Next, we describe features
+that we incorporated
+into our enhanced VQS,
+\zvpp,
+thematically organized by component.
+Then, we introduce a taxonomy
+for organizing these feature components
+into three sensemaking
+processes, spanning different 
+problems that VQSs are aimed to solve. 
+
 %Based on feature requests and discussion with our participants, we incorporated key features missing in our original VQS.
 %From these discussion and analysis of past VQSs, we identify nine components of VQSs, described below. T
 % Along with analysis of past literature, we develop a taxonomy of key functionalities in VQSs. 
@@ -34,7 +52,24 @@ In the following section, we will describe features that we have developed in ou
 % \end{figure*}
 
  %We discovered three central themes encapsulating these features that are important to facilitate rapid hypothesis generation and insight discovery, but are missing in prior VQSs. While some of our findings echo prior work on system-level taxonomies of visualization tasks \cite{Amar2005,Heer2012}, we highlight how specific analytic tasks and interaction features could be used to enhance VQSs in particular. \techreport{In particular, we learned that \textit{participants wanted more control over the internals of the systems and an integrated workflow that helped streamline their analysis when using VQSs.}}
-\boldpara{Pattern Specification} interfaces allow users to submit exact descriptions of a pattern as a query (hereafter referred to as \textit{pattern query}), then the VQS returns a list of most similar matches. Almost all existing VQS supports freehand sketching \techreport{on a virtual canvas through mouse or pen as a intuitive mechanism }for specifying desired patterns (Figure \ref{zvOverview}a). Since it is often difficult to sketch exactly, \zvpp also allows users to specify a functional form (e.g. y=$x^2$) for a pattern (Figure \ref{zvOverview}b). This feature was requested by material scientists who were interested in finding solvents with known analytical models describing relationships between their chemical properties. \zvpp also enable users to upload a pattern consisting of a sequence of points as a query. The uploaded pattern also represents a more precise query specification that captures the desired features of a pattern \techreport{(e.g. amplitude, width of peak), }that cannot be precisely sketched. For example, the width of a supernovae light curve is characteristic to the radioactive decay rate of its chemical signature~\cite{Nugent1997}, so querying with an exact pattern template would be helpful for distinguishing the patterns of interest from noise. The pattern upload functionality is also available in Google Correlate.
+\boldpara{Pattern Specification} interfaces 
+allow users to submit exact descriptions 
+of a pattern as a query 
+(hereafter referred to as \textit{pattern query}), with  
+the VQS returning a list of most similar matches. 
+Almost all existing VQSs support freehand 
+sketching \techreport{on a virtual canvas through mouse or pen as a intuitive mechanism }for specifying desired patterns 
+(Figure \ref{zvOverview}a). 
+Since it is often difficult to sketch precisely, 
+\zvpp also allows users to specify a functional 
+form (e.g., y=$x^2$) for a pattern (Figure \ref{zvOverview}b). 
+This feature was requested by material scientists 
+who were interested in finding solvents 
+with known analytical models describing chemical relationships. 
+\zvpp also enables users to upload a pattern 
+consisting of a sequence of points as a query (Figure \ref{zvOverview}i). 
+The uploaded pattern also represents 
+a more precise query specification that captures the desired features of a pattern \techreport{(e.g. amplitude, width of peak), }that cannot be precisely sketched. For example, the width of a supernovae light curve is characteristic to the radioactive decay rate of its chemical signature~\cite{Nugent1997}, so querying with an exact pattern template would be helpful for distinguishing the patterns of interest from noise. The pattern upload functionality is also available in Google Correlate.
 % The desired patterns uploaded are often generated from computational models or prelabelled data from an external reference database. For example, A1 wanted to query based on synthetic light curves generated from simulations and known supernovae discovered in the past.
 % Many participants also envisioned use cases for pattern loading. The ability to load in data patterns as a query would enable users to compare visualizations between different experiments, species, or surveys, query with known patterns from an external reference catalog\techreport{ (e.g. important genes of interest, objects labeled as supernovae)}, or verify the results of a \techreport{simulation or }downstream analysis\techreport{ by finding similar patterns in their existing dataset}. The uploaded pattern also represents a more precise query specification that captures the desired features of a pattern \techreport{(e.g. amplitude, width of peak), }that cannot be precisely sketched. For example, the width of a supernovae light curve is characteristic to the radioactive decay rate of its chemical signature~\cite{Nugent1997}, so querying with an exact pattern template would be helpful for distinguishing the patterns of interest from noise.
 
