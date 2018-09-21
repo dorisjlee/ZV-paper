@@ -206,12 +206,12 @@ Information regarding the created classes is displayed in a table and as a toolt
 \boldpara{Result querying} allows users to submit a query based on the results, essentially asking for patterns similar to the selected data pattern. In \zvpp, users can drag and drop a visualization in either the results pane or the representative and outliers to the query canvas (Figure \ref{zvOverview}j). Similarly, TimeSearcher enable users to instantiate queries via drag-and-drop, whereas QuerySketch does so through double clicking.  %\ccut{The distinction between concept and result querying is that concept querying loads in data external to the dataset, whereas result querying initiates the query using visualizations created from the queried data source.}
 \boldpara{Recommendation} displays visualizations that may be of interest to the users based on the data context. \zvpp provides visualizations of representative trends based on clustering and highlights outlier instances\techreport{ that look different from the rest of the visualizations} (Figure \ref{zvOverview}k,l).%The recommendation feature is unique to \zv, which provides visualizations of representative trends based on clustering and highlights outlier instances that looks different from the rest of the visualizations (Figure \ref{zvOverview}k,l).
 % In this section, we first describe a model to help characterize the design space for VQS based on the analytical workload and usage patterns from different use cases. Then, we present design challenges related to each of the process.
-\begin{figure}[h!]
+\begin{figure*}[ht!]
   \centering
-  \includegraphics[width=\linewidth]{figures/2dmodel.pdf}
-  \caption{The problem space for VQSs is characterized by how much the analyst knows about the visualized attributes and the pattern instance. The colored areas highlight the three different sensemaking processes in VQSs for addressing these characteristic problems. While prior work has focused solely on use cases in the blue region, we envision opportunities for VQSs beyond this to a larger space of use cases covered by the red and green regions.}
-  \label{2dmodel}
-\end{figure}
+  \includegraphics[width=\linewidth]{figures/full_taxonomy_invert.pdf}
+  \caption{Taxonomy of functionalities in VQSs. From top, each of the three paradigm is broken down into key components in the system, which is instantiated as features in \zvpp. The bottom-most layer connects the use cases features that have practical or envisioned usage based on the evaluation study.}
+  \label{fig:taxonomy}
+\end{figure*}
 \subsection{Characterizing the Design Space for VQSs}
 %Based on example use cases and feature components from participatory design, we further characterize the design space of VQSs. 
 Given the participatory design results, 
@@ -225,6 +225,12 @@ We introduce these two axes depicting the
 amount of information known 
 about the visualized attribute and pattern instance.%, as shown in Figure~\ref{2dmodel}.
 %(e.g., only interested in patterns related to a specific gene)
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{figures/2dmodel.pdf}
+  \caption{The problem space for VQSs is characterized by how much the analyst knows about the visualized attributes and the pattern instance. The colored areas highlight the three different sensemaking processes in VQSs for addressing these characteristic problems. While prior work has focused solely on use cases in the blue region, we envision opportunities for VQSs beyond this to a larger space of use cases covered by the red and green regions.}
+  \label{2dmodel}
+\end{figure}
 \par Along the \textbf{pattern instance} axis, 
 the visualization that contains 
 the desired pattern may already be \texttt{known} to the analyst, 
@@ -263,12 +269,6 @@ context creation (Figure~\ref{2dmodel} green)---i.e.,
 setting the stage for bottom-up or top-down processes---is 
 essential for allowing users 
 to pivot across different visualization collections.%subspaces. %Most past VQSs assume that the analyst has a desired pattern in-the-head that could be conveyed through visual specification, such as a sketch.
-\begin{figure*}[ht!]
-  \centering
-  \includegraphics[width=\linewidth]{figures/full_taxonomy_wide.pdf}
-  \caption{Taxonomy of functionalities in VQSs. From top, each of the three paradigm is broken down into key components in the system, which is instantiated as features in \zvpp. The bottom-most layer connects the use cases features that have practical or envisioned usage based on the evaluation study.}
-  \label{fig:taxonomy}
-\end{figure*}
 \subsection{Design Goals for the Sensemaking Processes}
 We further explore the design objectives 
 and challenges in supporting each sensemaking 
