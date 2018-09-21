@@ -73,6 +73,12 @@ The pattern upload functionality is also available in Google Correlate.
 
 % \boldpara{Concept querying} enable users to upload a pattern associated with a concept as a query. As supported in \zv and Google Correlate, users can upload a sequence of points as the query pattern (Figure \ref{zvOverview}i). This is useful for patterns generated from computational models or prelabelled data from an external reference database. For example, A1 wanted to query based on synthetic light curves generated from simulations and known supernovae that have been discovered in the past.
 %While pattern specification is an intuitive mechanism for constructing a visual query, p
+\begin{figure*}[ht!]
+  \centering
+  \includegraphics[width=\linewidth]{figures/full_taxonomy_invert.pdf}
+  \caption{Taxonomy of functionalities in VQSs. From top, each of the three paradigm is broken down into key components in the system, which is instantiated as features in \zvpp. The bottom-most layer connects the use cases features that have practical or envisioned usage based on the evaluation study.}
+  \label{fig:taxonomy}
+\end{figure*}
 \boldpara{Match Specification.} 
 Past work has shown that pattern queries 
 can be imprecise~\cite{correll2016semantics,Holz2009,Eichmann2015}. 
@@ -89,13 +95,13 @@ data smoothing effectively allows users to
 change the degree of shape approximation 
 they would like to apply to all visualizations 
 when performing pattern matching. 
-Smoothing is also supported in Qetch\agp{cite}. 
+Smoothing is also supported in Qetch~\cite{Mannino2018}. 
 Other interfaces have developed constrained 
 sketching mechanisms to allow users to 
 partially specify certain shape characteristics, 
 such as angular slope queries\techreport{for specifying the slope of a trend line}~\cite{Hochheiser2004} or 
-piecewise trend querylines\techreport{over a specified data range}~\cite{ryall2005querylines}. 
-\agp{Why did we not use those? One line.}
+piecewise trend querylines\techreport{over a specified data range}~\cite{ryall2005querylines}. \change{Smoothing was chosen over these other interfaces for approximating key patterns in the data, since it was a familiar preprocessing step in our study participants' workflow.}
+%\agp{Why did we not use those? One line.}
 
 \par When analyzing line charts,
 there are often specific ranges with
@@ -134,8 +140,7 @@ such as the existence of a peak or a rising profile,
 without regards to the exact time when the event occurs. 
 \zvpp supports an option to ignore 
 the x-range in shape matching (Figure \ref{zvOverview}f). 
-This feature is similar to `temporal invariants' in SketchQuery.
-\agp{cite} 
+This feature is similar to `temporal invariants' in SketchQuery~\cite{correll2016semantics}.
 %For finding supernovae, A1 primarily cared about the existence of a peak\techreport{above a certain amplitude with an appropriate width of the curve}, rather than the exact time that the event occurred. G1 also expressed that she does not care about when the `trigger point' occurs as long as the profile is rising.
 % \techreport{\par During participatory design, both material science and astronomy participants noted the difficulty of shape matching on their dense and noisy observational data and the challenge of picking the appropriate smoothing parameters during offline preprocessing. We found that tight integration between smoothing and visual search additionally tradeoff between the smoothness of the curve and the degree of approximation for shape-matching in VQSs. An over-smoothed visualization would return shape matches that only loosely resemble the query pattern. However, without smoothing, the noise may dominate the overall trend, which could lead to bad pattern matches.}
 %While the interactions in our original prototype enabled simple visual queries, many scientists were interested in extending their querying capabilities, either through different querying modalities or through more flexible query specification methods.
@@ -145,7 +150,6 @@ This feature is similar to `temporal invariants' in SketchQuery.
 % \par We chose to support only brushing for x, since it was more common to focus the context based on the independent variable in our use cases, such as zooming into particular sharp dips when looking for planetary transits or anomalous peaks indicative of erroneous experimental measurements. \cut{In contrast, y-range selection tends to be more global and enforced across multiple interaction sequences, such as looking for only signals above a certain threshold.} The TimeSearcher and Queryline approach is most flexible as they allow composition of multiple range selections to formulate complex piecewise queries, such as finding gene expression profiles rising from x=1-5 then declining from x=5-10.
 % \boldpara{Flexible Matching:}
 %Studies have shown that \techreport{to facilitate subjectively meaningful pattern matches,} VQSs need to support mechanisms for clarifying sketch interpretation and flexible shape matching algorithms~\cite{correll2016semantics,Mannino2018,Eichmann2015}.
-
 % This latter features is akin to the temporal invariants in SketchQuery.
 \boldpara{View specification} settings 
 alters the specifications 
@@ -206,12 +210,6 @@ Information regarding the created classes is displayed in a table and as a toolt
 \boldpara{Result querying} allows users to submit a query based on the results, essentially asking for patterns similar to the selected data pattern. In \zvpp, users can drag and drop a visualization in either the results pane or the representative and outliers to the query canvas (Figure \ref{zvOverview}j). Similarly, TimeSearcher enable users to instantiate queries via drag-and-drop, whereas QuerySketch does so through double clicking.  %\ccut{The distinction between concept and result querying is that concept querying loads in data external to the dataset, whereas result querying initiates the query using visualizations created from the queried data source.}
 \boldpara{Recommendation} displays visualizations that may be of interest to the users based on the data context. \zvpp provides visualizations of representative trends based on clustering and highlights outlier instances\techreport{ that look different from the rest of the visualizations} (Figure \ref{zvOverview}k,l).%The recommendation feature is unique to \zv, which provides visualizations of representative trends based on clustering and highlights outlier instances that looks different from the rest of the visualizations (Figure \ref{zvOverview}k,l).
 % In this section, we first describe a model to help characterize the design space for VQS based on the analytical workload and usage patterns from different use cases. Then, we present design challenges related to each of the process.
-\begin{figure*}[ht!]
-  \centering
-  \includegraphics[width=\linewidth]{figures/full_taxonomy_invert.pdf}
-  \caption{Taxonomy of functionalities in VQSs. From top, each of the three paradigm is broken down into key components in the system, which is instantiated as features in \zvpp. The bottom-most layer connects the use cases features that have practical or envisioned usage based on the evaluation study.}
-  \label{fig:taxonomy}
-\end{figure*}
 \subsection{Characterizing the Design Space for VQSs}
 %Based on example use cases and feature components from participatory design, we further characterize the design space of VQSs. 
 Given the participatory design results, 
