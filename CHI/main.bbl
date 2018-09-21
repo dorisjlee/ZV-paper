@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{26}
+\begin{thebibliography}{28}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -211,6 +211,18 @@
 \showDOI{\tempurl}
 
 
+\bibitem[\protect\citeauthoryear{Khetan, Krishnamurthy, and Viswanathan}{Khetan
+  et~al\mbox{.}}{2018}]%
+        {Khetan2018}
+\bibfield{author}{\bibinfo{person}{Abhishek Khetan}, \bibinfo{person}{Dilip
+  Krishnamurthy}, {and} \bibinfo{person}{Venkatasubramanian Viswanathan}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Towards Synergistic Electrode–Electrolyte Design
+  Principles for Nonaqueous Li–O$$_2$$2 batteries}.
+\newblock   \bibinfo{volume}{376} (\bibinfo{date}{04} \bibinfo{year}{2018}).
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Lam, Bertini, Isenberg, Plaisant, and
   Carpendale}{Lam et~al\mbox{.}}{2012}]%
         {lam2012empirical}
@@ -317,6 +329,21 @@
 \showISSN{10730516}
 \urldef\tempurl%
 \url{https://doi.org/10.1145/937549.937550}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Peng and Sinha}{Peng and Sinha}{2016}]%
+        {Peng2016}
+\bibfield{author}{\bibinfo{person}{Pei~Chen Peng} {and}
+  \bibinfo{person}{Saurabh Sinha}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Quantitative modeling of gene expression using DNA
+  shape features of binding sites}.
+\newblock \bibinfo{journal}{\emph{Nucleic Acids Research}}
+  \bibinfo{volume}{44}, \bibinfo{number}{13} (\bibinfo{year}{2016}),
+  \bibinfo{pages}{e120}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1093/nar/gkw446}
 \showDOI{\tempurl}
 
 

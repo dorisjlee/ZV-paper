@@ -2,14 +2,13 @@
 \vspace{-10pt}
 \section{Introduction\label{sec:intro}}
 % one for each key finding: a) many features deemed to be of importance to VQSs by domain experts, not all supported by present-day VQSs b) sketch is inefficient, perhaps explaining why present-day VQSs are not popular c) identify 3 typical workflows involving various sensemaking modalities in different proportions, depending on the application
-Line charts are one of the most ubiquitous types
-of visualizations employed during data exploration---the 
+Line charts are commonly employed during data exploration---the 
 intuitive connected patterns 
 often illustrate complex underlying processes
 and yield interpretable and visually compelling data-driven
 narratives. 
 To discover patterns in line charts,
-analysts create them
+analysts construct them
 using toolkits like {\tt ggplot} or {\tt matplotlib},
 or visualization construction interfaces
 like Excel or Tableau, specifying 
@@ -52,8 +51,8 @@ dedicated to building {\em Visual Query Systems} (VQSs),
 that allow users to specify 
 desired visual patterns 
 via an interactive interface~\cite{mohebbi2011google,Hochheiser2004,wattenberg2001sketching,Siddiqui2017VLDB,ryall2005querylines,correll2016semantics,Mannino2018,Eichmann2015,Holz2009}. 
-This interactive interface is typically 
-a sketching interface or canvas
+This interactive interface is one with 
+a sketching canvas
 where users can draw a trend of interest,
 with the system automatically traversing 
 all potential visualization candidates 
@@ -66,7 +65,7 @@ how a sketch should be interpreted~\cite{ryall2005querylines,correll2016semantic
 \par 
 While this intuitive 
 specification interface 
-seems to be the solution 
+seems to be a promising solution 
 to the problem of painful manual exploration of visualizations, 
 to the best of our knowledge, VQSs are not very commonly used in practice. 
 {\em Our paper seeks to bridge this gap 
@@ -91,7 +90,8 @@ levels of energy-efficiency and are safe and
 cheap to manufacture in production?
 
 \par Via cognitive walkthroughs and interviews, we first identified challenges in existing data analysis workflows in these domains
-that could be potentially addressed by a VQS. Building on top of an existing, open-source VQS, \zv~\cite{Siddiqui2017,Siddiqui2017VLDB}, we collaborated closely with our participants to gather feedback and iterate on VQS feature designs. We organized these features into a taxonomy of VQS functionalities, \change{involving three sensemaking processes inspired by Pirolli and Card's notional model of analyst sensemaking. The sensemaking processes include top-down pattern specification (translating a pattern in-the-head into the form of a visual query), bottom-up data-driven inquiries (querying or recommending based on data), and context-creation (navigating across different collections of visualization spaces).} We find that prior VQSs have focused largely on top-down processes, while largely ignoring the other two processes that are crucial for the needs of all three domains.
+that could be potentially addressed by a VQS. Building on top of an existing, open-source VQS, \zv~\cite{Siddiqui2017,Siddiqui2017VLDB}, we collaborated closely with our participants to gather feedback and iterate on VQS feature designs,
+over the course of a year, culminating in a new enhanced VQS, \zvpp. We organized these features into a taxonomy of VQS functionalities, \change{involving three sensemaking processes inspired by Pirolli and Card's notional model of analyst sensemaking. The sensemaking processes include top-down pattern specification (translating a pattern ``in-the-head'' into the form of a visual query), bottom-up data-driven inquiries (querying or recommending based on data), and context-creation (navigating across different collections of visualizations).} \agp{cite pirolli} We find that prior VQSs have focused largely on top-down processes, while largely ignoring the other two processes that are crucial for the needs of all three domains.
 
 \par 
 To study how various VQS features 
