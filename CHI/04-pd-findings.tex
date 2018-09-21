@@ -10,20 +10,8 @@
 % we developed features that addresses the challenges they pose on VQSs, described first in this section. From these experiences, we develop a taxonomy for summarizing key functionalities in VQSs. 
 % From participatory design, 
 \section{Participatory Design Findings\label{sec:pd_findings}}
-All of the three use cases 
-described in the previous section 
-recognized the need for a VQS. 
-As discussed in Section~\ref{sec:methods},
-we worked closely with them to develop 
-features to address their problems and challenges. 
-Next, we describe features that 
-we incorporated into our enhanced VQS, \zvpp, 
-thematically organized by component. 
-Then, we introduce a taxonomy for 
-organizing these components 
-into three sensemaking processes, 
-spanning different problem areas that VQSs are aimed to solve. 
-
+All of the three \change{domains} described in the previous section recognized the need for a VQS. As discussed in Section~\ref{sec:methods}, we worked closely with \change{participants} to develop features to address their problems and challenges. Next, we describe features that we incorporated into our enhanced VQS, \zvpp, thematically organized by component. Then, we introduce a taxonomy for organizing these components into three sensemaking processes, spanning different problem areas that VQSs are aimed to solve. 
+%\change{In this section, we will first introduce a taxonomy for organizing these components into}
 %Based on feature requests and discussion with our participants, we incorporated key features missing in our original VQS.
 %From these discussion and analysis of past VQSs, we identify nine components of VQSs, described below. T
 % Along with analysis of past literature, we develop a taxonomy of key functionalities in VQSs. 
@@ -35,7 +23,7 @@ spanning different problem areas that VQSs are aimed to solve.
 % •	What kind of features needs to be designed to address these challenges (S4 PD)
 %We employed participatory design with our scientists to incorporate key features missing in our original VQS, and unaddressed in their existing workflows. From these discussion and analysis of past VQSs, we identify nine components of VQSs, described below.
 \subsection{Themes Emerging from Participatory Design\label{sec:pd_findings}}
-Next, we discuss components 
+\change{Here,} we discuss components 
 incorporated in \zvpp, over the course of participatory design, 
 along with similar features in past VQSs.
 % that share the same high-level objective.
@@ -113,7 +101,7 @@ to perform matching through brushing interactions
 (Figure \ref{zvOverview}d) 
 or enter a filter for y-range selection in a textbox. 
 Other interfaces for range selection in past VQSs 
-includes textboxes~\cite{wattenberg2001sketching,Mannino2018}, 
+include textboxes~\cite{wattenberg2001sketching,Mannino2018}, 
 min/max line boundaries~\cite{ryall2005querylines}, 
 or brushing interactions~\cite{Hochheiser2001}. 
 TimeSearcher and Queryline's approach is 
@@ -147,19 +135,9 @@ This feature is similar to `temporal invariants' in SketchQuery~\cite{correll201
 % \boldpara{Flexible Matching:}
 %Studies have shown that \techreport{to facilitate subjectively meaningful pattern matches,} VQSs need to support mechanisms for clarifying sketch interpretation and flexible shape matching algorithms~\cite{correll2016semantics,Mannino2018,Eichmann2015}.
 % This latter features is akin to the temporal invariants in SketchQuery.
-\boldpara{View specification} settings 
-alters the specifications 
-for all of the candidate visualizations being explored 
-on the VQS. 
-These include changing 
-the visualized attributes on the x and y axes, 
-as well as display options, 
-such as reversing the y axes 
-(a common operation done by astronomers visualizing magnitude measurements) 
-and changing visualization mark type to scatter
-(material science represents each solvent 
-as a data point often better visualized as a scatter plot). 
-The ability to change the view specification 
+\boldpara{View specification} settings alter the specifications for all of the candidate visualizations being explored on the VQS. These include changing 
+the visualized attributes on the x and y axes, as well as display options, 
+such as reversing the y axes (a common operation done by astronomers visualizing magnitude measurements) and changing visualization mark type to scatter (material science represents each solvent as a data point often better visualized as a scatter plot). The ability to change the view specification 
 offers users different perspectives on the same portion of data.
 %functionalities in VQSs provide a mechanism for navigating and comparing between different regions of the dataset, effectively 
 %perform visual querying on 
@@ -206,7 +184,7 @@ Information regarding the created classes is displayed in a table and as a toolt
 \boldpara{Result querying} allows users to submit a query based on the results, essentially asking for patterns similar to the selected data pattern. In \zvpp, users can drag and drop a visualization in either the results pane or the representative and outliers to the query canvas (Figure \ref{zvOverview}j). Similarly, TimeSearcher enable users to instantiate queries via drag-and-drop, whereas QuerySketch does so through double clicking.  %\ccut{The distinction between concept and result querying is that concept querying loads in data external to the dataset, whereas result querying initiates the query using visualizations created from the queried data source.}
 \boldpara{Recommendation} displays visualizations that may be of interest to the users based on the data context. \zvpp provides visualizations of representative trends based on clustering and highlights outlier instances\techreport{ that look different from the rest of the visualizations} (Figure \ref{zvOverview}k,l).%The recommendation feature is unique to \zv, which provides visualizations of representative trends based on clustering and highlights outlier instances that looks different from the rest of the visualizations (Figure \ref{zvOverview}k,l).
 % In this section, we first describe a model to help characterize the design space for VQS based on the analytical workload and usage patterns from different use cases. Then, we present design challenges related to each of the process.
-\subsection{Characterizing the Design Space for VQSs}
+\subsection{Characterizing the Problem Space for VQSs}
 %Based on example use cases and feature components from participatory design, we further characterize the design space of VQSs. 
 Given the participatory design results, 
 we further characterize three sensemaking process 
@@ -221,9 +199,10 @@ about the visualized attribute and pattern instance.%, as shown in Figure~\ref{2
 %(e.g., only interested in patterns related to a specific gene)
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=\linewidth]{figures/2dmodel.pdf}
+  \includegraphics[width=0.9\linewidth]{figures/2dmodel.pdf}
   \caption{The problem space for VQSs is characterized by how much the analyst knows about the visualized attributes and the pattern instance. The colored areas highlight the three different sensemaking processes in VQSs for addressing these characteristic problems. While prior work has focused solely on use cases in the blue region, we envision opportunities for VQSs beyond this to a larger space of use cases covered by the red and green regions.}
   \label{2dmodel}
+  \vspace{-10pt}
 \end{figure}
 \par Along the \textbf{pattern instance} axis, 
 the visualization that contains 

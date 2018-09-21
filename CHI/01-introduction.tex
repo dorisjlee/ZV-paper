@@ -1,7 +1,6 @@
 %!TEX root=main.tex
 \section{Introduction\label{sec:intro}}
 % one for each key finding: a) many features deemed to be of importance to VQSs by domain experts, not all supported by present-day VQSs b) sketch is inefficient, perhaps explaining why present-day VQSs are not popular c) identify 3 typical workflows involving various sensemaking modalities in different proportions, depending on the application
-
 Line charts are one of the most ubiquitous types
 of visualizations employed during data exploration---the 
 intuitive connected patterns 
@@ -55,7 +54,7 @@ via an interactive interface~\cite{mohebbi2011google,Hochheiser2004,wattenberg20
 This interactive interface is typically 
 a sketching interface or canvas
 where users can draw a trend of interest,
-with the system system automatically traversing 
+with the system automatically traversing 
 all potential visualization candidates 
 to find those that match the specification. 
 Since the intent of a sketch can be ambiguous, 
@@ -107,58 +106,22 @@ that was known to harbor a Jupiter-sized planet
 and finding characteristic gene expression profiles confirming the results of a related publication.\techreport{, and discovering that the dip in an astronomical light curve is caused by saturated imaging equipment overlooked by the existing error-detection pipeline.} \techreport{Participants also gain additional insights about their datasets, including debugging mislabeled features and uncovering erroneous data preprocessing procedure applied to a collaborator's dataset.} 
 %that goes from a pattern in-the-head to a desired visualization 
 
-\par By analyzing the evaluation study results, 
-we discovered that sketching a pattern on a canvas
-is often ineffective. 
-This is due to the fact that sketching makes the problematic
-assumptions that 
-users know the pattern that they want to sketch,
-and are able to sketch it precisely. 
-Instead, participants typically
-opted for other means of pattern specification---one
-common mechanism was to drag-and-drop a known pattern
-onto the canvas,
-and then modify it (e.g., by smoothing it out).
-However, most VQSs do not support
-these other mechanisms (as we argued earlier,
-they typically focus only on top-down sensemaking processes,
-without covering bottom-up and context creation), 
-partially explaining
-why they have not been widely adopted in practice.
-
-
+\par By analyzing the evaluation study results, we discovered that sketching a pattern on a canvas is often ineffective. This is due to the fact that sketching makes the problematic assumptions that users know the pattern that they want to sketch and are able to sketch it precisely. Instead, participants typically opted for other means of pattern specification---one common mechanism was to drag-and-drop a \change{recommended} pattern onto the canvas, and then modify it (e.g., by smoothing it out). However, most VQSs do not support these other mechanisms (as we argued earlier, they typically focus only on top-down sensemaking processes, without covering bottom-up and context creation), partially explaining why \change{such systems} have not been widely adopted in practice.
 \par Further analysis of how participants
 transition between different sensemaking processes
 during analysis---including the construction of a Markov Model---illustrated
-how participants
-adopt a diverse set of workflows tailored
-to their domains. 
-For example, participants
-often center on a main sensemaking process,
-while interleaving variations with other
-two processes as they iterate on an analytic task.
-This finding points to how all three sensemaking processes,
-along with seamless transitions between them,
-are essential for enabling users to effectively
-use VQSs for data exploration. 
-
-\par 
-To the best of our knowledge, 
-our study is the \emph{first to holistically 
-examine how VQSs can be designed to fit the needs of real-world 
-analysts and how they are actually used in practice}. 
-Our work not only opens up a new space of 
-opportunities beyond the narrow use cases 
-considered by prior studies, but also advocates 
-common design guidelines and end-user 
-considerations for building next-generation VQSs.
-Our contributions include: 
+how participants adopt a diverse set of workflows tailored
+to their domains. \change{For example, participants often construct analysis workflows focused around one primary sensemaking process, while iteratively interleaving their analysis with the two other processes.}%For example, participants often center on a main sensemaking process, while interleaving variations with other two processes as they iterate on an analytic task.
+This finding points to how all three sensemaking processes, along with seamless transitions between them, are essential for enabling users to effectively use VQSs for data exploration. 
+\par To the best of our knowledge, our study is the \emph{first to holistically examine how VQSs can be designed to fit the needs of real-world 
+analysts and how they are actually used in practice}. Our contributions include: 
 \begin{denselist}
 \item a characterization of the problems addressable by VQSs through design studies with three different subject areas,
 \item the construction of a taxonomy of functionalities within VQSs, as well as an articulation of the problem space that is amenable to VQSs, both grounded in participatory design findings,
 \item a full-fledged VQS, \zvpp, capable of facilitating rapid hypothesis generation and insight discovery,
-\item evaluation study findings on how VQSs are used in practice, leading to the construction of a novel sensemaking model for VQSs. %including the ineffectiveness of sketching and the ---- workflow  
+\item evaluation study findings on how VQSs are used in practice, leading to the \change{development} of a novel sensemaking model for VQSs. %including the ineffectiveness of sketching and the ---- workflow  
 \end{denselist}
+\change{Our work not only opens up a new space of opportunities beyond the narrow use cases considered by prior studies, but also advocates common design guidelines and end-user considerations for building next-generation VQSs.}
  %From these experiences, we  advocate visualization researchers and tool designers to ---- future VQS opportunities  Understanding the design space and opportunities for VQS
 % Our three main research questions are as follows:
 
