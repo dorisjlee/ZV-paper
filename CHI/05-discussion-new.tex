@@ -107,11 +107,7 @@ Within top-down processes,
 a pattern query could arise 
 from users directly sketching 
 a new pattern (sketch-to-query) 
-or by modifying an existing sketch (sketch-to-modify).} % \agp{We don't really define what the various origins are clearly: what is sketch-to-query? what is sketch-to-modify?. Always describe what is going on in a figure clearly. I am left confused as I read through the rest. We shouldn't call it a sketch -- let's call it a pattern query. Delete the title from figure 5}
-%Within these actions, there can be different intentions behind the sketch. While all visualizations that could be drag-and-dropped must come from the result or recommendation pane, a query can come from a particular object that the participant is interested in or simply through peripheral browsing of visualization results.%, described in the next section. 
-%\par The latter case is also supported by the 
-%\par There are also many unexpected use cases where sketching was simply used as a mechanism to modify an existing pattern query. 
-For example, M2 first sketched a pattern 
+or by modifying an existing sketch (sketch-to-modify).} For example, M2 first sketched a pattern 
 to find solvent classes with anticorrelated 
 properties without much success in returning a desired match.
 %However, the sketched query did not return visualizations of interest.
@@ -127,15 +123,12 @@ was able to derive insights from the results.
 Likewise, Figure~\ref{query_modification} (right) 
 illustrates how A3 first picked out a regular pattern 
 (suspected star spot), then modified it slightly 
-so that the pattern looks more irregular (to find pulsating stars). %Likewise, A3 was interested in pulsating stars that looked similar to stellar hotspots in terms of its dramatic amplitude fluctuations, but differ in that their patterns exhibited irregularities. Figure \ref{query_modification} (right) showed how she first picked out a regular pattern (suspected star spot), then modified it slightly so that the pattern looks more irregular.
-%Likewise, A3 was interested in pulsating stars characterized by dramatic changes in the amplitudes of the light curves. During the search, hotspots on stellar surfaces often show up as false positives as they also result in dramatic amplitude fluctuations, but happen at a regular intervals. In the VQS, A3 looked for patterns that exhibits amplitude variations, but also some irregularities. As shown in Figure \ref{query_modification} (right), she first picked out a regular pattern (suspected star spot), then modified it slightly so that the pattern looks more irregular.
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=\columnwidth]{figures/QueryModificationBySketch.pdf}
-    \caption{Canvas traces from M2 (left) and A3 (right) during the study demonstrating query modification. The original drag-and-dropped query is shown in blue and the sketch-modified queries in red.}
-    \label{query_modification}
-    \vspace{-10pt}
-\end{figure}
+so that the pattern looks more irregular (to find pulsating stars). 
+%Within these actions, there can be different intentions behind the sketch. While all visualizations that could be drag-and-dropped must come from the result or recommendation pane, a query can come from a particular object that the participant is interested in or simply through peripheral browsing of visualization results.%, described in the next section. 
+%\par The latter case is also supported by the 
+%\par There are also many unexpected use cases where sketching was simply used as a mechanism to modify an existing pattern query. 
+%Likewise, A3 was interested in pulsating stars that looked similar to stellar hotspots in terms of its dramatic amplitude fluctuations, but differ in that their patterns exhibited irregularities. Figure \ref{query_modification} (right) showed how she first picked out a regular pattern (suspected star spot), then modified it slightly so that the pattern looks more irregular.
+%Likewise, A3 was interested in pulsating stars characterized by dramatic changes in the amplitudes of the light curves. During the search, hotspots on stellar surfaces often show up as false positives as they also result in dramatic amplitude fluctuations, but happen at a regular intervals. In the VQS, A3 looked for patterns that exhibits amplitude variations, but also some irregularities. As shown in Figure \ref{query_modification} (right), she first picked out a regular pattern (suspected star spot), then modified it slightly so that the pattern looks more irregular.\par While all visualizations that could be drag-and-dropped must come from the result or recommendation pane, a query can come from a particular object that the participant is interested in or simply through peripheral browsing of visualization results.
 As described in the following section, 
 bottom-up pattern queries can come from either 
 the ranked list of results, 
@@ -144,13 +137,13 @@ particular object of interest as a drag-and-drop query.
 Figure~\ref{fig:origins_of_sketch} shows that 
 bottom-up processes are more common 
 than top-down processes for generating a pattern query.
-
-While all visualizations that could be drag-and-dropped 
-must come from the result or recommendation pane, 
-a query can come from a particular object 
-that the participant is interested in or simply 
-through peripheral browsing of visualization results.
-
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\columnwidth]{figures/QueryModificationBySketch.pdf}
+    \caption{Canvas traces from M2 (left) and A3 (right) during the study demonstrating query modification. The original drag-and-dropped query is shown in blue and the sketch-modified queries in red.}
+    \label{query_modification}
+    \vspace{-10pt}
+\end{figure}
 \par The lack of practical use of top-down pattern 
 specification is also reflected in the fact 
 that none of the participants queried using an equation. 
@@ -162,15 +155,15 @@ relationships do exist, it is challenging to formulate
 functional forms in an prescriptive, ad-hoc manner.
 % Despite functional fitting being common in scientific data analysis, Figure \ref{feature_heatmap} shows that
 % . However,
-\par These findings suggest that while sketching 
+\par Our findings suggest that while sketching 
 is an useful construct for people to express their queries, 
 \emph{the existing ad-hoc, sketch-only model for VQSs 
 is insufficient without data examples 
 that can help analysts jumpstart their exploration}. 
 In fact, from Figure~\ref{fig:origins_of_sketch},
-we can see that sketch-to-query was used 
+we can see that sketch-to-query was only used 
 8 times, while the remaining modes were used 29 times altogether,
-three times as much as sketch-to-query.
+more than three times as much as sketch-to-query.
 This finding has profound implications 
 on the design of future VQSs, since Table~\ref{table:relatedwork} 
 shows that past work have primarily focused 
@@ -195,11 +188,8 @@ In particular, we find that top-down approaches
 were only useful for 29\% of the use cases, 
 whereas it was useful for 70\% of the use cases 
 for bottom-up approaches and 67\% 
-for context creation\change{\footnote{Feature usefulness is computed based on a matrix of usefulness labels for each use case (defined by a feature and user pair). The percentage of useful features for each process is computed as: $\frac{\textrm{\# of useful features in process}}{\textrm{total \# of features in process} \times \textrm{total \# of users}}$.}}.%number of features labeled as useful divided by the product of total number of features and total number of users}
-%\agp{how did you get these stats? explain how you derived "useful for X\%"}. 
-\change{We now highlight 
-some of the exemplary workflows 
-demonstrating the efficacy of the latter two sensemaking processes.}
+for context creation\change{\footnote{Feature usefulness is computed based on a matrix of usefulness labels for each use case (defined by a feature and user pair). The percentage of useful features for each process is computed as: $\frac{\textrm{\# of useful features in process}}{\textrm{total \# of features in process} \times \textrm{total \# of users}}$.}}. \change{We now highlight some of the exemplary workflows demonstrating the efficacy of the latter two sensemaking processes.}
+%number of features labeled as useful divided by the product of total number of features and total number of users}
 %%The prevalence of bottom-up approaches not only point to the need for result querying, but also providing recommendations for users without desired patterns in mind.
 \par As shown in Figure~\ref{fig:origins_of_sketch}, 
 the most common use of bottom-up querying 
@@ -211,8 +201,7 @@ to the same three groups of genes discussed
 in a recent publication~\cite{Gloss2017}: 
 induced genes (profiles with expression levels staying up), 
 repressed genes (started high but went down), 
-and transients (go up and then come down at different time points).}%Examples of how recommended trends can provoke further insightful actions comes from G2 and G3, who identified that the three representative patterns shown in \zvpp---induced genes (profiles with expression levels staying up), repressed genes (started high but went down), and transients (go up and then come down at different time points)---corresponded to the same three groups of genes discussed in a recent publication~\cite{Gloss2017}. 
-The clusters provoked G2 to generate a hypothesis 
+and transients (go up and then come down at different time points).} The clusters provoked G2 to generate a hypothesis 
 regarding the properties of transients: 
 \textit{``Is that because all the transient groups 
 get clustered together, or can I get sharp patterns 
@@ -242,6 +231,7 @@ have been mislabeled with CLASS\_STAR=0 as 1 during data cleaning.
 %This includes inspecting the top-most similar visualizations that lie in the queried cluster. and finding visualizations that are similar to an object of interest that exhibits a desired pattern. %. After browsing through a series query results and checking with an external database, he concluded that 
  %We found that geneticists often gain their intuition about the data from the recommended representative trends. One example of rapid insight discovery
 %the dataset had been incorrectly labelled with all the stars with CLASS\_STAR=0 as 1 during data cleaning.
+%Examples of how recommended trends can provoke further insightful actions comes from G2 and G3, who identified that the three representative patterns shown in \zvpp---induced genes (profiles with expression levels staying up), repressed genes (started high but went down), and transients (go up and then come down at different time points)---corresponded to the same three groups of genes discussed in a recent publication~\cite{Gloss2017}. 
 \techreport{
 	\begin{figure}[h!]
 	  \includegraphics[width=0.8\linewidth]{figures/PENcoding.pdf}
@@ -253,7 +243,7 @@ have been mislabeled with CLASS\_STAR=0 as 1 during data cleaning.
 \par Past studies in visual analytics 
 have shown that it is important to design features 
 that enable users to select relevant subsets of data~\cite{Amar2005,Heer2012}. 
-Context creation in VQSs enables users to change the lens 
+Context creation in VQSs enables users to change the `lens' 
 by which they look through the data 
 when performing visual querying, 
 thereby creating more opportunities 
@@ -335,7 +325,7 @@ or match specification when looking for a specific pattern. %when A1 looks for s
 %Each event sequence is separated by labeled session breaks signaling the beginning of a new line of inquiry. The  
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{figures/markov_transition.pdf}
-  \caption{Markov models computed based on the evaluation study event sequences, with edges denoting the probability that a participant in the particular domain will go from one sensemaking process to the next. Nodes are scaled according to the eigenvector centrality, which represents the percentage of time users spend in a particular state.}\label{fig:transition}
+  \caption{Markov models computed based on the evaluation study event sequences, with edges denoting the probability that a participant in the particular domain will go from one sensemaking process to the next. Nodes are scaled according to the eigenvector centrality, which represents the percentage of time users \change{would} spend in a particular state.}\label{fig:transition}
 \end{figure}
 % Similar to the sensemaking model proposed by Pirolli and Card~\cite{Pirolli}, the ---- sensemaking loop representing iterative process 
 % ---- highlights how the two newly discovered VQS sensemaking process in this paper are essential for `closing the loop' between the sensemaking acts in VQSs. %, equally important  
@@ -379,7 +369,7 @@ through recommendations to jumpstart their queries.
 adopted a diverse set of workflows 
 based on the unique set of research questions they brought to the study. 
 The bi-directional and cyclical nature 
-of the transition graph in Figure~\ref{fig:transition} highlights how the three sensemaking processes do not simply follow a linear progression, going from unknown to known pattern instance and visualized attributes in the problem space. Instead, the high connectivity of the transition model illustrates how these three equally-important processes form a sensemaking loop. The VQS sensemaking loop represents iterative acts of dynamic foraging and hypothesis generation. This flexibility is enabled by the diverse set of potential workflows that could be constructed in a full-fledged VQS like \zvpp, for addressing a wide range of analytical inquiries.%single-directional 
+of the transition graphs in Figure~\ref{fig:transition} highlight how the three sensemaking processes do not simply follow a linear progression, going from unknown to known pattern instance and visualized attributes in the problem space. Instead, the high connectivity of the transition model illustrates how these three equally-important processes form a sensemaking loop. The VQS sensemaking loop represents iterative acts of dynamic foraging and hypothesis generation. This flexibility is enabled by the diverse set of potential workflows that could be constructed in a full-fledged VQS like \zvpp, for addressing a wide range of analytical inquiries.%single-directional 
 \subsection{Limitations}
 \par Although evidence from our evaluation study 
 suggests that direct sketch is inefficient, 

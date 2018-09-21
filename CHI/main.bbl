@@ -217,8 +217,8 @@
 \bibfield{author}{\bibinfo{person}{Abhishek Khetan}, \bibinfo{person}{Dilip
   Krishnamurthy}, {and} \bibinfo{person}{Venkatasubramanian Viswanathan}.}
   \bibinfo{year}{2018}\natexlab{}.
-\newblock \showarticletitle{Towards Synergistic Electrode–Electrolyte Design
-  Principles for Nonaqueous Li–O$$_2$$2 batteries}.
+\newblock \showarticletitle{Towards Synergistic Electrode-Electrolyte Design
+  Principles for Nonaqueous Li-O2 batteries}.
 \newblock   \bibinfo{volume}{376} (\bibinfo{date}{04} \bibinfo{year}{2018}).
 \newblock
 
@@ -417,12 +417,18 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{{Siddiqui et al.}}{{Siddiqui et al.}}{2017}]%
+\bibitem[\protect\citeauthoryear{Siddiqui, Lee, Kim, Xue, Yu, Zou, Guo, Liu,
+  Wang, Karahalios, and Parameswaran}{Siddiqui et~al\mbox{.}}{2017}]%
         {Siddiqui2017}
-\bibfield{author}{\bibinfo{person}{{Siddiqui et al.}}}
-  \bibinfo{year}{2017}\natexlab{}.
+\bibfield{author}{\bibinfo{person}{Tarique Siddiqui}, \bibinfo{person}{John
+  Lee}, \bibinfo{person}{Albert Kim}, \bibinfo{person}{Edward Xue},
+  \bibinfo{person}{Xiaofo Yu}, \bibinfo{person}{Sean Zou},
+  \bibinfo{person}{Lijin Guo}, \bibinfo{person}{Changfeng Liu},
+  \bibinfo{person}{Chaoran Wang}, \bibinfo{person}{Karrie Karahalios}, {and}
+  \bibinfo{person}{Aditya Parameswaran}.} \bibinfo{year}{2017}\natexlab{}.
 \newblock \showarticletitle{Fast-Forwarding to Desired Visualizations with
-  Zenvisage}. In \bibinfo{booktitle}{\emph{CIDR}}.
+  Zenvisage}. In \bibinfo{booktitle}{\emph{The biennial Conference on
+  Innovative Data Systems Research (CIDR)}}.
 \newblock
 
 

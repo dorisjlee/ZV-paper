@@ -1,5 +1,5 @@
 %!TEX root=main.tex
-\vspace{-10pt}
+\vspace{-5pt}
 \section{Introduction\label{sec:intro}}
 % one for each key finding: a) many features deemed to be of importance to VQSs by domain experts, not all supported by present-day VQSs b) sketch is inefficient, perhaps explaining why present-day VQSs are not popular c) identify 3 typical workflows involving various sensemaking modalities in different proportions, depending on the application
 Line charts are commonly employed during data exploration---the 
@@ -15,7 +15,7 @@ like Excel or Tableau, specifying
 {\em exactly} what they want to visualize.
 For example, when trying to find celestial objects 
 corresponding to supernovae, which have a specific pattern
-of brightness over time, astrophysicists 
+of brightness over time, astronomers 
 individually inspect the corresponding line chart 
 for each object (often numbering in the hundreds) 
 until they find ones that match the pattern. \ccut{Similarly, when trying to infer relationships between two physical properties for different subsets of battery electrolytes, scientists need to individually visualize these properties
@@ -53,7 +53,7 @@ desired visual patterns
 via an interactive interface~\cite{mohebbi2011google,Hochheiser2004,wattenberg2001sketching,Siddiqui2017VLDB,ryall2005querylines,correll2016semantics,Mannino2018,Eichmann2015,Holz2009}. 
 This interactive interface is one with 
 a sketching canvas
-where users can draw a trend of interest,
+where users can draw a pattern of interest,
 with the system automatically traversing 
 all potential visualization candidates 
 to find those that match the specification. 
@@ -91,7 +91,7 @@ cheap to manufacture in production?
 
 \par Via cognitive walkthroughs and interviews, we first identified challenges in existing data analysis workflows in these domains
 that could be potentially addressed by a VQS. Building on top of an existing, open-source VQS, \zv~\cite{Siddiqui2017,Siddiqui2017VLDB}, we collaborated closely with our participants to gather feedback and iterate on VQS feature designs,
-over the course of a year, culminating in a new enhanced VQS, \zvpp. We organized these features into a taxonomy of VQS functionalities, \change{involving three sensemaking processes inspired by Pirolli and Card's notional model of analyst sensemaking. The sensemaking processes include top-down pattern specification (translating a pattern ``in-the-head'' into the form of a visual query), bottom-up data-driven inquiries (querying or recommending based on data), and context-creation (navigating across different collections of visualizations).} \agp{cite pirolli} We find that prior VQSs have focused largely on top-down processes, while largely ignoring the other two processes that are crucial for the needs of all three domains.
+over the course of a year, culminating in a new enhanced VQS, \zvpp. We organized these features into a taxonomy of VQS functionalities, \change{involving three sensemaking processes inspired by Pirolli and Card's notional model of analyst sensemaking~\cite{Pirolli}. The sensemaking processes include top-down pattern specification (translating a pattern ``in-the-head'' into the form of a visual query), bottom-up data-driven inquiries (querying or recommending based on data), and context-creation (navigating across different collections of visualizations).} We find that prior VQSs have focused largely on top-down processes, while largely ignoring the other two processes that are crucial for the needs \change{in} all three domains.
 
 \par 
 To study how various VQS features 
@@ -107,16 +107,16 @@ that was known to harbor a Jupiter-sized planet
 and finding characteristic gene expression profiles confirming the results of a related publication.\techreport{, and discovering that the dip in an astronomical light curve is caused by saturated imaging equipment overlooked by the existing error-detection pipeline.} \techreport{Participants also gain additional insights about their datasets, including debugging mislabeled features and uncovering erroneous data preprocessing procedure applied to a collaborator's dataset.} 
 %that goes from a pattern in-the-head to a desired visualization 
 
-\par By analyzing the evaluation study results, we discovered that sketching a pattern on a canvas is often ineffective. This is due to the fact that sketching makes the problematic assumptions that users know the pattern that they want to sketch and are able to sketch it precisely. Instead, participants typically opted for other means of pattern specification---one common mechanism was to drag-and-drop a \change{recommended} pattern onto the canvas, and then modify it (e.g., by smoothing it out). However, most VQSs do not support these other mechanisms (as we argued earlier, they typically focus only on top-down sensemaking processes, without covering bottom-up and context creation), partially explaining why \change{such systems} have not been widely adopted in practice.
+\par By analyzing the evaluation study results, we discovered that sketching a pattern \change{for querying} is often ineffective. This is due to the fact that sketching makes the problematic assumptions that users know the pattern that they want to sketch and are able to sketch it precisely. Instead, participants typically opted for other means of pattern specification---one common mechanism was to drag-and-drop a \change{recommended} pattern onto the canvas, and then modify it (e.g., by smoothing it out). However, most VQSs do not support these other mechanisms (as we argued earlier, they typically focus only on top-down sensemaking processes, without covering bottom-up and context creation), partially explaining why \change{such systems} have not been widely adopted in practice.
 \par Further analysis of how participants
 transition between different sensemaking processes
 during analysis---including the construction of a Markov Model---illustrated
 how participants adopt a diverse set of workflows tailored
-to their domains. \change{For example, participants often construct analysis workflows focused around one primary sensemaking process, while iteratively interleaving their analysis with the two other processes.} This finding points to how all three sensemaking processes, along with seamless transitions between them, are essential for enabling users to effectively use VQSs for data exploration.%For example, participants often center on a main sensemaking process, while interleaving variations with other two processes as they iterate on an analytic task.
+to their domains. \change{We find that participants often construct analysis workflows focused around a primary sensemaking process, while iteratively interleaving their analysis with the two other processes.} This finding points to how all three sensemaking processes, along with seamless transitions between them, are essential for enabling users to effectively use VQSs for data exploration.%For example, participants often center on a main sensemaking process, while interleaving variations with other two processes as they iterate on an analytic task.
 \par To the best of our knowledge, our study is the \emph{first to holistically examine how VQSs can be designed to fit the needs of real-world 
 analysts and how they are actually used in practice}. Our contributions include: 
 \begin{denselist}
-\item a characterization of the problems addressable by VQSs through design studies with three different subject areas,
+\item a characterization of the problems addressable by VQSs through design studies with three different \change{domains},
 \item the construction of a taxonomy of functionalities within VQSs, as well as an articulation of the problem space that is amenable to VQSs, both grounded in participatory design findings,
 \item a full-fledged VQS, \zvpp, capable of facilitating rapid hypothesis generation and insight discovery,
 \item evaluation study findings on how VQSs are used in practice, leading to the \change{development} of a novel sensemaking model for VQSs. %including the ineffectiveness of sketching and the ---- workflow  

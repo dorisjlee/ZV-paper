@@ -1,7 +1,7 @@
 %!TEX root = main.tex
 \begin{figure*}[ht!]
   \centering
-  \includegraphics[width=0.9\linewidth]{figures/full_taxonomy_invert.pdf}
+  \includegraphics[width=0.95\linewidth]{figures/full_taxonomy_invert.pdf}
   \caption{Taxonomy of functionalities in VQSs. From top, each of the three paradigm is broken down into key components in the system, which is instantiated as features in \zvpp. The bottom-most layer connects the use cases features that have practical or envisioned usage based on the evaluation study.}
   \label{fig:taxonomy}
 \end{figure*}
@@ -46,7 +46,7 @@ sketching \techreport{on a virtual canvas through mouse or pen as a intuitive me
 (Figure \ref{zvOverview}a). 
 Since it is often difficult to sketch precisely, 
 \zvpp also allows users to specify a functional 
-form (e.g., y=$x^2$) for a pattern (Figure \ref{zvOverview}b). 
+form (e.g., y=$x^2$) \change{as a pattern query} (Figure \ref{zvOverview}b). 
 This feature was requested by material scientists 
 who were interested in finding solvents 
 with known analytical models describing chemical relationships. 
@@ -63,10 +63,10 @@ The pattern upload functionality is also available in Google Correlate.
 \begin{figure*}[ht!]
 \centering
 \vspace{-15pt}
-\includegraphics[width=0.9\linewidth]{figures/zvpp_system.pdf} %5.5
-\vspace{-5pt}\caption{The \zvpp system, including: the ability to query via (a) a sketch,(b) input equations, (i) drag and drop, or (j) uploaded patterns; (c) data smoothing; query specification mechanisms including (d) x-range selection and filtering, (e) x-range invariance, (g) filtering, and (h) dynamic class creation; recommendation of (k) representative and (l) outlier trends.} %Prior to the participatory design, \zv only included a single sketch input with no additional options.}
+\includegraphics[width=0.95\linewidth]{figures/zvpp_system.pdf} %5.5
+\vspace{-5pt}\caption{The \zvpp system, including: the ability to query via (a) a sketch,(b) input equations, (i) uploaded patterns, or (j) drag and drop; (c) data smoothing; query specification mechanisms including (d) x-range selection and filtering, (e) x-range invariance, (f) similarity metric selection, (g) filtering, and (h) dynamic class creation; recommendation of (k) representative and (l) outlier trends.} %Prior to the participatory design, \zv only included a single sketch input with no additional options.}
 \label{zvOverview}
-\vspace{-14pt}
+\vspace{-5pt}
 \end{figure*}
 \boldpara{Match Specification.} 
 Past work has shown that pattern queries 
@@ -211,7 +211,7 @@ between information processing tasks that are \textit{top-down}
 we define \textit{top-down pattern specification} as the search-oriented paradigm where analysts query based on their 
 in-the-head pattern (Figure~\ref{2dmodel} blue) in a fixed collection. 
 On the other hand, in the realm of \textit{bottom-up 
-data-driven inquiry} (Figure~\ref{2dmodel} red), 
+data-driven inquiry} (Figure~\ref{2dmodel} green), 
 the pattern of interest is unknown and external 
 to the user and must be driven by recommendations 
 or queries that originate from the data (or equivalently, the visualization). 
@@ -230,17 +230,15 @@ In the case of our material science participants,
 they wanted to explore relationships between different 
 X and Y variables. 
 In this realm of \texttt{unknown} attributes, 
-context creation (Figure~\ref{2dmodel} green)---i.e.,
+context creation (Figure~\ref{2dmodel} yellow)---i.e.,
 setting the stage for bottom-up or top-down processes---is 
 essential for allowing users 
 to pivot across different visualization collections.%subspaces. %Most past VQSs assume that the analyst has a desired pattern in-the-head that could be conveyed through visual specification, such as a sketch.
 \subsection{Design Goals for the Sensemaking Processes}
 \change{After understanding how each sensemaking process fits into the problem space addressed by VQSs, we further explore the design objectives and challenges in supporting each sensemaking process, grounded in our collaborative design experience.} % based on the taxonomy orgaby developing a taxonomy for organizing the aforementioned components.% fits into the paradigms of sensemaking in VQSs, as shown in Figure~\ref{fig:taxonomy}. In particular, we will describe the main form of inquiry addressed by each paradigm\cut{(\textit{what, where, which})}, its characteristic use case, and design challenges in supporting these paradigms.
-% \par Drawing from our participatory design experience, evaluation study, and literature review in this space, we design a taxonomy for understanding the key functionalities in VQSs. In Figure~\ref{fig:taxonomy}, we show how each use cases makes use of the different features in \zv, then we organize the features into key components for VQSs, which belongs to one of the three paradigms in the VQS design space.
+% \par Drawing from our participatory design experience, evaluation study, and literature review in this space, we design a taxonomy for understanding the key functionalities in VQSs. In Figure~\ref{fig:taxonomy}, we show how each use cases makes use of the different features in \zv, then we organize the features into key components for VQSs, which belongs to one of the three paradigms in the VQS design space.%, effectively moving rightwards to the gray area in Figure~\ref{2dmodel}, where the pattern instance is known. 
 \boldpara{Top-down Pattern Specification} begins with the user's intuition 
-about how their desired patterns should look like based on `theory', including visualizations from past experience or abstract conceptions based on external knowledge. The goal of top-down pattern specification is to address the \textit{which} question of visual sensemaking: \textit{which pattern instance exhibits this pattern?}%, effectively moving rightwards to the gray area in Figure~\ref{2dmodel}, where the pattern instance is known. 
-Based on this preconceived notion of what to search for, 
-the design challenge is to translate the query in the 
+about how their desired patterns should look like based on `theory', including visualizations from past experience or abstract conceptions based on external knowledge. The goal of top-down pattern specification is to address the \textit{which} question of visual sensemaking: \textit{which pattern instance exhibits this pattern?} Based on this preconceived notion of what to search for, the design challenge is to translate the query in the 
 analyst's head to a query executable by the VQS. 
 In the taxonomy in Figure~\ref{fig:taxonomy}, 
 this includes both components for specifying the pattern, 
