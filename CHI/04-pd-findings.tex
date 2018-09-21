@@ -108,8 +108,7 @@ there are often specific ranges with
 domain significance (e.g., a period of time when there was an eclipse). 
 To find patterns when restricted to these ranges, 
 users can limit pattern queries 
-to be matched only in specific x or y ranges in \zvpp. 
-Users can select desired x-ranges 
+to be matched only in specific x or y ranges in \zvpp. Users can select desired x-ranges 
 to perform matching through brushing interactions 
 (Figure \ref{zvOverview}d) 
 or enter a filter for y-range selection in a textbox. 
@@ -122,12 +121,9 @@ most flexible for range selection as
 they allow composition of multiple ranges 
 to formulate complex piecewise queries, 
 such as finding gene expression profiles 
-rising from x=1-5 then declining from x=5-10.
-\agp{Again, why did we pick ours then?
-If ours is similar to Hochheiser, we can say
-that we used that as inspiration to build ours.} %Additionally, y axis range selection could be performed through entering a filter constraint on the measure variable. 
-\par 
-In addition to controls for fine-tuning
+rising from x=1-5 then declining from x=5-10. \change{Inspired by TimeSearcher's brushing interaction, we chose to support only brushing for x, since in most of our use cases it was more common to focus the context based on the independent variable, such as zooming into particular sharp dips when looking for planetary transits or anomalous peaks indicative of erroneous experimental measurements.}
+%\agp{Again, why did we pick ours then?If ours is similar to Hochheiser, we can saythat we used that as inspiration to build ours.} %Additionally, y axis range selection could be performed through entering a filter constraint on the measure variable. 
+\par In addition to controls for fine-tuning
 which portions of the sketch should be matched,
 VQSs also need to allow users
 to control the underlying matching algorithm. 
