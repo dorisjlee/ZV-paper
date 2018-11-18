@@ -34,10 +34,10 @@
 % \DigitalHeritagePaper
 % \PaperL2P          % for events EG only asks for License to Publish
 
-% --- for EuroVis 
+% --- for EuroVis
 % for full papers use \SpecialIssuePaper
-% \STAREurovis   % for EuroVis additional material 
-% \EuroVisPoster % for EuroVis additional material 
+% \STAREurovis   % for EuroVis additional material
+% \EuroVisPoster % for EuroVis additional material
 % \EuroVisShort  % for EuroVis additional material
 
 %
@@ -98,7 +98,7 @@
 
 \def\plaintitle{\emph{You can't always sketch what you want}: \\ Understanding Sensemaking in Visual Query Systems}
 \def\emptyauthor{}
-\def\plainkeywords{Visual analytics, visualization, exploratory data analysis, visual query.}
+\def\plainkeywords{Visual analytics, exploratory analysis, visual query}
 
 % llt: Define a global style for URLs, rather that the default one
 \makeatletter
@@ -176,8 +176,7 @@
 \newcommand{\astro}{\textit{astro}\xspace}
 \newcommand{\bio}{\textit{genetics}\xspace}
 \newcommand{\matsci}{\textit{matsci}\xspace}
-% \newcommand{\change}[1]{\textcolor{red}{#1}}
-\newcommand{\change}[1]{{#1}}
+\newcommand{\change}[1]{\textcolor{red}{#1}}
 \newcommand*\rot{\rotatebox{90}}
 \usepackage{xparse}   % http://ctan.org/pkg/xparse
 % Rotation: \rot[<angle>][<width>]{<stuff>}
@@ -201,16 +200,16 @@
 \title{\emph{You can't always sketch what you want}: \\ Understanding Sensemaking in Visual Query Systems}
 
 %How are visual query systems used in practice?\\ A Design Study with Zenvisage}
-\maketitle 
+\maketitle
 
 \begin{abstract}
 Visual query systems (VQSs) allow users to interactively search for line charts
 with desired visual patterns typically specified using intuitive sketch-based interfaces. Despite their potential in accelerating data exploration, more than a decade of past work on VQSs has not been translated to adoption in practice. Through a year-long collaboration with experts from three diverse domains, we examine the role of VQSs in real data exploration workflows,  develop features to support these workflows by enhancing an existing VQS,
-and evaluate how these features are used in practice. Via these observations, we formalize a taxonomy of key functionalities for VQSs, organized by three sensemaking processes. Perhaps somewhat surprisingly, we find that ad-hoc sketch-based querying is not commonly used during data exploration, since 
+and evaluate how these features are used in practice. Via these observations, we formalize a taxonomy of key functionalities for VQSs, organized by three sensemaking processes. Perhaps somewhat surprisingly, we find that ad-hoc sketch-based querying is not commonly used during data exploration, since
 analysts are not able to precisely articulate the patterns they are interested in. We find that there is a spectrum of VQS-centric data exploration workflows, depending on the application, and that many of these workflows are not effectively supported in present-day VQSs. Our insights can pave the way for next-generation VQSs to be adopted in a variety of real-world applications.
 % On characterizing the spectrum of workflows
-% adopted, 
-% we find that there is 
+% adopted,
+% we find that there is
 % Moreover, we find that there is a
 % variety of typical workflows
 % We offer guidelines for the next generation of
@@ -219,7 +218,7 @@ analysts are not able to precisely articulate the patterns they are interested i
 % We advocate that next-generation VQSs should support two other forms of sensemaking to pave way for these systems to be adopted to a variety of real-world applications.
 % The increasing availability of rich and complex data in a variety of scientific domains poses a pressing need for tools to enable scientists to rapidly make sense of and gather insights from data. One proposed solution is to design visual query systems (VQSs) that allow scientists to interactively search for desired patterns in their datasets. While many existing VQSs promise to accelerate exploratory data analysis by facilitating this search, they are not widely used in practice. Through a year-long collaboration with scientists in three distinct domains---astronomy, genetics, and material science---we study the impact of various features within VQSs that can aid rapid visual data analysis, and how VQSs fit into scientists' analysis workflow. Our findings offer design guidelines for improving the usability and adoption of next-generation VQSs, paving the way for VQSs to be applied to a variety of scientific domains.
 \end{abstract}
-\keywords{Visual analytics, visualization, exploratory data analysis}
+\keywords{Visual analytics, exploratory analysis, visual query}
 
 \input{01-introduction}
 \input{02-methodology}
