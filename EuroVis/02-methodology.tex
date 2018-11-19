@@ -18,12 +18,6 @@
 %In this work, we adopted a mixed methods research methodology that draws inspiration from ethnographic methods, iterative and participatory design, and controlled studies~\cite{Plaisant2004,lam2012empirical,shneiderman2006strategies,Muller1993} Participatory design has been successfully used in the development of interactive visualization systems in the past~\cite{Aragon2008,Chuang2012}. Sedlmair et al. \cite{Sedlmair2012} advocate that design study methodology is suitable for use cases in which the data is available for prototyping, but the task is only partially known and the information is partially in the user's head.
 %to understand how VQSs can be used in scientific data analysis. %In that regard, our scientific use cases with VQS is well-suited for a design study methodology, as we learn about the scientist's data and analysis requirements and design interactions that helps users translate their ``in-the-head'' specifications into actionable visual queries.
 \vspace{-10pt}
-\begin{table}
-    \includegraphics[width=0.8\linewidth]{figures/related_works_table.pdf}
-    \caption{Table summarizing whether key functionalities of VQSs (columns) are covered by past systems (row), indicated by checked cells. Column header colors blue, orange, green represents three sensemaking process (top-down querying, search with context, and bottom-up querying) described in Section~\ref{sec:pd_findings}. The heavily-used, practical features in our study for context-creation and bottom-up inquiry is largely missing from prior VQSs.}
-    \label{table:relatedwork}
-    \vspace{-10pt}
-\end{table}
 \subsection{Phase I: Participatory Design}
 \par We recruited participants by reaching out to research groups via email and word of mouth, who have experienced challenges in data exploration. Based on our early conversations with analysts from 12 different potential application areas, we narrowed down to three use cases in astronomy, genetics, and material science for our participatory design study, chosen based on their suitability for VQSs as well as diversity in use cases. Six scientists from three research groups participated in the design of \zv. On average, participants had more than 6 years of research experience working in their respective fields. Via interviews and cognitive walkthroughs with researchers from the three different scientific research groups, we identified the needs and challenges of these use cases.
 \par For the participatory design study, we built on an existing VQS, \zv~\cite{Siddiqui2017,Siddiqui2017VLDB}, that allowed users to sketch a pattern or drag-and-drop an existing visualization as a query, with the system returning visualizations that had the closest Euclidean distance from the queried pattern. We chose to build on top of \zv, since it was open-source, extensible, and encompassed a large selection of features compared to existing systems, which focused largely on features for pattern and match specification (as compared in Table~\ref{table:relatedwork}).
@@ -46,15 +40,6 @@
 \par During participatory design, we collaborated with each team closely with an average of two meetings per month, where we learned about their datasets, objectives, and how VQSs could help address their research questions. A summary timeline of our collaboration with participants over a year and features inspired by their use cases can be found in Figure \ref{timeline}.
 %Participants provided datasets they were exploring from their domain, whereby they had a vested interest in using a VQS to address their own research questions.
 Through this process, we identified and incorporated more than 20 desired features into the new version of our VQS, \zvpp, described more in Section~\ref{sec:pd_findings}.
-\begin{figure*}[ht!]
-	\centering
-	\captionsetup{justification=centering,margin=2cm}
-	\vspace{-10pt}
-	\includegraphics[width=6in]{figures/timeline_anon.pdf}
-	\vspace{-6pt}\caption{Timeline for progress in participatory design studies.}
-	\label{timeline}
-	\vspace{-10pt}
-\end{figure*}
 \vspace{-10pt}
 \subsection{Phase II: Evaluation Study}
 % \par Visualization systems are often evaluated using controlled studies that measure the user's performance against an existing visualization baseline~\cite{Plaisant2004}. Techniques such as artificially inserting ``insights'' or setting predefined tasks for example datasets work well for objective tasks, \techreport{such as debugging data errors~\cite{kandel2011wrangler,Patel2010},} but they are unsuitable for trying to learn about the types of real-world queries users may want to pose on VQSs. %Due to the unrealistic nature of controlled studies, many have proposed using a more multi-faceted, ethnographic approach to understand how analysts perform visual data analysis and reasoning~\cite{Plaisant2004,lam2012empirical,shneiderman2006strategies,munzner2009nested,Sedlmair2012}.
@@ -64,11 +49,3 @@ At the end of our participatory design study, we performed a qualitative evaluat
  %After loading their dataset, we emailed them a screenshot of a visualization from our tool to verify that we configured the system to meet their needs.
 \par At the start, participants were provided with an interactive walk-through explaining the system details and given approximately ten minutes for a guided exploration of \zvpp with a preloaded real-estate example dataset from Zillow \cite{zillow}.\techreport{This dataset contained housing data for various cities, metropolitan areas, and states in the U.S. from 2004-15.} After familiarizing themselves with the tool, we loaded the participant's dataset and encouraged them to talk-aloud during data exploration and use external tools. If the participant was out of ideas\ccut{ for three minutes}, we suggested one of the ten main VQS functionalities \techreport{\footnote{query by sketching, drag-and-drop, pattern loading, input equations, representative and outliers, narrow/ignore x-range options, filtering, data smoothing, creating dynamic classes,  data export}}that they had not yet used. If any of these operations were not applicable to their specific dataset, they were allowed to skip the operation after having considered how it may or may not be applicable to their workflow. The user study ended after they covered all ten main functionalities. On average, data exploration lasted for 63 minutes. After the study, we asked them open-ended questions about their experience.% and suggested an appropriate choice of axis to begin the exploration.
 %\par During the exploration phase, participants were informed that they could use other tools as needed.
-\begin{table}[h!]
-\centering
-\vspace{-10pt}
-\includegraphics[width=\linewidth]{figures/participant_info.pdf}
-\caption{Participant information. The Likert scale used for dataset familiarity ranges from 1 (not at all familiar) to 5 (extremely familiar).}
-\label{participants}
-\vspace{-15pt}
-\end{table}

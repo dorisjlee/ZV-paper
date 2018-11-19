@@ -111,13 +111,13 @@
 \makeatother
 
 \newenvironment{denselist}{
+  \vspace{-5pt}
     \begin{list}{\small{$\bullet$}}%
     {\setlength{\itemsep}{0ex} \setlength{\topsep}{0ex}
     \setlength{\parsep}{0pt} \setlength{\itemindent}{0pt}
     \setlength{\leftmargin}{1.5em}
     \setlength{\partopsep}{0pt}}}%
-    {\end{list}}
-
+    {\end{list}\vspace{-5pt}}
 \newcommand{\squishlist}{
    \begin{list}{$\bullet$}
     { \setlength{\itemsep}{0pt}
@@ -155,9 +155,24 @@
 \newcommand{\boldpara}[1]{\par\noindent\textbf{#1}}
 % de-facto paragraph format
 \newcommand{\stitle}[1]{\noindent\textbf{#1}}
+\newcommand{\nstitle}[1]{\\\noindent\textbf{#1}}
 \newcommand{\cut}[1]{{\leavevmode\color{lightgray}{#1}}}
 \newcommand{\ccut}[1]{} %confirmed cut
 
+\newcommand{\problemlist}{
+    \nstitle{Motivating Use Case Challenges:}
+    \vspace{-5pt}
+    \begin{enumerate}[label=\textbf{C\arabic*:},leftmargin=0.7cm]
+}
+\newcommand{\featurelist}{
+    \stitle{Instantiated Feature:}
+    \vspace{-5pt}
+    \begin{enumerate}[label=\textbf{F\arabic*:},leftmargin=0.7cm]
+}
+\newcommand{\enumend}{
+  \end{enumerate}
+  \vspace{-5pt}
+}
 \urlstyle{leo}
 
 % To make various LaTeX processors do the right thing with page size.
