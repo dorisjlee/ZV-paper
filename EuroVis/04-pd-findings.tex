@@ -42,46 +42,49 @@ All of the three domains described in the previous section recognized the need f
 % \vspace{-14pt}
 % \end{figure*}
  %We discovered three central themes encapsulating these features that are important to facilitate rapid hypothesis generation and insight discovery, but are missing in prior VQSs. While some of our findings echo prior work on system-level taxonomies of visualization tasks \cite{Amar2005,Heer2012}, we highlight how specific analytic tasks and interaction features could be used to enhance VQSs in particular. \techreport{In particular, we learned that \textit{participants wanted more control over the internals of the systems and an integrated workflow that helped streamline their analysis when using VQSs.}}
-\dor{this entire subsection below has been changed.}
-\boldpara{I) Pattern Specification}
-\nstitle{Purpose:} Specify exact descriptions
-of a pattern as a query
-(hereafter referred to as \emph{pattern query}),
-with the VQS returning a list of most similar matches.
-\problemlist
-  \item General need for an intuitive mechanism for specifying desired patterns.
-  \item Material scientists were interested in finding solvents with known analytical models describing chemical relationships.
-  \item Astronomers were interested in specifying the exact width of a supernovae light curve, which is characteristic to the radioactive decay rate of its chemical signature~\cite{Nugent1997}, to distinguish patterns of interest from noise.
-\enumend
-\featurelist
-\item Almost all existing VQSs, including \zvpp, support freehand sketching for specifying a desired query pattern on a virtual canvas (Figure \ref{zvOverview}B?). %\techreport{on a virtual canvas through mouse or pen as a intuitive mechanism }for specifying desired patterns
-%(Figure \ref{zvOverview}a).
-\item The above use cases highlights the common difficulty of sketching precisely. \zvpp allows users to specify a exact functional form (e.g., y=$x^2$) as a pattern query (Figure \ref{zvOverview}D?).
-\item \zvpp also enables users to upload a pattern consisting of a sequence of points as a query (Figure \ref{zvOverview}A?). The pattern upload functionality is also available in Google Correlate.
-\enumend
+\change{
+  \boldpara{I) Pattern Specification}
+  \nstitle{Purpose:} Specify exact descriptions
+  of a pattern as a query
+  (hereafter referred to as \emph{pattern query}),
+  with the VQS returning a list of most similar matches.
+  \problemlist
+    \item General need for an intuitive mechanism for specifying desired patterns.
+    \item Material scientists were interested in finding solvents with known analytical models describing chemical relationships.
+    \item Astronomers were interested in specifying the exact width of a supernovae light curve, which is characteristic to the radioactive decay rate of its chemical signature~\cite{Nugent1997}, to distinguish patterns of interest from noise.
+  \enumend
+  \featurelist
+  \item Almost all existing VQSs, including \zvpp, support freehand sketching for specifying a desired query pattern on a virtual canvas (Figure \ref{zvOverview}B1). %\techreport{on a virtual canvas through mouse or pen as a intuitive mechanism }for specifying desired patterns
+  %(Figure \ref{zvOverview}a).
+  \item The above use cases highlights the common difficulty of sketching precisely. \zvpp allows users to specify a exact functional form (e.g., y=$x^2$) as a pattern query (Figure \ref{zvOverview}D5).
+  \item \zvpp also enables users to upload a pattern consisting of a sequence of points as a query (Figure \ref{zvOverview}A1). The pattern upload functionality is also available in Google Correlate~\cite{mohebbi2011google}.
+  \enumend
+}
 %The uploaded pattern is once again more precise than a sketch.
 %For example, , so querying with an exact uploaded pattern would be helpful for distinguishing the patterns of interest from noise.
 % The desired patterns uploaded are often generated from computational models or prelabelled data from an external reference database. For example, A1 wanted to query based on synthetic light curves generated from simulations and known supernovae discovered in the past.
 % Many participants also envisioned use cases for pattern loading. The ability to load in data patterns as a query would enable users to compare visualizations between different experiments, species, or surveys, query with known patterns from an external reference catalog\techreport{ (e.g. important genes of interest, objects labeled as supernovae)}, or verify the results of a \techreport{simulation or }downstream analysis\techreport{ by finding similar patterns in their existing dataset}. The uploaded pattern also represents a more precise query specification that captures the desired features of a pattern \techreport{(e.g. amplitude, width of peak), }that cannot be precisely sketched. For example, the width of a supernovae light curve is characteristic to the radioactive decay rate of its chemical signature~\cite{Nugent1997}, so querying with an exact pattern template would be helpful for distinguishing the patterns of interest from noise.
 % \boldpara{Concept querying} enable users to upload a pattern associated with a concept as a query. As supported in \zv and Google Correlate, users can upload a sequence of points as the query pattern (Figure \ref{zvOverview}i). This is useful for patterns generated from computational models or prelabelled data from an external reference database. For example, A1 wanted to query based on synthetic light curves generated from simulations and known supernovae that have been discovered in the past.
 %While pattern specification is an intuitive mechanism for constructing a visual query, p
-\boldpara{II) Match Specification}
-\nstitle{Purpose:} Past work has shown that pattern queries can be imprecise~\cite{correll2016semantics,Holz2009,Eichmann2015}. To this end, VQSs need to support mechanisms for clarifying the interpretation of the sketch (i.e., how matching should be performed).
-\problemlist
-  \item Dense and noisy observational data in astronomy and material science makes it difficult to match with other patterns exactly.
-  \item When analyzing line charts, there are often specific ranges with domain significance that users want to restrict their search within or outside of these ranges (e.g., a known period of time when an imaging equipment is malfunctioning).
-  \item Astronomers and geneticists were interested in qualitative patterns, such as the existence of a peak above a certain amplitude or a `generally rising' profile, without regards to the exact time when the event occurs. The default Euclidean metric unnecessarily penalizes unaligned time-series of interest.
-\enumend
-\featurelist
-\item \zvpp supports an interface for users to adjust smoothing algorithms and parameters on-the-fly to update the resulting visualizations accordingly. In addition to denoising the data, data smoothing effectively allows users to change the degree of shape approximation they would like to apply to all visualizations when performing pattern matching. Smoothing is also supported in Qetch~\cite{Mannino2018}. Other interfaces have also developed constrained sketching mechanisms to allow users to partially specify certain shape characteristics, such as angular slope queries\techreport{for specifying the slope of a trend line}~\cite{Hochheiser2004} or piecewise trend querylines\techreport{over a specified data range}~\cite{ryall2005querylines}. Smoothing was chosen over these other interfaces for approximating key patterns in the data, since it was a familiar preprocessing step in our study participants' workflow.
-\item To restricted search to selected ranges in \zvpp, users can select desired x-ranges to perform matching through brushing interactions (Figure \ref{zvOverview}B?) or enter a y-range selection in the filter constraint textbox (Figure \ref{zvOverview}D?). Other interfaces for range selection in past VQSs
-include textboxes~\cite{wattenberg2001sketching,Mannino2018}, min/max line boundaries~\cite{ryall2005querylines},
-or brushing interactions~\cite{Hochheiser2001}. TimeSearcher and Queryline's approach is most flexible for range selection as
-they allow composition of multiple ranges to formulate complex piecewise queries, such as finding gene expression profiles
-rising from x=1-5 then declining from x=5-10. Inspired by TimeSearcher's brushing interaction, we support only brushing for x, since in most of our use cases it was more common to focus the context based on the independent variable, such as zooming into particular sharp dips when looking for planetary transits or anomalous peaks indicative of erroneous experimental measurements.
-%\agp{Again, why did we pick ours then?If ours is similar to Hochheiser, we can saythat we used that as inspiration to build ours.} %Additionally, y axis range selection could be performed through entering a filter constraint on the measure variable.
-\item  In addition to controls for fine-tuning the portions of the sketch to be matched, VQSs also need to allow users to control the underlying matching algorithm. In \zvpp, users have the option to change similarity metrics to perform flexible matching (Figure \ref{zvOverview}D?). \zvpp supports an option to ignore the x-range in shape matching (Figure \ref{zvOverview}D?). This feature is similar to `temporal invariants' in SketchQuery~\cite{correll2016semantics}.
-\enumend
+\change{
+  \boldpara{II) Match Specification}
+  \nstitle{Purpose:} Past work has shown that pattern queries can be imprecise~\cite{correll2016semantics,Holz2009,Eichmann2015}. To this end, VQSs need to support mechanisms for clarifying the interpretation of the sketch (i.e., how matching should be performed).
+  \problemlist
+    \item Dense and noisy observational data in astronomy and material science makes it difficult to match with other patterns exactly.
+    \item When analyzing line charts, there are often specific ranges with domain significance that users want to restrict their search within or outside of these ranges (e.g., a known period of time when an imaging equipment is malfunctioning).
+    \item Astronomers and geneticists were interested in qualitative patterns, such as the existence of a peak above a certain amplitude or a `generally rising' profile, without regards to the exact time when the event occurs. The default Euclidean metric unnecessarily penalizes unaligned time-series of interest.
+  \enumend
+  \featurelist
+  \item \zvpp supports an interface for users to adjust smoothing algorithms and parameters on-the-fly to update the resulting visualizations accordingly (Figure \ref{zvOverview}D2). In addition to denoising the data, data smoothing effectively allows users to change the degree of shape approximation they would like to apply to all visualizations when performing pattern matching. Smoothing is also supported in Qetch~\cite{Mannino2018}. Other interfaces have also developed constrained sketching mechanisms to allow users to partially specify certain shape characteristics, such as angular slope queries\techreport{for specifying the slope of a trend line}~\cite{Hochheiser2004} or piecewise trend querylines\techreport{over a specified data range}~\cite{ryall2005querylines}. Smoothing was chosen over these other interfaces for approximating key patterns in the data, since it was a familiar preprocessing step in our study participants' workflow.
+  \item To restricted search to selected ranges in \zvpp, users can select desired x-ranges to perform matching through brushing interactions (Figure \ref{zvOverview}B2) or enter a y-range selection in the filter constraint textbox (Figure \ref{zvOverview}D4). Other interfaces for range selection in past VQSs
+  include textboxes~\cite{wattenberg2001sketching,Mannino2018}, min/max line boundaries~\cite{ryall2005querylines},
+  or brushing interactions~\cite{Hochheiser2001}. TimeSearcher and Queryline's approach is most flexible for range selection as
+  they allow composition of multiple ranges to formulate complex piecewise queries, such as finding gene expression profiles
+  rising from x=1-5 then declining from x=5-10. Inspired by TimeSearcher's brushing interaction, we support only brushing for x, since in most of our use cases it was more common to focus the context based on the independent variable, such as zooming into particular sharp dips when looking for planetary transits or anomalous peaks indicative of erroneous experimental measurements.
+  %\agp{Again, why did we pick ours then?If ours is similar to Hochheiser, we can saythat we used that as inspiration to build ours.} %Additionally, y axis range selection could be performed through entering a filter constraint on the measure variable.
+  \item  In addition to controls for fine-tuning the portions of the sketch to be matched, VQSs also need to allow users to control the underlying matching algorithm. In \zvpp, users have the option to change similarity metrics to perform flexible matching (Figure \ref{zvOverview}D1). \zvpp supports an option to ignore the x-range in shape matching (Figure \ref{zvOverview}D4). This feature is similar to `temporal invariants' in SketchQuery~\cite{correll2016semantics}.
+  \enumend
+}
 %For finding supernovae, A1 primarily cared about the existence of a peak\techreport{above a certain amplitude with an appropriate width of the curve}, rather than the exact time that the event occurred. G1 also expressed that she does not care about when the `trigger point' occurs as long as the profile is rising.
 % \techreport{\par During participatory design, both material science and astronomy participants noted the difficulty of shape matching on their dense and noisy observational data and the challenge of picking the appropriate smoothing parameters during offline preprocessing. We found that tight integration between smoothing and visual search additionally tradeoff between the smoothness of the curve and the degree of approximation for shape-matching in VQSs. An over-smoothed visualization would return shape matches that only loosely resemble the query pattern. However, without smoothing, the noise may dominate the overall trend, which could lead to bad pattern matches.}
 %While the interactions in our original prototype enabled simple visual queries, many scientists were interested in extending their querying capabilities, either through different querying modalities or through more flexible query specification methods.
@@ -91,85 +94,76 @@ rising from x=1-5 then declining from x=5-10. Inspired by TimeSearcher's brushin
 % \boldpara{Flexible Matching:}
 %Studies have shown that \techreport{to facilitate subjectively meaningful pattern matches,} VQSs need to support mechanisms for clarifying sketch interpretation and flexible shape matching algorithms~\cite{correll2016semantics,Mannino2018,Eichmann2015}.
 % This latter features is akin to the temporal invariants in SketchQuery.
-\boldpara{III) View specification}
-\nstitle{Purpose:} Modify visualization settings for all visualizations displayed on the VQS. The ability to change the view specification offers analysts different perspectives on the same portion of data.
-\problemlist
-  \item For non-time-series uses of VQS, such as in material science, analysts is often interested in pivoting across various different x and y axes attributes.
-  \item Astronomers often view magnitude measurements by reversing the y-axes, material scientist often prefer viewing their data in terms of a scatterplot rather than line charts.
-\enumend
-\featurelist
-  \item The data selection panel in \zvpp allows users to select dataset and attributes of interest.
-  \item Display options can be modified via the control panel in \zvpp, such as reversing the y axes or changing visualization mark type to scatter.
-\enumend
-%These include changing the visualized attributes on the x and y axes, as well as display options, such as reversing the y axes (a common operation done by astronomers visualizing magnitude measurements) and changing visualization mark type to scatter (material science represents each solvent as a data point often better visualized as a scatter plot).
-%functionalities in VQSs provide a mechanism for navigating and comparing between different regions of the dataset, effectively
-%perform visual querying on
-\boldpara{IV) Slice-and-Dice}
-\nstitle{Purpose:} Navigate and compare collections of visualizations constructed from different portions of the data.
-\problemlist
-  \item Since astronomers often have datasets with large numbers of objects, they first use domain knowledge
-  to narrow down their search to a more manageable subset to increase their chances of finding an interesting pattern for a given pattern query.
-  \item Material scientists often partition solvent datapoints into customized classes based on their physical properties, in order to compare between these classes. For example, M1 wanted to create classes of solvents with ionization potential under -10 kJ/mol, over -8 kJ/mol, and ones between that range, and examine how visualizations involving lithium solvation energy varied across the three classes.
-\enumend
-\featurelist
-  \item To filter data on-the-fly in \zvpp, users can compose one or more conditions as filter constraints in a textbox (Figure \ref{zvOverview}D?). The filtering can be done on data columns associated with each pattern that is not visualized or on the visualized attributes. This feature is unique to \zvpp as most existing VQSs do not allow users to interact with data in the non-visualized columns.
-  \item \zvpp supports dynamic class creation, a feature that allows users to create custom classes interactively,
-  based on multiple data properties, following which each class can be visualized as a separate visualization. Information regarding the created classes is displayed in a table and as a tooltip over the aggregate visualizations. \dor{add DCC as a separate figure}
-\enumend
-% \par Another common slice-and-dice workflow is
-% To this end, we implemented
-% , effectively slicing-and-dicing the data based on their needs (Figure \ref{zvOverview}h).
-%
+\change{
+  \boldpara{III) View specification}
+  \nstitle{Purpose:} Modify visualization settings for all visualizations displayed on the VQS. The ability to change the view specification offers analysts different perspectives on the same portion of data.
+  \problemlist
+    \item For non-time-series uses of VQS, such as in material science, analysts is often interested in pivoting across various different x and y axes attributes.
+    \item Astronomers often view magnitude measurements by reversing the y-axes, material scientist often prefer viewing their data in terms of a scatterplot rather than line charts.
+  \enumend
+  \featurelist
+    \item The data selection panel in \zvpp allows users to select dataset and attributes of interest.
+    \item Display options can be modified via the control panel in \zvpp, such as reversing the y axes or changing visualization mark type to scatter.
+  \enumend
+}
+\change{
+  \boldpara{IV) Slice-and-Dice}
+  \nstitle{Purpose:} Navigate and compare collections of visualizations constructed from different portions of the data.
+  \problemlist
+    \item Since astronomers often have datasets with large numbers of objects, they first use domain knowledge
+    to narrow down their search to a more manageable subset to increase their chances of finding an interesting pattern for a given pattern query.
+    \item Material scientists often partition solvent datapoints into customized classes based on their physical properties, in order to compare between these classes. For example, M1 wanted to create classes of solvents with ionization potential under -10 kJ/mol, over -8 kJ/mol, and ones between that range, and examine how visualizations involving lithium solvation energy varied across the three classes.
+  \enumend
+  \featurelist
+    \item To filter data on-the-fly in \zvpp, users can compose one or more conditions as filter constraints in a textbox (Figure \ref{zvOverview}D3). The filtering can be done on data columns associated with each pattern that is not visualized or on the visualized attributes. This feature is unique to \zvpp as most existing VQSs do not allow users to interact with data in the non-visualized columns.
+    \item \zvpp supports dynamic class creation, a feature that allows users to create custom classes interactively,
+    based on multiple data properties, following which each class can be visualized as a separate visualization (Figure~\ref{dcc}). Information regarding the created classes is displayed in a table and as a tooltip over the aggregate visualizations.
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[width=0.95\linewidth]{figures/dcc.pdf}
+      \vspace{-6pt}
+      \caption{\change{Example of dynamic classes. (a) Four different classes with different Lithium solvation energies (li) and boiling point (bp) attributes based on user-defined data ranges. (b) Users can hover over the visualizations for each dynamic class to see the corresponding attribute ranges for each class. The visualizations of dynamic classes are aggregate across all the visualizations that lie in that class based on the user-selected aggregation method.}}
+      \label{dcc}
+      \vspace{-10pt}
+    \end{figure}
+  \enumend
+}
 %We designed two dynamic faceting features coupled with coordinated views that enabled users to specify subsets of data they are querying on and see immediate changes updated in the query, representative, and outlier results.
 %\boldpara{Group Comparison} addresses a common analytical task where users want to
 % , as shown in Figure~\ref{dcc}.
-% \begin{figure}[h!]
-% \centering
-% \includegraphics[width=\linewidth]{figures/dcc_example.pdf}
-% \vspace{-6pt}
-% \caption{Example of dynamic classes. (a) Four different classes with different Lithium solvation energies (li) and boiling point (bp) attributes based on user-defined data ranges. (b) Users can hover over the visualizations for each dynamic class to see the corresponding attribute ranges for each class. The visualizations of dynamic classes are aggregate across all the visualizations that lie in that class based on the user-selected aggregation method.}
-% \label{dcc}
-% \vspace{-10pt}
-% \end{figure}
 %While input equations are useful when simple analytical models exist, this may not be true for other domains. In these scenarios, users can upload a query pattern of a sequence of points
  %Similarly, Google Correlate allows users to upload their own time series or enter search keywords that corresponds to a time series.
 %, usually as part of the downstream analysis of the exploratory workflow. %For example, the genetics team are trying to develop a time series prediction algorithm using machine learning based on some biological parameters \cite{Peng2016}.
-\boldpara{V) Result querying}
-\nstitle{Purpose:} Querying based on the displayed results (either from the ranked list in Figure~\ref{zvOverview}C or recommendations from Figure~\ref{zvOverview}E), essentially requesting for patterns similar to the selected data pattern.
-\problemlist
-  \item General need for having to search for a pattern similar to a visualization of interest. For example, G1 was interested in the gene `Esrrb' and wanted to find other genes that exhibits a similar pattern to it.
-\enumend
-\featurelist
-  \item In \zvpp, users can drag and drop a visualization in either the results pane or the representative and outliers to the query canvas (Figure \ref{zvOverview}j). Similarly, TimeSearcher enable users to instantiate queries via drag-and-drop, whereas QuerySketch does so through double clicking.
-\enumend
-   %\ccut{The distinction between concept and result querying is that concept querying loads in data external to the dataset, whereas result querying initiates the query using visualizations created from the queried data source.}
-\boldpara{VI) Recommendation}
-\nstitle{Purpose:} displays visualizations that may be of interest to the users based on the data context.
-\problemlist
-  \item Geneticists are often interested in learning about the common gene expression profiles in their dataset.
-\enumend
-\featurelist
-  \item \zvpp provides visualizations of representative trends based on clustering and highlights outlier instances\techreport{ that look different from the rest of the visualizations} (Figure \ref{zvOverview}E).%The recommendation feature is unique to \zv, which provides visualizations of representative trends based on clustering and highlights outlier instances that looks different from the rest of the visualizations (Figure \ref{zvOverview}k,l).
-\enumend
+\change{
+  \boldpara{V) Result querying}
+  \nstitle{Purpose:} Querying based on the displayed results (either from the ranked list in Figure~\ref{zvOverview}C or recommendations from Figure~\ref{zvOverview}E), essentially requesting for patterns similar to the selected data pattern.
+  \problemlist
+    \item General need for having to search for a pattern similar to a visualization of interest. For example, G1 was interested in the gene `Esrrb' and wanted to find other genes that exhibits a similar pattern to it.
+  \enumend
+  \featurelist
+    \item In \zvpp, users can drag and drop a visualization in either the results pane or the representative and outliers to the query canvas (Figure \ref{zvOverview}j). Similarly, TimeSearcher enable users to instantiate queries via drag-and-drop, whereas QuerySketch does so through double clicking.
+  \enumend
+  \boldpara{VI) Recommendation}
+  \nstitle{Purpose:} displays visualizations that may be of interest to the users based on the data context.
+  \problemlist
+    \item Geneticists are often interested in learning about the common gene expression profiles in their dataset.
+  \enumend
+  \featurelist
+    \item \zvpp provides visualizations of representative trends based on clustering and highlights outlier instances\techreport{ that look different from the rest of the visualizations} (Figure \ref{zvOverview}E).%The recommendation feature is unique to \zv, which provides visualizations of representative trends based on clustering and highlights outlier instances that looks different from the rest of the visualizations (Figure \ref{zvOverview}k,l).
+  \enumend
+}
 % In this section, we first describe a model to help characterize the design space for VQS based on the analytical workload and usage patterns from different use cases. Then, we present design challenges related to each of the process.
 \begin{table}
 		\centering
     \includegraphics[width=0.8\linewidth]{figures/related_works_table.pdf}
-    \caption{Table summarizing whether key functionalities of VQSs (columns) are covered by past systems (row), indicated by checked cells. Column header colors blue, orange, green represents three sensemaking process (top-down querying, search with context, and bottom-up querying) described in Section~\ref{sec:pd_findings}. The heavily-used, practical features in our study for context-creation and bottom-up inquiry is largely missing from prior VQSs.}
+    \caption{Table summarizing whether key functionalities of VQSs (columns) are covered by past systems (row), indicated by checked cells. Column header colors blue, orange, green represents three sensemaking process (top-down querying, search with context, and bottom-up querying)\cut{ described in Section~\ref{sec:pd_findings}}. The heavily-used, practical features in our study for context-creation and bottom-up inquiry is largely missing from prior VQSs.}
     \label{table:relatedwork}
     \vspace{-10pt}
 \end{table}
 \subsection{Characterizing the Problem Space for VQSs}
 %Based on example use cases and feature components from participatory design, we further characterize the design space of VQSs. further characterize three sensemaking process within the problem space of VQSs.
-Given our earlier description of VQS features organized into components, we now introduce the three sensemaking processes by characterizing how they fit into different problem areas that VQSs are aimed to solve. Visual querying often consists of searching for a desired pattern instance (Z) across a visualization collection specified by some given attributes (X,Y). We introduce two axes depicting the amount of information known about the visualized attribute and pattern instance.%, as shown in Figure~\ref{2dmodel}.
+Given our earlier description of VQS features organized into components, we now introduce the three sensemaking processes by characterizing how they fit into different problem areas that VQSs are aimed to solve. Visual querying often consists of searching for a desired pattern instance (Z) across a visualization collection specified by some given attributes (X,Y). \change{Correspondingly, }we introduce two axes depicting the amount of information known about the visualized attribute and pattern instance.%, as shown in Figure~\ref{2dmodel}.
 %(e.g., only interested in patterns related to a specific gene)
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.9\linewidth]{figures/2dmodel.pdf}
-  \caption{The problem space for VQSs is characterized by how much the analyst knows about the visualized attributes and the pattern instance. Colored areas highlight the three sensemaking processes in VQSs for addressing these characteristic problems. While prior work has focused solely on use cases in the blue region, we envision opportunities for VQSs beyond this to a larger space of use cases covered by the yellow and green regions.}
-  \label{2dmodel}
-  \vspace{-10pt}
-\end{figure}
 \par Along the \textbf{pattern instance} axis,
 the visualization that contains
 the desired pattern may already be \texttt{known} to the analyst,
@@ -205,9 +199,16 @@ they wanted to explore relationships between different
 X and Y variables.
 In this realm of \texttt{unknown} attributes,
 context creation (Figure~\ref{2dmodel} yellow)---i.e.,
-setting the stage for bottom-up or top-down processes---is
+setting the stage for bottom-up or top-down processes---\dor{this clause is awkward?}is
 essential for allowing users
 to pivot across different visualization collections.%subspaces. %Most past VQSs assume that the analyst has a desired pattern in-the-head that could be conveyed through visual specification, such as a sketch.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/2dmodel.pdf}
+  \caption{The problem space for VQSs is characterized by how much the analyst knows about the visualized attributes and the pattern instance. Colored areas highlight the three sensemaking processes in VQSs for addressing these characteristic problems. While prior work has focused solely on use cases in the blue region, we envision opportunities for VQSs beyond this to a larger space of use cases covered by the yellow and green regions.}
+  \label{2dmodel}
+  \vspace{-10pt}
+\end{figure}
 \subsection{Design Goals for the Sensemaking Processes}
 After understanding how each sensemaking process fits into the problem space addressed by VQSs, we further explore the design objectives and challenges in supporting each sensemaking process, grounded in our collaborative design experience. % based on the taxonomy orgaby developing a taxonomy for organizing the aforementioned components.% fits into the paradigms of sensemaking in VQSs, as shown in Figure~\ref{fig:taxonomy}. In particular, we will describe the main form of inquiry addressed by each paradigm\cut{(\textit{what, where, which})}, its characteristic use case, and design challenges in supporting these paradigms.
 % \par Drawing from our participatory design experience, evaluation study, and literature review in this space, we design a taxonomy for understanding the key functionalities in VQSs. In Figure~\ref{fig:taxonomy}, we show how each use cases makes use of the different features in \zv, then we organize the features into key components for VQSs, which belongs to one of the three paradigms in the VQS design space.%, effectively moving rightwards to the gray area in Figure~\ref{2dmodel}, where the pattern instance is known.
@@ -256,7 +257,7 @@ classes to study their data from alternative perspectives.
 The design challenge of context creation is to develop
 features that act as a `lens': navigating users to desired data subsets,
 visualizing and comparing how the data changes between the different lenses, and ensuring that context is dynamically reflected across other VQS functionalities.
-\par\noindent The three aforementioned sensemaking processes are akin to the well-studied sensemaking paradigms of search, browse, and faceted navigation on the Web. Due to each of their advantages and limitations given different information seeking tasks, search interfaces have been designed to support all three complementary acts and transition smoothly between them to combine the strength of all three paradigms~\cite{Hearst2009,Olston2003}.
+\par\noindent The three aforementioned sensemaking processes are akin to the well-studied sensemaking paradigms of search, browse, and faceted navigation on the Web~\cite{Hearst2009,Olston2003}. Due to each of their advantages and limitations given different information seeking tasks, search interfaces have been designed to support all three complementary acts and transition smoothly between them to combine the strength of all three paradigms. \change{Similarly for VQSs, our main design objective in developing \zvpp is to integrate all the three sensemaking in the same system. As we discover in the evaluation study in the following section, this integration encourages and accelerate the process of visualization discovery.}
 % complementary in function
 % each have their limitations and advantages ----insufficient on its own
 % facillitate these acts, given different user objectives,
