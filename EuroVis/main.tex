@@ -100,16 +100,6 @@
 \def\emptyauthor{}
 \def\plainkeywords{Visual analytics, exploratory analysis, visual query}
 
-% llt: Define a global style for URLs, rather that the default one
-\makeatletter
-\def\url@leostyle{%
-  \@ifundefined{selectfont}{
-    \def\UrlFont{\sf}
-  }{
-    \def\UrlFont{\small\bf\ttfamily}
-  }}
-\makeatother
-
 \newenvironment{denselist}{
   \vspace{-5pt}
     \begin{list}{\small{$\bullet$}}%

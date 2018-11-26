@@ -3,7 +3,7 @@
 % From participatory design,
 \section{Participatory Design Findings\label{sec:pd_findings}}
 All of the three domains described in the previous section recognized the need for a VQS. As discussed in Section~\ref{sec:methods}, we worked closely with participants to develop features to address their problems and challenges. \change{In this section, we first provide a high-level system overview of \zvpp. Through our participatory design findings,} we develop a taxonomy for organizing these functionalities into three sensemaking processes, as shown in Figure~\ref{fig:taxonomy}. %We first describe features that we incorporated into our enhanced VQS, \zvpp, thematically organized by components (grouping features in the bottom-most level to components in the second level of Figure~\ref{fig:taxonomy}).
-\change{Starting from the bottom level of the taxonomy, we first reify what each component in our taxonomy entails, then we proceed onto the upper level of the taxonomy, describing the space of problems addressable by each sensemaking process and their design objectives.}%collaboratively-designed
+\change{Starting from the bottom level of the taxonomy, we first materialize what each component in our taxonomy entails, then we proceed onto the upper level of the taxonomy, describing the space of problems addressable by each sensemaking process and their design objectives.}%collaboratively-designed
 %Next, we describe features that we incorporated into our enhanced VQS, \zvpp, thematically organized by component. Then, we introduce a taxonomy for organizing these components into three sensemaking processes, spanning different problem areas that VQSs are aimed to solve.
 %\change{In this section, we will first introduce a taxonomy for organizing these components into}
 %Based on feature requests and discussion with our participants, we incorporated key features missing in our original VQS.
@@ -24,11 +24,12 @@ All of the three domains described in the previous section recognized the need f
 \end{figure*}
 \change{
   \subsection{System\label{sec:system}}
-  The \zvpp interface is organized into 5 major regions that dynamically updates upon user interactions. Typically, analysts begin their analysis by selecting the dataset and attribute to visualize in the \emph{data selection panel} (Figure~\ref{zvOverview}A). Then, they can specify a pattern query of interest, through either sketching, inputting an equation, uploading data pattern or dragging and dropping an existing visualization, displayed on the \emph{query canvas} (Figure~\ref{zvOverview}B). \zvpp performs shape-matching between the queried pattern and other possible visualizations and returns a ranked list of visualizations that are most similar to the queried pattern, displayed in the \emph{results panel} (Figure~\ref{zvOverview}C). At any point during the analysis, analysts can adjust various system-level settings through the \emph{control panel} (Figure~\ref{zvOverview}D) or browse through the list of recommendations provided by \zvpp (Figure~\ref{zvOverview}E).
+  The \zvpp interface is organized into 5 major regions that dynamically updates upon user interactions. Typically, analysts begin their analysis by selecting the dataset and attribute to visualize in the \emph{data selection panel} (Figure~\ref{zvOverview}A). Then, they can specify a pattern query of interest, through either sketching, inputting an equation, uploading a data pattern or dragging and dropping an existing visualization, displayed on the \emph{query canvas} (Figure~\ref{zvOverview}B). \zvpp performs shape-matching between the queried pattern and other possible visualizations and returns a ranked list of visualizations that are most similar to the queried pattern, displayed in the \emph{results panel} (Figure~\ref{zvOverview}C). At any point during the analysis, analysts can adjust various system-level settings through the \emph{control panel} (Figure~\ref{zvOverview}D) or browse through the list of recommendations provided by \zvpp (Figure~\ref{zvOverview}E).
+  Given the space limitation of our paper, we have focussed our discussion major \zvpp functionalities relevant to the study findings, and defer the details of other \zvpp features to our technical report~\cite{TR} and documentation in our open-source online repository\footnote{\url{github.com/[Anonymized for Submission]/wiki}}.
 }
 \subsection{\change{Components} Emerging from Participatory Design\label{sec:pd_findings}}
 \change{
-  Here, we discuss the purpose of these components, motivating use cases collected over the course of participatory design, and how these themes instantiate into corresponding features in \zvpp and other existing VQSs. Each of the features described (labelled F*) correspond directly to a use case challenge (labelled C*) highlighted in the list above it.
+  Here, we discuss the purpose of the components in the lower-level of our Figure~\ref{fig:taxonomy} taxonomy, motivating use cases collected over the course of participatory design, and how these themes instantiate into corresponding features in \zvpp and other existing VQSs. Each of the features described (labelled F*) correspond directly to a use case challenge (labelled C*) highlighted in the list above it.
 }
 % Here, we discuss components
 % incorporated in \zvpp, over the course of participatory design, along with similar features in past VQSs.
@@ -57,7 +58,7 @@ All of the three domains described in the previous section recognized the need f
   \item Almost all existing VQSs, including \zvpp, support freehand sketching for specifying a desired query pattern on a virtual canvas (Figure \ref{zvOverview}B1). %\techreport{on a virtual canvas through mouse or pen as a intuitive mechanism }for specifying desired patterns
   %(Figure \ref{zvOverview}a).
   \item The above use cases highlights the common difficulty of sketching precisely. \zvpp allows users to specify a exact functional form (e.g., y=$x^2$) as a pattern query (Figure \ref{zvOverview}D5).
-  \item \zvpp also enables users to upload a pattern consisting of a sequence of points as a query (Figure \ref{zvOverview}A1). The pattern upload functionality is also available in Google Correlate~\cite{mohebbi2011google}.
+  \item \zvpp also enables users to upload a pattern consisting of a sequence of points as a query (Figure \ref{zvOverview}A1). The pattern upload functionality is also available in Google Correlate~\cite{mohebbi2011google}.l
   \enumend
 }
 %The uploaded pattern is once again more precise than a sketch.
