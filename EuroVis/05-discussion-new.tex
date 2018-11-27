@@ -19,7 +19,7 @@ Event codes included specific feature usage,
 insights,
 provoked actions, confusion,
 request for functionalities unaddressed
-by the system, and use of external tools.
+by the system, and use of external tools\change{, detailed in Appendix~\ref{apdx:studydetails}}.
 % \begin{denselist}
 %     \item Insight (Science): Insight that connected back to the science (e.g. ``This cluster resembles a repressed gene.'')
 %     \item Insight (Data): Data-related insights (e.g. ``A bug in my data cleaning code generated this peak artifact.'')
@@ -74,8 +74,8 @@ despite the prevalence of sketch-to-query
 systems in the literature, \techreport{Figure \ref{fig:feature_heatmap} shows that} only two out of our nine participants
 found it useful to directly
 sketch their pattern onto the canvas (Figure~\ref{zvOverview}a). %Overall, bottom-up querying via drag-and-drop was more intuitive and more commonly used than top-down querying methods, such as sketching or input equations.
-The main reason why participants
-did not find sketching that useful was that
+The \change{reason why most} participants
+did not find \change{sketching useful} was that
 they often do not start their analysis with a specific pattern in mind.
 Instead, their intuition about what to query is derived
 from other visualizations they encounter
@@ -177,7 +177,7 @@ may be why existing VQSs are not commonly adopted in practice. %This result poin
 %Which is really interesting. Which is something that we observed experimentally also. That is an interesting insight right htere. This seems to suggest that there is a fundamental issue in if you want to try to get better on this axis, and get as low as possible, you lose out on the other axis.
 %once they see it they know it but they don't know beforehand
 
-\subsection{Context Creation and Bottom-up Approaches}
+\subsection{Context Creation and Bottom-up \change{Applications}}%Approaches}
 \par As alluded to earlier,
 \emph{bottom-up data-driven inquiries
 and context creation are far more commonly
@@ -188,7 +188,7 @@ In particular, we find that top-down approaches
 were only useful for 29\% of the use cases,
 whereas it was useful for 70\% of the use cases
 for bottom-up approaches and 67\%
-for context creation\footnote{Feature usefulness is computed based on a matrix of usefulness labels for each use case (defined by a feature and user pair). The percentage of useful features for each process is computed as: $\frac{\textrm{\# of useful features in process}}{\textrm{total \# of features in process} \times \textrm{total \# of users}}$.}. We now highlight some of the exemplary workflows demonstrating the efficacy of the latter two sensemaking processes.
+for context creation\footnote{Feature usefulness is computed based on a matrix of usefulness labels for each use case \change{defined by a feature and user pair (see Appendix~\ref{apdx:studydetails})}. The percentage of useful features for each process is computed as: $\frac{\textrm{\# of useful features in process}}{\textrm{total \# of features in process} \times \textrm{total \# of users}}$.}. We now highlight some of the exemplary workflows demonstrating the efficacy of the latter two sensemaking processes.
 %number of features labeled as useful divided by the product of total number of features and total number of users}
 %%The prevalence of bottom-up approaches not only point to the need for result querying, but also providing recommendations for users without desired patterns in mind.
 \par As shown in Figure~\ref{fig:origins_of_sketch},
@@ -279,7 +279,7 @@ All this is really possible because of dynamic class creation, so this allows yo
 \end{quote}
 %Context creation is a useful ---- despite the --- pattern instance. Filtering still useful
 %\par Participants employed \emph{a mix of bottom-up and top-down approaches when faceting through data in VQS}, including narrowing the search space based on some intuition about a phenomena, selecting individual visualizations, or specifying high-level groupings to compare and query with.
-\subsection{The Sensemaking Process in VQSs}
+\subsection{The Sensemaking Process in \change{VQS Workflows}}
 Given our observations so far as to
 how participants
 make use of each sensemaking process in practice,
@@ -294,7 +294,7 @@ in the context of an analysis workflow. %interplay with each other dynamically i
 % illustrates the state transitions computed based on event sequences from the evaluation study. %stay in the same state.
 The event sequences from the evaluation study
 consist of labels describing when specific features were used.
-Using the taxonomy in Figure~\ref{fig:taxonomy},
+Using the taxonomy in \change{Section~\ref{sec:pd_findings}},%Figure~\ref{fig:taxonomy},
 we map each usage of a feature
 to one of the three sensemaking processes.
 Each participant's event sequence
@@ -339,17 +339,18 @@ we compute the eigenvector centrality of each graph,
 displayed as node labels in Figure~\ref{fig:transition}.
 These values represent the percentage of time the participants
 spend in each of the sensemaking processes
-when the transition model has evolved to a steady state.
+when the transition model has evolved to a steady state\change{~\cite{pierre2011}}.
 Given that nodes in Figure~\ref{fig:transition}
 are scaled by this value, in all domains,
 we observe that there is always a prominent node
 connected to two less prominent ones---but it is also clear
 that all three nodes are essential to all domains.
-Our observation demonstrates how participants
+Our observation demonstrates how \emph{participants
 often construct a central workflow
 around a main sensemaking process
 and interleave variations with the two other processes
-as they iterate on the analytic task.
+as they iterate on the analytic task}
+.
 For example, material scientists focus
 on context creation 56\% of the time,
 mainly through dynamic class creation,
@@ -358,17 +359,17 @@ followed by bottom-up inquiries (such as drag-and-drop)
 %through dynamic classes than top-down pattern specification. %astronomers focus largely on performing top-down pattern specification, while filtering on the visualization space.
 The central process adopted by each domain
 is tightly coupled with characteristics
-of the analytic challenges associated with their subject area.
+of the analytic challenges associated with their subject area\change{, described in Section~\ref{sec:pd_findings}}.
 For example, without an initial query in-the-head,
 geneticists relied heavily on bottom-up querying
 through recommendations to jumpstart their queries.
 %Despite the differing levels of usage from each subject area, we learn that \textit{each sensemaking process fulfills a central role in participants' analysis to address their high-level research objectives}.
 % \agp{maybe point to figure?}.
-\par The transition model exemplifies how participants
+\par The \change{Markov} transition model exemplifies how participants
 adopted a diverse set of workflows
 based on the unique set of research questions they brought to the study.
 The bi-directional and cyclical nature
-of the transition graphs in Figure~\ref{fig:transition} highlight how the three sensemaking processes do not simply follow a linear progression, going from unknown to known pattern instance and visualized attributes in the problem space. Instead, the high connectivity of the transition model illustrates how these three equally-important processes form a sensemaking loop. The VQS sensemaking loop represents iterative acts of dynamic foraging and hypothesis generation. This flexibility is enabled by the diverse set of potential workflows that could be constructed in a full-fledged VQS like \zvpp, for addressing a wide range of analytical inquiries.%single-directional
+of the transition graphs in Figure~\ref{fig:transition} highlight how the three sensemaking processes do not simply follow a linear progression, going from unknown to known pattern instance and visualized attributes in the problem space. Instead, the high connectivity of the transition model illustrates how these three equally-important processes form a sensemaking loop\change{, representing} iterative acts of dynamic foraging and hypothesis generation. This flexibility is enabled by the diverse set of potential workflows that could be constructed in \change{an integrative} VQS like \zvpp, for addressing a wide range of analytical inquiries.%single-directional%. The VQS sensemaking loop%full-fledged
 \subsection{Limitations}
 \par Although evidence from our evaluation study
 suggests that direct sketch is inefficient,

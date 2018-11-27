@@ -1,0 +1,42 @@
+\appendix
+\section{Artifacts from Participatory Design\label{apdx:pdartifact}}
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\linewidth]{figures/oldZV_nozql.pdf}
+	\caption{The existing \zv prototype allowed users to sketch a pattern in (a), which would then return (b) results that had the closest Euclidean distance from the sketched pattern. The system also displays (c) representative patterns obtained through K-Means clustering and (d) outlier patterns to help the users gain an overview of the dataset.}
+	\label{oldZV}
+	\end{figure}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=\linewidth]{figures/workflow.png}
+  \caption{Examples of the scientists' original workflow: a) The astronomer performs various data analysis task using the Jupyter notebook environment, b) The geneticists uses a domain-specific software to examine clustering outputs.}
+  \label{workflow}
+\end{figure}
+
+\section{Evaluation Study Details\label{apdx:studydetails}}
+We analyzed the transcriptions of the evaluation study recordings through open-coding and
+categorized every event in the user study using the coding labels:
+\begin{denselist}
+    \item Insight (Science) \textbf{[IS]}: Insight that connected back to the science (e.g. ``This cluster resembles a repressed gene.'')
+    \item Insight (Data) \textbf{[ID]}: Data-related insights (e.g. ``A bug in my data cleaning code generated this peak artifact.'')
+    \item Provoke (Science) \textbf{[PS]}: Interactions or observations made while using the VQS that provoked a scientific hypothesis to be generated.
+    \item Provoke (Data) \textbf{[PD]}: Interactions or observations made while using the VQS that provoked further data actions to continue the investigation.
+    \item Confusion \textbf{[C]}: Participants were confused during this part of the analysis.
+    \item Want \textbf{[W]}: Additional features that participant wants, which is not currently available on the system.
+    \item External Tools \textbf{[E]}: The use of external tools outside of \zv to complement the analysis process.
+\end{denselist}
+\npar In addition, based on the usage of each feature during the user study, we categorized the features into one of the three usage types:
+\begin{denselist}
+    \item Practical usage \textbf{[P]}: Features used in a sensible and meaningful way.
+    \item Envisioned usage \textbf{[E]}: Features which could be used practically if the envisioned data was available or if they conducted downstream analysis, but was not performed due to the limited time during the user study.
+    \item Not useful \textbf{[N]}: Features that are not useful or do not make sense for the participant's research question and dataset.
+\end{denselist}
+The thematic encoding is summarized in Figure~\ref{feature_heatmap}.
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{figures/PENcoding.pdf}
+    \vspace{-6pt}\caption{Heatmap of features categorized as practical usage (P), envisioned usage (E), and not useful (N). We find that participants preferred to query using bottom-up methods such as drag-and-drop over top-down approaches such as sketching or input equations. Participants found that data faceting via filter constraints and dynamic class creation were powerful ways to compare between subgroups or filtered subsets. The columns are arranged in the order of subject areas and the features are arranged in the order of the three foraging acts.}
+    \label{feature_heatmap}
+    \vspace{-5pt}
+\end{figure}
+\dor{add event sequence based on codes.}
