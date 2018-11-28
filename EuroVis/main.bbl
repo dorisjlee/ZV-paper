@@ -1,0 +1,203 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{\uppercase{MVK{\etalchar{*}}11}}
+
+\bibitem[AES05]{Amar2005}
+\textsc{Amar R., Eagan J., Stasko J.}:
+\newblock Low-level components of analytic activity in information
+  visualization.
+\newblock In \emph{Information Visualization, 2005. INFOVIS 2005. IEEE
+  Symposium on} (2005), IEEE, pp.~111--117.
+
+\bibitem[BDI16]{Bossen2016}
+\textsc{Bossen C., Dindler C., Iversen O.~S.}:
+\newblock Evaluation in participatory design: A literature survey.
+\newblock In \emph{Proceedings of the 14th Participatory Design Conference:
+  Full Papers - Volume 1} (New York, NY, USA, 2016), PDC '16, ACM,
+  pp.~151--160.
+
+\bibitem[CAM{\etalchar{*}}16]{Ciolfi2016}
+\textsc{Ciolfi L., Avram G., Maye L., Dulake N., Marshall M.~T., van Dijk D.,
+  McDermott F.}:
+\newblock {Articulating Co-Design in Museums: Reflections on Two Participatory
+  Processes}.
+\newblock \emph{Proceedings of the 19th ACM Conference on Computer-Supported
+  Cooperative Work {\&} Social Computing - CSCW '16} (2016), 13--25.
+
+\bibitem[CG16]{correll2016semantics}
+\textsc{Correll M., Gleicher M.}:
+\newblock The semantics of sketch: Flexibility in visual query systems for time
+  series data.
+\newblock In \emph{Visual Analytics Science and Technology (VAST), 2016 IEEE
+  Conference on} (2016), IEEE, pp.~131--140.
+
+\bibitem[{Drl}17]{Drlica-Wagner2017}
+\textsc{{Drlica Wagner et al.}}:
+\newblock {Dark Energy Survey Year 1 Results: Photometric Data Set for
+  Cosmology}.
+
+\bibitem[EZ15]{Eichmann2015}
+\textsc{Eichmann P., Zgraggen E.}:
+\newblock {Evaluating Subjective Accuracy in Time Series Pattern-Matching Using
+  Human-Annotated Rankings}.
+\newblock \emph{Proceedings of the 20th International Conference on Intelligent
+  User Interfaces - IUI '15} (2015), 28--37.
+
+\bibitem[fR18]{TR}
+\textsc{for Review A.}:
+\newblock You can't always sketch what you want: Understanding sensemaking in
+  visual query systems (technical report).
+
+\bibitem[GSC{\etalchar{*}}17]{Gloss2017}
+\textsc{Gloss B.~S., Signal B., Cheetham S.~W., Gruhl F., Kaczorowski D.~C.,
+  Perkins A.~C., Dinger M.~E.}:
+\newblock High resolution temporal transcriptomics of mouse embryoid body
+  development reveals complex expression dynamics of coding and noncoding loci.
+\newblock \emph{Scientific Reports 7}, 1 (2017), 6731.
+
+\bibitem[Hea09]{Hearst2009}
+\textsc{Hearst M.~A.}:
+\newblock \emph{Search User Interfaces}, 1st~ed.
+\newblock Cambridge University Press, New York, NY, USA, 2009.
+
+\bibitem[HF09]{Holz2009}
+\textsc{Holz C., Feiner S.}:
+\newblock Relaxed selection techniques for querying time-series graphs.
+\newblock In \emph{Proceedings of the 22Nd Annual ACM Symposium on User
+  Interface Software and Technology} (New York, NY, USA, 2009), UIST '09, ACM,
+  pp.~213--222.
+
+\bibitem[HS01]{Hochheiser2001}
+\textsc{Hochheiser H., Shneiderman B.}:
+\newblock Interactive exploration of time series data.
+\newblock In \emph{Discovery Science} (Berlin, Heidelberg, 2001), Springer,
+  pp.~441--446.
+
+\bibitem[HS04]{Hochheiser2004}
+\textsc{Hochheiser H., Shneiderman B.}:
+\newblock {Dynamic query tools for time series data sets: Timebox widgets for
+  interactive exploration}.
+\newblock \emph{Information Visualization 3}, 1 (2004), 1--18.
+
+\bibitem[HS12]{Heer2012}
+\textsc{Heer J., Shneiderman B.}:
+\newblock {A taxonomy of tools that support the fluent and flexible use of
+  visualizations}.
+\newblock \emph{Interactive Dynamics for Visual Analysis 10} (2012), 1--26.
+
+\bibitem[IZCC08]{Isenberg2008}
+\textsc{Isenberg P., Zuk T., Collins C., Carpendale S.}:
+\newblock {Grounded Evaluation of Information Visualization}.
+\newblock \emph{Proceedings of the 2008 conference on BEyond time and errors
+  novel evaLuation methods for Information Visualization - BELIV '08} (2008),
+  1.
+
+\bibitem[KKV18]{Khetan2018}
+\textsc{Khetan A., Krishnamurthy D., Viswanathan V.}:
+\newblock Towards synergistic electrode-electrolyte design principles for
+  nonaqueous li-o2 batteries.
+
+\bibitem[LBI{\etalchar{*}}12]{lam2012empirical}
+\textsc{Lam H., Bertini E., Isenberg P., Plaisant C., Carpendale S.}:
+\newblock Empirical studies in information visualization: Seven scenarios.
+\newblock \emph{IEEE Transactions on Visualization and Computer Graphics 18}, 9
+  (2012), 1520--1536.
+
+\bibitem[MA18]{Mannino2018}
+\textsc{Mannino M., Abouzied A.}:
+\newblock {Expressive Time Series Querying with Hand-Drawn Scale-Free
+  Sketches}.
+\newblock 1--12.
+
+\bibitem[MS12]{Sedlmair2012}
+\textsc{Michael~Sedlmair Miriah~Meyer T.~M.}:
+\newblock Design study methodology: Reflections from the trenches and the
+  stacks.
+\newblock \emph{IEEE Transactions on Visualization and Computer Graphics 18},
+  12 (Dec 2012), 2431--2440.
+
+\bibitem[Mun09]{munzner2009nested}
+\textsc{Munzner T.}:
+\newblock A nested model for visualization design and validation.
+\newblock \emph{IEEE transactions on visualization and computer graphics 15}, 6
+  (2009).
+
+\bibitem[MVK{\etalchar{*}}11]{mohebbi2011google}
+\textsc{Mohebbi M., Vanderkam D., Kodysh J., Schonberger R., Choi H., Kumar
+  S.}:
+\newblock Google correlate whitepaper.
+
+\bibitem[NBB{\etalchar{*}}97]{Nugent1997}
+\textsc{{Nugent} P., {Baron} E., {Branch} D., {Fisher} A., {Hauschildt} P.}:
+\newblock {Synthetic Spectra of Hydrodynamic Models of Type Ia Supernovae}.
+\newblock \emph{The Astrophysical Journal 485}, 2 (1997), 812--819.
+
+\bibitem[OC03]{Olston2003}
+\textsc{Olston C., Chi E.~H.}:
+\newblock {ScentTrails: Integrating Browsing and Searching on the Web}.
+\newblock \emph{ACM Transactions on Computer-Human Interaction 10}, 3 (2003),
+  177--197.
+
+\bibitem[PC05]{Pirolli}
+\textsc{Pirolli P., Card S.}:
+\newblock The sensemaking process and leverage points for analyst technology as
+  identified through cognitive task analysis.
+\newblock In \emph{Proceedings of International Conference on Intelligence
+  Analysis} (2005), vol.~5, pp.~2--4.
+
+\bibitem[Pie11]{pierre2011}
+\textsc{Pierre B.}:
+\newblock \emph{Markov chains: Gibbs fields, Monte Carlo simulation, and
+  queues}.
+\newblock Springer, 2011.
+
+\bibitem[Pla04]{Plaisant2004}
+\textsc{Plaisant C.}:
+\newblock The challenge of information visualization evaluation.
+\newblock In \emph{Proceedings of the Working Conference on Advanced Visual
+  Interfaces} (2004), ACM, pp.~109--116.
+
+\bibitem[PS16]{Peng2016}
+\textsc{Peng P.~C., Sinha S.}:
+\newblock Quantitative modeling of gene expression using dna shape features of
+  binding sites.
+\newblock \emph{Nucleic Acids Research 44}, 13 (2016), e120.
+
+\bibitem[RLL{\etalchar{*}}05]{ryall2005querylines}
+\textsc{Ryall K., Lesh N., Lanning T., Leigh D., Miyashita H., Makino S.}:
+\newblock Querylines: approximate query for visual browsing.
+\newblock In \emph{CHI'05 Extended Abstracts on Human Factors in Computing
+  Systems} (2005), ACM, pp.~1765--1768.
+
+\bibitem[SKL{\etalchar{*}}16]{Siddiqui2017VLDB}
+\textsc{Siddiqui T., Kim A., Lee J., Karahalios K., Parameswaran A.}:
+\newblock Effortless data exploration with zenvisage: an expressive and
+  interactive visual analytics system.
+\newblock \emph{Proceedings of the VLDB Endowment 10}, 4 (2016), 457--468.
+
+\bibitem[SLK{\etalchar{*}}17]{Siddiqui2017}
+\textsc{Siddiqui T., Lee J., Kim A., Xue E., Yu X., Zou S., Guo L., Liu C.,
+  Wang C., Karahalios K., Parameswaran A.}:
+\newblock Fast-forwarding to desired visualizations with zenvisage.
+\newblock In \emph{The biennial Conference on Innovative Data Systems Research
+  (CIDR)} (2017).
+
+\bibitem[SP06]{shneiderman2006strategies}
+\textsc{Shneiderman B., Plaisant C.}:
+\newblock Strategies for evaluating information visualization tools:
+  multi-dimensional in-depth long-term case studies.
+\newblock In \emph{Proceedings of the 2006 AVI workshop on BEyond time and
+  errors: novel evaluation methods for information visualization} (2006), ACM,
+  pp.~1--7.
+
+\bibitem[Wat01]{wattenberg2001sketching}
+\textsc{Wattenberg M.}:
+\newblock Sketching a graph to query a time-series database.
+\newblock In \emph{CHI'01 Extended Abstracts on Human factors in Computing
+  Systems} (2001), ACM, pp.~381--382.
+
+\bibitem[zil16]{zillow}
+Zillow.
+\newblock \url{www.zillow.com}, 2016.
+\newblock Accessed: February 1, 2016.
+
+\end{thebibliography}

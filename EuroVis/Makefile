@@ -6,10 +6,12 @@ SRCS := $(wildcard *.tex) $(BIB) $(FIGS) Makefile
 
 ALL := $(DOC).pdf
 
-all : 
+all :
 	$(TEX) $(DOC).tex
-
+	#$(BIBTEX) $(DOC)
+	#$(TEX) $(DOC)
+	#$(TEX) $(DOC)
 figs :
 	mkdir -p figs
-clean: 
-	rm -f $(ALL) *.bbl *.blg *.log *.aux *.out *.run.xml
+clean:
+	rm -f $(ALL) *.bbl *.blg *.log *.aux *.out *.run.xml *.fls *.lbl *.brf *.blg *fdb_latexmk
