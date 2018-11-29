@@ -10,7 +10,7 @@
 \backcite {Hochheiser2004,correll2016semantics}{{2}{2.1}{subsection.2.1}}
 \backcite {munzner2009nested}{{2}{2.1}{subsection.2.1}}
 \backcite {lam2012empirical,shneiderman2006strategies,Sedlmair2012}{{2}{2.1}{subsection.2.1}}
-\backcite {Plaisant2004,Isenberg2008}{{3}{2.1}{subsection.2.1}}
+\backcite {Plaisant2004,Isenberg2008}{{2}{2.1}{subsection.2.1}}
 \backcite {Siddiqui2017,Siddiqui2017VLDB}{{3}{2.2}{subsection.2.2}}
 \backcite {Ciolfi2016}{{3}{2.2}{subsection.2.2}}
 \backcite {TR}{{3}{2.2}{subsection.2.2}}
@@ -23,11 +23,11 @@
 \backcite {mohebbi2011google}{{5}{{{\textbf {F3:}}}}{Item.6}}
 \backcite {correll2016semantics,Holz2009,Eichmann2015}{{5}{4.2}{Item.6}}
 \backcite {Mannino2018}{{5}{{{\textbf {F1:}}}}{Item.10}}
-\backcite {Hochheiser2004}{{5}{{{\textbf {F1:}}}}{Item.10}}
-\backcite {ryall2005querylines}{{5}{{{\textbf {F1:}}}}{Item.10}}
-\backcite {wattenberg2001sketching,Mannino2018}{{5}{{{\textbf {F2:}}}}{Item.11}}
-\backcite {ryall2005querylines}{{5}{{{\textbf {F2:}}}}{Item.11}}
-\backcite {Hochheiser2001}{{5}{{{\textbf {F2:}}}}{Item.11}}
+\backcite {Hochheiser2004}{{6}{{{\textbf {F1:}}}}{Item.10}}
+\backcite {ryall2005querylines}{{6}{{{\textbf {F1:}}}}{Item.10}}
+\backcite {wattenberg2001sketching,Mannino2018}{{6}{{{\textbf {F2:}}}}{Item.11}}
+\backcite {ryall2005querylines}{{6}{{{\textbf {F2:}}}}{Item.11}}
+\backcite {Hochheiser2001}{{6}{{{\textbf {F2:}}}}{Item.11}}
 \backcite {correll2016semantics}{{6}{{{\textbf {F3:}}}}{Item.12}}
 \backcite {Pirolli}{{7}{4.3}{subsection.4.3}}
 \backcite {Hearst2009,Olston2003}{{8}{4.4}{subsection.4.4}}

@@ -186,9 +186,9 @@ the three representative patterns
 recommended in \zvpp corresponded
 to the same three groups of genes discussed
 in a recent publication~\cite{Gloss2017}:
-induced genes (profiles with expression levels staying up),
-repressed genes (\change{starting high then decreasing}),
-and transients (\change{rising first then dropping} at different time points). The clusters provoked G2 to generate a hypothesis
+induced genes (profiles with expression levels \change{going up} \includegraphics[width=2\baselineskip,keepaspectratio]{figures/induced.png}),
+repressed genes (\change{starting high then decreasing} \includegraphics[width=2\baselineskip,keepaspectratio]{figures/repressed.png})),
+and transients (\change{rising first then dropping at another time point} \includegraphics[width=2\baselineskip,keepaspectratio]{figures/transient.png})). The clusters provoked G2 to generate a hypothesis
 regarding the properties of transients:
 \textit{``Is that because all the transient groups
 get clustered together, or can I get sharp patterns
@@ -261,13 +261,13 @@ into eight different categories based on voltage properties,
 state of matter, and viscosity levels,
 by dynamically setting the cutoff values
 on the quantitative variables to create these classes.
-By exploring these custom classes, M2 discovered that the relationship between viscosity and lithium solvation energy is independent of whether a solvent belongs to the class of high voltage or low voltage solvents and cited that dynamic class creation was central to learning about this previously-unknown attribute properties:
+By exploring these custom classes, M2 discovered that the relationship between viscosity and lithium solvation energy is independent of whether a solvent belongs to the class of high voltage or low voltage solvents\change{. He cited }that dynamic class creation was central to learning about this previously-unknown attribute properties:
 \begin{quote}
 All this is really possible because of dynamic class creation, so this allows you to bucket your intuition and put that together. [...] I can now bucket things as high voltage stable, liquid stable, viscous, or not viscous and start doing this classification quickly and start to explore trends. [...] look how quickly we can do it!% Quite good!
 \end{quote}
 %Context creation is a useful ---- despite the --- pattern instance. Filtering still useful
 %\par Participants employed \emph{a mix of bottom-up and top-down approaches when faceting through data in VQS}, including narrowing the search space based on some intuition about a phenomena, selecting individual visualizations, or specifying high-level groupings to compare and query with.
-\subsection{The Sensemaking Process in \change{VQS Workflows}}
+\subsection{\change{Sensemaking in VQS Workflows}}
 Given our observations so far as to
 how participants
 make use of each sensemaking process in practice,
@@ -280,10 +280,10 @@ in the context of an analysis workflow. %interplay with each other dynamically i
 % We first examine the popularity of each sensemaking process based on how frequently they are used in the study. Figure~\ref{fig:feature_heatmap} show that features categorized as bottom-up (useful for 70\% of the use cases) and context creation (67\%) are much more useful compared top-down features (29\%). [Examples of Bottom up]. [Examples of Context Creation].
 %Despite differing in levels of usage, each sensemaking process fulfills a central role in participants' analysis.
 % illustrates the state transitions computed based on event sequences from the evaluation study. %stay in the same state.
+%Figure~\ref{fig:taxonomy},
 The event sequences from the evaluation study
 consist of labels describing when specific features were used.
-Using the taxonomy in \change{Section~\ref{sec:pd_findings}},%Figure~\ref{fig:taxonomy},
-we map each usage of a feature
+Using the taxonomy in \change{Section~\ref{sec:pd_findings}}, we map each usage of a feature
 to one of the three sensemaking processes.
 Each participant's event sequence
 is divided into sessions,
@@ -312,7 +312,7 @@ or match specification when looking for a specific pattern. %when A1 looks for s
 %Each event sequence is separated by labeled session breaks signaling the beginning of a new line of inquiry. The
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{figures/markov_transition.pdf}
-  \caption{Markov models computed based on the evaluation study event sequences, with edges denoting the probability that a participant in the particular domain will go from one sensemaking process to the next. Nodes are scaled according to the eigenvector centrality, which represents the percentage of time users would spend in a particular state.}\label{fig:transition}
+  \caption{Markov models computed based on the evaluation study event sequences, with edges denoting the probability that a participant in the particular domain will go from one sensemaking process to the next. Nodes are scaled according to the eigenvector centrality, which represents the percentage of time users would spend in a particular \change{sensemaking process in steady state}.}\label{fig:transition}
 \end{figure}
 % Similar to the sensemaking model proposed by Pirolli and Card~\cite{Pirolli}, the ---- sensemaking loop representing iterative process
 % ---- highlights how the two newly discovered VQS sensemaking process in this paper are essential for `closing the loop' between the sensemaking acts in VQSs. %, equally important
@@ -347,7 +347,7 @@ followed by bottom-up inquiries (such as drag-and-drop)
 %through dynamic classes than top-down pattern specification. %astronomers focus largely on performing top-down pattern specification, while filtering on the visualization space.
 The central process adopted by each domain
 is tightly coupled with characteristics
-of the analytic challenges associated with their subject area\change{, described in Section~\ref{sec:pd_findings}}.
+of the analytic challenges associated with their subject area\change{, as described earlier.}%in Section~\ref{sec:pd_findings}}.
 For example, without an initial query in-the-head,
 geneticists relied heavily on bottom-up querying
 through recommendations to jumpstart their queries.
@@ -357,7 +357,8 @@ through recommendations to jumpstart their queries.
 adopted a diverse set of workflows
 based on the unique set of research questions they brought to the study.
 The bi-directional and cyclical nature
-of the transition graphs in Figure~\ref{fig:transition} highlight how the three sensemaking processes do not simply follow a linear progression, going from unknown to known pattern instance and visualized attributes in the problem space. Instead, the high connectivity of the transition model illustrates how these three equally-important processes form a sensemaking loop\change{, representing} iterative acts of dynamic foraging and hypothesis generation. This flexibility is enabled by the diverse set of potential workflows that could be constructed in \change{an integrative} VQS like \zvpp, for addressing a wide range of analytical inquiries.%single-directional%. The VQS sensemaking loop%full-fledged
+of the transition graphs in Figure~\ref{fig:transition} highlight how the three sensemaking processes do not simply follow a linear progression, going from unknown to known \change{in the Figure~\ref{2dmodel} problem space}.%pattern instance and visualized attributes 
+ Instead, the high connectivity of the transition model illustrates how these three equally-important processes form a sensemaking loop\change{, representing} iterative acts of dynamic foraging and hypothesis generation. This flexibility is enabled by the diverse set of potential workflows that could be constructed in \change{an integrative} VQS like \zvpp, for addressing a wide range of analytical inquiries.%single-directional%. The VQS sensemaking loop%full-fledged
 \subsection{Limitations}
 \par Although evidence from our evaluation study
 suggests that direct sketch is inefficient,
