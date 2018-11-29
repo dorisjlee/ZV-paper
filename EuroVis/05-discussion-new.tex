@@ -19,19 +19,8 @@ Event codes included specific feature usage,
 insights,
 provoked actions, confusion,
 request for functionalities unaddressed
-by the system, and use of external tools\change{, detailed in Appendix~\ref{apdx:studydetails}}.
-% \begin{denselist}
-%     \item Insight (Science): Insight that connected back to the science (e.g. ``This cluster resembles a repressed gene.'')
-%     \item Insight (Data): Data-related insights (e.g. ``A bug in my data cleaning code generated this peak artifact.'')
-%     \item Provoke (Science): Interactions or observations made while using the VQS that provoked a scientific hypothesis to be generated.
-%     \item Provoke (Data): Interactions or observations made while using the VQS that provoked further data actions to continue the investigation.
-%     \item Confusion: Participants were confused during this part of the analysis.
-%     \item Want: Additional features that participant wants, which is not currently available on the system.
-%     \item External Tools: The use of external tools outside of \zv to complement the analysis process.
-% \end{denselist}
-To characterize the usefulness
-of each feature,
-we further labeled whether each
+by the system, and use of external tools\change{, detailed in Appendix~\ref{apdx:studydetails}}. To characterize the usefulness
+of each feature, we further labeled whether each
 feature was useful to a particular participant's analysis.
 A feature was deemed \textit{useful}
 if the feature was either used in a sensible
@@ -73,7 +62,7 @@ In this section, we will apply our thematic analysis results to understand how e
 despite the prevalence of sketch-to-query
 systems in the literature, \techreport{Figure \ref{fig:feature_heatmap} shows that} only two out of our nine participants
 found it useful to directly
-sketch their pattern onto the canvas (Figure~\ref{zvOverview}a). %Overall, bottom-up querying via drag-and-drop was more intuitive and more commonly used than top-down querying methods, such as sketching or input equations.
+sketch \change{desired} pattern onto the canvas. %Overall, bottom-up querying via drag-and-drop was more intuitive and more commonly used than top-down querying methods, such as sketching or input equations.
 The \change{reason why most} participants
 did not find \change{sketching useful} was that
 they often do not start their analysis with a specific pattern in mind.
@@ -82,8 +71,7 @@ from other visualizations they encounter
 during exploration, in which case it makes
 more sense to query using those visualizations
 as examples directly (e.g., by dragging and dropping
-that visualization onto the sketch canvas via an action like
-Figure~\ref{zvOverview}j).
+that visualization onto the \change{canvas to submit the query}).
 Even if a user has a pattern in mind,
 translating that pattern into a sketch is often hard
 to do. For example,
@@ -93,7 +81,7 @@ planetary rotation \includegraphics[width=2\baselineskip,keepaspectratio]{figure
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{figures/the_origins_of_sketch.pdf}
   \vspace{-5pt}
-  \caption{The number of times a pattern query originates from one of the workflows. We find that pattern queries are more commonly generated via bottom-up than top-down processes.}\label{fig:origins_of_sketch}
+  \caption{The number of times a pattern query originates from one of the workflows. We find that pattern queries are \change{far} more commonly generated via bottom-up than top-down processes.}\label{fig:origins_of_sketch}
   \vspace{-5pt}
 \end{figure}
 \par Given these initial findings,
@@ -140,7 +128,7 @@ than top-down processes for generating a pattern query.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\columnwidth]{figures/QueryModificationBySketch.pdf}
-    \caption{Canvas traces from M2 (left) and A3 (right) during the study demonstrating query modification. The original drag-and-dropped query is shown in blue and the sketch-modified queries in red.}
+    \caption{Canvas traces from M2 (left) and A3 (right) during the study demonstrating query modification. The original drag-and-dropped query is shown in blue and sketch-modified queries in red.}
     \label{query_modification}
     \vspace{-10pt}
 \end{figure}
@@ -152,7 +140,7 @@ resulting from complex physical processes
 that could not be written down as an equation analytically.
 Even in the case of material science when analytical
 relationships do exist, it is challenging to formulate
-functional forms in an prescriptive, ad-hoc manner.
+functional forms in \change{a prescriptive} manner.
 % Despite functional fitting being common in scientific data analysis, Figure \ref{feature_heatmap} shows that
 % . However,
 \par Our findings suggest that while sketching
@@ -162,11 +150,11 @@ is insufficient without data examples
 that can help analysts jumpstart their exploration}.
 In fact, from Figure~\ref{fig:origins_of_sketch},
 we can see that sketch-to-query was only used
-8 times, while the remaining modes were used 29 times altogether,
+8 times, while the remaining \change{querying modalities} were used 29 times altogether,
 more than three times as much as sketch-to-query.
 This finding has profound implications
 on the design of future VQSs, since Table~\ref{table:relatedwork}
-shows that past work have primarily focused
+\change{suggests} that past work have primarily focused
 on optimizing top-down process components,
 without considering how useful these features
 are in real-world analytic tasks.
@@ -188,7 +176,7 @@ In particular, we find that top-down approaches
 were only useful for 29\% of the use cases,
 whereas it was useful for 70\% of the use cases
 for bottom-up approaches and 67\%
-for context creation\footnote{Feature usefulness is computed based on a matrix of usefulness labels for each use case \change{defined by a feature and user pair (see Appendix~\ref{apdx:studydetails})}. The percentage of useful features for each process is computed as: $\frac{\textrm{\# of useful features in process}}{\textrm{total \# of features in process} \times \textrm{total \# of users}}$.}. We now highlight some of the exemplary workflows demonstrating the efficacy of the latter two sensemaking processes.
+for context creation\footnote{\change{See Appendix~\ref{apdx:studydetails} for details on how this measure is computed.}}. We now highlight some of the exemplary workflows demonstrating the efficacy of the latter two sensemaking processes.
 %number of features labeled as useful divided by the product of total number of features and total number of users}
 %%The prevalence of bottom-up approaches not only point to the need for result querying, but also providing recommendations for users without desired patterns in mind.
 \par As shown in Figure~\ref{fig:origins_of_sketch},
@@ -199,8 +187,8 @@ recommended in \zvpp corresponded
 to the same three groups of genes discussed
 in a recent publication~\cite{Gloss2017}:
 induced genes (profiles with expression levels staying up),
-repressed genes (started high but went down),
-and transients (go up and then come down at different time points). The clusters provoked G2 to generate a hypothesis
+repressed genes (\change{starting high then decreasing}),
+and transients (\change{rising first then dropping} at different time points). The clusters provoked G2 to generate a hypothesis
 regarding the properties of transients:
 \textit{``Is that because all the transient groups
 get clustered together, or can I get sharp patterns

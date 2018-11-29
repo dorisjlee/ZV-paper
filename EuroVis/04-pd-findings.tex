@@ -3,7 +3,7 @@
 % From participatory design,
 \section{Participatory Design Findings\label{sec:pd_findings}}
 All of the three domains described in the previous section recognized the need for a VQS. As discussed in Section~\ref{sec:methods}, we worked closely with participants to develop features to address their problems and challenges. \change{In this section, we first provide a high-level system overview of \zvpp. Through our participatory design findings,} we develop a taxonomy for organizing these functionalities into three sensemaking processes, as shown in Figure~\ref{fig:taxonomy}. %We first describe features that we incorporated into our enhanced VQS, \zvpp, thematically organized by components (grouping features in the bottom-most level to components in the second level of Figure~\ref{fig:taxonomy}).
-\change{Starting from the bottom level of the taxonomy, we first materialize what each component in our taxonomy entails, then we proceed onto the upper level of the taxonomy, describing the space of problems addressable by each sensemaking process and their design objectives.}%collaboratively-designed
+\change{Starting from the bottom level of the taxonomy, we first describe what each component in our taxonomy encompasses, then we proceed onto the upper level of the taxonomy, describing the space of problems addressable by each sensemaking process and their design objectives.}%collaboratively-designed
 %Next, we describe features that we incorporated into our enhanced VQS, \zvpp, thematically organized by component. Then, we introduce a taxonomy for organizing these components into three sensemaking processes, spanning different problem areas that VQSs are aimed to solve.
 %\change{In this section, we will first introduce a taxonomy for organizing these components into}
 %Based on feature requests and discussion with our participants, we incorporated key features missing in our original VQS.
@@ -24,7 +24,7 @@ All of the three domains described in the previous section recognized the need f
 \end{figure*}
 \change{
   \subsection{System\label{sec:system}}
-  The \zvpp interface is organized into 5 major regions that dynamically updates upon user interactions. Typically, analysts begin their analysis by selecting the dataset and attribute to visualize in the \emph{data selection panel} (Figure~\ref{zvOverview}A). Then, they can specify a pattern query of interest, through either sketching, inputting an equation, uploading a data pattern or dragging and dropping an existing visualization, displayed on the \emph{query canvas} (Figure~\ref{zvOverview}B). \zvpp performs shape-matching between the queried pattern and other possible visualizations and returns a ranked list of visualizations that are most similar to the queried pattern, displayed in the \emph{results panel} (Figure~\ref{zvOverview}C). At any point during the analysis, analysts can adjust various system-level settings through the \emph{control panel} (Figure~\ref{zvOverview}D) or browse through the list of recommendations provided by \zvpp (Figure~\ref{zvOverview}E). Our \zvpp system is open source and available at: \url{github.com/[Annonymized for Submission]}. 
+  The \zvpp interface is organized into 5 major regions that dynamically updates upon user interactions. Typically, analysts begin their analysis by selecting the dataset and attribute to visualize in the \emph{data selection panel} (Figure~\ref{zvOverview}A). Then, they can specify a pattern query of interest, through either sketching, inputting an equation, uploading a data pattern, or dragging and dropping an existing visualization, displayed on the \emph{query canvas} (Figure~\ref{zvOverview}B). \zvpp performs shape-matching between the queried pattern and other possible visualizations and returns a ranked list of visualizations that are most similar to the queried pattern, displayed in the \emph{results panel} (Figure~\ref{zvOverview}C). At any point during the analysis, analysts can adjust various system-level settings through the \emph{control panel} (Figure~\ref{zvOverview}D) or browse through the list of recommendations provided by \zvpp (Figure~\ref{zvOverview}E). Our \zvpp system is open source and available at: \url{github.com/[Annonymized for Submission]}.
 }
 \subsection{\change{Components} Emerging from Participatory Design\label{sec:pd_findings}}
 \change{
@@ -43,6 +43,7 @@ All of the three domains described in the previous section recognized the need f
 % \end{figure*}
  %We discovered three central themes encapsulating these features that are important to facilitate rapid hypothesis generation and insight discovery, but are missing in prior VQSs. While some of our findings echo prior work on system-level taxonomies of visualization tasks \cite{Amar2005,Heer2012}, we highlight how specific analytic tasks and interaction features could be used to enhance VQSs in particular. \techreport{In particular, we learned that \textit{participants wanted more control over the internals of the systems and an integrated workflow that helped streamline their analysis when using VQSs.}}
 \change{
+\dor{This section is unchanged since the last iteration.}
   \boldpara{I) Pattern Specification}
   \nstitle{Purpose:} Specify exact descriptions
   of a pattern as a query
@@ -156,7 +157,7 @@ All of the three domains described in the previous section recognized the need f
 \begin{table}
 		\centering
     \includegraphics[width=0.8\linewidth]{figures/related_works_table.pdf}
-    \caption{Table summarizing whether key functionalities of VQSs (columns) are covered by past systems (row), indicated by checked cells. Column header colors blue, orange, green represents three sensemaking process (top-down querying, search with context, and bottom-up querying)\cut{ described in Section~\ref{sec:pd_findings}}. The heavily-used, practical features in our study for context-creation and bottom-up inquiry is largely missing from prior VQSs.}
+    \caption{Table summarizing whether key \change{functional components} (columns) are covered by past systems (row), indicated by checked cells. Column header colors blue, orange, green represents three sensemaking process (top-down querying, search with context, and bottom-up querying)\cut{ described in Section~\ref{sec:pd_findings}}. The heavily-used, practical features in our study for context-creation and bottom-up inquiry is largely missing from prior VQSs.}
     \label{table:relatedwork}
     \vspace{-10pt}
 \end{table}
@@ -169,8 +170,7 @@ the visualization that contains
 the desired pattern may already be \texttt{known} to the analyst,
 exist as a pattern \texttt{in-the-head} of the analyst,
 or completely \texttt{unknown} to the analyst.
-In the \texttt{known} pattern instance region (Figure~\ref{2dmodel} grey), visualization-at-a-time
-s such as Tableau,
+In the \texttt{known} pattern instance region (Figure~\ref{2dmodel} grey), visualization-at-a-time systems such as Tableau,
 where analyst manually create and examine each visualization one at a time,
 is more well-suited than VQSs, since analysts can directly work with the selected instance without the need for visual querying.
 Inspired by Pirolli and Card's information
@@ -181,8 +181,8 @@ we define \textit{top-down pattern specification} as the search-oriented paradig
 in-the-head pattern (Figure~\ref{2dmodel} blue) in a fixed collection.
 On the other hand, in the realm of \textit{bottom-up
 data-driven inquiry} (Figure~\ref{2dmodel} green),
-the pattern of interest is unknown and external
-to the user and must be driven by recommendations
+the pattern of interest is unknown\change{, external
+to the user, }and must be driven by recommendations
 or queries that originate from the data (or equivalently, the visualization).
 As we will discuss later, this process is crucial
 but underexplored in past work on VQSs.
@@ -199,10 +199,9 @@ In the case of our material science participants,
 they wanted to explore relationships between different
 X and Y variables.
 In this realm of \texttt{unknown} attributes,
-context creation (Figure~\ref{2dmodel} yellow)---i.e.,
-setting the stage for bottom-up or top-down processes---\dor{this clause is awkward?}is
+context creation (Figure~\ref{2dmodel} yellow) is
 essential for allowing users
-to pivot across different visualization collections.%subspaces. %Most past VQSs assume that the analyst has a desired pattern in-the-head that could be conveyed through visual specification, such as a sketch.
+to pivot across different visualization collections.%subspaces. %Most past VQSs assume that the analyst has a desired pattern in-the-head that could be conveyed through visual specification, such as a sketch.%---i.e., setting the stage for bottom-up or top-down processes---\dor{this clause is awkward?}
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\linewidth]{figures/2dmodel.pdf}
@@ -211,12 +210,12 @@ to pivot across different visualization collections.%subspaces. %Most past VQSs 
   \vspace{-10pt}
 \end{figure}
 \subsection{Design Goals for the Sensemaking Processes}
-After understanding how each sensemaking process fits into the problem space addressed by VQSs, we further explore the design objectives and challenges in supporting each sensemaking process, grounded in our collaborative design experience. % based on the taxonomy orgaby developing a taxonomy for organizing the aforementioned components.% fits into the paradigms of sensemaking in VQSs, as shown in Figure~\ref{fig:taxonomy}. In particular, we will describe the main form of inquiry addressed by each paradigm\cut{(\textit{what, where, which})}, its characteristic use case, and design challenges in supporting these paradigms.
+After understanding how each sensemaking process fits into the problem space \change{addressable} by VQSs, we further explore the design objectives and challenges in supporting each sensemaking process, grounded in our collaborative design experience. % based on the taxonomy orgaby developing a taxonomy for organizing the aforementioned components.% fits into the paradigms of sensemaking in VQSs, as shown in Figure~\ref{fig:taxonomy}. In particular, we will describe the main form of inquiry addressed by each paradigm\cut{(\textit{what, where, which})}, its characteristic use case, and design challenges in supporting these paradigms.
 % \par Drawing from our participatory design experience, evaluation study, and literature review in this space, we design a taxonomy for understanding the key functionalities in VQSs. In Figure~\ref{fig:taxonomy}, we show how each use cases makes use of the different features in \zv, then we organize the features into key components for VQSs, which belongs to one of the three paradigms in the VQS design space.%, effectively moving rightwards to the gray area in Figure~\ref{2dmodel}, where the pattern instance is known.
 \boldpara{Top-down Pattern Specification} begins with the user's intuition
 about how their desired patterns should look like based on `theory', including visualizations from past experience or abstract conceptions based on external knowledge. The goal of top-down pattern specification is to address the \textit{which} question of visual sensemaking: \textit{which pattern instance exhibits this pattern?} Based on this preconceived notion of what to search for, the design challenge is to translate the query in the
 analyst's head to a query executable by the VQS.
-In the taxonomy in Figure~\ref{fig:taxonomy},
+\change{In the Figure~\ref{fig:taxonomy} taxonomy},
 this includes both components for specifying the pattern,
 as well as controls governing the underlying
 algorithm of how shape-matching is performed.
@@ -249,7 +248,7 @@ as well as low-effort mechanisms to search via these results.
 \boldpara{Context Creation} addresses the \textit{where}
 question of sensemaking by enabling analysts
 to navigate across different parts of the visualization
-collection to learn about \textit{where the patterns of interest lie}.
+collection to learn about \textit{where \change{in the dataset do} the patterns of interest lie}.
 For example, material scientists often do not start
 with a pattern in-the-head, but recognize salient
 trends such as inverse correlation or linear correlation.
@@ -258,7 +257,7 @@ classes to study their data from alternative perspectives.
 The design challenge of context creation is to develop
 features that act as a `lens': navigating users to desired data subsets,
 visualizing and comparing how the data changes between the different lenses, and ensuring that context is dynamically reflected across other VQS functionalities.
-\par\noindent The three aforementioned sensemaking processes are akin to the well-studied sensemaking paradigms of search, browse, and faceted navigation on the Web~\cite{Hearst2009,Olston2003}. Due to each of their advantages and limitations given different information seeking tasks, search interfaces have been designed to support all three complementary acts and transition smoothly between them to combine the strength of all three paradigms. \change{Similarly for VQSs, our main design objective in developing \zvpp is to integrate all the three sensemaking in the same system. As we discover in the evaluation study in the following section, this integration encourages and accelerate the process of visualization discovery.}
+\par\noindent The three aforementioned sensemaking processes are akin to the well-studied sensemaking paradigms of search, browse, and faceted navigation on the Web~\cite{Hearst2009,Olston2003}. Due to each of their advantages and limitations given different information seeking tasks, search interfaces have been designed to support all three complementary acts and transition smoothly between them to combine the strength of all three paradigms. \change{Similarly for VQSs, our main design objective in developing \zvpp is to integrate all the three sensemaking in the same system. As we discover in the evaluation study in the following section, this integration encourages and accelerates the process of visualization discovery.}
 % complementary in function
 % each have their limitations and advantages ----insufficient on its own
 % facillitate these acts, given different user objectives,
