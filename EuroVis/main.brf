@@ -16,15 +16,15 @@
 \backcite {TR}{{3}{2.2}{subsection.2.2}}
 \backcite {Bossen2016}{{3}{2.3}{subsection.2.3}}
 \backcite {zillow}{{3}{2.3}{subsection.2.3}}
-\backcite {Drlica-Wagner2017}{{3}{3}{section.3}}
+\backcite {Drlica-Wagner2017}{{4}{3}{section.3}}
 \backcite {Peng2016}{{4}{3}{section.3}}
 \backcite {Khetan2018}{{4}{3}{section.3}}
 \backcite {Nugent1997}{{5}{{{\textbf {C3:}}}}{Item.3}}
 \backcite {mohebbi2011google}{{5}{{{\textbf {F3:}}}}{Item.6}}
 \backcite {correll2016semantics,Holz2009,Eichmann2015}{{5}{4.2}{Item.6}}
-\backcite {Mannino2018}{{5}{{{\textbf {F1:}}}}{Item.10}}
-\backcite {Hochheiser2004}{{5}{{{\textbf {F1:}}}}{Item.10}}
-\backcite {ryall2005querylines}{{5}{{{\textbf {F1:}}}}{Item.10}}
+\backcite {Mannino2018}{{6}{{{\textbf {F1:}}}}{Item.10}}
+\backcite {Hochheiser2004}{{6}{{{\textbf {F1:}}}}{Item.10}}
+\backcite {ryall2005querylines}{{6}{{{\textbf {F1:}}}}{Item.10}}
 \backcite {wattenberg2001sketching,Mannino2018}{{6}{{{\textbf {F2:}}}}{Item.11}}
 \backcite {ryall2005querylines}{{6}{{{\textbf {F2:}}}}{Item.11}}
 \backcite {Hochheiser2001}{{6}{{{\textbf {F2:}}}}{Item.11}}

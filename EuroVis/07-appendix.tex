@@ -46,7 +46,7 @@ categorized every event in the user study using the following coding labels:
     \item Envisioned usage \textbf{[E]}: Features which could be used practically if the envisioned data was available or if they conducted downstream analysis, but was not performed due to the limited time during the user study.
     \item Not useful \textbf{[N]}: Features that are not useful or do not make sense for the participant's research question and dataset.
 \end{denselist}
-The feature usage labels for each user is summarized in Figure~\ref{feature_heatmap}.
+The feature usage labels for each user is summarized in Figure~\ref{feature_heatmap}. A feature is regarded as \emph{useful} if it has a \textbf{P} or \textbf{E} code label. Using the matrix from Figure~\ref{feature_heatmap}, we compute the percentage of useful features for each sensemaking process as: $\frac{\textrm{\# of useful features in process}}{\textrm{total \# of features in process} \times \textrm{total \# of users}}$.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.75\columnwidth]{figures/PENcoding.pdf}
@@ -54,4 +54,3 @@ The feature usage labels for each user is summarized in Figure~\ref{feature_heat
     \label{feature_heatmap}
     \vspace{-5pt}
 \end{figure}
-A feature is regarded as \emph{useful} if it has a \textbf{P} or \textbf{E} code label. Using the matrix from Figure~\ref{feature_heatmap}, we compute the percentage of useful features for each sensemaking process as: $\frac{\textrm{\# of useful features in process}}{\textrm{total \# of features in process} \times \textrm{total \# of users}}$.
