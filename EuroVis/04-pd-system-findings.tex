@@ -1,42 +1,54 @@
 %!TEX root = main.tex
-% we developed features that addresses the challenges they pose on VQSs, described first in this section. From these experiences, we develop a taxonomy for summarizing key functionalities in VQSs.
-% From participatory design,
 \begin{figure*}[ht!]
   \centering
   \vspace{-5pt}
   \includegraphics[width=0.95\linewidth]{figures/zvpp_system.pdf} %5.5
-  \vspace{-5pt}\caption{\change{The \zvpp system consist of : (A) data selection panel (where users can select visualized dataset and attributes), (B) query canvas (where the queried data pattern is submitted and displayed), (C) results panel (where the visualizations most similar to the queried pattern is displayed as a ranked list), (D) control panel (where users can adjust various system-level settings), and (E) recommendation (where the typical and outlying trends in the dataset is displayed).}} %Prior to the participatory design, \zv only included a single sketch input with no additional options.}
-  %the ability to query via (a) a sketch,(b) input equations, (i) uploaded patterns, or (j) drag and drop; (c) data smoothing; query specification mechanisms including (d) x-range selection and filtering, (e) x-range invariance, (f) similarity metric selection, (g) filtering, and (h) dynamic class creation; recommendation of (k) representative and (l) outlier trends.
+  \vspace{-5pt}\caption{\change{The \zvpp system consist of : (A) data selection panel (where users can select visualized dataset and attributes), (B) query canvas (where the queried data pattern is submitted and displayed), (C) results panel (where the visualizations most similar to the queried pattern is displayed as a ranked list), (D) control panel (where users can adjust various system-level settings), and (E) recommendation (where the typical and outlying trends in the dataset is displayed).}}
   \label{zvOverview}
   \vspace{-5pt}
 \end{figure*}
-\section{Participatory Design Findings\label{sec:pd_findings}}
-All of the three domains described in the previous section recognized the need for a VQS. As discussed in Section~\ref{sec:methods}, we worked closely with participants to develop features to address their problems and challenges. \change{In this section, we first provide a high-level system overview of \zvpp. Through our participatory design findings,} we develop a taxonomy for organizing these functionalities into three sensemaking processes, as shown in Figure~\ref{fig:taxonomy}. %We first describe features that we incorporated into our enhanced VQS, \zvpp, thematically organized by components (grouping features in the bottom-most level to components in the second level of Figure~\ref{fig:taxonomy}).
-\change{Starting from the bottom level of the taxonomy, we first describe what each component in our taxonomy encompasses, then we proceed onto the upper level of the taxonomy, describing the space of problems addressable by each sensemaking process and their design objectives.}%collaboratively-designed
-%Next, we describe features that we incorporated into our enhanced VQS, \zvpp, thematically organized by component. Then, we introduce a taxonomy for organizing these components into three sensemaking processes, spanning different problem areas that VQSs are aimed to solve.
-%\change{In this section, we will first introduce a taxonomy for organizing these components into}
-%Based on feature requests and discussion with our participants, we incorporated key features missing in our original VQS.
-%From these discussion and analysis of past VQSs, we identify nine components of VQSs, described below. T
-% Along with analysis of past literature, we develop a taxonomy of key functionalities in VQSs.
-% novel contribution on  ---
-% contribute to holistic understanding on how sensemaking --- in VQS.
-% study on how users
-% Implication ---
-% •	What types of questions/ dataset/ problem challenges are asked to VQS or can be addressed by VQS? (S3)
-% •	What kind of features needs to be designed to address these challenges (S4 PD)
-%We employed participatory design with our scientists to incorporate key features missing in our original VQS, and unaddressed in their existing workflows. From these discussion and analysis of past VQSs, we identify nine components of VQSs, described below.
-\begin{figure*}[ht!]
-  \centering
-  \includegraphics[width=0.9\linewidth]{figures/taxonomy.pdf}
-  \caption{Taxonomy of functionalities in VQSs. Each of the three sensemaking process is broken down into key functional components in VQSs. \change{We list the types of questions addressed by each component from a system's perspective.}} %, which is instantiated as features in \zvpp.}% The bottom-most layer connects the use cases features that have practical or envisioned usage based on the evaluation study.}
-  \label{fig:taxonomy}
-\end{figure*}
+\section{System-level Participatory Design Findings\label{sec:pd_findings}}
+%All of the three domains described in the previous section recognized the need for a VQS. As discussed in Section~\ref{sec:methods},
+%we worked closely with participants to develop features to address their problems and challenges.
+Holzblatt and Jones~\cite{HoltzblattJones} describes contextual inquiry as a technique that forms the basis for ``\textit{developing a system model that will support user's work}'' that subsequently ``\textit{fosters participatory design}''. Given the need for a VQS highlighted in participatory design, we further distill a list of VQS features by working closely with participants to develop features to address their problems and challenges. In this section, we first reflect on our participatory design (PD) methodology
+to introduce the PD findings, then we provide a high-level system overview of the product of our PD exercise, \zvpp.
+\subsection{Reflection on Meta-Design Process}
+\par Throughout the PD process, we identified various subtasks based on the scientist's workflow and elicited intermediate feedback.
+Bodker et. al.~\cite{BodkerGronbaek} cites the importance of encouraging user participation and creativity in cooperative design through different techniques, such as future workshops, critiques, and situational role-playing. Similarly, our PD objective was to collect as many comprehensive list of feature proposals, inclusive across different domains, leading to the added features listed in Table~\ref{bigfeaturetable}. Given the highly-evolving, unstructured nature of exploratory data analysis (CITE), this technique comes with its advantages and limitations, since users request (or lack therof) may not always translate to a direct need. For instance, we found that introducing the newly-added features from \zvpp that addressed a particular use case often results in discovering an unexpected practice usage of the feature with other groups of participants. Having feature proposals inspired by multiple use cases can also lead to more generalized design choice. For example, we spoke to astronomers who wanted to eliminate sparse time series from their visual queries. In the same week, we spoke to material scientists who expressed a need for inspecting only solvents with properties above a certain threshold. Through these use cases, data filtering arose as a crucial, common operation that we needed to incorporate into \zvpp in order to support these class of queries.
+\par While our collective brainstorming led to the cross-pollination and generalization of features, this technique can also lead to unnecessary features that result in wasted engineering efforts. During the design phase, there were numerous problems and features proposed by participants, but not all were incorporated in the tool. Based on our meeting logs with participants, we found that the reasons for not taking a feature from the design stage to the implementation stage includes:
+\begin{denselist}
+\item Nice-to-haves: One of the most common reasons for unincorporated features comes from participant's requests for nice-to-have features. The amount of nice-to-have features that one could envision for the tool is endless. We use
+two criteria to heuristically judge whether to implement a particular feature:
+\begin{enumerate}[leftmargin=*]
+\item \textit{Necessity:} Without this feature, can the analyst still work with this dataset using our tool and achieve what they want to do?
+\item \textit{Generality:} If this feature was implemented, will it benefit only this specific use case or be potentially useful for other applications as well?
+\end{enumerate}
+\item ``One-shot'' operations: We decided not to include features that were ``one-shot'' operations that only needed to be performed once during the analysis workflow. For example, certain data preprocessing operations such as filtering null values only needed to be performed once unlike the data smoothing feature that we added, which was a preprocessing step that could be iteratively performed along with other operations in the VQS. This design choice is specific to our VQS design study.
+\item Substantial research or engineering effort: Some proposed features do not make sense in the context of VQS. For example, the \matsci group proposed functional fitting to obtain fitting coefficients. Other features requires a completely different set of research questions. For example, the question of how to properly compute similarity between time series with non-uniform number of datapoints arose in the astronomy and genetics use case, but requires the development of a novel distance metric or algorithm that is out of the scope of the RQs of our design study.
+\item Underdeveloped ideas: Other feature requirements came from casual specification that were underspecified. For example, A1 wanted to look for objects that have deficiency in one band and high emission in another band, but what brightness levels qualifies as a deficiency is ambiguous.
+\end{denselist}
+\par Failure to identify these early signs in the design phase may result in feature implementations that turn out not to be useful for the participants. Given exhaustive nature of Table~\ref{bigfeaturetable}, each motivated by example use cases from one or more domains, we organized the features list in terms of the sensemaking framework described in Section~\ref{sec:sensemaking} and evaluated its effectiveness in the evaluation study in Section~\ref{sec:eval_findings}.
+%Our experimental evaluation shows that some of our feature choices also suffer from these pitfalls. For example, we incorporated the feature to reverse the y-axis so that astronomers could better understand magnitude measurements (as larger magnitudes counter-intuitively corresponds to dimmer objects). In hindsight, the feature was not crucial for the analysis since another derived measure present in dataset could be selected instead and the feature was solely specific to the astronomy use case. In the end, we found that this feature was not used by any of the participants (including the proposer) in the user study.
+
+% These longitudinal collaboration led to a list of features that help support these subtasks. Given the , we encouraged participants to ----how VQS features could assist them in their PD
+%  which is later organized into a ------ framework in Section ----, and evaluated in ----
+
+% collective brainstorm exercise
+% partnership
+% during this ---- `what-if'
+% with the participant's dataset
+% The result of our ----
+% The goal of our participatory design process was to collect brainstorm --- a comphrensive list of ----
+% encourage creativity and inclusiveness across domains---
+% EDA is inherently unstructured process, highly evolving ,etc
+
+%incrementally incorporated and improved over time as described in the Figure~\ref{timeline} timeline
+
 \change{
   \subsection{System\label{sec:system}}
   The \zvpp interface is organized into 5 major regions that dynamically updates upon user interactions. Typically, analysts begin their analysis by selecting the dataset and attribute to visualize in the \emph{data selection panel} (Figure~\ref{zvOverview}A). Then, they can specify a pattern query of interest, through either sketching, inputting an equation, uploading a data pattern, or dragging and dropping an existing visualization, displayed on the \emph{query canvas} (Figure~\ref{zvOverview}B). \zvpp performs shape-matching between the queried pattern and other possible visualizations and returns a ranked list of visualizations that are most similar to the queried pattern, displayed in the \emph{results panel} (Figure~\ref{zvOverview}C). At any point during the analysis, analysts can adjust various system-level settings through the \emph{control panel} (Figure~\ref{zvOverview}D) or browse through the list of \emph{recommendations} provided by \zvpp (Figure~\ref{zvOverview}E). Our \zvpp system is open source and available at: \url{github.com/[Annonymized for Submission]}.
 }
-\subsection{\change{Components} Emerging from Participatory Design\label{sec:pd_findings}}
-\change{
-  Here, we discuss the purpose of the components in the lower-level of our Figure~\ref{fig:taxonomy} taxonomy, motivating use cases collected over the course of participatory design, and how these themes instantiate into corresponding features in \zvpp and other existing VQSs. Each of the features described (labelled F*) correspond directly to a use case challenge (labelled C*) highlighted in the list above it.
-}
-\subsection{Reflection on Meta-Design Process}
+% \subsection{\change{Components} Emerging from Participatory Design\label{sec:pd_findings}}
+% \change{
+%   Here, we discuss the purpose of the components in the lower-level of our Figure~\ref{fig:taxonomy} taxonomy, motivating use cases collected over the course of participatory design, and how these themes instantiate into corresponding features in \zvpp and other existing VQSs. Each of the features described (labelled F*) correspond directly to a use case challenge (labelled C*) highlighted in the list above it.
+% }

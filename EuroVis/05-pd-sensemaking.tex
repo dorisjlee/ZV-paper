@@ -1,5 +1,118 @@
 %!TEX root = main.tex
-\section{The Sensemaking Model for VQSs}
+\section{The Sensemaking Model for VQSs\label{sec:sensemaking}}
+raw findings, then we organize  describing the two products from PD and the sensemaking model, described in the following section. Through our participatory design findings, we develop a taxonomy for organizing these functionalities into three sensemaking processes, as shown in Figure~\ref{fig:taxonomy}. %We first describe features that we incorporated into our enhanced VQS, \zvpp, thematically organized by components (grouping features in the bottom-most level to components in the second level of Figure~\ref{fig:taxonomy}).
+Starting from the bottom level of the taxonomy, we first describe what each component in our taxonomy encompasses, then we proceed onto the upper level of the taxonomy, describing the space of problems addressable by each sensemaking process and their design objectives.%collaboratively-designed
+%Next, we describe features that we incorporated into our enhanced VQS, \zvpp, thematically organized by component. Then, we introduce a taxonomy for organizing these components into three sensemaking processes, spanning different problem areas that VQSs are aimed to solve.
+%\change{In this section, we will first introduce a taxonomy for organizing these components into}
+%Based on feature requests and discussion with our participants, we incorporated key features missing in our original VQS.
+%From these discussion and analysis of past VQSs, we identify nine components of VQSs, described below. T
+% Along with analysis of past literature, we develop a taxonomy of key functionalities in VQSs.
+% novel contribution on  ---
+% contribute to holistic understanding on how sensemaking --- in VQS.
+% study on how users
+% Implication ---
+% •	What types of questions/ dataset/ problem challenges are asked to VQS or can be addressed by VQS? (S3)
+% •	What kind of features needs to be designed to address these challenges (S4 PD)
+%We employed participatory design with our scientists to incorporate key features missing in our original VQS, and unaddressed in their existing workflows. From these discussion and analysis of past VQSs, we identify nine components of VQSs, described below.
+
+\subsection{Characterizing the Problem Space for VQSs}
+%Based on example use cases and feature components from participatory design, we further characterize the design space of VQSs. further characterize three sensemaking process within the problem space of VQSs.
+Given our earlier description of VQS features organized into components, we now introduce the three sensemaking processes by characterizing how they fit into different problem areas that VQSs are aimed to solve. Visual querying often consists of searching for a desired pattern instance (Z) across a visualization collection specified by some given attributes (X,Y). \change{Correspondingly, }we introduce two axes depicting the amount of information known about the visualized attribute and pattern instance.%, as shown in Figure~\ref{2dmodel}.
+%(e.g., only interested in patterns related to a specific gene)
+\par Along the \textbf{pattern instance} axis,
+the visualization that contains
+the desired pattern may already be \texttt{known} to the analyst,
+exist as a pattern \texttt{in-the-head} of the analyst,
+or completely \texttt{unknown} to the analyst.
+In the \texttt{known} pattern instance region (Figure~\ref{2dmodel} grey), visualization-at-a-time systems such as Tableau,
+where analyst manually create and examine each visualization one at a time,
+is more well-suited than VQSs, since analysts can directly work with the selected instance without the need for visual querying.
+Inspired by Pirolli and Card's information
+foraging framework~\cite{Pirolli}, which distinguishes
+between information processing tasks that are \textit{top-down}
+(from theory to data) and \textit{bottom-up} (from data to theory),
+we define \textit{top-down pattern specification} as the search-oriented paradigm where analysts query based on their
+in-the-head pattern (Figure~\ref{2dmodel} blue) in a fixed collection.
+On the other hand, in the realm of \textit{bottom-up
+data-driven inquiry} (Figure~\ref{2dmodel} green),
+the pattern of interest is unknown\change{, external
+to the user, }and must be driven by recommendations
+or queries that originate from the data (or equivalently, the visualization).
+As we will discuss later, this process is crucial
+but underexplored in past work on VQSs.
+%analysts often do not start with a known pattern instance. T
+\par The second axis, \textbf{visualized attributes},
+depicts how much the analyst
+knows about which X and Y axes
+they are interested in visualizing.
+In both the astronomy and genetics use cases,
+as well as past work in this space,
+data was in the form of a time series
+with \texttt{known} visualized attributes.
+In the case of our material science participants,
+they wanted to explore relationships between different
+X and Y variables.
+In this realm of \texttt{unknown} attributes,
+context creation (Figure~\ref{2dmodel} yellow) is
+essential for allowing users
+to pivot across different visualization collections.%subspaces. %Most past VQSs assume that the analyst has a desired pattern in-the-head that could be conveyed through visual specification, such as a sketch.%---i.e., setting the stage for bottom-up or top-down processes---\dor{this clause is awkward?}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/2dmodel.pdf}
+  \caption{The problem space for VQSs is characterized by how much the analyst knows about the visualized attributes and the pattern instance. Colored areas highlight the three sensemaking processes in VQSs for addressing these characteristic problems. While prior work has focused solely on use cases in the blue region, we envision opportunities for VQSs beyond this to a larger space of use cases covered by the yellow and green regions.}
+  \label{2dmodel}
+  \vspace{-10pt}
+\end{figure}
+\subsection{Design Goals for the Sensemaking Processes}
+After understanding how each sensemaking process fits into the problem space \change{addressable} by VQSs, we further explore the design objectives and challenges in supporting each sensemaking process, grounded in our collaborative design experience. % based on the taxonomy orgaby developing a taxonomy for organizing the aforementioned components.% fits into the paradigms of sensemaking in VQSs, as shown in Figure~\ref{fig:taxonomy}. In particular, we will describe the main form of inquiry addressed by each paradigm\cut{(\textit{what, where, which})}, its characteristic use case, and design challenges in supporting these paradigms.
+% \par Drawing from our participatory design experience, evaluation study, and literature review in this space, we design a taxonomy for understanding the key functionalities in VQSs. In Figure~\ref{fig:taxonomy}, we show how each use cases makes use of the different features in \zv, then we organize the features into key components for VQSs, which belongs to one of the three paradigms in the VQS design space.%, effectively moving rightwards to the gray area in Figure~\ref{2dmodel}, where the pattern instance is known.
+\boldpara{Top-down Pattern Specification} begins with the user's intuition
+about how their desired patterns should look like based on `theory', including visualizations from past experience or abstract conceptions based on external knowledge. The goal of top-down pattern specification is to address the \textit{which} question of visual sensemaking: \textit{which pattern instance exhibits this pattern?} Based on this preconceived notion of what to search for, the design challenge is to translate the query in the
+analyst's head to a query executable by the VQS.
+\change{In the Figure~\ref{fig:taxonomy} taxonomy},
+this includes both components for specifying the pattern,
+as well as controls governing the underlying
+algorithm of how shape-matching is performed.
+For example, A1 knows intuitively
+what a supernovae pattern looks like
+and the detailed constraints on the shape,
+such as the width and height of the peak
+or the level of error tolerance for defining a match.
+He can search for transient patterns through sketching,
+select the option to ignore differences
+on the x axis, and changes the similarity metric for flexible matching.  %The design challenge of top-down pattern specification is to ----- enable users to How to translate the in-the-head query to visual query and how matching is done.
+\boldpara{Bottom-up data-driven inquiry} is
+a browsing-oriented sensemaking process
+that goes from data to theory to
+addresses the \textit{what} questions
+in the sensemaking process.
+% While the usage of each querying feature may vary from one participant to the next, generally, result querying and pattern upload are considered bottom-up approaches that go from data to theory by enabling users to query via examples of known visualizations. Bottom-up data-driven inquiries
+ For example, genetics participants do not
+ have a preconceived knowledge of what to search
+ for in the dataset.
+ They were mostly interested in
+ \textit{what types of patterns exist in the dataset}
+ through representative trends, as a means to
+ jumpstart further queries. %The goal of data-driven inquiry is to move towards the blue area in Figure~\ref{2dmodel} to help analysts gain more information about patterns of interest in-the-head.
+% notion of what the pattern looks like
+The design challenge include developing
+the right set of `stimuli' that could
+provoke further data-driven inquiries,
+as well as low-effort mechanisms to search via these results.
+\boldpara{Context Creation} addresses the \textit{where}
+question of sensemaking by enabling analysts
+to navigate across different parts of the visualization
+collection to learn about \textit{where \change{in the dataset do} the patterns of interest lie}.
+For example, material scientists often do not start
+with a pattern in-the-head, but recognize salient
+trends such as inverse correlation or linear correlation.
+They switch between different visualized attributes or dynamic
+classes to study their data from alternative perspectives.
+The design challenge of context creation is to develop
+features that act as a `lens': navigating users to desired data subsets,
+visualizing and comparing how the data changes between the different lenses, and ensuring that context is dynamically reflected across other VQS functionalities.
+\par\noindent The three aforementioned sensemaking processes are akin to the well-studied sensemaking paradigms of search, browse, and faceted navigation on the Web~\cite{Hearst2009,Olston2003}. Due to each of their advantages and limitations given different information seeking tasks, search interfaces have been designed to support all three complementary acts and transition smoothly between them to combine the strength of all three paradigms. \change{Similarly for VQSs, our main design objective in developing \zvpp is to integrate all the three sensemaking in the same system. As we discover in the evaluation study in the following section, this integration encourages and accelerates the process of visualization discovery.}
+
 \subsection{\change{Components} Emerging from Participatory Design\label{sec:pd_findings}}
 \change{
   Here, we discuss the purpose of the components in the lower-level of our Figure~\ref{fig:taxonomy} taxonomy, motivating use cases collected over the course of participatory design, and how these themes instantiate into corresponding features in \zvpp and other existing VQSs. Each of the features described (labelled F*) correspond directly to a use case challenge (labelled C*) highlighted in the list above it.
@@ -135,126 +248,9 @@
     \label{table:relatedwork}
     \vspace{-10pt}
 \end{table}
-\subsection{Characterizing the Problem Space for VQSs}
-%Based on example use cases and feature components from participatory design, we further characterize the design space of VQSs. further characterize three sensemaking process within the problem space of VQSs.
-Given our earlier description of VQS features organized into components, we now introduce the three sensemaking processes by characterizing how they fit into different problem areas that VQSs are aimed to solve. Visual querying often consists of searching for a desired pattern instance (Z) across a visualization collection specified by some given attributes (X,Y). \change{Correspondingly, }we introduce two axes depicting the amount of information known about the visualized attribute and pattern instance.%, as shown in Figure~\ref{2dmodel}.
-%(e.g., only interested in patterns related to a specific gene)
-\par Along the \textbf{pattern instance} axis,
-the visualization that contains
-the desired pattern may already be \texttt{known} to the analyst,
-exist as a pattern \texttt{in-the-head} of the analyst,
-or completely \texttt{unknown} to the analyst.
-In the \texttt{known} pattern instance region (Figure~\ref{2dmodel} grey), visualization-at-a-time systems such as Tableau,
-where analyst manually create and examine each visualization one at a time,
-is more well-suited than VQSs, since analysts can directly work with the selected instance without the need for visual querying.
-Inspired by Pirolli and Card's information
-foraging framework~\cite{Pirolli}, which distinguishes
-between information processing tasks that are \textit{top-down}
-(from theory to data) and \textit{bottom-up} (from data to theory),
-we define \textit{top-down pattern specification} as the search-oriented paradigm where analysts query based on their
-in-the-head pattern (Figure~\ref{2dmodel} blue) in a fixed collection.
-On the other hand, in the realm of \textit{bottom-up
-data-driven inquiry} (Figure~\ref{2dmodel} green),
-the pattern of interest is unknown\change{, external
-to the user, }and must be driven by recommendations
-or queries that originate from the data (or equivalently, the visualization).
-As we will discuss later, this process is crucial
-but underexplored in past work on VQSs.
-%analysts often do not start with a known pattern instance. T
-\par The second axis, \textbf{visualized attributes},
-depicts how much the analyst
-knows about which X and Y axes
-they are interested in visualizing.
-In both the astronomy and genetics use cases,
-as well as past work in this space,
-data was in the form of a time series
-with \texttt{known} visualized attributes.
-In the case of our material science participants,
-they wanted to explore relationships between different
-X and Y variables.
-In this realm of \texttt{unknown} attributes,
-context creation (Figure~\ref{2dmodel} yellow) is
-essential for allowing users
-to pivot across different visualization collections.%subspaces. %Most past VQSs assume that the analyst has a desired pattern in-the-head that could be conveyed through visual specification, such as a sketch.%---i.e., setting the stage for bottom-up or top-down processes---\dor{this clause is awkward?}
-\begin{figure}[h!]
+\begin{figure*}[ht!]
   \centering
-  \includegraphics[width=0.9\linewidth]{figures/2dmodel.pdf}
-  \caption{The problem space for VQSs is characterized by how much the analyst knows about the visualized attributes and the pattern instance. Colored areas highlight the three sensemaking processes in VQSs for addressing these characteristic problems. While prior work has focused solely on use cases in the blue region, we envision opportunities for VQSs beyond this to a larger space of use cases covered by the yellow and green regions.}
-  \label{2dmodel}
-  \vspace{-10pt}
-\end{figure}
-\subsection{Design Goals for the Sensemaking Processes}
-After understanding how each sensemaking process fits into the problem space \change{addressable} by VQSs, we further explore the design objectives and challenges in supporting each sensemaking process, grounded in our collaborative design experience. % based on the taxonomy orgaby developing a taxonomy for organizing the aforementioned components.% fits into the paradigms of sensemaking in VQSs, as shown in Figure~\ref{fig:taxonomy}. In particular, we will describe the main form of inquiry addressed by each paradigm\cut{(\textit{what, where, which})}, its characteristic use case, and design challenges in supporting these paradigms.
-% \par Drawing from our participatory design experience, evaluation study, and literature review in this space, we design a taxonomy for understanding the key functionalities in VQSs. In Figure~\ref{fig:taxonomy}, we show how each use cases makes use of the different features in \zv, then we organize the features into key components for VQSs, which belongs to one of the three paradigms in the VQS design space.%, effectively moving rightwards to the gray area in Figure~\ref{2dmodel}, where the pattern instance is known.
-\boldpara{Top-down Pattern Specification} begins with the user's intuition
-about how their desired patterns should look like based on `theory', including visualizations from past experience or abstract conceptions based on external knowledge. The goal of top-down pattern specification is to address the \textit{which} question of visual sensemaking: \textit{which pattern instance exhibits this pattern?} Based on this preconceived notion of what to search for, the design challenge is to translate the query in the
-analyst's head to a query executable by the VQS.
-\change{In the Figure~\ref{fig:taxonomy} taxonomy},
-this includes both components for specifying the pattern,
-as well as controls governing the underlying
-algorithm of how shape-matching is performed.
-For example, A1 knows intuitively
-what a supernovae pattern looks like
-and the detailed constraints on the shape,
-such as the width and height of the peak
-or the level of error tolerance for defining a match.
-He can search for transient patterns through sketching,
-select the option to ignore differences
-on the x axis, and changes the similarity metric for flexible matching.  %The design challenge of top-down pattern specification is to ----- enable users to How to translate the in-the-head query to visual query and how matching is done.
-\boldpara{Bottom-up data-driven inquiry} is
-a browsing-oriented sensemaking process
-that goes from data to theory to
-addresses the \textit{what} questions
-in the sensemaking process.
-% While the usage of each querying feature may vary from one participant to the next, generally, result querying and pattern upload are considered bottom-up approaches that go from data to theory by enabling users to query via examples of known visualizations. Bottom-up data-driven inquiries
- For example, genetics participants do not
- have a preconceived knowledge of what to search
- for in the dataset.
- They were mostly interested in
- \textit{what types of patterns exist in the dataset}
- through representative trends, as a means to
- jumpstart further queries. %The goal of data-driven inquiry is to move towards the blue area in Figure~\ref{2dmodel} to help analysts gain more information about patterns of interest in-the-head.
-% notion of what the pattern looks like
-The design challenge include developing
-the right set of `stimuli' that could
-provoke further data-driven inquiries,
-as well as low-effort mechanisms to search via these results.
-\boldpara{Context Creation} addresses the \textit{where}
-question of sensemaking by enabling analysts
-to navigate across different parts of the visualization
-collection to learn about \textit{where \change{in the dataset do} the patterns of interest lie}.
-For example, material scientists often do not start
-with a pattern in-the-head, but recognize salient
-trends such as inverse correlation or linear correlation.
-They switch between different visualized attributes or dynamic
-classes to study their data from alternative perspectives.
-The design challenge of context creation is to develop
-features that act as a `lens': navigating users to desired data subsets,
-visualizing and comparing how the data changes between the different lenses, and ensuring that context is dynamically reflected across other VQS functionalities.
-\par\noindent The three aforementioned sensemaking processes are akin to the well-studied sensemaking paradigms of search, browse, and faceted navigation on the Web~\cite{Hearst2009,Olston2003}. Due to each of their advantages and limitations given different information seeking tasks, search interfaces have been designed to support all three complementary acts and transition smoothly between them to combine the strength of all three paradigms. \change{Similarly for VQSs, our main design objective in developing \zvpp is to integrate all the three sensemaking in the same system. As we discover in the evaluation study in the following section, this integration encourages and accelerates the process of visualization discovery.}
-% complementary in function
-% each have their limitations and advantages ----insufficient on its own
-% facillitate these acts, given different user objectives,
-% combining the strength of these three
-% different contexts
-% all three have been shown to be important in their own ways.
-% each have their limitations and advantages ----insufficient on its own
-% facillitate these acts
-%, effectively moving upwards in Figure~\ref{2dmodel} towards the known attributes region. . %to pivot across different visualization collections. %Analysts often navigate across different parts of the visualization subspace to narrow to a more manageable scope or to explore relationships between different visualization attributes. Context creation The goal is
-% \par As illustrated in Figure \ref{fig:sbmodel}, our search-browse paradigm is motivated by the characteristic challenges and foraging acts each use cases pose on existing VQSs observed in our design study.
-% \par In the astronomy use case, the participants knew the patterns they are looking for, but the patterns are hard to specify and find. The main challenge for the VQS involves finer specification of sketched patterns, such as amplitude and width of the peak and noise level tolerance for defining a pattern match. Describe more in D1. The main workflow for the astronomers in our user study involves \textit{enriching}, either through finer query specification or via filtering data subsets, to increase the probability that their queries would be more accurately matched with what they are looking for.
-% %For example, G2 knew that there was three repeated measurements that was taken for every timestep, in one of the profiles there was a sharp jump whereas other datapoints are relatively flat, he then concludes by inspecting in the scatterplot view that the rise in gene expression is probably due to an experimental error rather than the activation of a gene, because the other two repeated measurements were similar in magnitude. In other words, the scatterplot view offered him density of points as another proxy to consider that was not offered in the line chart perspective.
-%  %This is true for both participants with and without a desired pattern in mind. For the participant without a desired pattern (G2), he created groups based on quartile statistics of additional data attributes and recorded the most significant representative pattern.
-% - What does the act of browsing and searching mean in the context of VQSs
-%   - browse: viewing ranked result and any recommended results on the side, derived from the data and analysis context.
-%   - search: act of going from a user's in-the-head concept to an actionable query that could be executed through the VQSs, most work have focussed on sketch, we allow more than this.
-%   - The challenge of browsing and searching is well-known in information retrieval~\cite{Olston2003}, browse alone is limited by how much a user can browse and process at once, search alone can be ambiguous without sufficient context from looking at example results.
-% \par Pirolli and Card's notional model further characterizes the trade-offs between three central activities in the information foraging process: exploring, enriching, and exploiting~\cite{Pirolli}.  We organize the features that we have developed in \zv into these foraging acts, as shown in Figure~\ref{feature_heatmap}.
-% \par We find that participants often create unexpected workflows that chain together multiple analysis steps, including interactions, controls, and queries in order to address a higher-level research question. We find that participants often construct a central workflow, \tvcg{which they then iterate on while adding additional variations.} Their \emph{central workflow often resembles one of the three foraging acts} that aligns with the type of research question and dataset they are interested in. The variations are based on intermixing their central workflow with the other two foraging \tvcg{acts}.
-% % We find that participants often have a strong inclination to perform tasks that resembles one of the three foraging act and sparsely intermixed with other activities to support their analysis, depending on the type of research question and dataset they are interested in.
-% \par As illustrated in Figure \ref{fig:sbmodel}, our search-browse paradigm is motivated by the characteristic challenges and foraging acts each use cases pose on existing VQSs observed in our design study. For example, the genetics participants do not have a preconceived knowledge of what they want to search for in the dataset. They were mostly interested in \textit{exploring} clusters to gain an overall sense what profiles exist in the dataset \tvcg{through representative trends} and therefore queried mainly through drag-and-drop to jumpstart further queries. Point to need for D3 and D4. The variations to their main workflow include changing cluster sizes and display settings to offer them different perspectives on the dataset (\textit{exploit}) and filtering on data attributes (\textit{enriching}).
-% \par In the astronomy use case, the participants knew the patterns they are looking for, but the patterns are hard to specify and find. The main challenge for the VQS involves finer specification of sketched patterns, such as amplitude and width of the peak and noise level tolerance for defining a pattern match. Describe more in D1. The main workflow for the astronomers in our user study involves \textit{enriching}, either through finer query specification or via filtering data subsets, to increase the probability that their queries would be more accurately matched with what they are looking for.
-% \par The main workflow for material scientists involves \textit{exploiting}, since they spend the majority of their efforts performing ``close-reading'' of individual visualizations to understand the relationships between physical variables. The participants are able to identify interesting relationships between physical variables when they examine each closely, but they are not sure what patterns to look for to begin with. More in D2.
-% %For example, G2 knew that there was three repeated measurements that was taken for every timestep, in one of the profiles there was a sharp jump whereas other datapoints are relatively flat, he then concludes by inspecting in the scatterplot view that the rise in gene expression is probably due to an experimental error rather than the activation of a gene, because the other two repeated measurements were similar in magnitude. In other words, the scatterplot view offered him density of points as another proxy to consider that was not offered in the line chart perspective.
-%  %This is true for both participants with and without a desired pattern in mind. For the participant without a desired pattern (G2), he created groups based on quartile statistics of additional data attributes and recorded the most significant representative pattern.
-% % [---] out of 9 of our participants had more than one main workflow.
+  \includegraphics[width=0.9\linewidth]{figures/taxonomy.pdf}
+  \caption{Taxonomy of functionalities in VQSs. Each of the three sensemaking process is broken down into key functional components in VQSs. \change{We list the types of questions addressed by each component from a system's perspective.}} %, which is instantiated as features in \zvpp.}% The bottom-most layer connects the use cases features that have practical or envisioned usage based on the evaluation study.}
+  \label{fig:taxonomy}
+\end{figure*}
