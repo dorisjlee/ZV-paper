@@ -23,20 +23,20 @@
 \backcite {HoltzblattJones}{{4}{4}{section.4}}
 \backcite {BodkerGronbaek}{{4}{4.1}{subsection.4.1}}
 \backcite {Pirolli}{{6}{5.1}{subsection.5.1}}
+\backcite {Hochheiser2004}{{7}{\caption@xref {??}{ on input line 6}}{table.caption.4}}
+\backcite {mohebbi2011google}{{7}{\caption@xref {??}{ on input line 8}}{table.caption.4}}
+\backcite {Mannino2018,Hochheiser2004,ryall2005querylines}{{7}{\caption@xref {??}{ on input line 9}}{table.caption.4}}
+\backcite {wattenberg2001sketching,Mannino2018,ryall2005querylines,Hochheiser2001}{{7}{\caption@xref {??}{ on input line 10}}{table.caption.4}}
+\backcite {correll2016semantics}{{7}{\caption@xref {??}{ on input line 11}}{table.caption.4}}
+\backcite {Hochheiser2001,correll2016semantics}{{7}{\caption@xref {??}{ on input line 16}}{table.caption.4}}
 \backcite {Hearst2009,Olston2003}{{7}{5.2}{subsection.5.2}}
-\backcite {correll2016semantics,Holz2009,Eichmann2015}{{7}{5.3}{subsection.5.3}}
-\backcite {Mannino2018}{{7}{{{\textbf {F1:}}}}{Item.6}}
-\backcite {Hochheiser2004}{{7}{{{\textbf {F1:}}}}{Item.6}}
-\backcite {ryall2005querylines}{{7}{{{\textbf {F1:}}}}{Item.6}}
-\backcite {wattenberg2001sketching,Mannino2018}{{7}{{{\textbf {F2:}}}}{Item.7}}
-\backcite {ryall2005querylines}{{7}{{{\textbf {F2:}}}}{Item.7}}
-\backcite {Hochheiser2001}{{7}{{{\textbf {F2:}}}}{Item.7}}
-\backcite {Hochheiser2004}{{8}{\caption@xref {??}{ on input line 6}}{table.caption.5}}
-\backcite {mohebbi2011google}{{8}{\caption@xref {??}{ on input line 8}}{table.caption.5}}
-\backcite {Mannino2018,Hochheiser2004,ryall2005querylines}{{8}{\caption@xref {??}{ on input line 9}}{table.caption.5}}
-\backcite {wattenberg2001sketching,Mannino2018,ryall2005querylines,Hochheiser2001}{{8}{\caption@xref {??}{ on input line 10}}{table.caption.5}}
-\backcite {correll2016semantics}{{8}{\caption@xref {??}{ on input line 11}}{table.caption.5}}
-\backcite {Hochheiser2001,correll2016semantics}{{8}{\caption@xref {??}{ on input line 16}}{table.caption.5}}
+\backcite {correll2016semantics,Holz2009,Eichmann2015}{{8}{5.3}{subsection.5.3}}
+\backcite {Mannino2018}{{8}{{{\textbf {F1:}}}}{Item.6}}
+\backcite {Hochheiser2004}{{8}{{{\textbf {F1:}}}}{Item.6}}
+\backcite {ryall2005querylines}{{8}{{{\textbf {F1:}}}}{Item.6}}
+\backcite {wattenberg2001sketching,Mannino2018}{{8}{{{\textbf {F2:}}}}{Item.7}}
+\backcite {ryall2005querylines}{{8}{{{\textbf {F2:}}}}{Item.7}}
+\backcite {Hochheiser2001}{{8}{{{\textbf {F2:}}}}{Item.7}}
 \backcite {correll2016semantics}{{8}{{{\textbf {F3:}}}}{Item.8}}
 \backcite {Gloss2017}{{10}{6.2}{subsection.6.2}}
 \backcite {Amar2005,Heer2012}{{11}{6.2}{subsection.6.2}}
