@@ -115,50 +115,15 @@ The design challenge of context creation is to develop
 features that act as a `lens': navigating users to desired data subsets,
 visualizing and comparing how the data changes between the different lenses, and ensuring that context is dynamically reflected across other VQS functionalities.
 \par\noindent The three aforementioned sensemaking processes are akin to the well-studied sensemaking paradigms of search, browse, and faceted navigation on the Web~\cite{Hearst2009,Olston2003}. Due to each of their advantages and limitations given different information seeking tasks, search interfaces have been designed to support all three complementary acts and transition smoothly between them to combine the strength of all three paradigms. \change{Similarly for VQSs, our main design objective in developing \zvpp is to integrate all the three sensemaking in the same system. As we discover in the evaluation study in the following section, this integration encourages and accelerates the process of visualization discovery.}
+\input{bigtable}
+\change{
+\subsection{Functional Components of VQSs\label{sec:component}}
 
-\subsection{\change{Components} Emerging from Participatory Design\label{sec:pd_findings}}
-\change{
-  Here, we discuss the purpose of the components in the lower-level of our Figure~\ref{fig:taxonomy} taxonomy, motivating use cases collected over the course of participatory design, and how these themes instantiate into corresponding features in \zvpp and other existing VQSs. Each of the features described (labelled F*) correspond directly to a use case challenge (labelled C*) highlighted in the list above it.
-}
-% Here, we discuss components
-% incorporated in \zvpp, over the course of participatory design, along with similar features in past VQSs.
-% that share the same high-level objective.
-% \begin{figure*}[ht!]
-% \centering
-% \vspace{-15pt}
-% \includegraphics[width=\linewidth]{figures/system.pdf} %5.5
-% \vspace{-5pt}\caption{Our VQS after participatory design, which includes: the ability to query via (a) a sketch,(b) input equations, (i) drag and drop, or (j) uploaded patterns; (c) data smoothing; query specification mechanisms including (d) x-range selection and filtering, (e) x-range invariance, (g) filtering, and (h) dynamic class creation; recommendation of (k) representative and (l) outlier trends.} %Prior to the participatory design, \zv only included a single sketch input with no additional options.}
-% \label{zvOverview}
-% \vspace{-14pt}
-% \end{figure*}
- %We discovered three central themes encapsulating these features that are important to facilitate rapid hypothesis generation and insight discovery, but are missing in prior VQSs. While some of our findings echo prior work on system-level taxonomies of visualization tasks \cite{Amar2005,Heer2012}, we highlight how specific analytic tasks and interaction features could be used to enhance VQSs in particular. \techreport{In particular, we learned that \textit{participants wanted more control over the internals of the systems and an integrated workflow that helped streamline their analysis when using VQSs.}}
-\change{
-\dor{This section is unchanged since the last iteration.}
-  \boldpara{I) Pattern Specification}
-  \nstitle{Purpose:} Specify exact descriptions
-  of a pattern as a query
-  (hereafter referred to as \emph{pattern query}),
-  with the VQS returning a list of most similar matches.
-  \problemlist
-    \item General need for an intuitive mechanism for specifying desired patterns.
-    \item Material scientists were interested in finding solvents with known analytical models describing chemical relationships.
-    \item Astronomers were interested in specifying the exact width of a supernovae light curve, which is characteristic to the radioactive decay rate of its chemical signature~\cite{Nugent1997}, to distinguish patterns of interest from noise.
-  \enumend
-  \featurelist
-  \item Almost all existing VQSs, including \zvpp, support freehand sketching for specifying a desired query pattern on a virtual canvas (Figure \ref{zvOverview}B1). %\techreport{on a virtual canvas through mouse or pen as a intuitive mechanism }for specifying desired patterns
-  %(Figure \ref{zvOverview}a).
-  \item The above use cases highlights the common difficulty of sketching precisely. \zvpp allows users to specify a exact functional form (e.g., y=$x^2$) as a pattern query (Figure \ref{zvOverview}D5).
-  \item \zvpp also enables users to upload a pattern consisting of a sequence of points as a query (Figure \ref{zvOverview}A1). The pattern upload functionality is also available in Google Correlate~\cite{mohebbi2011google}.l
-  \enumend
-}
-%The uploaded pattern is once again more precise than a sketch.
-%For example, , so querying with an exact uploaded pattern would be helpful for distinguishing the patterns of interest from noise.
-% The desired patterns uploaded are often generated from computational models or prelabelled data from an external reference database. For example, A1 wanted to query based on synthetic light curves generated from simulations and known supernovae discovered in the past.
-% Many participants also envisioned use cases for pattern loading. The ability to load in data patterns as a query would enable users to compare visualizations between different experiments, species, or surveys, query with known patterns from an external reference catalog\techreport{ (e.g. important genes of interest, objects labeled as supernovae)}, or verify the results of a \techreport{simulation or }downstream analysis\techreport{ by finding similar patterns in their existing dataset}. The uploaded pattern also represents a more precise query specification that captures the desired features of a pattern \techreport{(e.g. amplitude, width of peak), }that cannot be precisely sketched. For example, the width of a supernovae light curve is characteristic to the radioactive decay rate of its chemical signature~\cite{Nugent1997}, so querying with an exact pattern template would be helpful for distinguishing the patterns of interest from noise.
-% \boldpara{Concept querying} enable users to upload a pattern associated with a concept as a query. As supported in \zv and Google Correlate, users can upload a sequence of points as the query pattern (Figure \ref{zvOverview}i). This is useful for patterns generated from computational models or prelabelled data from an external reference database. For example, A1 wanted to query based on synthetic light curves generated from simulations and known supernovae that have been discovered in the past.
-%While pattern specification is an intuitive mechanism for constructing a visual query, p
-\change{
-  \boldpara{II) Match Specification}
+  Here, we discuss the motivation for each functional component in the lower-level of our Figure~\ref{fig:taxonomy} taxonomy and how they address specific problem and dataset characteristic challenges posed by each domain.
+  \boldpara{Pattern Specification} interfaces allow users to submit exact descriptions of a pattern query with the VQS returning a list of most similar matches. This is useful when the dataset contains \emph{large} numbers of potentially-relevant pattern instance.
+  Since it is often difficult to sketch precisely, additional characteristics of the pattern query can be used to further winnow our undesired matches (e.g., pattern query expressible in a functional form, or has specific shape characteristics).
+
+  \boldpara{Match Specification}
   \nstitle{Purpose:} Past work has shown that pattern queries can be imprecise~\cite{correll2016semantics,Holz2009,Eichmann2015}. To this end, VQSs need to support mechanisms for clarifying the interpretation of the sketch (i.e., how matching should be performed).
   \problemlist
     \item Dense and noisy observational data in astronomy and material science makes it difficult to match with other patterns exactly.
@@ -175,7 +140,7 @@ visualizing and comparing how the data changes between the different lenses, and
   %\agp{Again, why did we pick ours then?If ours is similar to Hochheiser, we can saythat we used that as inspiration to build ours.} %Additionally, y axis range selection could be performed through entering a filter constraint on the measure variable.
   \item  In addition to controls for fine-tuning the portions of the sketch to be matched, VQSs also need to allow users to control the underlying matching algorithm. In \zvpp, users have the option to change similarity metrics to perform flexible matching (Figure \ref{zvOverview}D1). \zvpp supports an option to ignore the x-range in shape matching (Figure \ref{zvOverview}D4). This feature is similar to `temporal invariants' in SketchQuery~\cite{correll2016semantics}.
   \enumend
-}
+
 %For finding supernovae, A1 primarily cared about the existence of a peak\techreport{above a certain amplitude with an appropriate width of the curve}, rather than the exact time that the event occurred. G1 also expressed that she does not care about when the `trigger point' occurs as long as the profile is rising.
 % \techreport{\par During participatory design, both material science and astronomy participants noted the difficulty of shape matching on their dense and noisy observational data and the challenge of picking the appropriate smoothing parameters during offline preprocessing. We found that tight integration between smoothing and visual search additionally tradeoff between the smoothness of the curve and the degree of approximation for shape-matching in VQSs. An over-smoothed visualization would return shape matches that only loosely resemble the query pattern. However, without smoothing, the noise may dominate the overall trend, which could lead to bad pattern matches.}
 %While the interactions in our original prototype enabled simple visual queries, many scientists were interested in extending their querying capabilities, either through different querying modalities or through more flexible query specification methods.
@@ -257,3 +222,4 @@ visualizing and comparing how the data changes between the different lenses, and
   \caption{Taxonomy of functionalities in VQSs. Each of the three sensemaking process is broken down into key functional components in VQSs. \change{We list the types of questions addressed by each component from a system's perspective.}} %, which is instantiated as features in \zvpp.}% The bottom-most layer connects the use cases features that have practical or envisioned usage based on the evaluation study.}
   \label{fig:taxonomy}
 \end{figure*}
+}

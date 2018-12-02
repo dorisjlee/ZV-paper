@@ -51,6 +51,7 @@
 % mind: package option 'draft' will replace PS figure by a filname within a frame
 \ifpdf \usepackage[pdftex]{graphicx} \pdfcompresslevel=9
 \else \usepackage[dvips]{graphicx} \fi
+\usepackage{multirow}
 
 \PrintedOrElectronic
 
@@ -181,7 +182,7 @@
 \newcommand{\astro}{\textit{astro}\xspace}
 \newcommand{\bio}{\textit{genetics}\xspace}
 \newcommand{\matsci}{\textit{matsci}\xspace}
-\newcommand{\change}[1]{\textcolor{red}{#1}}
+\newcommand{\change}[1]{{\leavevmode\color{red}#1}}
 \newcommand*\rot{\rotatebox{90}}
 
 \newcommand{\agp}[1]{\textcolor{blue}{Aditya: #1}}
