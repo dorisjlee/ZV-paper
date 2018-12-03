@@ -15,6 +15,12 @@
   Full Papers - Volume 1} (New York, NY, USA, 2016), PDC '16, ACM,
   pp.~151--160.
 
+\bibitem[BGK93]{BodkerGronbaek}
+\textsc{Bodker S., Gronbaek K., Kyng M.}:
+\newblock Cooperative design: Techniques and experiences from the scandinavian
+  scene.
+\newblock L. Erlbaum Associates Inc., Hillsdale, NJ, USA, 1993, ch.~8.
+
 \bibitem[CAM{\etalchar{*}}16]{Ciolfi2016}
 \textsc{Ciolfi L., Avram G., Maye L., Dulake N., Marshall M.~T., van Dijk D.,
   McDermott F.}:
@@ -65,6 +71,11 @@
 \newblock In \emph{Proceedings of the 22Nd Annual ACM Symposium on User
   Interface Software and Technology} (New York, NY, USA, 2009), UIST '09, ACM,
   pp.~213--222.
+
+\bibitem[HJ93]{HoltzblattJones}
+\textsc{Holtzblatt K., Jones S.}:
+\newblock Contextual inquiry: A participatory technique for system design.
+\newblock L. Erlbaum Associates Inc., Hillsdale, NJ, USA, 1993, ch.~9.
 
 \bibitem[HS01]{Hochheiser2001}
 \textsc{Hochheiser H., Shneiderman B.}:
@@ -126,11 +137,6 @@
   S.}:
 \newblock Google correlate whitepaper.
 
-\bibitem[NBB{\etalchar{*}}97]{Nugent1997}
-\textsc{{Nugent} P., {Baron} E., {Branch} D., {Fisher} A., {Hauschildt} P.}:
-\newblock {Synthetic Spectra of Hydrodynamic Models of Type Ia Supernovae}.
-\newblock \emph{The Astrophysical Journal 485}, 2 (1997), 812--819.
-
 \bibitem[OC03]{Olston2003}
 \textsc{Olston C., Chi E.~H.}:
 \newblock {ScentTrails: Integrating Browsing and Searching on the Web}.
@@ -167,6 +173,11 @@
 \newblock Querylines: approximate query for visual browsing.
 \newblock In \emph{CHI'05 Extended Abstracts on Human Factors in Computing
   Systems} (2005), ACM, pp.~1765--1768.
+
+\bibitem[SG91]{Grnbak1991}
+\textsc{{Susanne Bodker}, Gr$\phi$nb{\ae}k K.}:
+\newblock {Cooperative Prototyping -}.
+\newblock \emph{International Journal of man-machine studies} (1991), 1--23.
 
 \bibitem[SKL{\etalchar{*}}16]{Siddiqui2017VLDB}
 \textsc{Siddiqui T., Kim A., Lee J., Karahalios K., Parameswaran A.}:
