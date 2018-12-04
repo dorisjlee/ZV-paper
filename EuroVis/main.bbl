@@ -107,6 +107,12 @@
 \newblock Towards synergistic electrode-electrolyte design principles for
   nonaqueous li-o2 batteries.
 
+\bibitem[KMSZ06]{Keim2006}
+\textsc{Keim D.~A., Mansmann F., Schneidewind J., Ziegler H.}:
+\newblock {Challenges in Visual Data Analysis}.
+\newblock \emph{Tenth International Conference on Information Visualization,
+  2006}, Iv 2006 (2006), 9--16.
+
 \bibitem[LBI{\etalchar{*}}12]{lam2012empirical}
 \textsc{Lam H., Bertini E., Isenberg P., Plaisant C., Carpendale S.}:
 \newblock Empirical studies in information visualization: Seven scenarios.
@@ -118,6 +124,11 @@
 \newblock {Expressive Time Series Querying with Hand-Drawn Scale-Free
   Sketches}.
 \newblock 1--12.
+
+\bibitem[MK93]{Muller1993}
+\textsc{Muller M.~J., Kuhn S.}:
+\newblock Participatory design.
+\newblock \emph{Communications of the ACM 36}, 6 (June 1993), 24--28.
 
 \bibitem[MS12]{Sedlmair2012}
 \textsc{Michael~Sedlmair Miriah~Meyer T.~M.}:
@@ -199,6 +210,11 @@
 \newblock In \emph{Proceedings of the 2006 AVI workshop on BEyond time and
   errors: novel evaluation methods for information visualization} (2006), ACM,
   pp.~1--7.
+
+\bibitem[Tuk70]{Tukey1970}
+\textsc{Tukey J.~W.}:
+\newblock \emph{Exploratory data analysis}.
+\newblock Addison-Wesley, 1970.
 
 \bibitem[Wat01]{wattenberg2001sketching}
 \textsc{Wattenberg M.}:
