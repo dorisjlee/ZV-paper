@@ -87,19 +87,17 @@ of a gene in a breast cancer cell-line?
 Which battery components have sustainable
 levels of energy-efficiency and are safe and
 cheap to manufacture in production?
-
+\par Via \change{contextual inquiries} and interviews, we first identified challenges in existing data analysis workflows in these domains
+that could be potentially addressed by a VQS. Building on top of an existing, open-source VQS, \zv~\cite{Siddiqui2017,Siddiqui2017VLDB}, we \change{engaged} our participants \change{in a process of participatory design (PD)~\cite{Muller1993,BodkerGronbaek,HoltzblattJones} to enable them to better compose data exploration workflows that lead to insight discovery}, over the course of a year. We organize \change{our PD findings} into a taxonomy of VQS \change{capabilities}, involving three sensemaking processes inspired by Pirolli and Card's notional model of analyst sensemaking~\cite{Pirolli}. The sensemaking processes include top-down pattern specification (translating a pattern ``in-the-head'' into the form of a visual query), bottom-up data-driven inquiries (querying or recommending based on data), and context-creation (navigating across different collections of visualizations). We find that prior VQSs have focused largely on top-down processes, while largely ignoring the other two processes that are crucial for all three domains.
+%to gather feedback and iterate on VQS feature designs, culminating in a new enhanced VQS, \zvpp.
 \begin{figure}[ht!]
 	\centering
-	\vspace{-10pt}
+	\vspace{-5pt}
 	\includegraphics[width=\linewidth]{figures/science_goal.pdf}
-	\vspace{-6pt}\caption{\change{Desired insights, problem and dataset challenges for each application domain.}}
+	\caption{\change{Desired insights, problem and dataset challenges for each of the three application domains in our study.}}
 	\label{timeline}
 	\vspace{-10pt}
 \end{figure}
-
-\par Via \change{contextual inquiries} and interviews, we first identified challenges in existing data analysis workflows in these domains
-that could be potentially addressed by a VQS. Building on top of an existing, open-source VQS, \zv~\cite{Siddiqui2017,Siddiqui2017VLDB}, we \change{engaged} our participants \change{in a process of participatory design (CITE) (PD) to enable them to better compose data exploration workflows that lead to insight discovery}, over the course of a year. We organize \change{our PD findings} into a taxonomy of VQS \change{capabilities}, involving three sensemaking processes inspired by Pirolli and Card's notional model of analyst sensemaking~\cite{Pirolli}. The sensemaking processes include top-down pattern specification (translating a pattern ``in-the-head'' into the form of a visual query), bottom-up data-driven inquiries (querying or recommending based on data), and context-creation (navigating across different collections of visualizations). We find that prior VQSs have focused largely on top-down processes, while largely ignoring the other two processes that are crucial for all three domains.
-%to gather feedback and iterate on VQS feature designs, culminating in a new enhanced VQS, \zvpp.
 \par To study how various \change{VQSs} are used in practice,
 we conducted a final evaluation study with nine participants
 using our final VQS prototype to address their research questions
@@ -111,15 +109,15 @@ that was known to harbor a Jupiter-sized planet
 and finding characteristic gene expression profiles confirming the results of a related publication.\techreport{, and discovering that the dip in an astronomical light curve is caused by saturated imaging equipment overlooked by the existing error-detection pipeline.} \techreport{Participants also gain additional insights about their datasets, including debugging mislabeled features and uncovering erroneous data preprocessing procedure applied to a collaborator's dataset.}
 %that goes from a pattern in-the-head to a desired visualization
 
-\par By analyzing the evaluation study results, we discovered that sketching a pattern for querying is often ineffective \change{on its own}. This is due to the fact that sketching makes the problematic assumption that users know the pattern that they want to sketch and are able to sketch it precisely. Instead, participants typically opted \change{to combine sketching with} other means of pattern specification---one common mechanism was to drag-and-drop a recommended pattern onto the canvas, and then modify it (e.g., by smoothing it out). However, most VQSs do not support these other mechanisms (as we argued earlier, they typically focus only on top-down sensemaking processes, without covering bottom-up and context creation), partially explaining why such systems have not been widely adopted in practice.
-\agp{Expand on evaluation study findings. Argue for why we studied multiple domains (which is not typical) and the challenges in doing so.}
+\par By analyzing the evaluation study results, we discovered that sketching a pattern for querying is often ineffective \change{on its own}. This is due to the fact that sketching makes the problematic assumption that users know the pattern that they want to sketch and are able to sketch it precisely. Instead, participants typically opted \change{to combine sketching with} other means of pattern specification---one common mechanism was to drag-and-drop a recommended pattern onto the canvas, and then modify it (e.g., by smoothing it out). However, most VQSs do not support these other mechanisms (as we argued earlier, they typically focus only on top-down sensemaking processes, without covering bottom-up and context creation), partially explaining why such systems have not been widely adopted in practice. \change{Participants were, however, able to apply the two other sensemaking processes to gain novel scientific insights, such as identifying a star with a transient pattern that was known to harbor a Jupiter-sized planet, finding characteristic gene expression profiles confirming the results of a related publication, and discovering mislabelled features from a data preprocessing mistake.}
 \par Further analysis of how participants
 transition between different sensemaking processes
-during analysis---including the construction of a Markov model---illustrated
+during analysis \change{using a Markov model} illustrated
 how participants adopt a diverse set of workflows tailored
 to their domains. We find that participants often construct analysis workflows focused around a primary sensemaking process, while iteratively interleaving their analysis with the two other processes. This finding points to how all three sensemaking processes, along with seamless transitions between them, are essential for enabling users to effectively use VQSs for data exploration.%For example, participants often center on a main sensemaking process, while interleaving variations with other two processes as they iterate on an analytic task.
+%---including the construction of a Markov model---
 \par To the best of our knowledge, our study is the \emph{first to holistically examine how VQSs can be designed to fit the needs of real-world
-analysts and how they are actually used in practice}. Our contributions include:
+analysts and how they are actually used in practice}. \change{Furthermore, working with participants from multiple domains (an uncommon practice for visualization design studies) enabled us to compare the differences and commonalities across different domains, thereby identifying general VQS challenges and requirements for supporting common analytical goals.} Our contributions include:
 \begin{denselist}
 \item a characterization of the problems addressable by VQSs through design studies with three different domains,
 \item the construction of a taxonomy of functionalities within VQSs, as well as an articulation of the problem space that is amenable to VQSs, both grounded in participatory design findings,
@@ -129,6 +127,7 @@ analysts and how they are actually used in practice}. Our contributions include:
 % sketching and the ---- workflow
 \end{denselist}
 Our work not only opens up a new space of opportunities beyond the narrow use cases considered by prior studies, but also advocates common design guidelines and end-user considerations for building next-generation VQSs.
+\agp{Expand on evaluation study findings. Argue for why we studied multiple domains (which is not typical) and the challenges in doing so.}\dor{Added.}
  %From these experiences, we  advocate visualization researchers and tool designers to ---- future VQS opportunities  Understanding the design space and opportunities for VQS
 % Our three main research questions are as follows:
 
