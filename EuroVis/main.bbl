@@ -130,12 +130,10 @@
 \newblock Participatory design.
 \newblock \emph{Communications of the ACM 36}, 6 (June 1993), 24--28.
 
-\bibitem[MS12]{Sedlmair2012}
-\textsc{Michael~Sedlmair Miriah~Meyer T.~M.}:
-\newblock Design study methodology: Reflections from the trenches and the
-  stacks.
-\newblock \emph{IEEE Transactions on Visualization and Computer Graphics 18},
-  12 (Dec 2012), 2431--2440.
+\bibitem[MK12]{Muller2012}
+\textsc{Muller M.~J., Kogan S.}:
+\newblock {Grounded Theory Method in HCI and CSCW}.
+\newblock \emph{Human Computer Interaction Handbook} (2012), 1003--1024.
 
 \bibitem[Mun09]{munzner2009nested}
 \textsc{Munzner T.}:
@@ -202,6 +200,13 @@
 \newblock Fast-forwarding to desired visualizations with zenvisage.
 \newblock In \emph{The biennial Conference on Innovative Data Systems Research
   (CIDR)} (2017).
+
+\bibitem[SMM12]{Sedlmair2012}
+\textsc{Sedlmair M., Meyer M., Munzner T.}:
+\newblock Design study methodology: Reflections from the trenches and the
+  stacks.
+\newblock \emph{IEEE Transactions on Visualization and Computer Graphics 18},
+  12 (Dec 2012), 2431--2440.
 
 \bibitem[SP06]{shneiderman2006strategies}
 \textsc{Shneiderman B., Plaisant C.}:
