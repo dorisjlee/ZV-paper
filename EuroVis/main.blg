@@ -10,50 +10,49 @@ Warning--I'm ignoring BodkerGronbaek's extra "title" field
 Warning--to sort, need author or key in zillow
 Warning--empty booktitle in BodkerGronbaek
 Warning--empty journal in Drlica-Wagner2017
-Warning--empty journal in TR
 Warning--empty booktitle in HoltzblattJones
 Warning--empty journal in Khetan2018
 Warning--empty journal in Mannino2018
 Warning--empty journal in mohebbi2011google
-You've used 38 entries,
+You've used 37 entries,
             2855 wiz_defined-function locations,
-            863 strings with 11936 characters,
-and the built_in function-call counts, 16320 in all, are:
-= -- 1634
-> -- 813
-< -- 8
-+ -- 294
-- -- 290
-* -- 1305
-:= -- 2591
-add.period$ -- 73
-call.type$ -- 38
-change.case$ -- 258
-chr.to.int$ -- 38
-cite$ -- 47
-duplicate$ -- 631
-empty$ -- 1174
-format.name$ -- 327
-if$ -- 3339
+            859 strings with 11804 characters,
+and the built_in function-call counts, 16081 in all, are:
+= -- 1610
+> -- 805
+< -- 7
++ -- 292
+- -- 288
+* -- 1291
+:= -- 2550
+add.period$ -- 72
+call.type$ -- 37
+change.case$ -- 253
+chr.to.int$ -- 37
+cite$ -- 45
+duplicate$ -- 619
+empty$ -- 1158
+format.name$ -- 324
+if$ -- 3293
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 40
-newline$ -- 190
-num.names$ -- 111
-pop$ -- 249
+missing$ -- 39
+newline$ -- 186
+num.names$ -- 108
+pop$ -- 245
 preamble$ -- 1
-purify$ -- 298
+purify$ -- 292
 quote$ -- 0
-skip$ -- 541
+skip$ -- 530
 stack$ -- 0
-substring$ -- 870
-swap$ -- 142
-text.length$ -- 8
+substring$ -- 863
+swap$ -- 141
+text.length$ -- 7
 text.prefix$ -- 7
 top$ -- 0
-type$ -- 327
-warning$ -- 8
-while$ -- 161
-width$ -- 44
-write$ -- 462
-(There were 10 warnings)
+type$ -- 318
+warning$ -- 7
+while$ -- 159
+width$ -- 43
+write$ -- 453
+(There were 9 warnings)
