@@ -1,8 +1,15 @@
 %!TEX root = main.tex
 \section{The Sensemaking Model for VQSs\label{sec:sensemaking}}
 \change{
-  To convey how the features in \zvpp addresses the analytical needs posed by each domain, we organize our PD findings into a sensemaking framework for VQSs. In this section, we first describe the space of problems addressable by VQSs. Then, as shown in Figure~\ref{fig:taxonomy}, we develop a taxonomy for organizing VQS functionalities into three sensemaking processes. From top to bottom, we first describe the design objectives of each sensemaking process, then we outline the design challenge addressed by each of the functional components that supports the sensemaking process. The mapping between specific \zvpp features and these functional components and sensemaking processes can be found in Table~\ref{bigfeaturetable}.
+  To convey how the features in \zvpp addresses the analytical needs posed by each domain, we organize our PD findings into a sensemaking framework for VQSs. In this section, we first describe the space of problems addressable by VQSs. Then, as shown in Figure~\ref{fig:taxonomy}, we develop a taxonomy for organizing VQS capabilities into three sensemaking processes. From top to bottom, we first describe the design objectives of each sensemaking process, then we outline the design challenge addressed by each of the functional components that supports the sensemaking process. The mapping between specific \zvpp features and these functional components and sensemaking processes can be found in Table~\ref{bigfeaturetable}.
 }
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/2dmodel.pdf}
+  \caption{The problem space for VQSs is characterized by how much the analyst knows about the visualized attributes and the pattern instance. Colored areas highlight the three sensemaking processes in VQSs for addressing these characteristic problems. While prior work has focused solely on use cases in the blue region, we envision opportunities for VQSs beyond this to a larger space of use cases covered by the yellow and green regions.}
+  \label{2dmodel}
+  \vspace{-10pt}
+\end{figure}
  %Starting from the bottom level of the taxonomy, we first describe what each component in our taxonomy encompasses, then we proceed onto the upper level of the taxonomy, .
 %We first describe features that we incorporated into our enhanced VQS, \zvpp, thematically organized by components (grouping features in the bottom-most level to components in the second level of Figure~\ref{fig:taxonomy}).
 %collaboratively-designed
@@ -21,7 +28,7 @@
 \begin{figure*}[ht!]
   \centering
   \includegraphics[width=0.9\linewidth]{figures/taxonomy.pdf}
-  \caption{Taxonomy of functionalities in VQSs. Each of the three sensemaking process is broken down into key functional components in VQSs. \change{We list the types of questions addressed by each component from a system's perspective.}} %, which is instantiated as features in \zvpp.}% The bottom-most layer connects the use cases features that have practical or envisioned usage based on the evaluation study.}
+  \caption{Taxonomy of \change{capabilities essential to VQSs}. Each of the three sensemaking process is broken down into key functional components in VQSs. \change{We list the types of questions addressed by each component from a system's perspective.}} %, which is instantiated as features in \zvpp.}% The bottom-most layer connects the use cases features that have practical or envisioned usage based on the evaluation study.}
   \label{fig:taxonomy}
 \end{figure*}
 \subsection{Characterizing the Problem Space for VQSs}
@@ -66,13 +73,6 @@ In this realm of \texttt{unknown} attributes,
 context creation (Figure~\ref{2dmodel} yellow) is
 essential for allowing users
 to pivot across different visualization collections.%subspaces. %Most past VQSs assume that the analyst has a desired pattern in-the-head that could be conveyed through visual specification, such as a sketch.%---i.e., setting the stage for bottom-up or top-down processes---\dor{this clause is awkward?}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.9\linewidth]{figures/2dmodel.pdf}
-  \caption{The problem space for VQSs is characterized by how much the analyst knows about the visualized attributes and the pattern instance. Colored areas highlight the three sensemaking processes in VQSs for addressing these characteristic problems. While prior work has focused solely on use cases in the blue region, we envision opportunities for VQSs beyond this to a larger space of use cases covered by the yellow and green regions.}
-  \label{2dmodel}
-  \vspace{-10pt}
-\end{figure}
 \subsection{Design Goals for the Sensemaking Processes}
 After understanding how each sensemaking process fits into the problem space \change{addressable} by VQSs, we further explore the design objectives and challenges in supporting each sensemaking process, grounded in our collaborative design experience. % based on the taxonomy orgaby developing a taxonomy for organizing the aforementioned components.% fits into the paradigms of sensemaking in VQSs, as shown in Figure~\ref{fig:taxonomy}. In particular, we will describe the main form of inquiry addressed by each paradigm\cut{(\textit{what, where, which})}, its characteristic use case, and design challenges in supporting these paradigms.
 % \par Drawing from our participatory design experience, evaluation study, and literature review in this space, we design a taxonomy for understanding the key functionalities in VQSs. In Figure~\ref{fig:taxonomy}, we show how each use cases makes use of the different features in \zv, then we organize the features into key components for VQSs, which belongs to one of the three paradigms in the VQS design space.%, effectively moving rightwards to the gray area in Figure~\ref{2dmodel}, where the pattern instance is known.
