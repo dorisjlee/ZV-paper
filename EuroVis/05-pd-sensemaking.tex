@@ -41,7 +41,7 @@ Inspired by Pirolli and Card's information
 foraging framework~\cite{Pirolli}, which distinguishes
 between information processing tasks that are \textit{top-down}
 (from theory to data) and \textit{bottom-up} (from data to theory),
-we define \textit{top-down pattern specification} as the search-oriented paradigm where analysts query based on their
+we define \textit{top-down pattern search} as the search-oriented paradigm where analysts query based on their
 in-the-head pattern (Figure~\ref{2dmodel} blue) in a fixed collection.
 On the other hand, in the realm of \textit{bottom-up
 data-driven inquiry} (Figure~\ref{2dmodel} green),
@@ -76,8 +76,8 @@ to pivot across different visualization collections.%subspaces. %Most past VQSs 
 \subsection{Design Goals for the Sensemaking Processes}
 After understanding how each sensemaking process fits into the problem space \change{addressable} by VQSs, we further explore the design objectives and challenges in supporting each sensemaking process, grounded in our collaborative design experience. % based on the taxonomy orgaby developing a taxonomy for organizing the aforementioned components.% fits into the paradigms of sensemaking in VQSs, as shown in Figure~\ref{fig:taxonomy}. In particular, we will describe the main form of inquiry addressed by each paradigm\cut{(\textit{what, where, which})}, its characteristic use case, and design challenges in supporting these paradigms.
 % \par Drawing from our participatory design experience, evaluation study, and literature review in this space, we design a taxonomy for understanding the key functionalities in VQSs. In Figure~\ref{fig:taxonomy}, we show how each use cases makes use of the different features in \zv, then we organize the features into key components for VQSs, which belongs to one of the three paradigms in the VQS design space.%, effectively moving rightwards to the gray area in Figure~\ref{2dmodel}, where the pattern instance is known.
-\boldpara{Top-down Pattern Specification} begins with the user's intuition
-about how their desired patterns should look like based on `theory', including visualizations from past experience or abstract conceptions based on external knowledge. The goal of top-down pattern specification is to address the \textit{which} question of visual sensemaking: \textit{which pattern instance exhibits this pattern?} Based on this preconceived notion of what to search for, the design challenge is to translate the query in the
+\boldpara{top-down pattern search} begins with the user's intuition
+about how their desired patterns should look like based on `theory', including visualizations from past experience or abstract conceptions based on external knowledge. The goal of top-down pattern search is to address the \textit{which} question of visual sensemaking: \textit{which pattern instance exhibits this pattern?} Based on this preconceived notion of what to search for, the design challenge is to translate the query in the
 analyst's head to a query executable by the VQS.
 \change{In the Figure~\ref{fig:taxonomy} taxonomy},
 this includes both components for specifying the pattern,
@@ -90,7 +90,7 @@ such as the width and height of the peak
 or the level of error tolerance for defining a match.
 He can search for transient patterns through sketching,
 select the option to ignore differences
-on the x axis, and changes the similarity metric for flexible matching.  %The design challenge of top-down pattern specification is to ----- enable users to How to translate the in-the-head query to visual query and how matching is done.
+on the x axis, and changes the similarity metric for flexible matching.  %The design challenge of top-down pattern search is to ----- enable users to How to translate the in-the-head query to visual query and how matching is done.
 \boldpara{Bottom-up data-driven inquiry} is
 a browsing-oriented sensemaking process
 that goes from data to theory to
