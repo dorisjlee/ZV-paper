@@ -1,6 +1,6 @@
 \appendix
 % \npar\textbf{{\huge Appendix}}
-\change{\npar In Appendix A, we first describe additional details about the participatory design process, as well as domain-specific artifacts collected from contextual inquiry. Then, in Appendix B, we provide supplementary information regarding our analysis methods and results.}
+\change{\npar In Appendix A, we first describe additional details about the participatory design process, as well as domain-specific artifacts collected from contextual inquiry. Next, in Appendix B, we articulate the space of problems amenable to VQSs and describe how the sensemaking processes introduced in Section~\ref{sec:sensemaking} into different parts of the problem space. Finally, in Appendix C, we provide supplementary information regarding our analysis methods and results.}
 \section{Artifacts from Participatory Design\label{apdx:pdartifact}}
 \change{Our collaboration with participants is illustrated in Figure~\ref{timeline}, where we began with an existing VQS (\zv, as illustrated in Figure~\ref{oldZV}) and incrementally incorporated features, such as dynamic class creation (Figure~\ref{dcc}), throughout the participatory design process.}
 \begin{figure}[h!]
@@ -61,6 +61,27 @@
 	\label{science_task}
 	\vspace{-10pt}
 \end{table}
+
+\section{Characterizing the Problem Space for VQSs}
+We now characterize how each sensemaking process fits into different problem areas that VQSs are aimed to solve. Visual querying often consists of searching for a desired pattern instance (Z) across a visualization collection specified by some given attributes (X,Y). Correspondingly, we introduce two axes depicting the amount of information known about the visualized attribute and pattern instance.
+\par Along the \textbf{pattern instance} axis, the visualization that contains the desired pattern may already be \texttt{known} to the analyst, exist as a pattern \texttt{in-the-head} of the analyst, or \change{be} completely \texttt{unknown} to the analyst. In the \texttt{known} pattern instance region (Figure~\ref{2dmodel} grey), visualization-at-a-time systems such as Tableau, where analyst manually create and examine each visualization one at a time, is more well-suited than VQSs, since analysts can directly work with the selected instance without the need for visual querying. Inspired by Pirolli and Card's information foraging framework~\cite{Pirolli}, which distinguishes between information processing tasks that are \textit{top-down} (from theory to data) and \textit{bottom-up} (from data to theory), we define \textit{top-down pattern search} as \change{the process where analysts query a fixed collection of visualizations based on their in-the-head pattern (Figure~\ref{2dmodel} blue)}. On the other hand, \change{\textit{bottom-up data-driven inquiries} (Figure~\ref{2dmodel} green) are driven by recommendations or queries that originate from the data (or equivalently, the visualization), since the pattern of interest is unknown and external to the user.} As we will discuss later, this process is crucial but underexplored in past work on VQSs.
+%analysts often do not start with a known pattern instance. T
+\par The second axis, \textbf{visualized attributes},
+depicts how much the analyst
+knows about which X and Y axes
+they are interested in visualizing.
+In both the astronomy and genetics use cases,
+as well as past work in this space, \change{the attribute to be visualized is \texttt{known}, as data was in the form of a time series.} In the case of our material science participants, they wanted to explore relationships between different
+X and Y variables. In this realm of \texttt{unknown} attributes, context creation (Figure~\ref{2dmodel} yellow) is
+essential for allowing users to pivot across different visualization collections.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/2dmodel.pdf}
+  \caption{The problem space for VQSs is characterized by how much the analyst knows about the visualized attributes and the pattern instance. Colored areas highlight the three sensemaking processes in VQSs for addressing these characteristic problems. While prior work has focused solely on use cases in the blue region, we envision opportunities for VQSs beyond this to a larger space of use cases covered by the yellow and green regions.}
+  \label{2dmodel}
+  \vspace{-10pt}
+\end{figure}
+
 \section{Evaluation Study Analysis Details\label{apdx:studydetails}}
 We analyzed the transcriptions of the evaluation study recordings through open-coding and
 categorized every event in the user study using the following coding labels:
