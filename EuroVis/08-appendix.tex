@@ -1,5 +1,5 @@
 \appendix
-\npar\textbf{{\huge Appendix}}
+% \npar\textbf{{\huge Appendix}}
 \change{\npar In Appendix A, we first describe additional details about the participatory design process, as well as domain-specific artifacts collected from contextual inquiry. Then, in Appendix B, we provide supplementary information regarding our analysis methods and results.}
 \section{Artifacts from Participatory Design\label{apdx:pdartifact}}
 \change{Our collaboration with participants is illustrated in Figure~\ref{timeline}, where we began with an existing VQS (\zv, as illustrated in Figure~\ref{oldZV}) and incrementally incorporated features, such as dynamic class creation (Figure~\ref{dcc}), throughout the participatory design process.}
@@ -23,7 +23,7 @@
   \centering
   \includegraphics[width=0.9\linewidth]{figures/dcc.pdf}
   \vspace{-6pt}
-  \caption{\change{Example of dynamic classes. (a) Four different classes with different Lithium solvation energies (li) and boiling point (bp) attributes based on user-defined data ranges. (b) Users can hover over the visualizations for each dynamic class to see the corresponding attribute ranges for each class. The visualizations of dynamic classes are aggregate across all the visualizations that lie in that class based on the user-selected aggregation method.}}
+  \caption{Example of dynamic classes. (a) Four different classes with different Lithium solvation energies (li) and boiling point (bp) attributes based on user-defined data ranges. (b) Users can hover over the visualizations for each dynamic class to see the corresponding attribute ranges for each class. The visualizations of dynamic classes are aggregate across all the visualizations that lie in that class based on the user-selected aggregation method.}
   \label{dcc}
   \vspace{-10pt}
 \end{figure}
@@ -41,7 +41,18 @@
   \caption{Screenshots from contextual inquiry: a) A1 examines a light curve manually using the Jupyter notebook environment, b) G2 uses a domain-specific software to examine clustering outputs.}
   \label{workflow}
 \end{figure}
-\vspace{-15pt}
+\vspace{-5pt}
+\npar Based on our meeting logs with participants, we found that reasons for not carrying a feature from the design to implementation stage included:
+\begin{denselist} %he amount of nice-to-have features that one could envision for the tool is endless.
+\item Nice-to-haves: One of the most common reasons for unincorporated features comes from participant's requests for nice-to-have features. To this end, we use two criteria to heuristically judge whether to implement a particular feature:
+\begin{enumerate}[leftmargin=*]
+\item \textit{Necessity:} Without this feature, can participants still work with this dataset using the tool and meet their information needs?
+\item \textit{Generality:} Will this feature benefit only this specific use case or be potentially useful for other domains as well?
+\end{enumerate}
+\item ``One-shot'' operations: We decided not to include features that only needed to be performed once and remain fixed thereafter in the analysis workflow. For example, certain preprocessing operations such as filtering null values only needed to be performed once with an external tool.
+\item Substantial research or engineering effort: Some proposed features did not make sense in the context of VQS or required a completely different set of research questions. For example, the question of how to properly compute similarity between time series with non-uniform number of datapoints arose in the astronomy and genetics use case, but requires the development of a novel distance metric and algorithm that is out of the scope of our design study objective. %. For example, M3 proposed functional fitting to obtain fitting coefficients. Other features
+\item Underdeveloped ideas: Other feature requirements came from casual specification that were underspecified. For example, A1 wanted to look for objects that have deficiency in one band and high emission in another band, but the scientific definition of ``deficiency'' in terms of brightness levels was ambiguous.
+\end{denselist}
 \change{\npar Figure~\ref{science_task} illustrates how each of the subtasks in participant's workflow can be addressed by a sensemaking process.}
 \begin{table}[h!]
 	\centering

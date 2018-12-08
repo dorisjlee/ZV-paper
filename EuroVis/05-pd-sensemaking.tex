@@ -53,6 +53,12 @@ essential for allowing users to pivot across different visualization collections
   \label{2dmodel}
   \vspace{-10pt}
 \end{figure}
+\begin{figure*}[ht!]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/taxonomy.pdf}
+  \caption{Taxonomy of \change{key capabilities essential to VQSs}. Each of the three sensemaking process is broken down into key functional components in VQSs. \change{Each component addresses a pro-forma question from a system's perspective.}} %, which is instantiated as features in \zvpp.}% The bottom-most layer connects the use cases features that have practical or envisioned usage based on the evaluation study.}
+  \label{fig:taxonomy}
+\end{figure*}
 \change{
   \subsection{From Processes to Components: A VQS Taxonomy}
   After understanding how each sensemaking process fits into the problem space \change{addressable} by VQSs, we further explore the design objectives and challenges in supporting each sensemaking process, grounded in our collaborative design experience. Here, we discuss how each functional component in the lower-level of our Figure~\ref{fig:taxonomy} taxonomy address specific challenges posed by the problem and dataset characteristics from each domain. Each of these VQS capabilities enable essential subtasks in accomplishing our participant's scientific  goal, as detailed in Appendix Table~\ref{bigfeaturetable}.
@@ -64,14 +70,11 @@ essential for allowing users to pivot across different visualization collections
   Since it is often difficult to sketch precisely, additional characteristics of the pattern query (e.g., patterns with specific shape characteristics, or expressible in a functional form) can be used to further winnow the list of undesired matches.%with the VQS returning a list of most similar matches
   \boldpara{Match Specification} addresses the well-known problem in VQSs where pattern queries are imprecise~\cite{correll2016semantics,Holz2009,Eichmann2015} by allowing users to clarifying how pattern matching should be performed.
   Match specification is useful when the dataset is \emph{noisy} (i.e., containing large numbers of false-positives). When the pattern query satisfies some additional constraints (e.g., pattern is x,y invariant), adjusting match specification prunes away false-positives to help reveal true candidates.
-
-
   \subsubsection{Bottom-Up Data-Driven Inquiry}
   \textit{Bottom-up data-driven inquiry} is a browsing-oriented sensemaking process that goes from data to theory to
   addresses the \textit{what} questions in the sensemaking process. For example, our genetics participants did not have a preconceived knowledge of what to search for in the dataset. They were mostly interested in \textit{what types of patterns exist in the dataset} through representative trends, as a means to jumpstart further queries. %The goal of data-driven inquiry is to move towards the blue area in Figure~\ref{2dmodel} to help analysts gain more information about patterns of interest in-the-head. % notion of what the pattern looks like
   The design challenge include developing the right set of ``stimuli'' that could provoke further data-driven inquiries, as well as low-effort mechanisms to search via these results.
   %%%%%%%%%%%%%%%%%%%%%%%%Components%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
   \boldpara{View specification} settings alter the encoding for all visualizations on the VQS. This ability to work with different collections of visualizations is useful when the dataset is \emph{multidimensional} and the axes of interest is \emph{unknown}. Modifying the view specification offers analysts different perspectives on the data to locate visualization collections of interest.
   \boldpara{Slice-and-Dice} empowers users to navigate and compare collections of visualizations constructed from different portions of the data. Slice-and-dice is useful when the dataset has \emph{large numbers of non-visualized attributes} that may be related to the visualized attributes (e.g., geographical location may influence the time series pattern for housing prices). Analysts can either make use of pre-existing knowledge regarding these ``support attributes'' to navigate to a data region that is more likely to contain the desired pattern (e.g., filtering to suburbs to find cheaper housing) or discover unknown patterns and relationships between different data subsets (e.g., housing prices is lower in winter than compared to summer).% by gaining a better understanding of characteristic patterns in particular data region.
 
@@ -94,7 +97,6 @@ essential for allowing users to pivot across different visualization collections
 
   \par\noindent The three aforementioned sensemaking processes are akin to the well-studied sensemaking paradigms of search, browse, and faceted navigation on the Web~\cite{Hearst2009,Olston2003}. Due to each of their advantages and limitations given different information seeking tasks, search interfaces have been designed to support all three complementary acts and transition smoothly between them to combine the strength of all three paradigms. \change{Similarly for VQSs, our design objective is to integrate all the three sensemaking into \zvpp. As we discover in the Section~\ref{sec:eval_findings} evaluation study, this integrative approach not only accelerates the process of visualization discovery, but also encourages hypotheses generation and experimentation.}
 }
-
 
 % \change{
 %   \subsection{Problems Addressed by Functional Components\label{sec:component}}
