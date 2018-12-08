@@ -43,14 +43,9 @@ depicts how much the analyst
 knows about which X and Y axes
 they are interested in visualizing.
 In both the astronomy and genetics use cases,
-as well as past work in this space, \change{the attribute to be visualized is \texttt{known}, as data was in the form of a time series.}% data was in the form of a time series % with \texttt{known} visualized attributes.
-In the case of our material science participants,
-they wanted to explore relationships between different
-X and Y variables.
-In this realm of \texttt{unknown} attributes,
-context creation (Figure~\ref{2dmodel} yellow) is
-essential for allowing users
-to pivot across different visualization collections.%subspaces. %Most past VQSs assume that the analyst has a desired pattern in-the-head that could be conveyed through visual specification, such as a sketch.%---i.e., setting the stage for bottom-up or top-down processes---\dor{this clause is awkward?}
+as well as past work in this space, \change{the attribute to be visualized is \texttt{known}, as data was in the form of a time series.} In the case of our material science participants, they wanted to explore relationships between different
+X and Y variables. In this realm of \texttt{unknown} attributes, context creation (Figure~\ref{2dmodel} yellow) is
+essential for allowing users to pivot across different visualization collections.%subspaces. %Most past VQSs assume that the analyst has a desired pattern in-the-head that could be conveyed through visual specification, such as a sketch.%---i.e., setting the stage for bottom-up or top-down processes---\dor{this clause is awkward?}% data was in the form of a time series % with \texttt{known} visualized attributes.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\linewidth]{figures/2dmodel.pdf}
@@ -58,51 +53,59 @@ to pivot across different visualization collections.%subspaces. %Most past VQSs 
   \label{2dmodel}
   \vspace{-10pt}
 \end{figure}
-\subsection{Design Goals for the Sensemaking Processes}
-After understanding how each sensemaking process fits into the problem space \change{addressable} by VQSs, we further explore the design objectives and challenges in supporting each sensemaking process, grounded in our collaborative design experience. % based on the taxonomy orgaby developing a taxonomy for organizing the aforementioned components.% fits into the paradigms of sensemaking in VQSs, as shown in Figure~\ref{fig:taxonomy}. In particular, we will describe the main form of inquiry addressed by each paradigm\cut{(\textit{what, where, which})}, its characteristic use case, and design challenges in supporting these paradigms.
-% \par Drawing from our participatory design experience, evaluation study, and literature review in this space, we design a taxonomy for understanding the key functionalities in VQSs. In Figure~\ref{fig:taxonomy}, we show how each use cases makes use of the different features in \zv, then we organize the features into key components for VQSs, which belongs to one of the three paradigms in the VQS design space.%, effectively moving rightwards to the gray area in Figure~\ref{2dmodel}, where the pattern instance is known.
-\boldpara{Top-down pattern search} begins with the \change{analyst's} intuition about how the desired patterns should look like based on ``theory'', including visualizations from past experience or abstract conceptions based on external knowledge. The goal of top-down pattern search is to address the \textit{which} question of visual sensemaking: \textit{which \change{data instances exhibit} this pattern?} Based on this preconceived notion of what to search for, the design challenge is to translate the query \change{from} the analyst's head to a query executable by the VQS. \change{In the Figure~\ref{fig:taxonomy} taxonomy}, this includes both components for specifying the pattern, as well as controls governing the underlying
-algorithm of how shape-matching is performed. For example, A1 knows intuitively what a supernovae pattern looks like and the detailed constraints on the shape, such as the width and height of the peak or the level of error tolerance for defining a match. He can search for transient patterns through sketching, select the option to ignore differences on the x axis, and \change{change} the similarity metric for flexible matching.  %The design challenge of top-down pattern search is to ----- enable users to How to translate the in-the-head query to visual query and how matching is done.
-\boldpara{Bottom-up data-driven inquiry} is
-a browsing-oriented sensemaking process
-that goes from data to theory to
-addresses the \textit{what} questions
-in the sensemaking process.
-% While the usage of each querying feature may vary from one participant to the next, generally, result querying and pattern upload are considered bottom-up approaches that go from data to theory by enabling users to query via examples of known visualizations. Bottom-up data-driven inquiries
- For example, genetics participants do not
- have a preconceived knowledge of what to search
- for in the dataset.
- They were mostly interested in
- \textit{what types of patterns exist in the dataset}
- through representative trends, as a means to
- jumpstart further queries. %The goal of data-driven inquiry is to move towards the blue area in Figure~\ref{2dmodel} to help analysts gain more information about patterns of interest in-the-head.
-% notion of what the pattern looks like
-The design challenge include developing
-the right set of ``stimuli'' that could
-provoke further data-driven inquiries,
-as well as low-effort mechanisms to search via these results.
-\boldpara{Context creation} addresses the \textit{where}
-question of sensemaking by enabling analysts
-to navigate across different parts of the visualization
-collection to learn about \textit{where \change{in the dataset do} the patterns of interest lie}.
-For example, material scientists often do not start
-with a pattern in-the-head, but recognize salient
-trends such as inverse correlation or linear correlation.
-They switch between different visualized attributes or dynamic
-classes to study their data from alternative perspectives.
-The design challenge of context creation is to \change{ensure that context is dynamically reflected across other VQS functionalities to help users visualize and compare how the data changes between the different contexts.}
-%develop features that act as a `lens': navigating users to desired data subsets, visualizing and comparing how the data changes between the different lenses, and ensuring that context is dynamically reflected across other VQS functionalities.
-\par\noindent The three aforementioned sensemaking processes are akin to the well-studied sensemaking paradigms of search, browse, and faceted navigation on the Web~\cite{Hearst2009,Olston2003}. Due to each of their advantages and limitations given different information seeking tasks, search interfaces have been designed to support all three complementary acts and transition smoothly between them to combine the strength of all three paradigms. \change{Similarly for VQSs, our design objective is to integrate all the three sensemaking into \zvpp. As we discover in the Section~\ref{sec:eval_findings} evaluation study, this integrative approach not only accelerates the process of visualization discovery, but also encourages hypotheses generation and experimentation.}
 \change{
-  \subsection{Problems Addressed by Functional Components\label{sec:component}}
-    Here, we discuss how each functional component in the lower-level of our Figure~\ref{fig:taxonomy} taxonomy address specific challenges posed by the problem and dataset characteristics from each domain. Each of these VQS capabilities enable essential subtasks in accomplishing our participant's scientific  goal, as detailed in Appendix Table~\ref{bigfeaturetable}.
-    \boldpara{Pattern Specification} interfaces allow users to submit exact descriptions of a pattern query. This is useful when the dataset contains \emph{large numbers of potentially-relevant pattern instances}.
-    Since it is often difficult to sketch precisely, additional characteristics of the pattern query (e.g., patterns with specific shape characteristics, or expressible in a functional form) can be used to further winnow the list of undesired matches.%with the VQS returning a list of most similar matches
-    \boldpara{Match Specification} addresses the well-known problem in VQSs where pattern queries are imprecise~\cite{correll2016semantics,Holz2009,Eichmann2015} by allowing users to clarifying how pattern matching should be performed.
-    Match specification is useful when the dataset is \emph{noisy} (i.e., containing large numbers of false-positives). When the pattern query satisfies some additional constraints (e.g., pattern is x,y invariant), adjusting match specification prunes away false-positives to help reveal true candidates.
-    \boldpara{View specification} settings alter the encoding for all visualizations on the VQS. This ability to work with different collections of visualizations is useful when the dataset is \emph{multidimensional} and the axes of interest is \emph{unknown}. Modifying the view specification offers analysts different perspectives on the data to locate visualization collections of interest.
-    \boldpara{Slice-and-Dice} empowers users to navigate and compare collections of visualizations constructed from different portions of the data. Slice-and-dice is useful when the dataset has \emph{large numbers of non-visualized attributes} that may be related to the visualized attributes (e.g., geographical location may influence the time series pattern for housing prices). Analysts can either make use of pre-existing knowledge regarding these ``support attributes'' to navigate to a data region that is more likely to contain the desired pattern (e.g., filtering to suburbs to find cheaper housing) or discover unknown patterns and relationships between different data subsets (e.g., housing prices is lower in winter than compared to summer).% by gaining a better understanding of characteristic patterns in particular data region.
-    \boldpara{Result querying} enables users to query for patterns similar to a selected data pattern from the ranked list of results or recommendation. Typically, analyst select visualizations with \emph{semantic or visual properties} of interest and make use of results querying to understand characteristic properties of similar instances.
-    \boldpara{Recommendation} displays visualizations that may be of interest to users based on the data context. Representative trends and outliers are useful when a \emph{small number of common patterns} is exhibited in the dataset. Understanding \emph{characteristic} patterns in dataset can help analysts discover other pattern queries of interest to jumpstart further queries.
-  % % In this section, we first describe a model to help characterize the design space for VQS based on the analytical workload and usage patterns from different use cases. Then, we present design challenges related to each of the process.
+  \subsection{From Processes to Components: A VQS Taxonomy}
+  After understanding how each sensemaking process fits into the problem space \change{addressable} by VQSs, we further explore the design objectives and challenges in supporting each sensemaking process, grounded in our collaborative design experience. Here, we discuss how each functional component in the lower-level of our Figure~\ref{fig:taxonomy} taxonomy address specific challenges posed by the problem and dataset characteristics from each domain. Each of these VQS capabilities enable essential subtasks in accomplishing our participant's scientific  goal, as detailed in Appendix Table~\ref{bigfeaturetable}.
+  \subsubsection{Top-Down Pattern Search}
+  \textit{Top-down pattern search} begins with the \change{analyst's} intuition about how the desired patterns should look like based on ``theory'', including visualizations from past experience or abstract conceptions based on external knowledge. The goal of top-down pattern search is to address the \textit{which} question of visual sensemaking: \textit{which \change{data instances exhibit} this pattern?} Based on this preconceived notion of what to search for, the design challenge is to translate the query \change{from} the analyst's head to a query executable by the VQS. \change{In the Figure~\ref{fig:taxonomy} taxonomy}, this includes both components for specifying the pattern, as well as controls governing the underlying
+  algorithm of how shape-matching is performed. For example, A1 knows intuitively what a supernovae pattern looks like and the detailed constraints on the shape, such as the width and height of the peak or the level of error tolerance for defining a match. He can search for transient patterns through sketching, select the option to ignore differences on the x axis, and \change{change} the similarity metric for flexible matching.
+  %%%%%%%%%%%%%%%%%%%%%%%%Components%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \boldpara{Pattern Specification} interfaces allow users to submit exact descriptions of a pattern query. This is useful when the dataset contains \emph{large numbers of potentially-relevant pattern instances}.
+  Since it is often difficult to sketch precisely, additional characteristics of the pattern query (e.g., patterns with specific shape characteristics, or expressible in a functional form) can be used to further winnow the list of undesired matches.%with the VQS returning a list of most similar matches
+  \boldpara{Match Specification} addresses the well-known problem in VQSs where pattern queries are imprecise~\cite{correll2016semantics,Holz2009,Eichmann2015} by allowing users to clarifying how pattern matching should be performed.
+  Match specification is useful when the dataset is \emph{noisy} (i.e., containing large numbers of false-positives). When the pattern query satisfies some additional constraints (e.g., pattern is x,y invariant), adjusting match specification prunes away false-positives to help reveal true candidates.
+
+
+  \subsubsection{Bottom-Up Data-Driven Inquiry}
+  \textit{Bottom-up data-driven inquiry} is a browsing-oriented sensemaking process that goes from data to theory to
+  addresses the \textit{what} questions in the sensemaking process. For example, our genetics participants did not have a preconceived knowledge of what to search for in the dataset. They were mostly interested in \textit{what types of patterns exist in the dataset} through representative trends, as a means to jumpstart further queries. %The goal of data-driven inquiry is to move towards the blue area in Figure~\ref{2dmodel} to help analysts gain more information about patterns of interest in-the-head. % notion of what the pattern looks like
+  The design challenge include developing the right set of ``stimuli'' that could provoke further data-driven inquiries, as well as low-effort mechanisms to search via these results.
+  %%%%%%%%%%%%%%%%%%%%%%%%Components%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \boldpara{View specification} settings alter the encoding for all visualizations on the VQS. This ability to work with different collections of visualizations is useful when the dataset is \emph{multidimensional} and the axes of interest is \emph{unknown}. Modifying the view specification offers analysts different perspectives on the data to locate visualization collections of interest.
+  \boldpara{Slice-and-Dice} empowers users to navigate and compare collections of visualizations constructed from different portions of the data. Slice-and-dice is useful when the dataset has \emph{large numbers of non-visualized attributes} that may be related to the visualized attributes (e.g., geographical location may influence the time series pattern for housing prices). Analysts can either make use of pre-existing knowledge regarding these ``support attributes'' to navigate to a data region that is more likely to contain the desired pattern (e.g., filtering to suburbs to find cheaper housing) or discover unknown patterns and relationships between different data subsets (e.g., housing prices is lower in winter than compared to summer).% by gaining a better understanding of characteristic patterns in particular data region.
+
+  \subsubsection{Context creation}
+  \boldpara{Context creation} addresses the \textit{where}
+  question of sensemaking by enabling analysts
+  to navigate across different parts of the visualization
+  collection to learn about \textit{where \change{in the dataset do} the patterns of interest lie}.
+  For example, material scientists often do not start
+  with a pattern in-the-head, but recognize salient
+  trends such as inverse correlation or linear correlation.
+  They switch between different visualized attributes or dynamic
+  classes to study their data from alternative perspectives.
+  The design challenge of context creation is to \change{ensure that context is dynamically reflected across other VQS functionalities to help users visualize and compare how the data changes between the different contexts.}
+  %develop features that act as a `lens': navigating users to desired data subsets, visualizing and comparing how the data changes between the different lenses, and ensuring that context is dynamically reflected across other VQS functionalities.
+
+  %%%%%%%%%%%%%%%%%%%%%%%%Components%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \boldpara{Result querying} enables users to query for patterns similar to a selected data pattern from the ranked list of results or recommendation. Typically, analyst select visualizations with \emph{semantic or visual properties} of interest and make use of results querying to understand characteristic properties of similar instances.
+  \boldpara{Recommendation} displays visualizations that may be of interest to users based on the data context. Representative trends and outliers are useful when a \emph{small number of common patterns} is exhibited in the dataset. Understanding \emph{characteristic} patterns in dataset can help analysts discover other pattern queries of interest to jumpstart further queries.
+
+  \par\noindent The three aforementioned sensemaking processes are akin to the well-studied sensemaking paradigms of search, browse, and faceted navigation on the Web~\cite{Hearst2009,Olston2003}. Due to each of their advantages and limitations given different information seeking tasks, search interfaces have been designed to support all three complementary acts and transition smoothly between them to combine the strength of all three paradigms. \change{Similarly for VQSs, our design objective is to integrate all the three sensemaking into \zvpp. As we discover in the Section~\ref{sec:eval_findings} evaluation study, this integrative approach not only accelerates the process of visualization discovery, but also encourages hypotheses generation and experimentation.}
 }
+
+
+% \change{
+%   \subsection{Problems Addressed by Functional Components\label{sec:component}}
+%     Here, we discuss how each functional component in the lower-level of our Figure~\ref{fig:taxonomy} taxonomy address specific challenges posed by the problem and dataset characteristics from each domain. Each of these VQS capabilities enable essential subtasks in accomplishing our participant's scientific  goal, as detailed in Appendix Table~\ref{bigfeaturetable}.
+%     \boldpara{Pattern Specification} interfaces allow users to submit exact descriptions of a pattern query. This is useful when the dataset contains \emph{large numbers of potentially-relevant pattern instances}.
+%     Since it is often difficult to sketch precisely, additional characteristics of the pattern query (e.g., patterns with specific shape characteristics, or expressible in a functional form) can be used to further winnow the list of undesired matches.%with the VQS returning a list of most similar matches
+%     \boldpara{Match Specification} addresses the well-known problem in VQSs where pattern queries are imprecise~\cite{correll2016semantics,Holz2009,Eichmann2015} by allowing users to clarifying how pattern matching should be performed.
+%     Match specification is useful when the dataset is \emph{noisy} (i.e., containing large numbers of false-positives). When the pattern query satisfies some additional constraints (e.g., pattern is x,y invariant), adjusting match specification prunes away false-positives to help reveal true candidates.
+%     \boldpara{View specification} settings alter the encoding for all visualizations on the VQS. This ability to work with different collections of visualizations is useful when the dataset is \emph{multidimensional} and the axes of interest is \emph{unknown}. Modifying the view specification offers analysts different perspectives on the data to locate visualization collections of interest.
+%     \boldpara{Slice-and-Dice} empowers users to navigate and compare collections of visualizations constructed from different portions of the data. Slice-and-dice is useful when the dataset has \emph{large numbers of non-visualized attributes} that may be related to the visualized attributes (e.g., geographical location may influence the time series pattern for housing prices). Analysts can either make use of pre-existing knowledge regarding these ``support attributes'' to navigate to a data region that is more likely to contain the desired pattern (e.g., filtering to suburbs to find cheaper housing) or discover unknown patterns and relationships between different data subsets (e.g., housing prices is lower in winter than compared to summer).% by gaining a better understanding of characteristic patterns in particular data region.
+%     \boldpara{Result querying} enables users to query for patterns similar to a selected data pattern from the ranked list of results or recommendation. Typically, analyst select visualizations with \emph{semantic or visual properties} of interest and make use of results querying to understand characteristic properties of similar instances.
+%     \boldpara{Recommendation} displays visualizations that may be of interest to users based on the data context. Representative trends and outliers are useful when a \emph{small number of common patterns} is exhibited in the dataset. Understanding \emph{characteristic} patterns in dataset can help analysts discover other pattern queries of interest to jumpstart further queries.
+%   % % In this section, we first describe a model to help characterize the design space for VQS based on the analytical workload and usage patterns from different use cases. Then, we present design challenges related to each of the process.
+% }
