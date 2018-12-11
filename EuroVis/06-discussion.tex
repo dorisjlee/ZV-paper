@@ -169,7 +169,7 @@ and context creation are far more commonly
 used than top-down pattern search
 when users have no desired patterns in mind},
 which is typically the case for exploratory data analysis.
-In particular, we find that top-down approaches
+In particular, top-down approaches
 were only useful for 29\% of the use cases,
 whereas it was useful for 70\% of the use cases
 for bottom-up approaches and 67\%
@@ -287,19 +287,18 @@ each indicating a \change{separate line} of inquiry
 during the analysis.
 Based on these event sequences---one for each session,
 we compute the aggregate state transition probabilities
-(shown as edge weights in Figure~\ref{fig:transition})
+(edge weight labels in Figure~\ref{fig:transition})
 to characterize how participants from each domain
 move between different sensemaking processes.
 For example, in material science,
 bottom-up exploration
 leads to context creation 60\% of the time
-and to top-down pattern-specification
+and to top-down pattern search
 the rest of the time.
 Self-directed edges indicate the probability that the participant
 would continue with the same type of sensemaking process.
 For example, when an astronomer performs top-down pattern search,
-it is followed by another top-down specification
-64\% of the time and context creation the rest of the time,
+it is followed by another top-down process 64\% of the time and context creation the rest of the time,
 but never followed by a bottom-up processes.
 This high self-directed transition probability
 reflects how astronomers often need to iteratively
@@ -308,7 +307,7 @@ or match specification when looking for a specific pattern. %when A1 looks for s
 %Each event sequence is separated by labeled session breaks signaling the beginning of a new line of inquiry. The
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{figures/markov_transition.pdf}
-  \caption{Markov models computed based on the evaluation study event sequences, with edges denoting the probability that a participant in the particular domain will go from one sensemaking process to the next. Nodes are scaled according to the eigenvector centrality, which represents the percentage of time users would spend in a particular \change{sensemaking process in steady state}.}\label{fig:transition}
+  \caption{Markov models computed based on evaluation study event sequences, with edges denoting the probability that participant in the particular domain will go from one sensemaking process to the next. Nodes are scaled according to the eigenvector centrality, representing the percentage of time participants would spend in a particular \change{sensemaking process in steady state}.}\label{fig:transition}
 \end{figure}
 % Similar to the sensemaking model proposed by Pirolli and Card~\cite{Pirolli}, the ---- sensemaking loop representing iterative process
 % ---- highlights how the two newly discovered VQS sensemaking process in this paper are essential for `closing the loop' between the sensemaking acts in VQSs. %, equally important
@@ -340,7 +339,7 @@ followed by bottom-up inquiries (such as drag-and-drop)
  and top-down pattern searches (such as sketch modification).
 %through dynamic classes than top-down pattern search. %astronomers focus largely on performing top-down pattern search, while filtering on the visualization space. %in Section~\ref{sec:pd_findings}}.
 The central process adopted by each domain
-is tightly coupled with \change{the problem characteristics associated with each subject area, as illustrated in Appendix Table~\ref{science_task}.} For example, without an initial query in-the-head,
+is tightly coupled with \change{the problem characteristics associated with each domain, as illustrated in Appendix Table~\ref{science_task}.} For example, without an initial query in mind,
 geneticists relied heavily on bottom-up querying
 through recommendations to jumpstart their queries.
 %Despite the differing levels of usage from each subject area, we learn that \textit{each sensemaking process fulfills a central role in participants' analysis to address their high-level research objectives}.
