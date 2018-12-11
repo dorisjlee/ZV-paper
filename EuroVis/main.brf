@@ -1,6 +1,6 @@
 \backcite {mohebbi2011google,Hochheiser2004,wattenberg2001sketching,Siddiqui2017VLDB,ryall2005querylines,correll2016semantics,Mannino2018,Eichmann2015,Holz2009}{{1}{1}{section.1}}
 \backcite {ryall2005querylines,correll2016semantics,Mannino2018,Eichmann2015,Holz2009}{{1}{1}{section.1}}
-\backcite {Siddiqui2017,Siddiqui2017VLDB}{{2}{1}{figure.caption.1}}
+\backcite {Siddiqui2017,Siddiqui2017VLDB}{{1}{1}{figure.caption.1}}
 \backcite {Muller1993,BodkerGronbaek,HoltzblattJones}{{2}{1}{figure.caption.1}}
 \backcite {Pirolli}{{2}{1}{figure.caption.1}}
 \backcite {Hochheiser2001,Hochheiser2004}{{2}{2.1}{subsection.2.1}}
@@ -38,7 +38,9 @@
 \backcite {correll2016semantics}{{6}{\caption@xref {??}{ on input line 37}}{table.caption.5}}
 \backcite {Siddiqui2017}{{6}{4.2}{subsection.4.2}}
 \backcite {Pirolli}{{7}{5}{figure.caption.6}}
+\backcite {Pirolli}{{7}{5.1}{subsection.5.1}}
 \backcite {correll2016semantics,Holz2009,Eichmann2015}{{7}{5.1}{subsection.5.1}}
+\backcite {Pirolli}{{7}{5.2}{subsection.5.2}}
 \backcite {Hearst2009,Olston2003}{{8}{5.3}{subsection.5.3}}
 \backcite {Williams2017}{{8}{6}{section.6}}
 \backcite {Gloss2017}{{9}{6.2}{subsection.6.2}}
