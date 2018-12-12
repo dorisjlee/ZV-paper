@@ -75,6 +75,7 @@
 \usepackage{pifont}
 \usepackage{xspace}
 \usepackage{setspace}
+\usepackage{titlesec}
 \usepackage{graphicx}
 \usepackage[skip=5pt,font=small]{caption}
 \usepackage[textsize=tiny]{todonotes}
@@ -125,6 +126,12 @@
 \itemsep=\parsep
     }
 }
+% Custom section spacing 
+\titlespacing*{\section}
+{0pt}{1.7ex}{0.3ex}
+\titlespacing*{\subsection}
+{0pt}{0.2ex}{0.1ex}
+
 \newcommand*{\img}[1]{%
     \raisebox{-.3\baselineskip}{%
         \includegraphics[
@@ -187,8 +194,9 @@
 \newcommand{\astro}{\textit{astro}\xspace}
 \newcommand{\bio}{\textit{genetics}\xspace}
 \newcommand{\matsci}{\textit{matsci}\xspace}
-\newcommand{\change}[1]{{\leavevmode\color{red}#1}}
-% \newcommand{\change}[1]{{\leavevmode#1}}
+% \newcommand{\change}[1]{{\leavevmode\color{red}#1}}
+\newcommand{\fchange}[1]{{\leavevmode\color{red}#1}}
+\newcommand{\change}[1]{{\leavevmode#1}}
 
 \newcommand{\agp}[1]{\textcolor{blue}{Aditya: #1}}
 \newcommand{\dor}[1]{\textcolor{green}{Doris: #1}}
@@ -213,7 +221,7 @@
 \begin{document}
 % \title{Understanding usage patterns for query specification in sketch-based visual query systems: A Case Study with Zenvisage}
 %\title{I can't always sketch what I want: \\ Understanding Sensemaking in Visual Query Systems through Design Studies with Zenvisage++}
-\title{\emph{You can't always sketch what you want}: \\ Understanding Sensemaking in Visual Query Systems\vspace{-20pt}}
+\title[You can't always sketch what you want: Understanding Sensemaking in Visual Query Systems]{\emph{You can't always sketch what you want}: \\ Understanding Sensemaking in Visual Query Systems\vspace{-20pt}}
 \author{Submission ID: 1051\vspace{-50pt}}
 %How are visual query systems used in practice?\\ A Design Study with Zenvisage}
 \maketitle

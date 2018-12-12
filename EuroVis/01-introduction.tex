@@ -10,7 +10,7 @@ using toolkits like \texttt{ggplot} or \texttt{matplotlib}, or visualization con
 \vspace{-5pt}
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=0.95\linewidth]{figures/science_goal.pdf}
+	\includegraphics[width=\linewidth]{figures/science_goal.pdf}
 	\caption{\change{Desired insights, problem and dataset challenges for each of the three application domains in our study.}}
 	\label{science_goal}
 	\vspace*{-15pt}
@@ -38,7 +38,7 @@ Which battery components have sustainable
 levels of energy-efficiency and are safe and
 cheap to manufacture in production?
 \par Via \change{contextual inquiries} and interviews, we first identified challenges in existing data analysis workflows in these domains
-that could be potentially addressed by a VQS. Building on top of an existing open-source VQS, \zv~\cite{Siddiqui2017,Siddiqui2017VLDB}, we \change{engaged} participants \change{in a process of participatory design (PD)~\cite{Muller1993,BodkerGronbaek,HoltzblattJones} to enable them to better compose data exploration workflows that lead to insight discovery}, over the course of a year. We organize \change{our PD findings} into a taxonomy of VQS \change{capabilities}, involving three sensemaking processes inspired by Pirolli and Card's notional model of analyst sensemaking~\cite{Pirolli}. The sensemaking processes include top-down pattern search (translating a pattern ``in-the-head'' into a visual query), bottom-up data-driven inquiries (querying or recommending based on data), and context-creation (navigating across different collections of visualizations). We find that prior VQSs have focused on enabling top-down processes, while largely ignoring the other two processes that \change{we found to be} crucial for all three domains.
+that could be potentially addressed by a VQS. Building on top of an existing open-source VQS, \zv~\cite{Siddiqui2017,Siddiqui2017VLDB}, we \change{engaged} participants \change{in a process of participatory design (PD)~\cite{Muller1993,BodkerGronbaek,HoltzblattJones} to enable them to better compose data exploration workflows that lead to insight discovery}, over the course of a year. We organize \change{our PD findings} into a taxonomy of VQS \change{capabilities}, involving three sensemaking processes inspired by Pirolli and Card's notional model of analyst sensemaking~\cite{Pirolli}. The sensemaking processes include \emph{top-down pattern search} (translating a pattern ``in-the-head'' into a visual query), \emph{bottom-up data-driven inquiries} (querying or recommending based on data), and \emph{context-creation} (navigating across different collections of visualizations). We find that prior VQSs have focused on enabling top-down processes, while largely ignoring the other two processes that \change{we found to be} crucial for all three domains.
 %to gather feedback and iterate on VQS feature designs, culminating in a new enhanced VQS, \zvpp.
 \par To study how various \change{VQSs} are used in practice,
 we conducted a final evaluation study with nine participants
@@ -72,8 +72,8 @@ analysts and how they are actually used in practice}. \change{Working with parti
 Our work not only opens up a new space of opportunities beyond the narrow use cases considered by prior studies, but also advocates common design guidelines and end-user considerations for building next-generation VQSs.
 \begin{table}[h!]
     \centering
-    \includegraphics[width=0.75\linewidth]{figures/related_works_table.pdf}
+    \includegraphics[width=0.8\linewidth]{figures/related_works_table.pdf}
     \caption{Table summarizing whether key \change{functional components} (columns) are covered by past systems (row), indicated by checked cells. Column header colors blue, orange, green represents three sensemaking process (top-down querying, search with context, and bottom-up querying) described in Section~\ref{sec:pd_findings}. The heavily-used, practical features in our study for context-creation and bottom-up inquiry is largely missing from prior VQSs.}
     \label{table:relatedwork}
-    \vspace{-10pt}
+    \vspace*{-15pt}
 \end{table}
