@@ -7,7 +7,6 @@ Warning--I'm ignoring HoltzblattJones's extra "title" field
 --line 932 of file reference.bib
 Warning--I'm ignoring BodkerGronbaek's extra "title" field
 --line 944 of file reference.bib
-Warning--to sort, need author or key in zillow
 Warning--empty booktitle in BodkerGronbaek
 Warning--empty journal in Drlica-Wagner2017
 Warning--empty booktitle in HoltzblattJones
@@ -16,43 +15,43 @@ Warning--empty journal in Mannino2018
 Warning--empty journal in mohebbi2011google
 You've used 38 entries,
             2855 wiz_defined-function locations,
-            865 strings with 12036 characters,
-and the built_in function-call counts, 16562 in all, are:
-= -- 1660
-> -- 835
-< -- 7
-+ -- 304
-- -- 300
-* -- 1338
-:= -- 2623
-add.period$ -- 74
+            866 strings with 12080 characters,
+and the built_in function-call counts, 16608 in all, are:
+= -- 1658
+> -- 842
+< -- 8
++ -- 306
+- -- 302
+* -- 1343
+:= -- 2641
+add.period$ -- 73
 call.type$ -- 38
 change.case$ -- 261
 chr.to.int$ -- 38
-cite$ -- 46
-duplicate$ -- 631
-empty$ -- 1188
-format.name$ -- 337
-if$ -- 3387
+cite$ -- 44
+duplicate$ -- 638
+empty$ -- 1187
+format.name$ -- 341
+if$ -- 3389
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 40
+missing$ -- 42
 newline$ -- 191
-num.names$ -- 111
-pop$ -- 250
+num.names$ -- 114
+pop$ -- 251
 preamble$ -- 1
-purify$ -- 301
+purify$ -- 302
 quote$ -- 0
 skip$ -- 545
 stack$ -- 0
-substring$ -- 895
-swap$ -- 143
-text.length$ -- 7
-text.prefix$ -- 7
+substring$ -- 894
+swap$ -- 144
+text.length$ -- 8
+text.prefix$ -- 8
 top$ -- 0
-type$ -- 327
-warning$ -- 7
-while$ -- 164
-width$ -- 40
+type$ -- 322
+warning$ -- 6
+while$ -- 166
+width$ -- 39
 write$ -- 465
-(There were 9 warnings)
+(There were 8 warnings)

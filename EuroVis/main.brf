@@ -1,7 +1,9 @@
+\backcite {Few2012}{{1}{1}{section.1}}
 \backcite {mohebbi2011google,Hochheiser2004,wattenberg2001sketching,Siddiqui2017VLDB,ryall2005querylines,correll2016semantics,Mannino2018,Eichmann2015,Holz2009}{{1}{1}{section.1}}
 \backcite {ryall2005querylines,correll2016semantics,Mannino2018,Eichmann2015,Holz2009}{{1}{1}{section.1}}
-\backcite {Siddiqui2017,Siddiqui2017VLDB}{{1}{1}{figure.caption.1}}
-\backcite {Muller1993,BodkerGronbaek,HoltzblattJones}{{1}{1}{figure.caption.1}}
+\backcite {ryall2005querylines,wattenberg2001sketching}{{1}{1}{figure.caption.1}}
+\backcite {Siddiqui2017,Siddiqui2017VLDB}{{2}{1}{figure.caption.1}}
+\backcite {Muller1993,BodkerGronbaek,HoltzblattJones}{{2}{1}{figure.caption.1}}
 \backcite {Pirolli}{{2}{1}{figure.caption.1}}
 \backcite {Hochheiser2001,Hochheiser2004}{{2}{2.1}{subsection.2.1}}
 \backcite {wattenberg2001sketching}{{2}{2.1}{subsection.2.1}}
@@ -16,7 +18,6 @@
 \backcite {Ciolfi2016}{{3}{2.2}{subsection.2.2}}
 \backcite {Grnbak1991}{{3}{2.2}{subsection.2.2}}
 \backcite {Bossen2016}{{3}{2.3}{subsection.2.3}}
-\backcite {zillow}{{3}{2.3}{subsection.2.3}}
 \backcite {Drlica-Wagner2017}{{4}{3}{section.3}}
 \backcite {Peng2016}{{4}{3}{section.3}}
 \backcite {Khetan2018}{{4}{3}{section.3}}
