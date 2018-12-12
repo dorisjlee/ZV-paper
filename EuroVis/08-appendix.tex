@@ -1,13 +1,28 @@
+\vspace*{-15pt}
 \appendix
-\vspace{-10pt}
+\vspace*{-15pt}
 % \npar\textbf{{\huge Appendix}}
 \change{\npar In Appendix A, we first describe additional details about the participatory design process, as well as domain-specific artifacts collected from contextual inquiry. Next, in Appendix B, we articulate the space of problems amenable to VQSs and describe how the sensemaking processes (introduced in Section~\ref{sec:sensemaking}) fit into different parts of the problem space. Finally, in Appendix C, we provide supplementary information regarding our analysis methods and results for the evaluation study.}
+\vspace*{-10pt}
 \section{Artifacts from Participatory Design\label{apdx:pdartifact}}
-\change{Our collaboration with participants is illustrated in Figure~\ref{timeline}, where we began with an existing VQS (\zv, as illustrated in Figure~\ref{oldZV}) and incrementally incorporated features, such as dynamic class creation (Figure~\ref{dcc}), throughout the participatory design process.}
+\vspace*{-10pt}
+\change{\npar During the contextual inquiry, participants demonstrated the use of external tools for conducting analysis in their existing workflow, as shown in Figure~\ref{workflow}, including:
+  \begin{denselist}
+    \item \href{http://descut.cosmology.illinois.edu}{Image Cutout Service (Astronomy)}
+    \item \href{http://cs.cmu.edu/~jernst/stem/}{Short Time-series Expression Miner (Genetics)}
+    \item \href{http://srdata.nist.gov/solubility/}{Solubility Database (Material Science)}
+  \end{denselist}
+}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/workflow.png}
+  \caption{Screenshots from contextual inquiry: a) A1 examines a light curve manually using the Jupyter notebook environment, b) G2 uses a domain-specific software to examine clustering outputs.}
+  \label{workflow}
+\end{figure}
+\change{\npar Our collaboration with participants is illustrated in Figure~\ref{timeline}, where we began with an existing VQS (\zv, as illustrated in Figure~\ref{oldZV}) and incrementally incorporated features, such as dynamic class creation (Figure~\ref{dcc}), throughout the PD process.}
 \begin{figure}[h!]
 	\centering
 	% \captionsetup{justification=centering,margin=2cm}
-	\vspace{-10pt}
 	% \includegraphics[width=6in]{figures/timeline.pdf}
   \includegraphics[width=\linewidth]{figures/timeline.pdf}
 	\caption{Timeline for progress in participatory design studies.}
@@ -28,22 +43,7 @@
   \label{dcc}
   \vspace{-10pt}
 \end{figure}
-\newpage
-\change{\npar During the contextual inquiry, participants demonstrated the use of external tools for conducting analysis in their existing workflow, as shown in Figure~\ref{workflow}, including:
-  \begin{denselist}
-    \item \href{http://descut.cosmology.illinois.edu}{Image Cutout Service (Astronomy)}
-    \item \href{http://cs.cmu.edu/~jernst/stem/}{Short Time-series Expression Miner (Genetics)}
-    \item \href{http://srdata.nist.gov/solubility/}{Solubility Database (Material Science)}
-  \end{denselist}
-}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.9\linewidth]{figures/workflow.png}
-  \caption{Screenshots from contextual inquiry: a) A1 examines a light curve manually using the Jupyter notebook environment, b) G2 uses a domain-specific software to examine clustering outputs.}
-  \label{workflow}
-\end{figure}
-\vspace{-5pt}
-\npar Based on our meeting logs with participants, we found that reasons for not carrying a feature from the design to implementation stage included:
+\npar \change{As discussed in Section~\ref{sec:feature_dsicovery}, not all of the features proposed by participants during PD were incorporated in the \zvpp prototype.} Based on our meeting logs with participants, we found that reasons for not carrying a feature from the design to implementation stage included:
 \begin{denselist} %he amount of nice-to-have features that one could envision for the tool is endless.
 \item Nice-to-haves: One of the most common reasons for unincorporated features comes from participant's requests for nice-to-have features. To this end, we use two criteria to heuristically judge whether to implement a particular feature:
 \begin{enumerate}[leftmargin=*]
@@ -55,6 +55,7 @@
 \item Underdeveloped ideas: Other feature requirements came from casual specification that were underspecified. For example, A1 wanted to look for objects that have deficiency in one band and high emission in another band, but the scientific definition of ``deficiency'' in terms of brightness levels was ambiguous.
 \end{denselist}
 \newpage
+\vspace*{-30pt}
 \change{\npar Table~\ref{science_task} illustrates how each of the subtasks in participant's workflow can be addressed by a sensemaking process.}
 \begin{table}[h!]
 	\centering
@@ -66,9 +67,9 @@
 \change{
 \section{Characterizing the Problem Space for VQSs\label{appdx:problem_space}}
 We now characterize the space of problems addressable by VQSs and describe how each sensemaking process fits into different problem areas that VQSs are aimed to solve. Visual querying often consists of searching for a desired pattern instance (Z) across a visualization collection specified by some given attributes (X,Y). Correspondingly, we introduce two axes depicting the amount of information known about the visualized attribute and pattern instance \change{as shown in Figure~\ref{2dmodel}}.
-\par Along the \textbf{pattern instance} axis, the visualization that contains the desired pattern may already be \texttt{known} to the analyst, exist as a pattern \texttt{in-the-head} of the analyst, or \change{be} completely \texttt{unknown} to the analyst. In the \texttt{known} pattern instance region (Figure~\ref{2dmodel} grey cell), systems such as Tableau, where analysts manually create and examine each visualization one at a time, is more well-suited than VQSs, since analysts can directly work with the selected instance without \change{having to search for which visualization exhibits the desired pattern}. We define \textit{top-down pattern search} as \change{the process where analysts query a fixed collection of visualizations based on their in-the-head pattern (Figure~\ref{2dmodel} blue)}. On the other hand, \change{\textit{bottom-up data-driven inquiries} (Figure~\ref{2dmodel} green) are driven by recommendations or queries that originate from the data (or equivalently, the visualization), since the pattern of interest is unknown and external to the user.}
+\npar Along the \textbf{pattern instance} axis, the visualization that contains the desired pattern may already be \texttt{known} to the analyst, exist as a pattern \texttt{in-the-head} of the analyst, or \change{be} completely \texttt{unknown} to the analyst. In the \texttt{known} pattern instance region (Figure~\ref{2dmodel} grey cell), systems such as Tableau, where analysts manually create and examine each visualization one at a time, is more well-suited than VQSs, since analysts can directly work with the selected instance without \change{having to search for which visualization exhibits the desired pattern}. We define \textit{top-down pattern search} as \change{the process where analysts query a fixed collection of visualizations based on their in-the-head pattern (Figure~\ref{2dmodel} blue)}. On the other hand, \change{\textit{bottom-up data-driven inquiries} (Figure~\ref{2dmodel} green) are driven by recommendations or queries that originate from the data (or equivalently, the visualization), since the pattern of interest is unknown and external to the user.}
 %analysts often do not start with a known pattern instance. T
-\par The second axis, \textbf{visualized attributes},
+\npar The second axis, \textbf{visualized attributes},
 depicts how much the analyst
 knows about which X and Y axes
 they are interested in visualizing.
