@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: eg-alpha.bst
+Database file #1: reference.bib
+Warning--I'm ignoring HoltzblattJones's extra "title" field
+--line 932 of file reference.bib
+Warning--I'm ignoring BodkerGronbaek's extra "title" field
+--line 944 of file reference.bib
+Warning--empty booktitle in BodkerGronbaek
+Warning--empty journal in Drlica-Wagner2017
+Warning--empty booktitle in HoltzblattJones
+Warning--empty journal in Khetan2018
+Warning--empty journal in Mannino2018
+Warning--empty journal in mohebbi2011google
+You've used 38 entries,
+            2855 wiz_defined-function locations,
+            866 strings with 12080 characters,
+and the built_in function-call counts, 16608 in all, are:
+= -- 1658
+> -- 842
+< -- 8
++ -- 306
+- -- 302
+* -- 1343
+:= -- 2641
+add.period$ -- 73
+call.type$ -- 38
+change.case$ -- 261
+chr.to.int$ -- 38
+cite$ -- 44
+duplicate$ -- 638
+empty$ -- 1187
+format.name$ -- 341
+if$ -- 3389
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 42
+newline$ -- 191
+num.names$ -- 114
+pop$ -- 251
+preamble$ -- 1
+purify$ -- 302
+quote$ -- 0
+skip$ -- 545
+stack$ -- 0
+substring$ -- 894
+swap$ -- 144
+text.length$ -- 8
+text.prefix$ -- 8
+top$ -- 0
+type$ -- 322
+warning$ -- 6
+while$ -- 166
+width$ -- 39
+write$ -- 465
+(There were 8 warnings)

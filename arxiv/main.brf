@@ -1,0 +1,50 @@
+\backcite {Few2012}{{1}{1}{section.1}}
+\backcite {mohebbi2011google,Hochheiser2004,wattenberg2001sketching,Siddiqui2017VLDB,ryall2005querylines,correll2016semantics,Mannino2018,Eichmann2015,Holz2009}{{1}{1}{section.1}}
+\backcite {ryall2005querylines,correll2016semantics,Mannino2018,Eichmann2015,Holz2009}{{1}{1}{section.1}}
+\backcite {ryall2005querylines,wattenberg2001sketching}{{1}{1}{figure.caption.1}}
+\backcite {Siddiqui2017,Siddiqui2017VLDB}{{2}{1}{figure.caption.1}}
+\backcite {Muller1993,BodkerGronbaek,HoltzblattJones}{{2}{1}{figure.caption.1}}
+\backcite {Pirolli}{{2}{1}{figure.caption.1}}
+\backcite {Hochheiser2001,Hochheiser2004}{{2}{2.1}{subsection.2.1}}
+\backcite {wattenberg2001sketching}{{2}{2.1}{subsection.2.1}}
+\backcite {mohebbi2011google}{{2}{2.1}{subsection.2.1}}
+\backcite {Eichmann2015,correll2016semantics,Mannino2018}{{2}{2.1}{subsection.2.1}}
+\backcite {ryall2005querylines,Holz2009}{{2}{2.1}{subsection.2.1}}
+\backcite {Hochheiser2004,correll2016semantics}{{2}{2.1}{subsection.2.1}}
+\backcite {munzner2009nested}{{2}{2.1}{subsection.2.1}}
+\backcite {lam2012empirical,shneiderman2006strategies,Sedlmair2012}{{3}{2.1}{subsection.2.1}}
+\backcite {Plaisant2004,Isenberg2008}{{3}{2.1}{subsection.2.1}}
+\backcite {Siddiqui2017,Siddiqui2017VLDB}{{3}{2.2}{subsection.2.2}}
+\backcite {Ciolfi2016}{{3}{2.2}{subsection.2.2}}
+\backcite {Grnbak1991}{{3}{2.2}{subsection.2.2}}
+\backcite {Bossen2016}{{3}{2.3}{subsection.2.3}}
+\backcite {Drlica-Wagner2017}{{4}{3}{section.3}}
+\backcite {Peng2016}{{4}{3}{section.3}}
+\backcite {Khetan2018}{{4}{3}{section.3}}
+\backcite {HoltzblattJones}{{4}{3}{section.4}}
+\backcite {Hochheiser2004}{{5}{\caption@xref {??}{ on input line 37}}{table.caption.4}}
+\backcite {mohebbi2011google}{{5}{\caption@xref {??}{ on input line 37}}{table.caption.4}}
+\backcite {Mannino2018}{{5}{\caption@xref {??}{ on input line 37}}{table.caption.4}}
+\backcite {Hochheiser2004}{{5}{\caption@xref {??}{ on input line 37}}{table.caption.4}}
+\backcite {ryall2005querylines}{{5}{\caption@xref {??}{ on input line 37}}{table.caption.4}}
+\backcite {wattenberg2001sketching,Mannino2018}{{5}{\caption@xref {??}{ on input line 37}}{table.caption.4}}
+\backcite {ryall2005querylines}{{5}{\caption@xref {??}{ on input line 37}}{table.caption.4}}
+\backcite {Hochheiser2001}{{5}{\caption@xref {??}{ on input line 37}}{table.caption.4}}
+\backcite {correll2016semantics}{{5}{\caption@xref {??}{ on input line 37}}{table.caption.4}}
+\backcite {Hochheiser2001}{{5}{\caption@xref {??}{ on input line 37}}{table.caption.4}}
+\backcite {correll2016semantics}{{5}{\caption@xref {??}{ on input line 37}}{table.caption.4}}
+\backcite {BodkerGronbaek}{{5}{4.1}{subsection.4.1}}
+\backcite {Muller2012}{{5}{4.1}{subsection.4.1}}
+\backcite {Heer2012,Amar2005}{{6}{4.1}{figure.caption.5}}
+\backcite {Keim2006,Tukey1970}{{6}{4.1}{figure.caption.5}}
+\backcite {Siddiqui2017}{{6}{4.2}{subsection.4.2}}
+\backcite {Pirolli}{{6}{5}{figure.caption.6}}
+\backcite {Sedlmair2012}{{6}{5}{figure.caption.6}}
+\backcite {Pirolli}{{7}{5.1}{subsection.5.1}}
+\backcite {correll2016semantics,Holz2009,Eichmann2015}{{7}{5.1}{subsection.5.1}}
+\backcite {Pirolli}{{7}{5.2}{subsection.5.2}}
+\backcite {Hearst2009,Olston2003}{{8}{5.3}{subsection.5.3}}
+\backcite {Williams2017}{{8}{6}{section.6}}
+\backcite {Gloss2017}{{9}{6.2}{subsection.6.2}}
+\backcite {Amar2005,Heer2012}{{9}{6.2}{subsection.6.2}}
+\backcite {pierre2011}{{10}{6.3}{figure.caption.9}}

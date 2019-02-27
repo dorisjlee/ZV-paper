@@ -1,0 +1,257 @@
+% ---------------------------------------------------------------------------
+% Author guideline and sample document for EG publication using LaTeX2e input
+% D.Fellner, v1.14, Nov. 29, 2017
+\PassOptionsToPackage{table}{xcolor}
+\documentclass{egpubl}
+\usepackage{eurovis2019}
+
+% --- for  Annual CONFERENCE
+% \ConferenceSubmission   % uncomment for Conference submission
+% \ConferencePaper        % uncomment for (final) Conference Paper
+% \STAR                   % uncomment for STAR contribution
+% \Tutorial               % uncomment for Tutorial contribution
+% \ShortPresentation      % uncomment for (final) Short Conference Presentation
+% \Areas                  % uncomment for Areas contribution
+% \MedicalPrize           % uncomment for Medical Prize contribution
+% \Education              % uncomment for Education contribution
+% \Poster                 % uncomment for Poster contribution
+% \DC                     % uncomment for Doctoral Consortium
+%
+% --- for  CGF Journal
+% \JournalSubmission    % uncomment for submission to Computer Graphics Forum
+% \JournalPaper         % uncomment for final version of Journal Paper
+%
+% --- for  CGF Journal: special issue
+% \SpecialIssueSubmission    % uncomment for submission to , special issue
+\SpecialIssuePaper         % uncomment for final version of Computer Graphics Forum, special issue
+%                          % EuroVis, SGP, Rendering, PG
+% --- for  EG Workshop Proceedings
+% \WsSubmission      % uncomment for submission to EG Workshop
+% \WsPaper           % uncomment for final version of EG Workshop contribution
+% \WsSubmissionJoint % for joint events, for example ICAT-EGVE
+% \WsPaperJoint      % for joint events, for example ICAT-EGVE
+% \Expressive        % for SBIM, CAe, NPAR
+% \DigitalHeritagePaper
+% \PaperL2P          % for events EG only asks for License to Publish
+
+% --- for EuroVis
+% for full papers use \SpecialIssuePaper
+% \STAREurovis   % for EuroVis additional material
+% \EuroVisPoster % for EuroVis additional material
+% \EuroVisShort  % for EuroVis additional material
+
+%
+ \electronicVersion % can be used both for the printed and electronic version
+
+% !! *please* don't change anything above
+% !! unless you REALLY know what you are doing
+% ------------------------------------------------------------------------
+
+% for including postscript figures
+% mind: package option 'draft' will replace PS figure by a filname within a frame
+\ifpdf \usepackage[pdftex]{graphicx} \pdfcompresslevel=9
+\else \usepackage[dvips]{graphicx} \fi
+\usepackage{multirow}
+
+\PrintedOrElectronic
+
+% prepare for electronic version of your document
+\usepackage{t1enc,dfadobe}
+
+\usepackage{egweblnk}
+\usepackage{cite}
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead
+\usepackage[T1]{fontenc}
+\usepackage{txfonts}
+\usepackage{mathptmx}
+\usepackage[htt]{hyphenat}
+% \usepackage[pdftex]{hyperref}
+
+% \usepackage{booktabs}
+% \usepackage{textcomp}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{pifont}
+\usepackage{xspace}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage[skip=5pt,font=small]{caption}
+\usepackage[textsize=tiny]{todonotes}
+% Some optional stuff you might like/need.
+\usepackage{microtype} % Improved Tracking and Kerning
+% \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
+\usepackage{ccicons}  % Cite your images correctly!
+% \usepackage[utf8]{inputenc} % for a UTF8 editor only
+\usepackage{verbatim}
+\usepackage{relsize}
+\usepackage{etoolbox}
+\usepackage{lipsum}   % for filler text
+\usepackage{setspace} % for \onehalfspacing and \singlespacing macros
+\usepackage[normalem]{ulem}
+\usepackage{enumitem}
+\usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
+\usepackage{makecell}
+\renewcommand\theadalign{bc}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+\newcommand{\tabitem}{~\llap{{\tiny\textbullet}}~}
+\AtBeginEnvironment{quote}{\small}% Step font down one size relative to current font.
+
+\def\plaintitle{You can't always sketch what you want: Understanding Sensemaking in Visual Query Systems}
+\def\emptyauthor{}
+\def\plainkeywords{Visual analytics, exploratory analysis, visual query}
+
+\newenvironment{denselist}{
+  \vspace{-5pt}
+    \begin{list}{\small{$\bullet$}}%
+    {\setlength{\itemsep}{0ex} \setlength{\topsep}{0ex}
+    \setlength{\parsep}{0pt} \setlength{\itemindent}{0pt}
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\partopsep}{0pt}}}%
+    {\end{list}\vspace{-5pt}}
+\newcommand{\squishlist}{
+   \begin{list}{$\bullet$}
+    { \setlength{\itemsep}{0pt}
+      \setlength{\parsep}{2pt}
+      \setlength{\topsep}{0pt}
+      \setlength{\partopsep}{0pt}
+      \leftmargin=25pt
+\rightmargin=0pt
+\labelsep=5pt
+\labelwidth=10pt
+\itemindent=0pt
+\listparindent=0pt
+\itemsep=\parsep
+    }
+}
+% Custom section spacing
+\titlespacing*{\section}
+{0pt}{1ex}{0.1ex}
+\titlespacing*{\subsection}
+{0pt}{0.1ex}{0.05ex}
+
+\newcommand*{\img}[1]{%
+    \raisebox{-.3\baselineskip}{%
+        \includegraphics[
+        height=\baselineskip,
+        width=\baselineskip,
+        keepaspectratio,
+        ]{#1}%
+    }%
+}
+\newcommand{\squishend}{\end{list}}
+\newcommand{\npar}{\par\noindent}
+% use extensively to toggle between paper and TR
+\newcommand{\eat}[1]{}
+% \newcommand{\papertext}[1]{{\leavevmode\color{blue}{#1}}}
+% \newcommand{\techreport}[1]{{\leavevmode\color{red}{#1}}}
+\newcommand{\papertext}[1]{#1}
+\newcommand{\techreport}[1]{}
+\newcommand{\nonannon}[1]{#1}
+\newcommand{\annon}[1]{}
+\newcommand{\boldpara}[1]{\par\noindent\textbf{#1}}
+% de-facto paragraph format
+\newcommand{\stitle}[1]{\noindent\textbf{#1}}
+\newcommand{\nstitle}[1]{\\\noindent\textbf{#1}}
+\newcommand{\cut}[1]{{\leavevmode\color{lightgray}{#1}}}
+\newcommand{\ccut}[1]{} %confirmed cut
+% \newcommand{\rot}[1]{\rotatebox{90}{#1}}
+\newcommand{\rot}[1]{\rotatebox[origin=c]{90}{\parbox{2.6cm}{\centering#1}}}
+\newcommand{\A}{\textbf{A: }}
+\newcommand{\M}{\textbf{M: }}
+\newcommand{\G}{\textbf{G: }}
+\newcommand{\problemlist}{
+    \nstitle{Motivating Use Case Challenges:}
+    \vspace{-5pt}
+    \begin{enumerate}[label=\textbf{C\arabic*:},leftmargin=0.7cm]
+}
+\newcommand{\featurelist}{
+    \stitle{Instantiated Feature:}
+    \vspace{-5pt}
+    \begin{enumerate}[label=\textbf{F\arabic*:},leftmargin=0.7cm]
+}
+\newcommand{\enumend}{
+  \end{enumerate}
+  \vspace{-5pt}
+}
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% create a shortcut to typeset table headings
+% \newcommand\tabhead[1]{\small\textbf{#1}}
+\newcommand{\zv}{\textit{zenvisage}\xspace}
+\newcommand{\zvpp}{\textit{zenvisage++}\xspace}
+\newcommand{\astro}{\textit{astro}\xspace}
+\newcommand{\bio}{\textit{genetics}\xspace}
+\newcommand{\matsci}{\textit{matsci}\xspace}
+% \newcommand{\change}[1]{{\leavevmode\color{red}#1}}
+% \newcommand{\fchange}[1]{{\leavevmode\color{red}#1}}
+\newcommand{\change}[1]{{\leavevmode#1}}
+\newcommand{\fchange}[1]{{\leavevmode#1}}
+
+\newcommand{\agp}[1]{\textcolor{blue}{Aditya: #1}}
+\newcommand{\dor}[1]{\textcolor{green}{Doris: #1}}
+\newcommand{\kar}[1]{\textcolor{magenta}{Karrie: #1}}
+
+\usepackage{xparse}   % http://ctan.org/pkg/xparse
+% Rotation: \rot[<angle>][<width>]{<stuff>}
+% \NewDocumentCommand{\rot}{O{320} O{2.2em} m}{\makebox[#2][r]{\rotatebox{#1}{#3}}}%
+\newcommand*\OK{\ding{51}}
+\renewenvironment{quote}{%
+   \list{}{%
+     \leftmargin0.15cm
+     \rightmargin\leftmargin
+   }
+   \item\relax
+}
+{\endlist}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% START OF THE PAPER %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+% \title{Understanding usage patterns for query specification in sketch-based visual query systems: A Case Study with Zenvisage}
+%\title{I can't always sketch what I want: \\ Understanding Sensemaking in Visual Query Systems through Design Studies with Zenvisage++}
+\title[You can't always sketch what you want: Understanding Sensemaking in Visual Query Systems]{\emph{You can't always sketch what you want}: \\ Understanding Sensemaking in Visual Query Systems\vspace{-20pt}}
+\author{Submission ID: 1051\vspace{-50pt}}
+%How are visual query systems used in practice?\\ A Design Study with Zenvisage}
+\maketitle
+\begin{abstract}
+Visual query systems (VQSs) \change{empower} users to interactively search for line charts
+with desired visual patterns typically specified using intuitive sketch-based interfaces. Despite their potential in accelerating data exploration, more than a decade of past work on VQSs has not been translated to adoption in practice. Through a year-long collaboration with experts from three diverse domains, we examine the role of VQSs in real data exploration workflows, \change{enhance an existing VQS to support these workflows via a participatory design process}, and evaluate how \change{VQS components} are used in practice. Via these observations, we formalize a taxonomy of key \change{capabilities} for VQSs, organized by three sensemaking processes. Perhaps somewhat surprisingly, we find that ad-hoc sketch-based querying is not commonly used during data exploration, since
+analysts are \change{often unable} to precisely articulate the patterns they are interested in. We find that there is a spectrum of VQS-centric data exploration workflows, depending on the application \change{domain}, and that many of these workflows are not effectively supported in present-day VQSs. Our insights can pave the way for next-generation VQSs to be adopted in a variety of real-world applications.
+% On characterizing the spectrum of workflows
+% adopted,
+% we find that there is
+% Moreover, we find that there is a
+% variety of typical workflows
+% We offer guidelines for the next generation of
+% VQSs
+
+% We advocate that next-generation VQSs should support two other forms of sensemaking to pave way for these systems to be adopted to a variety of real-world applications.
+% The increasing availability of rich and complex data in a variety of scientific domains poses a pressing need for tools to enable scientists to rapidly make sense of and gather insights from data. One proposed solution is to design visual query systems (VQSs) that allow scientists to interactively search for desired patterns in their datasets. While many existing VQSs promise to accelerate exploratory data analysis by facilitating this search, they are not widely used in practice. Through a year-long collaboration with scientists in three distinct domains---astronomy, genetics, and material science---we study the impact of various features within VQSs that can aid rapid visual data analysis, and how VQSs fit into scientists' analysis workflow. Our findings offer design guidelines for improving the usability and adoption of next-generation VQSs, paving the way for VQSs to be applied to a variety of scientific domains.
+\end{abstract}
+\keywords{Visual analytics, exploratory analysis, visual query}
+\raggedbottom
+\input{01-introduction}
+\input{02-methodology}
+\input{03-participants-datasets}
+\input{04-pd-system-findings}
+\input{05-pd-sensemaking}
+\input{06-discussion}
+\input{07-conclusion}
+\bibliographystyle{eg-alpha}
+\bibliography{reference}
+% \newpage
+\input{08-appendix}
+\end{document}
