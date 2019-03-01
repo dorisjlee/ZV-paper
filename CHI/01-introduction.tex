@@ -45,13 +45,11 @@ analysts.
 % often lack the extensive experience to deal
 % with data of this scale and complexity
 % in a way that can facilitate rapid insight discovery~\cite{Kersten2011}.with the system automatically traversing all potential visualization candidates to find those that match the specification
-\par To address this challenge, 
-there has been a large number of papers 
-dedicated to building {\em Visual Query Systems} (VQSs), 
+\par Many recent papers have addressed this challenge-- building {\em Visual Query Systems} (VQSs), 
 that allow users to specify 
 desired visual patterns 
 via an interactive interface~\cite{mohebbi2011google,Hochheiser2004,wattenberg2001sketching,Siddiqui2017VLDB,ryall2005querylines,correll2016semantics,Mannino2018,Eichmann2015,Holz2009}. 
-This interactive interface is one with 
+A typical VQS interactive interface is one with 
 a sketching canvas
 where users can draw a pattern of interest,
 with the system automatically traversing 
@@ -89,7 +87,7 @@ Which battery components have sustainable
 levels of energy-efficiency and are safe and 
 cheap to manufacture in production?
 
-\par Via cognitive walkthroughs and interviews, we first identified challenges in existing data analysis workflows in these domains
+\par Via cognitive walkthroughs and interviews with analysts in the three respective domain areas--astronomy, genetics, and material science, we first identified challenges in existing data analysis workflows in these domains
 that could be potentially addressed by a VQS. Building on top of an existing, open-source VQS, \zv~\cite{Siddiqui2017,Siddiqui2017VLDB}, we collaborated closely with our participants to gather feedback and iterate on VQS feature designs,
 over the course of a year, culminating in a new enhanced VQS, \zvpp. We organized these features into a taxonomy of VQS functionalities, \change{involving three sensemaking processes inspired by Pirolli and Card's notional model of analyst sensemaking~\cite{Pirolli}. The sensemaking processes include top-down pattern specification (translating a pattern ``in-the-head'' into the form of a visual query), bottom-up data-driven inquiries (querying or recommending based on data), and context-creation (navigating across different collections of visualizations).} We find that prior VQSs have focused largely on top-down processes, while largely ignoring the other two processes that are crucial for the needs \change{in} all three domains.
 
