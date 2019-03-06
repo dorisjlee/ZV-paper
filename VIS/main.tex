@@ -1,64 +1,62 @@
-% ---------------------------------------------------------------------------
-% Author guideline and sample document for EG publication using LaTeX2e input
-% D.Fellner, v1.14, Nov. 29, 2017
 \PassOptionsToPackage{table}{xcolor}
-\documentclass{egpubl}
-\usepackage{eurovis2019}
+\documentclass[review,journal]{vgtc}                % final (journal style)
+%\documentclass[review,journal]{vgtc}         % review (journal style)
+%\documentclass[widereview]{vgtc}             % wide-spaced review
+%\documentclass[preprint,journal]{vgtc}       % preprint (journal style)
 
-% --- for  Annual CONFERENCE
-% \ConferenceSubmission   % uncomment for Conference submission
-% \ConferencePaper        % uncomment for (final) Conference Paper
-% \STAR                   % uncomment for STAR contribution
-% \Tutorial               % uncomment for Tutorial contribution
-% \ShortPresentation      % uncomment for (final) Short Conference Presentation
-% \Areas                  % uncomment for Areas contribution
-% \MedicalPrize           % uncomment for Medical Prize contribution
-% \Education              % uncomment for Education contribution
-% \Poster                 % uncomment for Poster contribution
-% \DC                     % uncomment for Doctoral Consortium
-%
-% --- for  CGF Journal
-% \JournalSubmission    % uncomment for submission to Computer Graphics Forum
-% \JournalPaper         % uncomment for final version of Journal Paper
-%
-% --- for  CGF Journal: special issue
-% \SpecialIssueSubmission    % uncomment for submission to , special issue
-\SpecialIssuePaper         % uncomment for final version of Computer Graphics Forum, special issue
-%                          % EuroVis, SGP, Rendering, PG
-% --- for  EG Workshop Proceedings
-% \WsSubmission      % uncomment for submission to EG Workshop
-% \WsPaper           % uncomment for final version of EG Workshop contribution
-% \WsSubmissionJoint % for joint events, for example ICAT-EGVE
-% \WsPaperJoint      % for joint events, for example ICAT-EGVE
-% \Expressive        % for SBIM, CAe, NPAR
-% \DigitalHeritagePaper
-% \PaperL2P          % for events EG only asks for License to Publish
+%% Uncomment one of the lines above depending on where your paper is
+%% in the conference process. ``review'' and ``widereview'' are for review
+%% submission, ``preprint'' is for pre-publication, and the final version
+%% doesn't use a specific qualifier.
 
-% --- for EuroVis
-% for full papers use \SpecialIssuePaper
-% \STAREurovis   % for EuroVis additional material
-% \EuroVisPoster % for EuroVis additional material
-% \EuroVisShort  % for EuroVis additional material
+%% Please use one of the ``review'' options in combination with the
+%% assigned online id (see below) ONLY if your paper uses a double blind
+%% review process. Some conferences, like IEEE Vis and InfoVis, have NOT
+%% in the past.
 
-%
- \electronicVersion % can be used both for the printed and electronic version
+%% Please note that the use of figures other than the optional teaser is not permitted on the first page
+%% of the journal version.  Figures should begin on the second page and be
+%% in CMYK or Grey scale format, otherwise, colour shifting may occur
+%% during the printing process.  Papers submitted with figures other than the optional teaser on the
+%% first page will be refused. Also, the teaser figure should only have the
+%% width of the abstract as the template enforces it.
 
-% !! *please* don't change anything above
-% !! unless you REALLY know what you are doing
-% ------------------------------------------------------------------------
+%% These few lines make a distinction between latex and pdflatex calls and they
+%% bring in essential packages for graphics and font handling.
+%% Note that due to the \DeclareGraphicsExtensions{} call it is no longer necessary
+%% to provide the the path and extension of a graphics file:
+%% \includegraphics{diamondrule} is completely sufficient.
+%%
+\ifpdf%                                % if we use pdflatex
+  \pdfoutput=1\relax                   % create PDFs from pdfLaTeX
+  \pdfcompresslevel=9                  % PDF Compression
+  \pdfoptionpdfminorversion=7          % create PDF 1.7
+  \ExecuteOptions{pdftex}
+  \usepackage{graphicx}                % allow us to embed graphics files
+  \DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg} % for pdflatex we expect .pdf, .png, or .jpg files
+\else%                                 % else we use pure latex
+  \ExecuteOptions{dvips}
+  \usepackage{graphicx}                % allow us to embed graphics files
+  \DeclareGraphicsExtensions{.eps}     % for pure latex we expect eps files
+\fi%
 
 % for including postscript figures
 % mind: package option 'draft' will replace PS figure by a filname within a frame
-\ifpdf \usepackage[pdftex]{graphicx} \pdfcompresslevel=9
-\else \usepackage[dvips]{graphicx} \fi
+
 \usepackage{multirow}
 
-\PrintedOrElectronic
+%% it is recomended to use ``\autoref{sec:bla}'' instead of ``Fig.~\ref{sec:bla}''
+\graphicspath{{figures/}{pictures/}{images/}{./}} % where to search for the images
 
-% prepare for electronic version of your document
-\usepackage{t1enc,dfadobe}
-
-\usepackage{egweblnk}
+\usepackage{microtype}                 % use micro-typography (slightly more compact, better to read)
+\PassOptionsToPackage{warn}{textcomp}  % to address font issues with \textrightarrow
+\usepackage{textcomp}                  % use better special symbols
+\usepackage{mathptmx}                  % use matching math font
+\usepackage{times}                     % we use Times as the main font
+\renewcommand*\ttdefault{txtt}         % a nicer typewriter font
+\usepackage{cite}                      % needed to automatically sort the references
+\usepackage{tabu}                      % only used for the table example
+\usepackage{booktabs}                  % only used for the table example
 \usepackage{cite}
 \usepackage{balance}  % to better equalize the last page
 \usepackage{graphics} % for EPS, load graphicx instead
@@ -176,7 +174,7 @@
   \end{enumerate}
   \vspace{-5pt}
 }
-\urlstyle{leo}
+% \urlstyle{leo}
 
 % To make various LaTeX processors do the right thing with page size.
 \def\pprw{8.5in}
@@ -215,33 +213,81 @@
    \item\relax
 }
 {\endlist}
+%% We encourage the use of mathptmx for consistent usage of times font
+%% throughout the proceedings. However, if you encounter conflicts
+%% with other math-related packages, you may want to disable it.
+
+%% In preprint mode you may define your own headline.
+%\preprinttext{To appear in IEEE Transactions on Visualization and Computer Graphics.}
+
+%% If you are submitting a paper to a conference for review with a double
+%% blind reviewing process, please replace the value ``0'' below with your
+%% OnlineID. Otherwise, you may safely leave it at ``0''.
+\onlineid{0}
+
+%% declare the category of your paper, only shown in review mode
+\vgtccategory{Research}
+%% please declare the paper type of your paper to help reviewers, only shown in review mode
+%% choices:
+%% * algorithm/technique
+%% * application/design study
+%% * evaluation
+%% * system
+%% * theory/model
+\vgtcpapertype{please specify}
+
+%% Paper title.
+\title{\emph{You can't always sketch what you want}: \\ Understanding Sensemaking in Visual Query Systems\vspace{-20pt}}
+
+%% This is how authors are specified in the journal style
+
+%% indicate IEEE Member or Student Member in form indicated below
+\author{Submission ID: XXXX}
+
+%other entries to be set up for journal
+\shortauthortitle{Biv \MakeLowercase{\textit{et al.}}: Global Illumination for Fun and Profit}
+%\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
+
+\abstract{
+Visual query systems (VQSs) \change{empower} users to interactively search for line charts
+with desired visual patterns typically specified using intuitive sketch-based interfaces. Despite their potential in accelerating data exploration, more than a decade of past work on VQSs has not been translated to adoption in practice. Through a year-long collaboration with experts from three diverse domains, we examine the role of VQSs in real data exploration workflows, \change{enhance an existing VQS to support these workflows via a participatory design process}, and evaluate how \change{VQS components} are used in practice. Via these observations, we formalize a taxonomy of key \change{capabilities} for VQSs, organized by three sensemaking processes. Perhaps somewhat surprisingly, we find that ad-hoc sketch-based querying is not commonly used during data exploration, since
+analysts are \change{often unable} to precisely articulate the patterns they are interested in. We find that there is a spectrum of VQS-centric data exploration workflows, depending on the application \change{domain}, and that many of these workflows are not effectively supported in present-day VQSs. Our insights can pave the way for next-generation VQSs to be adopted in a variety of real-world applications.
+}
+\keywords{Visual analytics, exploratory analysis, visual query}
+
+%% ACM Computing Classification System (CCS). 
+%% See <http://www.acm.org/class/1998/> for details.
+%% The ``\CCScat'' command takes four arguments.
+
+\CCScatlist{ % not used in journal version
+ \CCScat{K.6.1}{Management of Computing and Information Systems}%
+{Project and People Management}{Life Cycle};
+ \CCScat{K.7.m}{The Computing Profession}{Miscellaneous}{Ethics}
+}
+
+%% Uncomment below to include a teaser figure.
+% \teaser{
+%   \centering
+%   \includegraphics[width=\linewidth]{CypressView}
+%   \caption{In the Clouds: Vancouver from Cypress Mountain. Note that the teaser may not be wider than the abstract block.}
+% 	\label{fig:teaser}
+% }
+
+%% Uncomment below to disable the manuscript note
+%\renewcommand{\manuscriptnotetxt}{}
+
+%% Copyright space is enabled by default as required by guidelines.
+%% It is disabled by the 'review' option or via the following command:
+% \nocopyrightspace
+
+\vgtcinsertpkg
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%% START OF THE PAPER %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-% \title{Understanding usage patterns for query specification in sketch-based visual query systems: A Case Study with Zenvisage}
-%\title{I can't always sketch what I want: \\ Understanding Sensemaking in Visual Query Systems through Design Studies with Zenvisage++}
-\title[You can't always sketch what you want: Understanding Sensemaking in Visual Query Systems]{\emph{You can't always sketch what you want}: \\ Understanding Sensemaking in Visual Query Systems\vspace{-20pt}}
-\author{Submission ID: 1051\vspace{-50pt}}
-%How are visual query systems used in practice?\\ A Design Study with Zenvisage}
 \maketitle
-\begin{abstract}
-Visual query systems (VQSs) \change{empower} users to interactively search for line charts
-with desired visual patterns typically specified using intuitive sketch-based interfaces. Despite their potential in accelerating data exploration, more than a decade of past work on VQSs has not been translated to adoption in practice. Through a year-long collaboration with experts from three diverse domains, we examine the role of VQSs in real data exploration workflows, \change{enhance an existing VQS to support these workflows via a participatory design process}, and evaluate how \change{VQS components} are used in practice. Via these observations, we formalize a taxonomy of key \change{capabilities} for VQSs, organized by three sensemaking processes. Perhaps somewhat surprisingly, we find that ad-hoc sketch-based querying is not commonly used during data exploration, since
-analysts are \change{often unable} to precisely articulate the patterns they are interested in. We find that there is a spectrum of VQS-centric data exploration workflows, depending on the application \change{domain}, and that many of these workflows are not effectively supported in present-day VQSs. Our insights can pave the way for next-generation VQSs to be adopted in a variety of real-world applications.
-% On characterizing the spectrum of workflows
-% adopted,
-% we find that there is
-% Moreover, we find that there is a
-% variety of typical workflows
-% We offer guidelines for the next generation of
-% VQSs
-
-% We advocate that next-generation VQSs should support two other forms of sensemaking to pave way for these systems to be adopted to a variety of real-world applications.
-% The increasing availability of rich and complex data in a variety of scientific domains poses a pressing need for tools to enable scientists to rapidly make sense of and gather insights from data. One proposed solution is to design visual query systems (VQSs) that allow scientists to interactively search for desired patterns in their datasets. While many existing VQSs promise to accelerate exploratory data analysis by facilitating this search, they are not widely used in practice. Through a year-long collaboration with scientists in three distinct domains---astronomy, genetics, and material science---we study the impact of various features within VQSs that can aid rapid visual data analysis, and how VQSs fit into scientists' analysis workflow. Our findings offer design guidelines for improving the usability and adoption of next-generation VQSs, paving the way for VQSs to be applied to a variety of scientific domains.
-\end{abstract}
-\keywords{Visual analytics, exploratory analysis, visual query}
 \raggedbottom
 \input{01-introduction}
 \input{02-methodology}
@@ -250,8 +296,10 @@ analysts are \change{often unable} to precisely articulate the patterns they are
 \input{05-pd-sensemaking}
 \input{06-discussion}
 \input{07-conclusion}
-\bibliographystyle{eg-alpha}
+\bibliographystyle{abbrv-doi}
 \bibliography{reference}
 % \newpage
 \input{08-appendix}
+
 \end{document}
+

@@ -1,7 +1,8 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
-The style file: eg-alpha.bst
+The style file: abbrv-doi.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: reference.bib
 Warning--I'm ignoring HoltzblattJones's extra "title" field
 --line 932 of file reference.bib
@@ -10,48 +11,49 @@ Warning--I'm ignoring BodkerGronbaek's extra "title" field
 Warning--empty booktitle in BodkerGronbaek
 Warning--empty journal in Drlica-Wagner2017
 Warning--empty booktitle in HoltzblattJones
+Warning--there's a number but no volume in Keim2006
 Warning--empty journal in Khetan2018
 Warning--empty journal in Mannino2018
 Warning--empty journal in mohebbi2011google
 You've used 38 entries,
-            2855 wiz_defined-function locations,
-            866 strings with 12080 characters,
-and the built_in function-call counts, 16608 in all, are:
-= -- 1658
-> -- 842
-< -- 8
-+ -- 306
-- -- 302
-* -- 1343
-:= -- 2641
-add.period$ -- 73
+            2598 wiz_defined-function locations,
+            867 strings with 12847 characters,
+and the built_in function-call counts, 31582 in all, are:
+= -- 6647
+> -- 666
+< -- 1035
++ -- 1283
+- -- 247
+* -- 1082
+:= -- 4578
+add.period$ -- 125
 call.type$ -- 38
-change.case$ -- 261
-chr.to.int$ -- 38
-cite$ -- 44
-duplicate$ -- 638
-empty$ -- 1187
-format.name$ -- 341
-if$ -- 3389
-int.to.chr$ -- 1
-int.to.str$ -- 0
+change.case$ -- 223
+chr.to.int$ -- 0
+cite$ -- 45
+duplicate$ -- 581
+empty$ -- 1124
+format.name$ -- 224
+if$ -- 8307
+int.to.chr$ -- 0
+int.to.str$ -- 38
 missing$ -- 42
-newline$ -- 191
-num.names$ -- 114
-pop$ -- 251
+newline$ -- 316
+num.names$ -- 76
+pop$ -- 256
 preamble$ -- 1
-purify$ -- 302
+purify$ -- 188
 quote$ -- 0
-skip$ -- 545
+skip$ -- 427
 stack$ -- 0
-substring$ -- 894
-swap$ -- 144
-text.length$ -- 8
-text.prefix$ -- 8
+substring$ -- 1881
+swap$ -- 165
+text.length$ -- 573
+text.prefix$ -- 0
 top$ -- 0
-type$ -- 322
-warning$ -- 6
-while$ -- 166
-width$ -- 39
-write$ -- 465
-(There were 8 warnings)
+type$ -- 144
+warning$ -- 7
+while$ -- 187
+width$ -- 40
+write$ -- 1036
+(There were 9 warnings)
