@@ -13,6 +13,30 @@ R.~Amar, J.~Eagan, and J.~Stasko.
 }{.}\hspace{.4pt}24}}
 
 
+\bibitem{Batch2018}
+A.~Batch and N.~Elmqvist.
+\newblock {The Interactive Visualization Gap in Initial Exploratory Data
+  Analysis}.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  24(1):278--287, 2018. doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TVCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2017\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2743990}}
+
+
+\bibitem{Battle2016}
+L.~Battle, R.~Chang, and M.~Stonebraker.
+\newblock {Dynamic Prefetching of Data Tiles for Interactive Visualization}.
+\newblock {\em Proceedings of the 2016 International Conference on Management
+  of Data - SIGMOD '16}, pp. 1363--1375, 2016. doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1145\discretionary{/}{%
+}{/}2882903\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2882919}}
+
+
 \bibitem{BodkerGronbaek}
 S.~Bodker, K.~Gronbaek, and M.~Kyng.
 \newblock Cooperative design: Techniques and experiences from the scandinavian
@@ -194,6 +218,13 @@ M.~Mannino and A.~Abouzied.
 }{.}\hspace{.4pt}3173962}}
 
 
+\bibitem{Mclachlan2008}
+P.~Mclachlan, T.~Munzner, and F.~Park.
+\newblock {LiveRAC : Interactive Visual Exploration of System Management
+  Time-Series Data}.
+\newblock {\em CHI 08 Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, pp. 1483--1492, 2008.
+
 \bibitem{mohebbi2011google}
 M.~Mohebbi, D.~Vanderkam, J.~Kodysh, R.~Schonberger, H.~Choi, and S.~Kumar.
 \newblock Google correlate whitepaper.
@@ -328,6 +359,13 @@ T.~Siddiqui, J.~Lee, A.~Kim, E.~Xue, X.~Yu, S.~Zou, L.~Guo, C.~Liu, C.~Wang,
 \newblock In {\em The biennial Conference on Innovative Data Systems Research
   (CIDR)}, 2017.
 
+\bibitem{Srinivasan2019}
+A.~Srinivasan, S.~M. Drucker, A.~Endert, and J.~Stasko.
+\newblock {Augmenting Visualizations with Interactive Data Facts to Facilitate
+  Interpretation and Communication}.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  25(1):672 -- 681, 2019.
+
 \bibitem{Grnbak1991}
 {Susanne Bodker} and K.~Gr$\phi$nb{\ae}k.
 \newblock {Cooperative Prototyping -}.
@@ -359,6 +397,19 @@ P.~Williams, J.~Jenkins, J.~Valacich, and M.~Byrd.
 }{.}\hspace{.4pt}17705\discretionary{/}{%
 }{/}1thci\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}00101}}
+
+
+\bibitem{Yi2008}
+J.~S. Yi, Y.-A. Kang, J.~T. Stasko, and J.~A. Jacko.
+\newblock {Understanding and characterizing insights: How Do People Gain
+  Insights Using Information Visualization?}
+\newblock {\em Proceedings of the 2008 conference on BEyond time and errors
+  novel evaLuation methods for Information Visualization - BELIV '08}, p.~1,
+  2008. doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1145\discretionary{/}{%
+}{/}1377966\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1377971}}
 
 
 \end{thebibliography}

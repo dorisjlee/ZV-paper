@@ -96,19 +96,13 @@
 \renewcommand\cellgape{\Gape[4pt]}
 \newcommand{\tabitem}{~\llap{{\tiny\textbullet}}~}
 \AtBeginEnvironment{quote}{\small}% Step font down one size relative to current font.
-
-\def\plaintitle{You can't always sketch what you want: Understanding Sensemaking in Visual Query Systems}
-\def\emptyauthor{}
-\def\plainkeywords{Visual analytics, exploratory analysis, visual query}
-
 \newenvironment{denselist}{
-  \vspace{-5pt}
     \begin{list}{\small{$\bullet$}}%
     {\setlength{\itemsep}{0ex} \setlength{\topsep}{0ex}
     \setlength{\parsep}{0pt} \setlength{\itemindent}{0pt}
     \setlength{\leftmargin}{1.5em}
     \setlength{\partopsep}{0pt}}}%
-    {\end{list}\vspace{-5pt}}
+    {\end{list}}
 \newcommand{\squishlist}{
    \begin{list}{$\bullet$}
     { \setlength{\itemsep}{0pt}
@@ -153,7 +147,7 @@
 % de-facto paragraph format
 \newcommand{\stitle}[1]{\noindent\textbf{#1}}
 \newcommand{\nstitle}[1]{\\\noindent\textbf{#1}}
-\newcommand{\cut}[1]{{\leavevmode\color{lightgray}{#1}}}
+\newcommand{\cut}[1]{{\leavevmode\color{lightgray}{#1}}} %potentially move to TR
 \newcommand{\ccut}[1]{} %confirmed cut
 % \newcommand{\rot}[1]{\rotatebox{90}{#1}}
 \newcommand{\rot}[1]{\rotatebox[origin=c]{90}{\parbox{2.6cm}{\centering#1}}}
@@ -192,10 +186,8 @@
 \newcommand{\astro}{\textit{astro}\xspace}
 \newcommand{\bio}{\textit{genetics}\xspace}
 \newcommand{\matsci}{\textit{matsci}\xspace}
-% \newcommand{\change}[1]{{\leavevmode\color{red}#1}}
-% \newcommand{\fchange}[1]{{\leavevmode\color{red}#1}}
-\newcommand{\change}[1]{{\leavevmode#1}}
-\newcommand{\fchange}[1]{{\leavevmode#1}}
+\newcommand{\change}[1]{{\leavevmode\color{red}#1}}
+%\newcommand{\change}[1]{{\leavevmode#1}}
 
 \newcommand{\agp}[1]{\textcolor{blue}{Aditya: #1}}
 \newcommand{\dor}[1]{\textcolor{green}{Doris: #1}}
@@ -234,10 +226,10 @@
 %% * evaluation
 %% * system
 %% * theory/model
-\vgtcpapertype{please specify}
+\vgtcpapertype{application/design study}
 
 %% Paper title.
-\title{\emph{You can't always sketch what you want}: \\ Understanding Sensemaking in Visual Query Systems\vspace{-20pt}}
+\title{\emph{You can't always sketch what you want}: \\ Understanding \change{Domain-Expert} Sensemaking in Visual Query Systems}
 
 %% This is how authors are specified in the journal style
 
@@ -249,9 +241,9 @@
 %\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
 
 \abstract{
-Visual query systems (VQSs) \change{empower} users to interactively search for line charts
-with desired visual patterns typically specified using intuitive sketch-based interfaces. Despite their potential in accelerating data exploration, more than a decade of past work on VQSs has not been translated to adoption in practice. Through a year-long collaboration with experts from three diverse domains, we examine the role of VQSs in real data exploration workflows, \change{enhance an existing VQS to support these workflows via a participatory design process}, and evaluate how \change{VQS components} are used in practice. Via these observations, we formalize a taxonomy of key \change{capabilities} for VQSs, organized by three sensemaking processes. Perhaps somewhat surprisingly, we find that ad-hoc sketch-based querying is not commonly used during data exploration, since
-analysts are \change{often unable} to precisely articulate the patterns they are interested in. We find that there is a spectrum of VQS-centric data exploration workflows, depending on the application \change{domain}, and that many of these workflows are not effectively supported in present-day VQSs. Our insights can pave the way for next-generation VQSs to be adopted in a variety of real-world applications.
+Visual query systems (VQSs) empower users to interactively search for line charts
+with desired visual patterns typically specified using intuitive sketch-based interfaces. Despite their potential in accelerating data exploration, more than a decade of past work on VQSs has not been translated to adoption in practice. Through a year-long collaboration with experts from three diverse domains, we examine the role of VQSs in real data exploration workflows, enhance an existing VQS to support these workflows via a participatory design process, and evaluate how VQS components are used in practice. Via these observations, we formalize a taxonomy of key capabilities for VQSs, organized by three sensemaking processes. Perhaps somewhat surprisingly, we find that ad-hoc sketch-based querying is not commonly used during data exploration, since
+analysts are often unable to precisely articulate the patterns they are interested in. We find that there is a spectrum of VQS-centric data exploration workflows, depending on the application domain, and that many of these workflows are not effectively supported in present-day VQSs. Our insights can pave the way for next-generation VQSs to be adopted in a variety of real-world applications.
 }
 \keywords{Visual analytics, exploratory analysis, visual query}
 
@@ -298,7 +290,7 @@ analysts are \change{often unable} to precisely articulate the patterns they are
 \input{07-conclusion}
 \bibliographystyle{abbrv-doi}
 \bibliography{reference}
-% \newpage
+\newpage
 \input{08-appendix}
 
 \end{document}
