@@ -13,6 +13,21 @@ R.~Amar, J.~Eagan, and J.~Stasko.
 }{.}\hspace{.4pt}24}}
 
 
+\bibitem{Aragon2008}
+C.~R. Aragon, S.~S. Poon, G.~S. Aldering, R.~C. Thomas, and R.~Quimby.
+\newblock Using visual analytics to maintain situation awareness in
+  astrophysics.
+\newblock In {\em Visual Analytics Science and Technology, 2008. VAST'08. IEEE
+  Symposium on}, pp. 27--34. IEEE, 2008. doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1088\discretionary{/}{%
+}{/}1742\discretionary{%
+}{-}{-}6596\discretionary{/}{%
+}{/}125\discretionary{/}{%
+}{/}1\discretionary{/}{%
+}{/}012091}}
+
+
 \bibitem{Batch2018}
 A.~Batch and N.~Elmqvist.
 \newblock {The Interactive Visualization Gap in Initial Exploratory Data
@@ -53,6 +68,31 @@ C.~Bossen, C.~Dindler, and O.~S. Iversen.
 }{.}\hspace{.4pt}1145\discretionary{/}{%
 }{/}2940299\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}2940303}}
+
+
+\bibitem{Chen2016}
+N.~C. Chen, S.~Poon, L.~Ramakrishnan, and C.~R. Aragon.
+\newblock {Considering Time in Designing Large-Scale Systems for Scientific
+  Computing}.
+\newblock {\em Proceedings of the 19th ACM Conference on Computer-Supported
+  Cooperative Work {\&} Social Computing - CSCW '16}, pp. 1533--1545, 2016.
+  doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1145\discretionary{/}{%
+}{/}2818048\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2819988}}
+
+
+\bibitem{Chuang2012}
+J.~Chuang, D.~Ramage, C.~Manning, and J.~Heer.
+\newblock Interpretation and trust: Designing model-driven visualizations for
+  text analysis.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, pp. 443--452. ACM, 2012. doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1145\discretionary{/}{%
+}{/}2207676\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2207738}}
 
 
 \bibitem{Ciolfi2016}
@@ -117,6 +157,17 @@ B.~S. Gloss, B.~Signal, S.~W. Cheetham, F.~Gruhl, D.~C. Kaczorowski, A.~C.
 }{-}{-}017\discretionary{%
 }{-}{-}06110\discretionary{%
 }{-}{-}5}}
+
+
+\bibitem{Gould1983}
+J.~D. Gould and C.~Lewis.
+\newblock {Designing for usability---key principles and what designers think}.
+\newblock {\em Proceedings of the SIGCHI conference on Human Factors in
+  Computing Systems}, 28(3):50--53, 1983. doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1145\discretionary{/}{%
+}{/}800045\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}801579}}
 
 
 \bibitem{Hearst2009}
@@ -257,9 +308,21 @@ T.~Munzner.
 }{.}\hspace{.4pt}111}}
 
 
+\bibitem{North2006}
+C.~North.
+\newblock {Toward measuring visualization insight}.
+\newblock {\em IEEE Computer Graphics and Applications}, 26(3):6--9, 2006. doi:
+  {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}MCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2006\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}70}}
+
+
 \bibitem{Olston2003}
 C.~Olston and E.~H. Chi.
-\newblock {ScentTrails: Integrating Browsing and Searching on the Web}.
+\newblock {ScentTrails}.
 \newblock {\em ACM Transactions on Computer-Human Interaction}, 10(3):177--197,
   2003. doi: {{%
 10\hspace{.1pt}\discretionary{.}{%
@@ -301,6 +364,18 @@ C.~Plaisant.
 }{.}\hspace{.4pt}1145\discretionary{/}{%
 }{/}989863\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}989880}}
+
+
+\bibitem{Poon2008}
+S.~S. Poon, R.~C. Thomas, C.~R. Aragon, and B.~Lee.
+\newblock Context-linked virtual assistants for distributed teams: an
+  astrophysics case study.
+\newblock In {\em Proceedings of the 2008 ACM Conference on Computer supported
+  Cooperative Work}, pp. 361--370. ACM, 2008. doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1145\discretionary{/}{%
+}{/}1460563\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1460623}}
 
 
 \bibitem{ryall2005querylines}
@@ -375,6 +450,13 @@ A.~Srinivasan, S.~M. Drucker, A.~Endert, and J.~Stasko.
 J.~W. Tukey.
 \newblock {\em Exploratory data analysis}.
 \newblock Addison-Wesley, 1970.
+
+\bibitem{Wall2017}
+E.~Wall, L.~M. Blaha, L.~Franklin, and A.~Endert.
+\newblock {Warning, Bias May Occur: A Proposed Approach to Detecting Cognitive
+  Bias in Interactive Visual Analytics}.
+\newblock {\em 2017 IEEE Conference on Visual Analytics Science and Technology
+  (VAST)}, 2017.
 
 \bibitem{wattenberg2001sketching}
 M.~Wattenberg.

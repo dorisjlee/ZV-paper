@@ -4,10 +4,12 @@ The top-level auxiliary file: main.aux
 The style file: abbrv-doi.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: reference.bib
+Warning--I'm ignoring North2006's extra "doi" field
+--line 579 of file reference.bib
 Warning--I'm ignoring HoltzblattJones's extra "title" field
---line 932 of file reference.bib
+--line 918 of file reference.bib
 Warning--I'm ignoring BodkerGronbaek's extra "title" field
---line 944 of file reference.bib
+--line 930 of file reference.bib
 Warning--empty booktitle in BodkerGronbaek
 Warning--empty journal in Drlica-Wagner2017
 Warning--empty booktitle in HoltzblattJones
@@ -15,45 +17,45 @@ Warning--there's a number but no volume in Keim2006
 Warning--empty journal in Khetan2018
 Warning--empty journal in Mannino2018
 Warning--empty journal in mohebbi2011google
-You've used 43 entries,
+You've used 50 entries,
             2598 wiz_defined-function locations,
-            900 strings with 13991 characters,
-and the built_in function-call counts, 36091 in all, are:
-= -- 7598
-> -- 761
-< -- 1180
-+ -- 1462
-- -- 282
-* -- 1245
-:= -- 5220
-add.period$ -- 140
-call.type$ -- 43
-change.case$ -- 254
+            950 strings with 15688 characters,
+and the built_in function-call counts, 43732 in all, are:
+= -- 9315
+> -- 901
+< -- 1455
++ -- 1790
+- -- 336
+* -- 1480
+:= -- 6291
+add.period$ -- 164
+call.type$ -- 50
+change.case$ -- 299
 chr.to.int$ -- 0
-cite$ -- 50
-duplicate$ -- 661
-empty$ -- 1276
-format.name$ -- 256
-if$ -- 9494
+cite$ -- 57
+duplicate$ -- 782
+empty$ -- 1503
+format.name$ -- 304
+if$ -- 11559
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 47
-newline$ -- 357
-num.names$ -- 86
-pop$ -- 284
+int.to.str$ -- 50
+missing$ -- 54
+newline$ -- 426
+num.names$ -- 100
+pop$ -- 334
 preamble$ -- 1
-purify$ -- 214
+purify$ -- 252
 quote$ -- 0
-skip$ -- 495
+skip$ -- 590
 stack$ -- 0
-substring$ -- 2189
-swap$ -- 195
-text.length$ -- 653
+substring$ -- 2662
+swap$ -- 241
+text.length$ -- 808
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 164
+type$ -- 192
 warning$ -- 7
-while$ -- 214
-width$ -- 45
-write$ -- 1175
-(There were 9 warnings)
+while$ -- 256
+width$ -- 52
+write$ -- 1421
+(There were 10 warnings)
