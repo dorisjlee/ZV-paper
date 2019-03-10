@@ -190,7 +190,7 @@
 %\newcommand{\change}[1]{{\leavevmode#1}}
 
 \newcommand{\agp}[1]{\textcolor{blue}{Aditya: #1}}
-\newcommand{\dor}[1]{\textcolor{green}{Doris: #1}}
+\newcommand{\dor}[1]{\textcolor{teal}{Doris: #1}}
 \newcommand{\kar}[1]{\textcolor{magenta}{Karrie: #1}}
 
 \usepackage{xparse}   % http://ctan.org/pkg/xparse
@@ -244,6 +244,8 @@
 Visual query systems (VQSs) empower users to interactively search for line charts
 with desired visual patterns typically specified using intuitive sketch-based interfaces. Despite their potential in accelerating data exploration, more than a decade of past work on VQSs has not been translated to adoption in practice. Through a year-long collaboration with experts from three diverse domains, we examine the role of VQSs in real data exploration workflows, enhance an existing VQS to support these workflows via a participatory design process, and evaluate how VQS components are used in practice. Via these observations, we formalize a taxonomy of key capabilities for VQSs, organized by three sensemaking processes. Perhaps somewhat surprisingly, we find that ad-hoc sketch-based querying is not commonly used during data exploration, since
 analysts are often unable to precisely articulate the patterns they are interested in. We find that there is a spectrum of VQS-centric data exploration workflows, depending on the application domain, and that many of these workflows are not effectively supported in present-day VQSs. Our insights can pave the way for next-generation VQSs to be adopted in a variety of real-world applications.
+\dor{We might want to merge the rebuttal 1st paragraph into the abstract or intro (Pasted below).}
+\change{Despite decades of past work on visual query systems (VQSs), they have not been adopted in practice. Our paper answers the question ``why?'', via participatory design and evaluation of a VQS with three groups of domain experts over a year. Our findings: 1) Sketching is not as commonly used as prior work suggests; 2) Prior VQSs are not effective because they don't support the three important types of sensemaking processes we identified. In fact, each domain exhibits different sensemaking patterns--indicating the need for an integrative VQS, like ours, that addresses a range of analytical inquiries.}
 }
 \keywords{Visual analytics, exploratory analysis, visual query}
 
