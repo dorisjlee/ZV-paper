@@ -1,0 +1,900 @@
+tablexcolor
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  pdftex
+                  
+  .pdf,.png,.jpg,.jpeg 
+
+  dvips
+                  
+  .eps     
+
+
+
+
+
+
+
+figures/pictures/images/./ 
+
+                 
+warntextcomp  
+                  
+                  
+
+                      
+                      
+                  
+  
+ 
+
+
+
+
+
+ 
+
+  
+
+   
+ 
+
+  
+quote
+
+
+
+
+
+
+
+
+
+
+
+
+*
+1ex0.1ex
+*
+0.1ex0.05ex
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+8.5in
+11in
+papersize=,
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+0
+
+
+Research
+
+
+
+
+
+
+
+application/design study
+
+
+You can't always sketch what you want: 
+ Understanding Sensemaking in Visual Query Systems
+
+
+
+
+Submission ID: XXXX
+
+
+Biv et al.: Global Illumination for Fun and Profit
+
+
+
+Visual query systems (VQSs) empower users to interactively search for line charts
+with desired visual patterns typically specified using intuitive sketch-based interfaces. Despite their potential in accelerating data exploration, more than a decade of past work on VQSs has not been translated to adoption in practice. Through a year-long collaboration with experts from three diverse domains, we examine the role of VQSs in real data exploration workflows, enhance an existing VQS to support these workflows via a participatory design process, and evaluate how VQS components are used in practice. Via these observations, we formalize a taxonomy of key capabilities for VQSs, organized by three sensemaking processes. Perhaps somewhat surprisingly, we find that ad-hoc sketch-based querying is not commonly used during data exploration, since
+analysts are often unable to precisely articulate the patterns they are interested in. We find that there is a spectrum of VQS-centric data exploration workflows, depending on the application domain, and that many of these workflows are not effectively supported in present-day VQSs. Our insights can pave the way for next-generation VQSs to be adopted in a variety of real-world applications.
+We might want to merge the rebuttal 1st paragraph into the abstract or intro (Pasted below).
+Despite decades of past work on visual query systems (VQSs), they have not been adopted in practice. Our paper answers the question "why?", via participatory design and evaluation of a VQS with three groups of domain experts over a year. Our findings: 1) Sketching is not as commonly used as prior work suggests; 2) Prior VQSs are not effective because they don't support the three important types of sensemaking processes we identified. In fact, each domain exhibits different sensemaking patterns-indicating the need for an integrative VQS, like ours, that addresses a range of analytical inquiries.
+
+Visual analytics, exploratory analysis, visual query
+
+
+
+
+
+ 
+ K.6.1Management of Computing and Information Systems
+Project and People ManagementLife Cycle;
+ K.7.mThe Computing ProfessionMiscellaneousEthics
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ Introduction
+ 
+ 
+ Line charts are commonly employed during data exploration-the intuitive connected patterns often illustrate complex underlying processes
+ and yield interpretable and visually compelling data-driven narratives . To discover patterns of interest, analysts often have to construct and inspect thousands of line chart visualizations manually to find ones that match their desired pattern.For example, when trying to find celestial objects corresponding to supernovae, which have a specific pattern of brightness over time, astronomers individually inspect the corresponding line chart for each object-numbering in the hundreds-until they find ones that match the pattern.Similarly, when trying to infer relationships between two physical properties for different subsets of battery electrolytes, scientists need to individually visualize these properties for each subset (out of an unbounded number of such subsets) until they identify relationships that make sense to them. This process of manual exploration of large numbers of line charts for pattern identification is not only error-prone, but also overwhelming for analysts. To address this challenge, there has been a large number of papers dedicated to building Visual Query Systems (VQSs)-the term coined by Ryall et al.  to describe systems that allow users to specify and search for desired line chart patterns via visual interfaces . 
+ These interactive interfaces often include a sketching canvas where users can draw a visual pattern of interest, with the system automatically traversing all potential visualization candidates to find those that match the specification. For example, since the intent of a sketch can be ambiguous, follow-up work has developed mechanisms to enable users to clarify how a sketch should be interpreted .Should we move this sentence to the related work section?
+ 
+ While these intuitive specification interfaces were proposed as a promising solution to the problem of painful manual exploration of visualizations for time-series analysis , to the best of our knowledge, VQSs have not lived up to these expectations and are not very commonly used in practice.
+ Our paper seeks to bridge this gap
+ to understand how VQSs can actually be used in practice,
+ as a first step towards the broad adoption of VQSs in data analysis.
+ Unlike prior work on VQSs,
+ we set out to not only evaluate VQSs in-situ on
+ real problem domains, but also involve participants
+ from these domains in the VQS design. We present findings from a series of interviews, contextual inquiry, participatory design, and user studies with scientists from three different domains-astronomy, genetics, and material science-over the course of
+ a year-long collaboration. The amount of time and depth we invested in each of the three diverse domains, surpasses the norm in this field and is key to discovering the insights presented in this paper. As illustrated in Figure , these domains were selected to capture a diverse set of goals and datasets wherein VQSs can help address important scientific questions, such as: How does a treatment affect the expression of a gene in a breast cancer cell-line? Which battery components have sustainable levels of energy-efficiency and are safe and
+ cheap to manufacture in production?
+ [ht!]
+ 	 	 	Desired insights, problem and dataset challenges for each of the three application domains in our study.
+ 	 	
+  Via contextual inquiries and interviews, we first identified challenges in existing data analysis workflows in these domains
+ that could be potentially addressed by a VQS. Building on top of an existing open-source VQS,  , we engaged participants in a process of participatory design (PD)  to enable them to better compose data exploration workflows that lead to insight discovery, over the course of a year. Rather than targetting for a domain-specific solution, we chose to perform participatory design across multiple domains (an uncommon practice for visualization design studies) in order to observe differences and commonalities across domains to obtain generalizable insights regarding VQSs. We organize our PD findings into a taxonomy of VQS capabilities, involving three sensemaking processes inspired by Pirolli and Card's notional model of analyst sensemaking . The sensemaking processes include top-down pattern search (translating a pattern "in-the-head" into a visual query), bottom-up data-driven inquiries (querying or recommending based on data), and context-creation (navigating across different collections of visualizations). We find that prior VQSs have focused on enabling top-down processes (via sketching), while largely ignoring the two other processes that we found to be essential in all three domains, partially explaining why such systems have not been widely adopted in practice.
+
+ 
+ To study how various VQSs are used in practice, we conducted a final evaluation study with nine participants using our final VQS prototype to address their research questions on their own datasets. During this 1.5-hour study, participants were able to gain novel scientific insights,
+ such as identifying a star with a transient pattern that was known to harbor a Jupiter-sized planet
+ and finding characteristic gene expression profiles confirming the results of a related publication., and discovering that the dip in an astronomical light curve is caused by saturated imaging equipment overlooked by the existing error-detection pipeline. Participants also gain additional insights about their datasets, including debugging mislabeled features and uncovering erroneous data preprocessing procedure applied to a collaborator's dataset.
+ 
+ 
+ By analyzing the evaluation study results, we discovered that sketching a pattern for querying is often ineffective on its own. This is due to the fact that sketching makes the problematic assumption that users know the pattern that they want to sketch and are able to sketch it precisely. However, geneticists from our study often do not have a preconceived knowledge of what to sketch and search for and relied heavily on recommended patterns to jumpstart their queries; likewise, while material scientists from our study were interested in datapoints that falls within specific value-ranges, they did not have an apriori pattern in mind to sketch. As a result, participants typically opted to combine sketching with other means of pattern specification-one common mechanism was to drag-and-drop a recommended pattern onto the canvas, and then modify it (e.g., by smoothing it out). However, most VQSs do not support these other mechanisms (as we argued earlier, they typically focus only on top-down sensemaking processes, without covering bottom-up and context creation)cutting this out since already mentioned 2 paragraphs ago. 
+ 
+ To further understand how participants engage with VQSs in their analytical workflows, we used a Markov model to study how participants transition between different sensemaking processes during their analysis. Our empirical task analysis illustrates how participants often construct a diverse set of analysis workflows tailored to their domains by focussing around a primary sensemaking process, while iteratively interleaving their analysis with the two other processes. This finding points to how all three sensemaking processes, along with seamless transitions between them, are essential for enabling users to effectively use VQSs for data exploration.
+ 
+ To the best of our knowledge, our study is the first to holistically examine how VQSs can be designed to fit the needs of real-world, domain-expert analysts and how they are actually used in practice. Working with participants from multiple domains enabled us to compare the differences and commonalities across different domains, thereby identifying general VQS challenges and requirements for supporting common analytical goals. Our contributions include:
+ 
+ a characterization of the problems addressable by VQSs through design studies with three different domains,
+ the construction of a taxonomy of essential VQSs capabilities leading to a sensemaking model for VQSs, grounded in participatory design findings, 
+ an integrative VQS, , post participatory design capable of facilitating rapid hypothesis generation and insight discovery,
+ study findings on how VQSs are used in practice, leading to the development of a novel sensemaking model for VQSs. 
+ 
+ 
+  Our work not only opens up a new space of opportunities beyond the narrow use cases considered by prior studies, but also advocates common design guidelines and end-user considerations for building next-generation VQSs.
+
+  Related Works
+  
+
+  
+  We will now describe past work in visual query systems and existing evaluation methods of visualization systems to provide background and motivation to our work. Then, we will introduce Pirolli and Card's sensemaking model, which serves as a framework for contextualizing our study findings. 
+  
+  Visual Query Systems: Definition and Brief Survey
+  Visual query system (VQS) is a term introduced by Ryall et al.  and Correll and Gleicher  to describe systems that enable analysts to directly search for time-series visualizations matching certain patterns through a visual specification interface. Examples of such systems include TimeSearcher , where the query specification mechanism is a rectangular box, with the tool filtering out all of the time series that does not pass through it, and QuerySketch  and Google Correlate , where the query is sketched as a pattern on canvas, with the tool filtering out all of the time series that have a different shape. Subsequent work, including TimeSketch , SketchQuery , and Qetch , recognized the ambiguity in sketching by studying how humans rank similarity in patterns. To improve the expressiveness of sketched queries, these VQSs include finer-grained specification interfaces and pattern-matching algorithms, including QueryLines  where queries can be flexibly composed from soft constraints and preferences and SoftSelect  where users can vary the level of sketch similarity across a search pattern. Beyond sketching,  , SketchQuery, and TimeSearcher allow users to select an existing visualization as a query, either via drag-and-drop or double-clicking on the existing visualization. In our work, we built on , since it was open-source, extensible, and included features beyond pattern and match specification typically found in existing systems, as compared in Table . I didn't incorporate Aditya's comment on stating that "(the details of each component is described in Section )" here because it is already stated in the Table caption.
+  
+  
+  
+  
+  
+  [ht!]
+    
+               Table summarizing whether key functional components (columns) are covered by past systems (row, ordered by recency), indicated by checked cells. Column header colors blue, orange, green represents three sensemaking process (top-down querying, search with context, and bottom-up querying) described in Section . The heavily-used, practical features in our study for context-creation and bottom-up inquiry is largely missing from prior VQSs.
+          
+    Design and Evaluation Methodologies for Visualization Systems
+  Visualization systems are typically evaluated via in-lab usability studies or controlled studies against existing visualization baselines . However, successful lab-tested systems do not always translate to community acceptance and adoption. For instance, while decades of work have shown VQSs to be effective in controlled lab studies, they have not gained widespread adoption. Unlike our work, past VQSs have never been designed and evaluated in-situ on multiple real-world use cases. Even when use cases were involved , the inclusion of these case studies served as a post-hoc demonstrative case study that had little influence on the major design decisions of the system. The unrealistic nature of controlled studies have prompted the visualization research community to develop more participant-centered, ethnographic approaches for understanding how analysts perform visual data analysis and reasoning . For example, multi-dimensional, in-depth, long-term case studies (MILCs) combine interviews, surveys, logging and other empirical artifacts to create a holistic understanding of how a visualization system can be used in its intended environment. 
+  In the context of Munzner's nested model for visualization design and evaluation , this gap between research and adoption stems from the common "downstream threat" of jumping prematurely into the deep levels of encoding, interaction, or algorithm design, before a proper domain problem characterization and data/operation abstraction design is performed. In other words, even though advanced VQS algorithms and interactions have been developed and shown to be effective in lab studies, prior work have yet to address the initial steps of evaluating: 1) whether this is even the right problem to solve, by characterizing and interviewing target users and 2) whether the chosen data and operations acutally solve the user's problems, by observing how the tool is used as a part of a real-world workflow. Our work fills this crucial gap in the existing literature and demonstrates how incorrect assumptions adopted by most prior work in this space regarding the first two stages of Munzner's model may have led to the failure in VQS adoption.
+  In this work, we performed design studies  with three different subject areas for domain problem characterization by adopting participatory design practices  to engage potential stakeholders in designing a VQS that they may eventually use in their analytical workflow. Participatory design is well-established in the CHI and CSCW community and has been successfully applied to develop systems for visual analytics , tangible museum experiences , and scientific collaborations . Holzblatt and Jones  describes contextual inquiry as a technique that forms the basis for "developing a system model that will support [a] user's work" that subsequently "fosters participatory design". Likewise, we first perform contextual inquiry and interviews with participants to understand their research questions, the challenges associated with their existing analytical workflows, and identify design opportunities for VQSs. Past research on participatory design has found that the use of functional prototypes is a common and effective way of engaging with participants and providing a starting point for participatory design . Similarly, we provide a functional prototype at the beginning of the participatory design sessions to showcase capabilities of VQSs. Since our participants were not aware of the existence of VQSs, let alone using them in their workflows, they would not have been able to imagine use cases for VQS without a starting point. Likewise, the use of "simulated future work situation" (where users are introduced to the envisioned use of the prototype) is also a common practice in cooperative prototyping when the real use of the prototype is not feasible . To better understand how VQSs can be used in-situ participant's existing workflow, we regularly gathered feedback from participants and collaboratively envisioned potential designs based on preview demos of preliminary versions of our protoype . Finally, we validated our abstraction design with grounded evaluation , where participants were invited to bring in their own datasets and research problems that they have a vested interest in to test our final deployed system.Regarding Aditya's question on whether we could argue that PD is the only way to truly get at the heart ofthe problem underlying adoption. I don't think we should say this, there are many other possible techniques that Munzner's paper lists for dealing wiht domain and abstraction threats (for domain threats: ethnographic field studies, semi-structured interviews; for abstraction threats: formative testing collecting anecdotal evidence, long-term field study with deployed system). It would be hard to argue that PD is the *right* approach amongst these.
+  
+  
+ 
+  Sensemaking Models for Visual Analytics
+  Based on our participatory design findings, we contribute to the data/operation abstraction design of VQSs in Munzner's model by developing a taxonomy for understanding how analysts make use of VQSs to accomplish their analytical tasks. To develop a sensemaking model for VQS, we draw from Pirolli and Card's seminal paper on information sensemaking based on cognitive task analysis of intelligence analysts . The sensemaking framework was designed to capture how expert analysts iteratively search and re-represent gathered evidence into a conceptual model (schema). Many papers in visual analytics have also applied the sensemaking framework to motivate tool designs, such as for exploratory browsing of visualizations in large datasets  and of the Web . In addition, the sensemaking framework has also been used for understanding and modeling user behavior in visual analytics, including how analysts gain insights from visualizations , how biases can be introduced during visual analysis , and how analysts transition between natural-language generated data facts and visualizations . In this framework, the sensemaking process can be organized into: 1) a foraging loop that searches for information to further schema organization and 2) a sensemaking loop for constructing a schema that best aligns with the insights obtained from the analysis. Overall, the model distinguishes between information processing tasks that are top-down (from theory to data) and bottom-up (from data to theory), described more in Section . We were inspired by this model for expert intelligence analysis as it bears semblance to our work for studying how domain experts perform visual analysis using VQSs.
+
+
+  
+  
+
+  Methods
+  
+  Via interviews and cognitive walkthroughs, we first identified the needs and challenges in participants' existing data analysis workflows. Given these challenges, we collaboratively designed VQS functionalities by engaging with experts from three different domains in the process of participatory design, leading to a final prototype . At the end of the design study, we conducted a realistic evaluation study to study how VQSs are used in the real-world analytical workflows.
+  Phase I: Contextual Inquiry and Participatory Design
+  We recruited participants by reaching out to research groups, who have experienced challenges in data exploration, via email and word of mouth. Based on our early conversations with analysts from 12 different potential application areas, we narrowed down to three use cases in astronomy, genetics, and material science for our design study, chosen based on their suitability for VQSs as well as diversity in use cases. Six scientists (1 female, 5 male), with an average of more than 6 years of research experience in their respective fields, participated in the design process. Via interviews and contextual inquiries, we identified the needs and challenges of these use cases based on each participant's existing analysis workflow. We discuss these findings in Section 
+  
+  For the participatory design study, we built on top of an existing VQS,  , to create a functional prototype that served as a starting point for discussion around VQSs. During participatory design, we collaborated with each team closely with an average of two meetings per month, where we learned about their datasets, objectives, and what additional VQS functionalities could help address their research questions. Since some of the essential features that were crucial for effective exploration were lacking in and still under development in the new version of our VQS, , we did not provide a deployed prototype for participants to actively use on their own during the participatory design period. Instead, as we iterated on the design of these features, relevant capabilities from intermediate versions of were demonstrated to the participants. As "simulated future work situations" are common in participatory design, participants also had the opportunity to interact with the low-fidelity prototype through the help of a guided facilitator. 
+  During this process, we elicited feedback from participants on how the VQS could better support their scientific goals. A summary timeline of our collaboration with participants over a year can be found in Figure  in Appendix . 
+  
+  
+  Through this process, we identified and incorporated several crucial capabilities into , as listed in Table . 
+  [hb!]
+            Participant information. The Likert scale used for dataset familiarity ranges from 1 (not familiar) to 5 (extremely familiar).
+        
+    Phase II: Evaluation Study
+  
+  
+  At the end of our participatory design study, we performed a qualitative evaluation to study how analysts interact with different VQS components in practice. Participants used datasets that they have a vested interest in exploring to address unanswered research questions (a total of six different datasets across nine participants). As shown in Table , the evaluation study participants included the six scientists from participatory design, along with three additional "blank-slate" participants who had never encountered before. The use of all or a subset of the project stakeholders as evaluation participants is common in participatory design . While the small sample size of participants is a limitation, this is a common challenge when recruiting domain-experts, whose specific expertise and skills are rare and have limited time due to their workplace demands relative to the general population, as echoed in prior work. Addressing Aditya's comments, we can't exactly say that most other PD work involves significantly less participants. For example, LiveRAC involved 14 participants in 3 groups; Batch and Elmqvist had  8 participants. So our study is about typical in size.
+  
+  
+  
+   
+  
+  
+  Evaluation study participants were recruited from each of the three aforementioned research groups, as well as domain-specific mailing lists. Prior to the study, we asked potential participants to fill out a pre-study survey to determine eligibility. Eligibility criteria included: being an active researcher in the subject area with more than one year of experience, and having worked on a research project involving data of the same nature used in participatory design. None of the participants received monetary compensation for the study, as this is not a common practice for participatory design with stakeholders . The research questions and objectives of the participants were diverse even among the same subject area. Examples included understanding gene expression profiles of breast cancer cells after a particular treatment and comparing common patterns among stars that exhibit planetary transits versus stars that do not.from the Kepler space telescope(www.nasa.gov/mission_pages/kepler/main/index.html).
+  At the start, participants were provided with an interactive walk-through of and given approximately ten minutes for a guided exploration of a preloaded real-estate example dataset. from Zillow. This dataset contained housing data for various cities, metropolitan areas, and states in the U.S. from 2004-15.After familiarizing themselves with the tool, we loaded the participant's dataset and encouraged them to talk-aloud during data exploration, and use external tools or other resources as needed. If the participant was out of ideas for three minutes, we suggested one of the main VQS functionalities (query by sketching, drag-and-drop, pattern loading, input equations, representative and outliers, narrow/ignore x-range options, filtering, data smoothing, creating dynamic classes,  data export) that they had not yet used. If any of these operations were not applicable to their specific dataset, they were allowed to skip the operation after having considered it. The user study ended after they covered all the main functionalities and lasted on average for 63 minutes. After the study, we asked participants open-ended questions about their experience.
+
+ Participants and Datasets
+ In this section, we describe our study participants, their scientific goals, and their preferred analysis workflows, based on the contextual inquiry that we conducted at the start of the design study. 
+ *[ht!]
+    
+     
+   [HTML]AADFFD
+  [HTML]AADFFD & &   &  &  
+ 2-5
+  [HTML]AADFFD
+  [HTML]AADFFD &  &  &  & -- 
+ 2-5
+  [HTML]AADFFD
+  -5*[HTML]AADFFD
+      &  & &  &  
+   [HTML]AADFFD
+  [HTML]AADFFD & &  &   &  
+ 2-5
+  [HTML]AADFFD
+  [HTML]AADFFD &  &  &  &  
+ 2-5
+  [HTML]AADFFD
+  -8*[HTML]AADFFD
+   &  &  &  &  
+   [HTML]FBE39C
+  [HTML]FBE39C &  &  &  & -- 
+ 2-5
+  [HTML]FBE39C
+  -3*[HTML]FBE39C&  &  &   & -- 
+   [HTML]FBE39C
+  [HTML]FBE39C &  &  &  & -- 
+ 2-5
+  [HTML]FBE39C
+  -5*[HTML]FBE39CSlice-and-Dice &  &  &  & -- 
+   [HTML]B5E1A4
+   &  &  &  &  
+   [HTML]B5E1A4
+  Recommendation  &  &  & & -- 
+   
+  List of major features incorporated via participatory design. We organize each feature based on its functional component. Table cells are further colored according to the sensemaking process that each component corresponds to (Blue: Top-down, Yellow: Context creation, Green: Bottom-up). We list the functional purpose of each feature based on how it is implemented in , example use cases from participatory design (astronomy, material science, genetics), and similar features incorporated in past VQSs. Given the exhaustive nature of Table , each motivated by example use cases from one or more domains, we further organize the features in terms of the Section  sensemaking framework and assess their effectiveness in the Section  evaluation study.  
+
+
+ While we collaborated with each application domain in depth, we focus on the key findings in each domain to highlight their commonalities and differences, in order to provide a backdrop for our generalized VQSs findings described later on. Comparing and contrasting between the diverse set of questions, datasets, and challenges across these three use cases revealed new generalizable insights and was essential in enabling us to better understand how VQSs can be extended for novel and unforeseen use cases.
+ 
+ 
+ 
+ Astronomy
+ Participants and Goals: 
+ The Dark Energy Survey (DES) is a multi-institution project that surveys 300 million galaxies over 525 nights to study dark energy . The telescope used to survey these galaxies also focuses on smaller patches of the sky on a weekly interval to discover astronomical transients (objects whose brightness changes dramatically as a function of time), such as supernovae or quasars. Their dataset consists of a large collection of light curves: brightness observations over time, one associated with each astronomical object, plotted as time series. Over five months, we worked closely with A1, an astronomer on the project's data management team at a supercomputing facility. Their scientific goal is to identify potential astronomical transients in order to study their properties. These insights can help further constrain physical models regarding the formation of these objects.
+ Existing Workflow and Design Opportunities: 
+ To identify transients, astronomers programmatically generate visualizations of candidate objects with matplotlib and visually examine each light curve. If an object of interest is identified through visual analysis, the astronomer may inspect the image of the object for verifying that the significant change in brightness is not due to an imaging artifact. While an experienced astronomer who has examined many transient light curves can often distinguish an interesting transient object from noise by sight, manual searching for transients is time-consuming and error prone, since the large majority of objects are false-positives. A1 was interested in VQSs as he recognized how specific pattern queries could help astronomers directly search for these rare transients.
+ 
+ Genetics
+ Participants and Goals: 
+ Gene expression is a common measurement in genetics obtained via microarray experiments . In these experiments, a grid containing thousands of DNA fragments are exposed to stimuli and measurements for the level at which a gene is expressed are recorded as a function of time. We worked with a graduate student (G1) and professor (G3) at a research university who were using gene expression data to understand how genes are related to phenotypes expressed during early embryonic development. Their data consisted of a collection of gene expression profiles over time for mouse stem cells, aggregated over multiple experiments., downloaded from an online database(ncbi.nlm.nih.gov/geo/). 
+ Existing Workflow and Design Opportunities: 
+ Their typical workflow is as follows: G1 first loads the preprocessed gene expression data into custom desktop application to  visualize and cluster the profiles (www.cs.cmu.edu/ jernst/stem/). After setting several system parameters and executing the clustering algorithm, the overlaid time series for each cluster is displayed on the interface. G1 visually inspects that the patterns in each cluster looks "clean" and checks that the number of outlier genes (i.e., those that do not fall into any of the clusters) is low.  If the number of outliers is high or the clustered visualizations look "unclean", she reruns the analysis by increasing the number of clusters. Once the visualized clusters look "good enough", G1 exports the clusters to her downstream regression tasks.
+ Existing Workflow and Design Opportunities: 
+ Prior to the study, G1 and G3 spent over a month attempting to determine the best number of clusters based on a series of static visualizations and statistics computed after clustering. While regenerating their results took no more than 15 minutes every time they made a change, the multi-step, segmented workflow meant that all changes had to be done offline., so that valuable meeting time was not wasted trying to regenerate results. They were interested in VQSs, as interactively querying time series with clustering results had the potential to dramatically speed up their collaborative analysis process.
+ 
+ 
+ Material Science
+ Participants and Goals: 
+ 
+ We collaborated with material scientists at a research university who are working to identify solvents for energy efficient and safe batteries. These scientists work on a large simulation dataset containing chemical properties for more than 280,000 solvents . Each row of their dataset represents a unique solvent with 25 different chemical attributes. We worked closely with a postdoctoral researcher (M1), professor (M2), and graduate student (M3) to design a sensible way of exploring their data. They wanted to use VQSs to identify solvents that not only have similar properties to known solvents, but are also more favorable (e.g., cheaper or safer to manufacture). To search for these desired solvents, they need to understand how changes in certain chemical attributes affect other properties under specific conditions.
+ Existing Workflow and Design Opportunities: 
+ M1 typically starts his data exploration process by iteratively applying filters to a list of potential battery solvents using SQL queries. Once the remaining solvent list is sufficiently small, he manually examines the properties of each solvent individually by examining the 3D chemical structure of the solvent in a custom software, as well as gathering information regarding the solvent by cross-referencing an external chemical database and existing uses of this solvent in literature. The collected information, including cost, availability, and other physical properties, enable researchers to select the final set of desirable solvents that they can feasibly experiment with in lab. They were interested in VQSs as it was impossible for them to uncover hidden relationships between different attributes across large numbers of solvents manually.
+ Next, we describe the collaborative feature discovery process and the system prototype from participatory design.
+ 
+
+ 
+ Design Process and System Overview
+
+
+ Given the need for a VQS highlighted via contextual inquiry, we further collaborate with participants to develop features to address their problems and challenges. In this section, we first reflect on our feature discovery process to introduce the participatory design (PD) findings, then we provide a high-level system overview of the product of PD, .
+ The Collaborative Feature Discovery Process 
+ Throughout the PD process, we worked closely with participants to discover VQS capabilities that are essential for addressing their high-level domain challenges. We identified various subtasks based on the participant's workflow, designed sensible features for accomplishing these subtasks that could be used in conjunction with existing VQS capabilities, and elicited feedback on intermediate feature prototypes. Bodker et al.  cites the importance of encouraging user participation and creativity in cooperative design through different techniques, such as future workshops, critiques, and situational role-playing. Similarly, our PD objective was to collect as many feature proposals as possible, while being inclusive across different domains. We further organized these features into Table  through an iterative coding process by one of the authors.
+ In grounded theory methods , researchers first create open codes to assign descriptive labels to raw data, followed by grouping open codes together by relationships or categories to form axial codes. Finally, selective codes are obtained by focusing on specific sets of axial codes to come up with a set of core emerging concepts. Inspired by grounded theory methods, we first collect the list of features and example usage scenarios from PD and similar capabilities in existing VQSs as open codes. Then, we further organize this list into axial codes representing "components" (first column in Table ): core functionalities that are essential in VQSs. Finally, as we will describe in Section , the selective codes capture each of the sensemaking processes (denoted by cell colors in Table ). Instead of describing this table in detail, we present a typical example of how this table is organized. Consider row 4 of Table , as shown, one of the common challenges in astronomy and material science is that noise in the dataset can result in large numbers of false-positive matches. To address this issue,  smoothing is a feature in that enables users to adjust data smoothing algorithms and parameters on-the-fly to both denoise the data and change the degree of shape approximation applied to all visualizations when performing pattern matching. 
+ Smoothing, along with range selection and range invariance (row 5 and 6), is part of the match specification component: VQS mechanisms for clarifying how matching should be performed. Both match specification and pattern specification (a description of what the pattern query should look like) are essential components for supporting the sensemaking process top-down pattern search (in blue), described in Section .
+ 
+ *[ht!]
+      
+    
+   The system consists of : (A) data selection panel (where users can select visualized dataset and attributes), (B) query canvas (where the queried data pattern is submitted and displayed), (C) results panel (where the visualizations most similar to the queried pattern are displayed as a ranked list), (D) control panel (where users can adjust various system-level settings), and (E) recommendations (where the typical and outlying trends in the dataset is displayed).
+      
+  It is important to note that while some of the proposed features in Table  are pervasive in general visual analytics (VA) systems , they have not been incorporated in present-day VQSs. In fact, one of the key contributions of our work is recognizing the need for an integrative VQS whose sum is greater than its parts, that encourages analysts to rapidly generate hypotheses and discover insights by facilitating all three sensemaking processes. This finding is partially enabled by the unexpected benefits that comes with collaborating with multiple groups of participants during the feature discovery process, described next.
+ Given the highly-evolving, ad-hoc nature of exploratory data analysis , our collaborative feature discovery approach for aiding such analysis comes with its advantages and limitations. One such advantage is that introducing the newly-added features to that addressed a particular domain often results in unexpected use cases for other domains. Considering feature proposals from multiple domains can also lead to more generalized design choices. For example, around the same time when we spoke to astronomers who wanted to eliminate sparse time series from their search results, our material science collaborators also expressed a need for inspecting only solvents with properties above a certain threshold. Through these use cases, data filtering arose as a crucial, common operation that was later incorporated into to support this class of queries. 
+ 
+ 
+ While our collective brainstorming led to the cross-pollination and generalization of features, this technique can also lead to unnecessary features that result in wasted engineering effort. During the design phase, there were numerous problems and associated features proposed by participants, not all of which were incorporated. We detail the list of criteria that was used to determine whether to implement a proposed feature (including eliminating features that were nice-to-have, one-shot operations, non-essential, or required a substantially different set of research questions) in Appendix . Failure to identify these early signs in the design phase may result in feature implementations that turn out not to be useful for the participants or result in feature bloat.
+ System Overview
+ The features in Table  were incrementally incorporated and improved over time, leading to our final PD product, . Given the space limitations, we will focus our discussion on the major capabilities relevant to the study findings, and defer the details of other features to the appendix and online documentation(github.com/[Anonymized for Submission]/wiki). The interface is organized into 5 major regions all of which dynamically update upon user interactions. Typically, users begin analysis by selecting the dataset and attributes to visualize in the data selection panel (Figure A). Then, they specify a pattern of interest as a query (hereafter referred to as pattern query), through either sketching, inputting an equation, uploading a data pattern, or dragging and dropping an existing visualization, displayed on the query canvas (Figure B). performs shape-matching between the queried pattern and other possible visualizations, and returns a ranked list of visualizations that are most similar to the queried pattern, displayed in the results panel (Figure C). At any point during the analysis, analysts can adjust various system-level settings through the control panel (Figure D) or browse through the list of recommendations provided by (Figure E). For comparison, the existing system (Figure  in Appendix ) from  allowed users to query via sketching or drag-and-drop and displayed representative and outlier pattern recommendations, but had limited capabilities to navigate across different data subsets and had few control settings. Our system is open source and available at: github.com/[Annonymized for Submission]. 
+ 
+
+ A Sensemaking Model for VQSs
+   
+ Now that we have described our eventual PD prototype , we revisit Table  in an effort to contextualize our PD findings using Pirolli and Card's sensemaking framework . We demonstrate how features in address the analytical needs posed by each domain. We organize the components in Table  along a taxonomy of three sensemaking processes, as shown in Figure . 
+ 
+
+Analogous to top-down and bottom-up information processing tasks in the sensemaking framework, in the context of VQSs, analysts can query either directly based on a pattern "in their head"  via top-down pattern specification or based on the data or visualizations presented to them by the system via bottom-up data-driven inquiry. In addition, when analysts do not know what attributes to visualize, context creation helps analysts navigate across different collections of visualizations to seek visualization attributes of interest. A more detailed articulation of the problem space addressable by VQS and how each sensemaking process fits into this space can be found in Appendix .
+ 
+In this section, we first describe the design objectives of each sensemaking process (the top level in Figure ). Proceeding to the lower level of the Figure  taxonomy, we then discuss how each sensemaking process is comprised of functional components that address the problem and dataset characteristics of each domain. Usage scenarios from Table  exemplifies how each sensemaking process supports essential subtasks and enables participants' scientific goals. For reference, the mapping between specific features and these components and processes can be found in Table .
+
+ 
+   
+ 
+   
+   
+   
+    *[ht!]
+            Taxonomy of key capabilities essential to VQSs. Each of the three sensemaking process is broken down into key functional components in VQSs. Each component addresses a pro-forma question from a system's perspective. 
+        
+       Top-Down Pattern Search
+   Top-down processes are "goal-oriented" tasks that makes use of "analysis or re-evaluation of theories [and] hypotheses [to] generate new searches" . Applying this notion to the context of VQSs, the goal of top-down pattern search is to search for data instances that exhibit a specified pattern, based on analyst's intuition about how the desired patterns should look like "in theory" (including visualizations from past experience or abstract conceptions based on external knowledge). Based on this preconceived notion of what patterns to search for, the design challenge is to translate the pattern query from the analyst's head to a query executable by the VQS. This requires both components for specifying the pattern (pattern specification), as well as controls governing how the pattern-matching is performed (match specification).
+   
+   
+   Pattern Specification interfaces allow users to submit exact descriptions of a pattern query. This is useful when the dataset contains large numbers of potentially-relevant pattern instances.
+   Since it is often difficult to sketch precisely, additional characteristics of the pattern query (e.g., patterns with specific shape characteristics, or expressible in a functional form) can be used to further winnow the list of undesired matches.
+   Match Specification addresses the well-known problem in VQSs where pattern queries are imprecise  by enabling users to clarify how pattern matching should be performed. Match specification is useful when the dataset is noisy. When the pattern query satisfies some additional constraints (e.g., the pattern is x,y invariant), adjusting these knobs helps prune away matches that are false-positives to help analysts discover true desired candidates.
+   Usage Scenario: A1 knows intuitively what a supernovae pattern should look like and its detailed shape characteristics, such as the amplitude of the peak and the level of error tolerance for defining a match. He performs top-down pattern search by querying for transient patterns through sketching and adjusting the match criterion by choosing to ignore differences along the temporal dimension and changing the similarity metric for flexible matching.
+   Bottom-Up Data-Driven Inquiry
+   In Pirolli and Card's sensemaking model, bottom-up processes are "data-driven" tasks initiated by "noticing something of interest in data" . Likewise in VQSs, bottom-up data-driven inquiry is a browsing-oriented sensemaking process that involves tasks that are inspired by system-generated visualizations or results. The design challenge for VQSs to support bottom-up data-driven inquiries is to develop the right set of "stimuli" through recommendations that could provoke further data-driven inquiries, as well as low-effort mechanisms to search via these results through result querying. As we will discuss later, this process is crucial but underexplored in past work on VQSs. 
+   
+   Recommendations display visualizations that may be of interest to users based on the current data context. In , recommendations comprise of representative trends and outliers, which are useful for understanding common and outlying behaviors when a small number of common patterns is exhibited in the dataset. 
+   Result querying enables users to query for patterns similar to a selected data pattern from the ranked list of results or recommendations. Typically, analysts select visualizations with semantic or visual properties of interest and make use of result querying to understand characteristic properties of similar instances.
+   Usage Scenario: G2 does not have a preconceived knowledge of what to search for in the dataset. She engages with bottom-up data-driven inquiries to learn about the characteristic patterns that exist in the dataset through representative trends, as a means to jump-start further queries via result querying, as well as to understand groups of data instances with shared characteristics.
+   Context creation
+   While top-down and bottom-up processes operate on a collection of visualizations with fixed X and Y attributes, context creation operates in the regime where the analyst may be investigating the relationships between multiple different attributes of interest. Context creation enables analysts to navigate across different visualization collections to learn about patterns in different regions of the data. The design challenge of context creation is to help users visualize and compare how data changes between these different contexts by constructing visualization collections with different visual encodings (view specification) or different data subsets (slice-and-dice).
+   
+   
+   View specification settings alter the encoding for all of the visualizations on the VQS currently being examined. This ability to work with different collections of visualizations is useful when the dataset is multidimensional and the axes of interest are unknown. Modifying the view specification offers analysts different perspectives on the data to locate visualization collections of interest.
+   Slice-and-Dice empowers users to navigate and compare collections of visualizations constructed from different subselections of the data. Data navigation capabilities is essential when the dataset has large numbers of "support attributes" that may be related to the visualization attributes (e.g., geographical location may influence the time series pattern for housing prices). Analysts can either make use of pre-existing knowledge regarding these support attributes to navigate to a data region that is more likely to contain the desired pattern (e.g., filtering to suburbs to find cheaper housing) or discover unknown patterns and relationships between different data subsets (e.g., housing prices are lower in winter than compared to summer).
+   Usage Scenario: M1 recognizes salient trends in his dataset such as inverse or linear correlations, but does not have fixed attributes that he wants to visualize or a pattern in mind to query with. Given a list of physical properties of potential interest, he performs context creation by switching between different visualized attributes to understand the dataset from alternative perspectives. He can also dynamically create different classes of data (e.g., solvents with low solubility or have high capacity) to examine their aggregate patterns.
+   The three aforementioned sensemaking processes are akin to the well-studied sensemaking paradigms of search (top-down), browse (bottom-up), and faceted navigation (context creation) on the Web . Due to each of their advantages and limitations given different information seeking tasks, search interfaces have been designed to support all three complementary acts and transition smoothly between them to combine the strength of all three sensemaking processes. Similarly for VQSs, our design objective is to enable all three sensemaking processes in . Our Section  evaluation study reveals that this integrative approach not only accelerates the process of visualization discovery, but also encourages hypotheses generation and experimentation.
+ [ht!]
+         Each VQS sensemaking process maps to scientific tasks and goals from each use case, from pattern search to comparing visualization collections to gaining overall data understanding. We find that our scientific participants typically have one focused goal expressible through a single sensemaking process, but since their desired insights may not always be achievable with a single operation, they make use of the two other sensemaking processes to support them in accomplishing their main goal.
+      
+
+
+ Evaluation Study Findings
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Based on audio, video screen capture,
+ and click-stream logs recorded
+ during our evaluation study,
+ we performed thematic analysis via open coding to label every event with a descriptive code. Event codes included specific feature usage,
+ insights,
+ provoked actions, confusion,
+ need for capabilities unaddressed
+ by the system, and use of external tools, detailed in Appendix . To characterize the usefulness
+ of each feature, we further labeled whether each
+ feature was useful to a particular participant's analysis.
+ A feature was deemed useful
+ if the feature was either used in a sensible
+ and meaningful way during the study,
+ or has envisioned usage outside of the constrained
+ time limit during the study
+ (e.g., if data was available or downstream analysis was conducted).
+ We derived these labels from the study transcript
+ to circumvent self-reporting bias ,
+ which can often artificially inflate
+ the usefulness of the feature under examination.
+ In this section, we will apply our thematic analysis results to understand how each sensemaking process occurs in practice.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Uncovering the Myth of Sketch-to-Insight
+ 
+ To understand the usefulness of different visual querying modalities, we analyzed their frequency of use based on our evaluation study. To our surprise,
+ despite the prevalence of sketch-to-query
+ systems in the literature, Figure  shows that only two out of our nine participants
+ found it useful to directly
+ sketch a desired pattern onto the canvas. 
+ The reason why most participants
+ did not find direct sketching useful was that
+ they often do not start their analysis with a specific pattern in mind.
+ Instead, their intuition about what to query is derived
+ from other visualizations they encounter
+ during exploration, in which case it makes
+ more sense to query using those visualizations
+ as examples directly (e.g., by dragging and dropping
+ that visualization onto the canvas to submit the query).
+ Even if a user has a pattern in mind,
+ translating that pattern into a sketch is often hard
+ to do. For example,
+ A2 wanted to search for a highly-varying signal
+ enveloped by a sinusoidal pattern indicating
+ planetary rotation , which is hard to draw by hand.
+ [h!]
+      
+   The number of times a pattern query originates from one of the workflows. We find that pattern queries are far more commonly generated via bottom-up than top-down processes.   
+  
+ Given these initial findings,
+ we further investigated the process that analyst engaged in to construct pattern queries, as presented in Figure .
+ Pattern queries can be generated by
+ either top-down (sketching) or
+ bottom-up (drag-and-drop) processes,
+ driven by various different querying intentions.
+ Within top-down processes,
+ a pattern query could arise
+ from users directly sketching
+ a new pattern (sketch-to-query)
+ or by modifying an existing sketch (sketch-to-modify). For example, M2 first sketched a pattern
+ to find solvent classes with anticorrelated
+ properties without much success in returning a desired match.
+ 
+ So he instead dragged and dropped one
+ of the peripheral visualizations similar
+ to his desired visualization and then smoothed
+ out the noise in the visualization via sketching yielding
+ a straight line,
+ as shown in Figure  (left).
+ M2 repeated this workflow twice in separate
+ occurrences during the study and
+ was able to derive insights from the results.
+ Likewise, Figure  (right)
+ illustrates how A3 first picked out a regular pattern
+ (suspected star spot), then modified it slightly
+ so that the pattern looks more irregular (to find pulsating stars).
+ 
+ 
+ 
+ 
+ 
+ As described in the following section,
+ bottom-up pattern queries can come from either
+ the ranked list of results,
+ recommendations, or by selecting a
+ particular object of interest as a drag-and-drop query.
+ Figure  shows that
+ bottom-up processes are more common
+ than top-down processes for generating a pattern query.
+ [h!]
+               Example of sketch-to-modify, based on canvas traces from M2 (left) and A3 (right). The original drag-and-dropped query is shown in blue and sketch-modified queries in red.
+          
+  The lack of practical use of top-down pattern
+ specification is also reflected in the fact
+ that none of the participants queried using an equation.
+ In both astronomy and genetics, the visualization patterns
+ resulting from complex physical processes
+ that could not be written down as an equation analytically.
+ Even in the case of material science when analytical
+ relationships do exist, it is challenging to formulate patterns as functional forms in a prescriptive manner.
+ 
+ 
+ Our findings suggest that while sketching
+ is a useful construct for people to express their queries,
+ the existing ad-hoc, sketch-only model for VQSs
+ is insufficient on its own without data examples
+ that can help analysts jumpstart their exploration.
+ In fact, from Figure ,
+ we can see that sketch-to-query was only used
+ 8 times, while the remaining querying modalities were used 29 times altogether,
+ more than three times as much as sketch-to-query.
+ This finding has profound implications
+ on the design of future VQSs, since Table  suggests that past work has primarily focused
+ on optimizing top-down process components,
+ without considering how useful these features
+ are in real-world analytic tasks.
+ 
+ We suspect that these limitations
+ may be why existing VQSs are not commonly adopted in practice. Note that we are not advocating for removing the sketch capabilities from future VQSs completely, but instead focusing future research and design efforts to examine other (often underlooked) VQS sensemaking processes that could be used in conjunction with sketching to help analysts more flexibly express their analytical goals, described next.
+
+ 
+ 
+ 
+ 
+ 
+ Insights via Context Creation and Bottom-up Approaches
+ 
+ As alluded to earlier,
+ bottom-up data-driven inquiries
+ and context creation are far more commonly
+ used than top-down pattern search
+ when users have no desired patterns in mind,
+ which is typically the case for exploratory data analysis.
+ In particular, top-down approaches
+ were only useful for 29 of the use cases,
+ whereas it was useful for 70 of the use cases
+ for bottom-up approaches and 67
+ for context creation(See Appendix  for details on how this measure was computed.). We now highlight some exemplary workflows demonstrating the efficacy of the latter two sensemaking processes.
+ 
+ 
+ As shown in Figure ,
+ the most common use of bottom-up querying
+ is via recommended visualizations. For example, G2 and G3 identified that
+ the three representative patterns
+ recommended in corresponded
+ to the same three groups of genes discussed
+ in a recent publication :
+ induced genes (profiles with expression levels going up ),
+ repressed genes (starting high then decreasing ),
+ and transients (rising first then dropping at another time point ). The clusters provoked G2 to generate a hypothesis
+ regarding the properties of transients:
+ "Is that because all the transient groups
+ get clustered together, or can I get sharp patterns
+ that rise and ebb at different time points?"
+ To verify this hypothesis, G2 increased the parameter controlling the number of clusters and noticed that the clusters
+ no longer exhibited the clean,
+ intuitive patterns he had seen earlier.
+ G3 expressed a similar sentiment and proceeded
+ by inspecting the visualizations
+ in the cluster via drag-and-drop.
+ He found a group of genes that all transitioned
+ at the same timestep, while others transitioned
+ at different timesteps.
+ G3 described the process of using
+ VQSs as doing "detective work" that provoked
+ him to generate further scientific hypotheses
+ as well as data actions.
+ By browsing through the ranked list of
+ results in , participants were also able to
+ gain a peripheral overview of the data
+ and spot anomalies during exploration.
+ For example, A1 spotted time series
+ that were too faint to look like stars
+ after applying the filter CLASSSTAR=1,
+ which led him to discover that all stars
+ have been mislabeled with CLASSSTAR=0 as 1 during data cleaning.
+ 
+  
+ 
+ 
+ 
+ *[ht!]
+         Markov models computed based on evaluation study event sequences, with edges denoting the probability that participant in the particular domain will go from one sensemaking process to the next. Nodes are scaled according to their eigenvector centrality, representing the percentage of time participants would spend in a particular sensemaking process in steady state.   
+  Past studies in visual analytics
+ have shown that it is important to design features
+ that enable users to select relevant subsets of data .
+ Context creation in VQSs enables users to change the "lens"
+ by which they look through the data
+ when performing visual querying,
+ thereby creating more opportunities
+ to explore the data from different perspectives.
+ All participants found at least
+ one of the features in context creation to be useful.
+ 
+ 
+ 
+ Both A1 and A2 expressed that context creation through interactive filtering enabled them to test conditions and tune values that they would not have otherwise modified, effectively lowering the barrier between the iterative hypothesize-then-compare cycle during sensemaking.
+ 
+ During the study, participants used filtering
+ to address questions such as:
+ Are there more genes similar
+ to a known activator when we subselect
+ only the differentially expressed genes? DIFFEXP=1 (G2) or Can I find more supernovae candidates if I query only on objects that are bright and classified as a star? flux10 AND CLASSSTAR=1 (A1). Three participants had also used filtering as a way to query with known individual objects of interest, as shown in Figure . For example, G2 set the filter as gene=9687 and explained that since "this gene is regulated by the estrogen receptor, when we search for other genes that resemble this gene, we can find other genes that are potentially affected by the same factors."
+ While filtering enabled users to
+ narrow down to a selected data subset,
+ dynamic classes (buckets of data points that satisfies one or more range constraints) enabled users to compare
+ relationships between multiple attributes and subgroups of data.
+ For example, M2 divided solvents in the database
+ into eight different categories based on voltage properties,
+ state of matter, and viscosity levels,
+ by dynamically setting the cutoff values
+ on the quantitative variables to create these classes.
+ By exploring these custom classes, M2 discovered that the relationship between viscosity and lithium solvation energy is independent of whether a solvent belongs to the class of high voltage or low voltage solvents. He cited that dynamic class creation was central to learning about this previously-unknown attribute properties:
+ 
+ All this is really possible because of dynamic class creation, so this allows you to bucket your intuition and put that together. [...] I can now bucket things as high voltage stable, liquid stable, viscous, or not viscous and start doing this classification quickly and start to explore trends. [...] look how quickly we can do it!
+  
+ 
+ Combining Sensemaking Processes in VQS Workflows
+ Given our observations so far as to  how participants make use of each sensemaking process in practice, we further investigate the interplay between these sensemaking processes in the context of an analysis workflow. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The event sequences from the evaluation study
+ consist of labels describing when specific features were used.
+ Using the taxonomy in Table , we map each usage of a feature in to one of the three sensemaking processes.
+ Each participant's event sequence
+ is divided into sessions,
+ each indicating a separate line of inquiry
+ during the analysis.
+ Based on these event sequences-one for each session,
+ we compute the aggregate state transition probabilities
+ (edge weight labels in Figure )
+ to characterize how participants from each domain
+ move between different sensemaking processes.
+ For example, in material science,
+ bottom-up exploration
+ leads to context creation 60 of the time
+ and to top-down pattern search
+ the rest of the time.
+ Self-directed edges indicate the probability that the participant
+ would continue with the same type of sensemaking process.
+ For example, when an astronomer performs top-down pattern search,
+ it is followed by another top-down process 64 of the time and context creation the rest of the time,
+ but never followed by a bottom-up processes.
+ This high self-directed transition probability
+ reflects how astronomers often need to iteratively
+ refine their top-down query through pattern
+ or match specification when looking for a specific pattern. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ To study how important each sensemaking process
+ is for participant's overall analysis,
+ we compute the eigenvector centrality of each graph,
+ displayed as node labels in Figure .
+ These values represent the percentage of time the participants
+ spend in each of the sensemaking processes
+ when the transition model has evolved to a steady state .
+ Given that nodes in Figure  are scaled by this value, in all domains,
+ we observe that there is always a prominent node
+ connected to two less prominent ones-but it is also clear
+ that all three nodes are essential to all domains.
+ Our observation demonstrates how participants
+ often construct a central workflow
+ around a main sensemaking process based on their analytical goals
+ and interleave variations with the two other support processes as they iterate on the analytic task, as illustrated in Appendix Table . For example, material scientists focus on context creation 56 of the time, mainly through dynamic class creation,
+ followed by bottom-up inquiries (such as drag-and-drop)
+  and top-down pattern searches (such as sketch modification).
+ 
+ The central process adopted by each domain
+ is tightly coupled with the problem characteristics associated with each domain. For example, without an initial query in mind,
+ geneticists relied heavily on bottom-up querying
+ through recommendations to jumpstart their queries.
+ 
+ 
+ 
+ 
+ The Markov transition model exemplifies how participants
+ adopted a diverse set of workflows
+ based on their unique set of research questions. The bi-directional and cyclical nature
+ of the transition graphs in Figure  highlight how the three sensemaking processes do not simply follow a linear progression towards finding a single pattern or attribute of interest. 
+ Instead, the high connectivity of the transition model illustrates how these three equally-important processes form a sensemaking loop, representing iterative acts of dynamic foraging and hypothesis generation. This finding reinforces the importance of each sensemaking process and indicates that future VQSs need to be integrative in supporting all three sensemaking process to enable a diverse set of potential workflows for addressing a wide range of analytical inquiries. 
+ Limitations
+ Although evidence from our evaluation study points to the infrequent use of direct sketch, we have not performed controlled studies
+ with a sketch-only system as a baseline to validate this hypothesis. The goal of our study is to uncover qualitative insights that might reveal why VQSs are not widely used in practice; further validation of specific findings is out of the scope of this paper. While concerns regarding study results being focused on must be acknowledged, we note that is one of the most comphrensive VQSs to-date, covering many of the features from past systems and much more (as evident from Table 1). We believe that our integrative VQS, , can serve as a baseline for future research in VQS to evaluate against and build upon. Given that this paper covered three design studies along with one evaluation study, we were unable to cover each domain to the level of detail typically found in a dedicated design study paper. Instead, our focus was to highlight the differences and similarities among these domains relevant to the capabilities required in VQS and we defer domain-specific participatory design details and artifacts to Appendix . While we have generalized our findings by employing
+ three different and diverse domains (see Figure ),
+ our case studies have so far
+ been focused on scientific data analysis with domain-experts,
+ as a first step towards greater adoption of VQSs.
+ Other potential domains that could benefit from VQSs include:
+ financial data for business intelligence,
+ electronic medical records for healthcare,
+ and personal data for "Quantified Self".
+ These different domains may each pose different sets of challenges (such as designing for novices as end-users) unaddressed by the findings in this paper,
+  pointing to a promising direction for future work.
+
+ Conclusion
+ While VQSs hold tremendous promise in accelerating data exploration, they are rarely used in practice. In this paper, we worked closely with analysts from three diverse domains to characterize how VQSs can address their analytic challenges, collaboratively design VQS capabilities, and evaluate how VQSs are used in practice. Participants were able to use our final system, , for discovering desired patterns, trends, and valuable insights to address unanswered research questions. Based on these experiences, we developed a sensemaking model for how analysts make use of VQSs. Contrary to past work, we found that sketch-to-query is not as effective in practice as past work may suggest. Beyond sketching, we find that each sensemaking process fulfills a central role in participants' analysis workflows to address their high-level research objectives. We advocate that future VQSs should invest in understanding and supporting all three sensemaking processes to effectively "close the loop" in how analysts interact and perform sensemaking with VQSs. While more work certainly remains to be done, by contributing to a better understanding of how VQSs are used in practice across domains, our paper can serve as a roadmap towards the broader adoption of VQSs for novel future use cases.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+  
+ 
+abbrv-doi
+
+  
+ 
+ In Appendix A, we first describe additional details about the participatory design process, as well as domain-specific artifacts collected from contextual inquiry. Next, in Appendix B, we articulate the space of problems amenable to VQSs and describe how the sensemaking processes (introduced in Section ) fit into different parts of the problem space. Finally, in Appendix C, we provide supplementary information regarding our analysis methods and results for the evaluation study.
+ 
+ Artifacts from Participatory Design
+ 
+ During the contextual inquiry, participants demonstrated the use of external tools for conducting analysis in their existing workflow, as shown in Figure , including:
+   
+     http://descut.cosmology.illinois.eduImage Cutout Service (Astronomy)
+     http://cs.cmu.edu/ jernst/stem/Short Time-series Expression Miner (Genetics)
+     http://srdata.nist.gov/solubility/Solubility Database (Material Science)
+    [h!]
+         Screenshots from contextual inquiry: a) A1 examines a light curve manually using the Jupyter notebook environment, b) G2 uses a domain-specific software to examine clustering outputs.
+      
+  Our collaboration with participants is illustrated in Figure , where we began with an existing VQS (, as illustrated in Figure ) and incrementally incorporated features, such as dynamic class creation (Figure ), throughout the PD process.
+ [h!]
+ 	 	
+ 	
+    	Timeline for progress in participatory design studies.
+ 	 	
+  [h!]
+ 	 	 	The existing prototype allowed users to sketch a pattern in (a), which would then return (b) results that had the closest Euclidean distance from the sketched pattern. The system also displays (c) representative patterns obtained through K-Means clustering and (d) outlier patterns to help the users gain an overview of the dataset.
+ 	   
+  [h!]
+         Example of dynamic classes. (a) Four different classes with different Lithium solvation energies (li) and boiling point (bp) attributes based on user-defined data ranges. (b) Users can hover over the visualizations for each dynamic class to see the corresponding attribute ranges for each class. The visualizations of dynamic classes are aggregate across all the visualizations that lie in that class based on the user-selected aggregation method.
+      
+  As discussed in Section , not all of the features proposed by participants during PD were incorporated in the prototype. Based on our meeting logs with participants, we found that reasons for not carrying a feature from the design to implementation stage included:
+  
+ Nice-to-haves: One of the most common reasons for unincorporated features comes from participant's requests for nice-to-have features. To this end, we use two criteria to heuristically judge whether to implement a particular feature:
+ [leftmargin=*]
+ Necessity: Without this feature, can participants still work with this dataset using the tool and meet their information needs?
+ Generality: Will this feature benefit only this specific use case or be potentially useful for other domains as well?
+  "One-shot" operations: We decided not to include features that only needed to be performed once and remain fixed thereafter in the analysis workflow. For example, certain preprocessing operations such as filtering null values only needed to be performed once with an external tool.
+ Substantial research or engineering effort: Some proposed features did not make sense in the context of VQS or required a completely different set of research questions. For example, the question of how to properly compute similarity between time series with non-uniform number of datapoints arose in the astronomy and genetics use case, but requires the development of a novel distance metric and algorithm that is out of the scope of our design study objective. 
+ Underdeveloped ideas: Other feature requirements came from casual specification that were underspecified. For example, A1 wanted to look for objects that have deficiency in one band and high emission in another band, but the scientific definition of "deficiency" in terms of brightness levels was ambiguous.
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Characterizing the Problem Space for VQSs
+ We now characterize the space of problems addressable by VQSs and describe how each sensemaking process fits into different problem areas that VQSs are aimed to solve. Visual querying often consists of searching for a desired pattern instance (Z) across a visualization collection specified by some given attributes (X,Y). Correspondingly, we introduce two axes depicting the amount of information known about the visualized attribute and pattern instance as shown in Figure .
+ Along the pattern instance axis, the visualization that contains the desired pattern may already be known to the analyst, exist as a pattern in-the-head of the analyst, or be completely unknown to the analyst. In the known pattern instance region (Figure  grey cell), systems such as Tableau, where analysts manually create and examine each visualization one at a time, is more well-suited than VQSs, since analysts can directly work with the selected instance without having to search for which visualization exhibits the desired pattern. We define top-down pattern search as the process where analysts query a fixed collection of visualizations based on their in-the-head pattern (Figure . On the other hand, bottom-up data-driven inquiries (Figure  green) are driven by recommendations or queries that originate from the data (or equivalently, the visualization), since the pattern of interest is unknown and external to the user.
+ 
+ The second axis, visualized attributes,
+ depicts how much the analyst
+ knows about which X and Y axes
+ they are interested in visualizing.
+ In both the astronomy and genetics use cases,
+ as well as past work in this space, the attribute to be visualized is known, as data was in the form of a time series. In the case of our material science participants, they wanted to explore relationships between different
+ X and Y variables. In this realm of unknown attributes, context creation (Figure  yellow) is
+ essential for allowing users to pivot across different visualization collections.
+ [h!]
+         The problem space for VQSs is characterized by how much the analyst knows about the visualized attributes and the pattern instance. Colored areas highlight the three sensemaking processes in VQSs for addressing these characteristic problems. While prior work has focused solely on use cases in the blue region, we envision opportunities for VQSs beyond this to a larger space of use cases covered by the yellow and green regions.
+      
+  
+ Evaluation Study Analysis Details
+ We analyzed the transcriptions of the evaluation study recordings through open-coding and
+ categorized every event in the user study using the following coding labels:
+ 
+     Insight (Science) [IS]: Insight that connected back to the science (e.g. "This cluster resembles a repressed gene.")
+     Insight (Data) [ID]: Data-related insights (e.g. "A bug in my data cleaning code generated this peak artifact.")
+     Provoke (Science) [PS]: Interactions or observations that provoked a scientific hypothesis to be generated.
+     Provoke (Data) [PD]: Interactions or observations that provoked further data actions to continue the investigation.
+     Confusion [C]: Participants were confused during this part of the analysis.
+     Want [W]: Additional features that participant wants, which is not currently available on the system.
+     External Tool [E]: The use of external tools outside of to complement the analysis process.
+     Feature Usage [F]: One of the features in was used.
+     Session Break [BR]: Transition to a new line of inquiry.
+  
+ [h!]
+   
+   Count summary of thematic event code across all participants of the same subject area.
+  In addition, based on the usage of each feature during the user study, we categorized the features into one of the three usage types:
+ 
+     Practical [P]: Features used in a sensible and meaningful way.
+     Envisioned usage [E]: Features which could be used practically if the envisioned data was available or if they conducted downstream analysis, but was not performed due to the limited time during the user study.
+     Not useful [N]: Features that are not useful or do not make sense for the participant's research question and dataset.
+  The feature usage labels for each user is summarized in Figure . A feature is regarded as useful if it has a P or E code label. Using the matrix from Figure , we compute the percentage of useful features for each sensemaking process as: .
+ 
+ [h!]
+               Heatmap of features categorized as practical usage (P), envisioned usage (E), and not useful (N). Columns are arranged in the order of subject areas and the features are arranged in the order of the three foraging acts. Participants preferred to query using bottom-up methods such as drag-and-drop over top-down approaches such as sketching or input equations. Participants found that context creation via filter constraints and dynamic class creation were powerful ways to compare between subgroups or filtered subsets.
+          
+  
+
+

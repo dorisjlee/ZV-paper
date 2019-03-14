@@ -52,7 +52,6 @@
 \PassOptionsToPackage{warn}{textcomp}  % to address font issues with \textrightarrow
 \usepackage{textcomp}                  % use better special symbols
 \usepackage{mathptmx}                  % use matching math font
-\usepackage{times}                     % we use Times as the main font
 \renewcommand*\ttdefault{txtt}         % a nicer typewriter font
 \usepackage{cite}                      % needed to automatically sort the references
 \usepackage{tabu}                      % only used for the table example
@@ -181,7 +180,7 @@
 
 % create a shortcut to typeset table headings
 % \newcommand\tabhead[1]{\small\textbf{#1}}
-\newcommand{\zv}{\textit{zenvisage}\xspace}
+\newcommand{\zv}{Zenvisage\xspace}
 \newcommand{\zvpp}{\textit{zenvisage++}\xspace}
 \newcommand{\astro}{\textit{astro}\xspace}
 \newcommand{\bio}{\textit{genetics}\xspace}
@@ -194,17 +193,7 @@
 \newcommand{\kar}[1]{\textcolor{magenta}{Karrie: #1}}
 
 \usepackage{xparse}   % http://ctan.org/pkg/xparse
-% Rotation: \rot[<angle>][<width>]{<stuff>}
-% \NewDocumentCommand{\rot}{O{320} O{2.2em} m}{\makebox[#2][r]{\rotatebox{#1}{#3}}}%
-\newcommand*\OK{\ding{51}}
-\renewenvironment{quote}{%
-   \list{}{%
-     \leftmargin0.15cm
-     \rightmargin\leftmargin
-   }
-   \item\relax
-}
-{\endlist}
+
 %% We encourage the use of mathptmx for consistent usage of times font
 %% throughout the proceedings. However, if you encounter conflicts
 %% with other math-related packages, you may want to disable it.
@@ -291,6 +280,7 @@ analysts are often unable to precisely articulate the patterns they are interest
 \input{06-pd-sensemaking}
 \input{07-discussion}
 \input{08-conclusion}
+\newpage
 \bibliographystyle{abbrv-doi}
 \bibliography{reference}
 \newpage
