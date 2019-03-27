@@ -122,12 +122,6 @@ M.~Correll and M.~Gleicher.
 }{.}\hspace{.4pt}7883519}}
 
 
-\bibitem{Drlica-Wagner2017}
-{Drlica Wagner et al.}
-\newblock {Dark Energy Survey Year 1 Results: Photometric Data Set for
-  Cosmology}.
-\newblock 2017.
-
 \bibitem{Eichmann2015}
 P.~Eichmann and E.~Zgraggen.
 \newblock {Evaluating Subjective Accuracy in Time Series Pattern-Matching Using
@@ -142,7 +136,7 @@ P.~Eichmann and E.~Zgraggen.
 
 \bibitem{Few2012}
 S.~Few.
-\newblock {\em Show me the numbers: designing tables and graphs to enlighten}.
+\newblock {\em Show Me the Numbers: Designing Tables and Graphs to Enlighten}.
 \newblock Analytics Press, 2012.
 
 \bibitem{Gloss2017}
@@ -244,7 +238,7 @@ D.~A. Keim, F.~Mansmann, J.~Schneidewind, and H.~Ziegler.
 A.~Khetan, D.~Krishnamurthy, and V.~Viswanathan.
 \newblock Towards synergistic electrode-electrolyte design principles for
   nonaqueous li-o2 batteries.
-\newblock 376, 04 2018.
+\newblock {\em Topics in Current Chemistry}, 376, 04 2018.
 
 \bibitem{lam2012empirical}
 H.~Lam, E.~Bertini, P.~Isenberg, C.~Plaisant, and S.~Carpendale.
@@ -471,7 +465,7 @@ A.~Srinivasan, S.~M. Drucker, A.~Endert, and J.~Stasko.
 
 \bibitem{Grnbak1991}
 {Susanne Bodker} and K.~Gr$\phi$nb{\ae}k.
-\newblock {Cooperative Prototyping -}.
+\newblock {Cooperative Prototyping}.
 \newblock {\em International Journal of man-machine studies}, pp. 1--23, 1991.
 
 \bibitem{Tukey1970}
