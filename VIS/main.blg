@@ -10,51 +10,50 @@ Warning--I'm ignoring HoltzblattJones's extra "title" field
 --line 923 of file reference.bib
 Warning--I'm ignoring BodkerGronbaek's extra "title" field
 --line 935 of file reference.bib
-Warning--I didn't find a database entry for "Drlica-Wagner2017"
 Warning--empty booktitle in BodkerGronbaek
 Warning--empty booktitle in HoltzblattJones
 Warning--there's a number but no volume in Keim2006
 Warning--empty journal in Mannino2018
 Warning--empty journal in mohebbi2011google
-You've used 51 entries,
+You've used 52 entries,
             2598 wiz_defined-function locations,
-            966 strings with 16324 characters,
-and the built_in function-call counts, 46168 in all, are:
-= -- 9905
-> -- 940
-< -- 1548
-+ -- 1899
-- -- 352
-* -- 1561
-:= -- 6610
-add.period$ -- 168
-call.type$ -- 51
-change.case$ -- 309
+            974 strings with 16562 characters,
+and the built_in function-call counts, 47229 in all, are:
+= -- 10175
+> -- 947
+< -- 1596
++ -- 1951
+- -- 355
+* -- 1585
+:= -- 6761
+add.period$ -- 171
+call.type$ -- 52
+change.case$ -- 313
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 808
-empty$ -- 1560
-format.name$ -- 318
-if$ -- 12243
+cite$ -- 57
+duplicate$ -- 819
+empty$ -- 1583
+format.name$ -- 320
+if$ -- 12540
 int.to.chr$ -- 0
-int.to.str$ -- 51
-missing$ -- 55
-newline$ -- 444
-num.names$ -- 102
-pop$ -- 338
+int.to.str$ -- 52
+missing$ -- 56
+newline$ -- 455
+num.names$ -- 104
+pop$ -- 340
 preamble$ -- 1
-purify$ -- 261
+purify$ -- 264
 quote$ -- 0
-skip$ -- 612
+skip$ -- 619
 stack$ -- 0
-substring$ -- 2835
-swap$ -- 255
-text.length$ -- 865
+substring$ -- 2895
+swap$ -- 256
+text.length$ -- 891
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 196
+type$ -- 200
 warning$ -- 5
-while$ -- 266
-width$ -- 53
-write$ -- 1501
-(There were 9 warnings)
+while$ -- 271
+width$ -- 54
+write$ -- 1541
+(There were 8 warnings)
