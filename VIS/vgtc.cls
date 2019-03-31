@@ -767,21 +767,21 @@ Manuscript received xx xxx. 201x; accepted xx xxx. 201x. Date of Publication xx 
    \ifvgtcjournal% no copyrightspace for journal, but authorfooter
      \ifvgtc@review\else
        \renewcommand{\thefootnote}{}%
-       \footnotetext[0]{
-         \begin{flushleft}
-         \vskip -6pt
-         \begin{list}{\textbullet}{
-           \setlength{\partopsep}{0pt}
-           \setlength{\topsep}{0pt}
-           \setlength{\itemsep}{-2pt}
-           \setlength{\itemindent}{-4pt}
-           \setlength{\leftmargin}{12pt}}
-           \authorfootertext
-         \end{list}
-         \vskip 4pt
-         \ifvgtc@preprint\else\textit{\manuscriptnotetxt}\fi
-         \end{flushleft}
-       }%
+       % \footnotetext[0]{
+       %   \begin{flushleft}
+       %   \vskip -6pt
+       %   \begin{list}{\textbullet}{
+       %     \setlength{\partopsep}{0pt}
+       %     \setlength{\topsep}{0pt}
+       %     \setlength{\itemsep}{-2pt}
+       %     \setlength{\itemindent}{-4pt}
+       %     \setlength{\leftmargin}{12pt}}
+       %     \authorfootertext
+       %   \end{list}
+       %   \vskip 4pt
+       %   \ifvgtc@preprint\else\textit{\manuscriptnotetxt}\fi
+       %   \end{flushleft}
+       % }%
        \renewcommand{\thefootnote}{\arabic{footnote}}
      \fi
    \else%

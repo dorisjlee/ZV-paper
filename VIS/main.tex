@@ -1,5 +1,5 @@
 \PassOptionsToPackage{table}{xcolor}
-\documentclass[review,journal]{vgtc}                % final (journal style)
+\documentclass[journal]{vgtc}                % final (journal style)
 %\documentclass[review,journal]{vgtc}         % review (journal style)
 %\documentclass[widereview]{vgtc}             % wide-spaced review
 %\documentclass[preprint,journal]{vgtc}       % preprint (journal style)
@@ -224,14 +224,14 @@
 %% This is how authors are specified in the journal style
 
 %% indicate IEEE Member or Student Member in form indicated below
-\author{Submission ID: 1041}
-
+% \author{Submission ID: 1041}
+\author{Doris Jung-Lin Lee, John Lee, Tarique Siddiqui, Jaewoo Kim, Karrie Karahalios, Aditya Parameswaran}
 %other entries to be set up for journal
 % \shortauthortitle{Biv \MakeLowercase{\textit{et al.}}: Global Illumination for Fun and Profit}
-%\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
+\shortauthortitle{Lee \MakeLowercase{\textit{et al.}}: \emph{You can't always sketch what you want}: \\ Understanding Sensemaking in Visual Query Systems}
 
 \abstract{
-\change{Visual query systems (VQSs) empower users to interactively search for line charts with desired visual patterns typically specified using intuitive sketch-based interfaces. Despite decades of past work on VQSs, these efforts have not translated to adoption in practice\achange{, often because VQSs are evaluated in unrealistic lab-based settings. To remedy this, we performed a year-long particpatory design with experts from three diverse domains---astronomy, genetics, and material science---to develop a VQS to support their workflow and analytical needs,} and evaluate how VQSs are used in practice. Our study results reveal that ad-hoc sketch-based querying is not as commonly used as prior work suggests, since analysts are often unable to precisely express their patterns of interest. In addition, \achange{we characterize three essential sensemaking processes supported by our enhanced VQS. We discover that experts from all domains employ all three processes, but in different proportions, depending on the analytical needs in each domain. Our findings point to the need for integrating all three sensemaking processes into the design of future VQSs to make them useful and practical, by addressing a wide range of analytical inquiries.}}
+  \change{Visual query systems (VQSs) empower users to interactively search for line charts with desired visual patterns, typically specified using intuitive sketch-based interfaces. Despite decades of past work on VQSs, these efforts have not translated to adoption in practice\achange{, possibly because VQSs are largely evaluated in unrealistic lab-based settings. To remedy this gap in adoption, we performed a year-long participatory design with experts from three diverse domains---astronomy, genetics, and material science---to develop a VQS to support their workflow and analytical needs,} and evaluate how VQSs \achange{can be} used in practice. Our study results reveal that ad-hoc \achange{sketch-only} querying is not as commonly used as prior work suggests, since analysts are often unable to precisely express their patterns of interest. In addition, \achange{we characterize three essential sensemaking processes supported by our enhanced VQS. We discover that experts from all domains employ all three processes, but in different proportions, depending on the analytical needs in each domain. Our findings point to the need for integrating all three sensemaking processes into the design of future VQSs to make them useful and practical, by addressing a wide range of analytical inquiries.}}
 }
 %. Through a year-long collaboration with experts from three diverse domains, we examine the role of VQSs in real data exploration workflows, enhance an existing VQS to support these workflows via a participatory design process, we discover that participants from different domains rely heavily on one of the three essential sensemaking processes that we identify, while making use of the two other processes to support their analytical goals\dor{Karrie said that this sentence is confusing, I've tried to fix it a little.}.
 \keywords{Visual analytics, exploratory analysis, visual queries}
@@ -255,11 +255,11 @@
 % }
 
 %% Uncomment below to disable the manuscript note
-%\renewcommand{\manuscriptnotetxt}{}
-
+% \renewcommand{\manuscriptnotetxt}{\vspace{-45pt}}
+% NOTE: we supressed this directly insight vgtc.cls (line 770-784)
 %% Copyright space is enabled by default as required by guidelines.
 %% It is disabled by the 'review' option or via the following command:
-% \nocopyrightspace
+\nocopyrightspace
 
 \vgtcinsertpkg
 
