@@ -93,8 +93,8 @@
  Within top-down processes,
  a pattern query could arise
  from users directly sketching
- a new pattern (sketch-to-query)
- or by modifying an existing sketch (sketch-to-modify). For example, M2 first sketched a pattern
+ a new pattern (\bartext{sketch-to-query})
+ or by modifying an existing sketch (\bartext{sketch-to-modify}). For example, M2 first sketched a pattern
  to find solvent classes with anticorrelated
  properties without much success in returning a desired match.
  %However, the sketched query did not return visualizations of interest.
@@ -131,7 +131,7 @@
      \label{query_modification}
      \vspace{-10pt}
  \end{figure}
- \par The lack of practical use \achange{for top-down pattern
+ \par The \achange{infrequent use of top-down pattern
  specification was} also reflected in the fact
  that none of the participants queried using an equation.
  In both astronomy and genetics, the visualization patterns
@@ -179,7 +179,7 @@
  for context creation\footnote{See Appendix~\ref{apdx:studydetails} for details on how this measure was computed.}. We now highlight some exemplary workflows demonstrating the efficacy of the latter two sensemaking processes.
  %number of features labeled as useful divided by the product of total number of features and total number of users}
  %%The prevalence of bottom-up approaches not only point to the need for result querying, but also providing recommendations for users without desired patterns in mind.
- \par As shown in Figure~\ref{fig:origins_of_sketch},
+ \par As shown in Figure~\ref{fig:origins_of_sketch} \achange{(\bartext{recommendations})},
  the most common use of bottom-up querying
  is via recommended visualizations. For example, G2 and G3 identified that
  the three representative patterns
@@ -207,7 +207,7 @@
  him to generate further scientific hypotheses
  as well as data actions.}
  \par By browsing through the ranked list of
- results in \zvpp, participants were also able to
+ results \achange{(corresponding to the \bartext{ranked results} bar in Figure~\ref{fig:origins_of_sketch})}, participants were also able to
  gain a peripheral overview of the data
  and spot anomalies during exploration.
  For example, A1 spotted time series
@@ -244,7 +244,7 @@
  to address questions such as:
  \textit{Are there more genes similar
  to a known activator when we subselect
- only the differentially expressed genes?} \techreport{\texttt{DIFFEXP=1} }(G2) or \textit{Can I find more supernovae candidates if I query only on objects that are bright and classified as a star?} \techreport{\texttt{flux\textgreater10 AND CLASS\_STAR=1} }(A1). Three participants had also used filtering as a way to query with known individual objects of interest, as shown in Figure~\ref{fig:origins_of_sketch}. For example, G2 set the filter as gene=9687 and explained that since ``\textit{this gene is regulated by the estrogen receptor, when we search for other genes that resemble this gene, we can find other genes that are potentially affected by the same factors.}''
+ only the differentially expressed genes?} \techreport{\texttt{DIFFEXP=1} }(G2) or \textit{Can I find more supernovae candidates if I query only on objects that are bright and classified as a star?} \techreport{\texttt{flux\textgreater10 AND CLASS\_STAR=1} }(A1). Three participants had also used filtering as a way to query with known individual objects of interest, as shown in \achange{the \bartext{object of interest} bar of} Figure~\ref{fig:origins_of_sketch}. For example, G2 set the filter as gene=9687 and explained that since ``\textit{this gene is regulated by the estrogen receptor, when we search for other genes that resemble this gene, we can find other genes that are potentially affected by the same factors.}''
  \par While filtering enabled users to
  narrow down to a selected data subset,
  dynamic classes (buckets of data points that satisfies one or more range constraints) enabled users to compare
@@ -261,7 +261,7 @@
  %Context creation is a useful ---- despite the --- pattern instance. Filtering still useful
  %\par Participants employed \emph{a mix of bottom-up and top-down approaches when faceting through data in VQS}, including narrowing the search space based on some intuition about a phenomena, selecting individual visualizations, or specifying high-level groupings to compare and query with.
  \subsection{Combining Sensemaking Processes in VQS Workflows}
- Given our observations so far as to  how participants make use of each sensemaking process in practice, we further investigate the interplay between these sensemaking processes in the context of an analysis workflow. %interplay with each other dynamically i% - Bottom up and context creation much more common than top-down. Stats \%. Brief Examples of each (How they are used in practice).
+ Given our observations so far as to how participants make use of each sensemaking process in practice, we \achange{construct a Markov model to} further investigate the interplay between these sensemaking processes in the context of an analysis workflow. %interplay with each other dynamically i% - Bottom up and context creation much more common than top-down. Stats \%. Brief Examples of each (How they are used in practice).
  % - BUT All three process are equally important.
  % - participants can go from one to the next and there is no single progression (e.g. context --> bottom -up --> top-down).
  % - Both the PageRank score (how important/“central” is the state is to the analysis?), raw occurrence of each state (how frequently is a feature categorized as part of the state used?) and the normalized self-directed edge score (how much user stays in that state?) coincide with what each subject area focuses on.
@@ -269,8 +269,7 @@
  %Despite differing in levels of usage, each sensemaking process fulfills a central role in participants' analysis.
  % illustrates the state transitions computed based on event sequences from the evaluation study. %stay in the same state.
  %Figure~\ref{fig:taxonomy},
- The event sequences from the evaluation study
- consist of labels describing when specific features were used.
+ \achange{To compute the state transition probabilities in the Markov model, we make use of the event sequences from the evaluation study, where each event consists of labels describing when specific features were used}.
  Using the taxonomy in Table~\ref{bigfeaturetable}, we map each usage of a feature in \zvpp to one of the three sensemaking processes.
  Each participant's event sequence
  is divided into sessions,
@@ -341,6 +340,13 @@
  based on their unique set of research questions. The bi-directional and cyclical nature
  of the transition graphs in Figure~\ref{fig:transition} highlight how the three sensemaking processes do not simply follow a linear progression towards finding a single pattern or attribute of interest. %, going from unknown to known in the Figure~\ref{2dmodel problem space}
  Instead, the high connectivity of the transition model illustrates how these three equally-important processes form a sensemaking loop, representing iterative acts of dynamic foraging and hypothesis generation. \change{This finding reinforces the importance of each sensemaking process and indicates that future VQSs need to be \emph{integrative} in supporting all three sensemaking process to enable a diverse set of potential workflows for addressing a wide range of analytical inquiries.} %This flexibility is enabled by the diverse set of potential workflows that could be constructed in an integrative VQS like \zvpp, for addressing a wide range of analytical inquiries.%single-directional%. The VQS sensemaking loop%full-fledged
+ \begin{table}[h!]
+   \centering
+   \includegraphics[width=\linewidth]{figures/science_task.pdf}
+   \vspace{-6pt}\caption{\change{Each VQS sensemaking process maps to scientific tasks and goals from each use case, from pattern search to comparing visualization collections to \achange{improving} overall data understanding. We find that our participants typically have one focused goal expressible through a single sensemaking process, but since their desired insights may not always be achievable with a single \achange{class of} operation, they make use of the two other sensemaking processes to support them in accomplishing their main goal.}}
+   \label{science_task}
+   \vspace{-10pt}
+\end{table}
  \subsection{Limitations}%suggests that direct sketch is inefficient
  \par Although evidence from our evaluation study \change{points to the infrequent use of direct sketch}, we have not performed controlled studies with a sketch-only system as a baseline to validate this hypothesis. The goal of our study is to uncover qualitative insights that might reveal why VQSs are not widely used in practice; further validation of specific findings is out of the scope of this paper. \change{While concerns regarding study results being focused on \zvpp must be acknowledged, we note that \zvpp is one of the most comprehensive VQSs to-date, covering many of the features from past systems and more (as evident from Table 1). We believe that our integrative VQS, \zvpp, can serve as a baseline for future research in VQS to evaluate against and build upon.} Given that this paper covered three design studies along with one evaluation study, we were unable to cover each domain to the level of detail typically found in a dedicated design study paper. Instead, our focus was to highlight the differences and similarities among these domains relevant to the capabilities required in VQS and we defer domain-specific participatory design details and artifacts to Appendix~\ref{apdx:pdartifact}. \achange{Future longitudinal studies may also help alleviate the novelty effects that participants may have experienced during the evaluation study.} While we have generalized our findings \change{beyond existing work} by employing three different and diverse domains (see Figure~\ref{fig:transition}),
  our case studies have so far
