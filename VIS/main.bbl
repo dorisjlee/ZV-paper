@@ -437,6 +437,16 @@ M.~Sedlmair, M.~Meyer, and T.~Munzner.
 }{.}\hspace{.4pt}213}}
 
 
+\bibitem{Shneiderman1994}
+B.~Shneiderman.
+\newblock {Dynamic queries for visual information seeking}.
+\newblock {\em IEEE Software}, 11(6):70--77, 1994. doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}52\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}329404}}
+
+
 \bibitem{shneiderman2006strategies}
 B.~Shneiderman and C.~Plaisant.
 \newblock Strategies for evaluating information visualization tools:
