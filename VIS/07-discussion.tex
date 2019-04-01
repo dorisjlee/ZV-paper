@@ -80,7 +80,7 @@
  \begin{figure}[h!]
    \includegraphics[width=0.95\linewidth]{figures/the_origins_of_sketch.pdf}
    \vspace{-5pt}
-   \caption{The number of times a pattern query originates from one of the workflows. We find that pattern queries are far more commonly generated via bottom-up than top-down processes.}\label{fig:origins_of_sketch}
+   \caption{The number of times a pattern query originates from one of the workflows. \fchange{Pattern} queries are far more commonly generated via bottom-up than top-down processes.}\label{fig:origins_of_sketch}
    \vspace{-5pt}
  \end{figure}
  %where the pattern on the canvas typically originates
@@ -91,13 +91,13 @@
  bottom-up (drag-and-drop) processes,
  driven by various different querying intentions. \fchange{Figure~\ref{fig:origins_of_sketch} shows that
  \emph{bottom-up processes are more common
- than top-down processes for generating a pattern query}.} Within top-down processes,
+ than top-down processes for generating a pattern query}. We will describe the different ways in which the pattern queries are generated (corresponding to individual bars in Figure~\ref{fig:origins_of_sketch}) in this subsection and the next.} Within top-down processes,
  a pattern query could arise
  from users directly sketching
  a new pattern (\bartext{sketch-to-query})
  or by modifying an existing sketch (\bartext{sketch-to-modify}). For example, M2 first sketched a pattern
  to find solvent classes with anticorrelated
- properties without much success in returning a desired match.
+ properties (pattern as a straight line with negative slope) without much success in returning a desired match.
  %However, the sketched query did not return visualizations of interest.
  So he instead dragged and dropped one
  of the peripheral visualizations similar
@@ -124,7 +124,7 @@
  % particular object of interest as a drag-and-drop query.
  \begin{figure}[h!]
      \centering
-     \includegraphics[width=\columnwidth]{figures/QueryModificationBySketch.pdf}
+     \includegraphics[width=0.8\columnwidth]{figures/QueryModificationBySketch.pdf}
      \caption{Example of sketch-to-modify, based on canvas traces from M2 (left) and A3 (right). The original drag-and-dropped query is shown in blue and sketch-modified queries in red.}%during the study demonstrating query modification
      \label{query_modification}
      \vspace{-10pt}
@@ -133,8 +133,8 @@
  specification was} also reflected in the fact
  that none of the participants queried using an equation.
  In both astronomy and genetics, the visualization patterns
- resulting from complex physical processes
- that could not be written down as an equation analytically.
+ resulted from complex physical processes
+ that could not be written down as equations analytically.
  Even in the case of material science when analytical
  relationships do exist, it is challenging to formulate patterns as functional forms in a prescriptive manner.
  % Despite functional fitting being common in scientific data analysis, Figure \ref{feature_heatmap} shows that
@@ -177,7 +177,7 @@
  for context creation\footnote{See Appendix~\ref{apdx:studydetails} for details on how this measure was computed.}. We now highlight some exemplary workflows demonstrating the efficacy of the latter two sensemaking processes.
  %number of features labeled as useful divided by the product of total number of features and total number of users}
  %%The prevalence of bottom-up approaches not only point to the need for result querying, but also providing recommendations for users without desired patterns in mind.
- \npar \fchange{\stitle{Bottom-up }pattern queries can come from either
+ \par \fchange{\textbf{Bottom-up }pattern queries can come from either
  the ranked list of results,
  recommendations, or by selecting a
  particular object of interest as a drag-and-drop query.} As shown in Figure~\ref{fig:origins_of_sketch} \fchange{(\bartext{recommendations})},
@@ -206,7 +206,8 @@
  \techreport{G3 described the process of using
  VQSs as doing ``detective work'' that provoked
  him to generate further scientific hypotheses
- as well as data actions.} By browsing through the ranked list of
+ as well as data actions.} 
+ \par By browsing through the ranked list of
  results \fchange{(\bartext{ranked results} in Figure~\ref{fig:origins_of_sketch})}, participants were also able to
  gain a peripheral overview of the data
  and spot anomalies during exploration.
@@ -226,22 +227,22 @@
    \caption{Markov models computed based on evaluation study event sequences, with edges denoting the probability that participant in the particular domain will go from one sensemaking process to the next. Nodes are scaled according to \change{their} eigenvector centrality, representing the percentage of time participants would spend in a particular sensemaking process in steady state. \achange{Markov models are computed based on a total of 206 event actions taken by participants during the evaluation study (80 for astronomy, 65 for genetics, and 61 for material science).}}\label{fig:transition}
    \vspace*{-15pt}
  \end{figure*}
- \npar \fchange{\stitle{Context creation} in VQSs enables users to change the ``lens''
+ \par \fchange{\textbf{Context creation} in VQSs enables users to change the ``lens''
  by which they look through the data
  when performing visual querying,
  thereby creating more opportunities
- to explore the data from different perspectives. Echoing the sentiment from past studies in visual analytics, which have shown the importance of designing features that enable users to select relevant subsets of data~\cite{Shneiderman1994,Amar2005,Heer2012}, we found that all participants found at least one of the features in context creation to be useful.}
+ to explore the data from different perspectives. Echoing the sentiment from past studies in visual analytics regarding the importance of designing features that enable users to select relevant subsets of data~\cite{Shneiderman1994,Amar2005,Heer2012}, we found that all participants found at least one of the features in context creation to be useful.}
  %We designed two dynamic faceting features coupled with coordinated views that enabled users to specify subsets of data they are querying on and see immediate changes updated in the query, representative, and outlier results.
  %either envisioned a use case or utilized features in the context creation paradigm to explore and compare subsets of their data.
  %ven though the filtering step could be easily done with an external tool and reloaded into \zv, filtering on-the-fly was a powerful way to dynamically test his hypothesis. I
- \npar Both A1 and A2 expressed that context creation through interactive filtering enabled them to test conditions and tune values that they would not have otherwise modified, effectively lowering the barrier between the iterative hypothesize-then-compare cycle during sensemaking.
+ \par Both A1 and A2 expressed that context creation through interactive filtering enabled them to test conditions and tune values that they would not have otherwise modified, effectively lowering the barrier between the iterative hypothesize-then-compare cycle during sensemaking.
  % echoing our previous finding that segmented workflow prevents extensive exploration.
  During the study, participants used filtering
  to address questions such as:
  \textit{Are there more genes similar
  to a known activator when we subselect
- only the differentially expressed genes?} \techreport{\texttt{DIFFEXP=1} }(G2) or \textit{Can I find more supernovae candidates if I query only on objects that are bright and classified as a star?} \techreport{\texttt{flux\textgreater10 AND CLASS\_STAR=1} }(A1). Three participants had also used filtering as a way to query with known individual objects of interest, as shown in \fchange{the \bartext{object of interest} bar of} Figure~\ref{fig:origins_of_sketch}. For example, G2 set the filter as gene=9687 and explained that since ``\textit{this gene is regulated by the estrogen receptor, when we search for other genes that resemble this gene, we can find other genes that are potentially affected by the same factors.}''
- \npar While filtering enabled users to
+ only the differentially expressed genes?} \techreport{\texttt{DIFFEXP=1} }(G2) and \textit{Can I find more supernovae candidates if I query only on objects that are bright and classified as a star?} \techreport{\texttt{flux\textgreater10 AND CLASS\_STAR=1} }(A1). Three participants had also used filtering as a way to query with known individual objects of interest, as shown in \fchange{the \bartext{object of interest} bar of} Figure~\ref{fig:origins_of_sketch}. For example, G2 set the filter as gene=9687 and explained that since ``\textit{this gene is regulated by the estrogen receptor, when we search for other genes that resemble this gene, we can find other genes that are potentially affected by the same factors.}''
+ \par While filtering enabled users to
  narrow down to a selected data subset,
  dynamic classes (buckets of data points that satisfies one or more range constraints) enabled users to compare
  relationships between multiple attributes and subgroups of data.
@@ -265,7 +266,7 @@
  %Despite differing in levels of usage, each sensemaking process fulfills a central role in participants' analysis.
  % illustrates the state transitions computed based on event sequences from the evaluation study. %stay in the same state.
  %Figure~\ref{fig:taxonomy},
- \achange{To compute the state transition probabilities in the Markov model, we make use of the event sequences from the evaluation study, where each event consists of labels describing when specific features were used}.
+ \achange{To compute the state transition probabilities in the Markov model, we make use of event sequences from the evaluation study, where each event consists of labels describing when specific features were used}.
  Using the taxonomy in Table~\ref{bigfeaturetable}, we map each usage of a feature in \zvpp to one of the three sensemaking processes.
  Each participant's event sequence
  is divided into sessions,

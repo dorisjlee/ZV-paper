@@ -185,9 +185,13 @@
 \newcommand{\astro}{\textit{astro}\xspace}
 \newcommand{\bio}{\textit{genetics}\xspace}
 \newcommand{\matsci}{\textit{matsci}\xspace}
-\newcommand{\change}[1]{{\leavevmode\color{red}#1}}
-\newcommand{\achange}[1]{{\leavevmode\color{violet}#1}}
-\newcommand{\fchange}[1]{{\leavevmode\color{orange}#1}}
+% \newcommand{\change}[1]{{\leavevmode\color{red}#1}}
+% \newcommand{\achange}[1]{{\leavevmode\color{violet}#1}}
+% \newcommand{\fchange}[1]{{\leavevmode\color{orange}#1}}
+\newcommand{\change}[1]{#1}
+\newcommand{\achange}[1]{#1}
+\newcommand{\fchange}[1]{#1}
+
 \newcommand{\bartext}[1]{{\small \textsf{#1}}}
 
 
@@ -233,7 +237,7 @@
 \shortauthortitle{Lee \MakeLowercase{\textit{et al.}}: \emph{You can't always sketch what you want}: \\ Understanding Sensemaking in Visual Query Systems}
 
 \abstract{
-  \change{Visual query systems (VQSs) empower users to interactively search for line charts with desired visual patterns, typically specified using intuitive sketch-based interfaces. Despite decades of past work on VQSs, these efforts have not translated to adoption in practice\achange{, possibly because VQSs are largely evaluated in unrealistic lab-based settings. To remedy this gap in adoption, \fchange{in a year-long participatory design process, we collaborated} with experts from three diverse domains---astronomy, genetics, and material science---to develop a VQS \fchange{that supports} their workflow and analytical needs,} and evaluate how VQSs \achange{can be} used in practice. Our study results reveal that ad-hoc \achange{sketch-only} querying is not as commonly used as prior work suggests, since analysts are often unable to precisely express their patterns of interest. In addition, \achange{we characterize three essential sensemaking processes supported by our enhanced VQS. We discover that \fchange{participants} employ all three processes, but in different proportions, depending on the analytical needs in each domain. Our findings point to the need for integrating all three sensemaking processes into the design of future VQSs to make them useful and practical, by addressing a wide range of analytical inquiries.}}
+  \change{Visual query systems (VQSs) empower users to interactively search for line charts with desired visual patterns, typically specified using intuitive sketch-based interfaces. Despite decades of past work on VQSs, these efforts have not translated to adoption in practice\achange{, possibly because VQSs are largely evaluated in unrealistic lab-based settings. To remedy this gap in adoption, \fchange{we collaborated} with experts from three diverse domains---astronomy, genetics, and material science---\fchange{via a year-long participatory design process} to develop a VQS \fchange{that supports} their workflow and analytical needs,} and evaluate how VQSs \achange{can be} used in practice. Our study results reveal that ad-hoc \achange{sketch-only} querying is not as commonly used as prior work suggests, since analysts are often unable to precisely express their patterns of interest. In addition, \achange{we characterize three essential sensemaking processes supported by our enhanced VQS. We discover that \fchange{participants} employ all three processes, but in different proportions, depending on the analytical needs in each domain. Our findings \fchange{discovered} the need for integrating all three sensemaking processes into the design of future VQSs to make them useful and practical, by addressing a wide range of analytical inquiries.}}
 }
 %. Through a year-long collaboration with experts from three diverse domains, we examine the role of VQSs in real data exploration workflows, enhance an existing VQS to support these workflows via a participatory design process, we discover that participants from different domains rely heavily on one of the three essential sensemaking processes that we identify, while making use of the two other processes to support their analytical goals\dor{Karrie said that this sentence is confusing, I've tried to fix it a little.}.
 \keywords{Visual analytics, exploratory analysis, visual queries}
@@ -257,7 +261,8 @@
 % }
 
 %% Uncomment below to disable the manuscript note
-% \renewcommand{\manuscriptnotetxt}{\vspace{-45pt}}
+\renewcommand{\manuscriptnotetxt}{\vspace*{-55pt}}
+\renewcommand{\authorfootertext}{\vspace*{-5pt}\item\textit{All authors are with Univeristy of Illinois Urbana-Champaign.\item E-mail: \textrm{\{}jlee782, lee98, tsiddiq2, jkim475, kkarahal, adityagp\textrm{\}}@illinois.edu}}
 % NOTE: we suppressed this directly inside vgtc.cls (line 770-784)
 %% Copyright space is enabled by default as required by guidelines.
 %% It is disabled by the 'review' option or via the following command:
