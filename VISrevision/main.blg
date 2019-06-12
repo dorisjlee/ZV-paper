@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: abbrv-doi.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: reference.bib
+Warning--I'm ignoring North2006's extra "doi" field
+--line 584 of file reference.bib
+Warning--I'm ignoring HoltzblattJones's extra "title" field
+--line 923 of file reference.bib
+Warning--I'm ignoring BodkerGronbaek's extra "title" field
+--line 935 of file reference.bib
+Warning--empty booktitle in BodkerGronbaek
+Warning--empty booktitle in HoltzblattJones
+Warning--there's a number but no volume in Keim2006
+Warning--empty journal in Mannino2018
+Warning--empty journal in mohebbi2011google
+You've used 53 entries,
+            2598 wiz_defined-function locations,
+            983 strings with 16698 characters,
+and the built_in function-call counts, 48081 in all, are:
+= -- 10373
+> -- 954
+< -- 1630
++ -- 1988
+- -- 358
+* -- 1610
+:= -- 6887
+add.period$ -- 174
+call.type$ -- 53
+change.case$ -- 317
+chr.to.int$ -- 0
+cite$ -- 58
+duplicate$ -- 830
+empty$ -- 1609
+format.name$ -- 322
+if$ -- 12766
+int.to.chr$ -- 0
+int.to.str$ -- 53
+missing$ -- 57
+newline$ -- 465
+num.names$ -- 106
+pop$ -- 342
+preamble$ -- 1
+purify$ -- 267
+quote$ -- 0
+skip$ -- 626
+stack$ -- 0
+substring$ -- 2954
+swap$ -- 257
+text.length$ -- 910
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 204
+warning$ -- 5
+while$ -- 277
+width$ -- 55
+write$ -- 1573
+(There were 8 warnings)
