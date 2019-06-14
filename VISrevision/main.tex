@@ -75,7 +75,7 @@
 \usepackage{titlesec}
 \usepackage{graphicx}
 \usepackage[skip=5pt,font=small]{caption}
-\usepackage[textsize=tiny]{todonotes}
+% \usepackage[textsize=tiny]{todonotes}
 % Some optional stuff you might like/need.
 \usepackage{microtype} % Improved Tracking and Kerning
 % \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
@@ -118,10 +118,10 @@
     }
 }
 % Custom section spacing
-\titlespacing*{\section}
-{0pt}{1ex}{0.1ex}
-\titlespacing*{\subsection}
-{0pt}{0.1ex}{0.05ex}
+% \titlespacing*{\section}
+% {0pt}{1ex}{0.1ex}
+% \titlespacing*{\subsection}
+% {0pt}{0.1ex}{0.05ex}
 
 \newcommand*{\img}[1]{%
     \raisebox{-.3\baselineskip}{%
@@ -146,8 +146,6 @@
 % de-facto paragraph format
 \newcommand{\stitle}[1]{\noindent\textbf{#1}}
 \newcommand{\nstitle}[1]{\\\noindent\textbf{#1}}
-\newcommand{\cut}[1]{{\sout{#1}}} %potentially move to TR
-\newcommand{\ccut}[1]{} %confirmed cut
 % \newcommand{\rot}[1]{\rotatebox{90}{#1}}
 \newcommand{\rot}[1]{\rotatebox[origin=c]{90}{\parbox{2.6cm}{\centering#1}}}
 \newcommand{\A}{\textbf{A: }}
@@ -178,6 +176,7 @@
 \setlength{\pdfpagewidth}{\pprw}
 \setlength{\pdfpageheight}{\pprh}
 
+\usepackage{xcolor}
 % create a shortcut to typeset table headings
 % \newcommand\tabhead[1]{\small\textbf{#1}}
 \newcommand{\zv}{Zenvisage\xspace}
@@ -185,12 +184,14 @@
 \newcommand{\astro}{\textit{astro}\xspace}
 \newcommand{\bio}{\textit{genetics}\xspace}
 \newcommand{\matsci}{\textit{matsci}\xspace}
-\newcommand{\rchange}[1]{{\leavevmode\color{red}#1}} %Revision change
-% \newcommand{\rchange}[1]{#1}
 
+\newcommand{\cut}[1]{{\leavevmode\color{lightgray}{#1}}}
+\newcommand{\ccut}[1]{} %confirmed cut
+\newcommand{\rchange}[1]{{\leavevmode\color{red}#1}}%Revision change
+% \newcommand{\rchange}[1]{#1}
 \newcommand{\bartext}[1]{{\small \textsf{#1}}}
 
-
+\newcommand{\todo}[1]{\textcolor{red}{TODO: #1}}
 \newcommand{\agp}[1]{\textcolor{blue}{Aditya: #1}}
 \newcommand{\dor}[1]{\textcolor{teal}{Doris: #1}}
 \newcommand{\kar}[1]{\textcolor{magenta}{Karrie: #1}}
