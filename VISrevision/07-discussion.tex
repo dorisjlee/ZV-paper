@@ -75,7 +75,7 @@
  to do. For example,
  A2 wanted to search for a highly-varying signal
  enveloped by a sinusoidal pattern indicating
- planetary rotation \includegraphics[width=2\baselineskip,keepaspectratio]{figures/impossible_sketch.png}, which was hard to draw by hand.
+ planetary rotation \includegraphics[width=3\baselineskip,keepaspectratio]{figures/impossible_sketch.png}, which was hard to draw by hand.
  % \begin{figure}[h!]
  %   \includegraphics[width=0.95\linewidth]{figures/the_origins_of_sketch.pdf}
  %   \vspace{-5pt}
@@ -123,6 +123,7 @@
  that could not be written down as equations analytically.
  Even in the case of material science when analytical
  relationships do exist, it is challenging to formulate patterns as functional forms in a prescriptive manner.
+ \rchange{\par We found that some users employed match specification to remedy the undesired results from their top-down pattern queries. While we did not rigorously study the effects of different analytical parameter settings, we found that more users refined their matches by adjusting the range and degree of approximation, rather than opting for a different similarity metric. This points to future work in developing more flexible and intuitive vocabularies for modifying the match~\cite{correll2016semantics,Mannino2018} over incorporating additional complex, off-the-shelf matching objectives in VQSs.}
  % Despite functional fitting being common in scientific data analysis, Figure \ref{feature_heatmap} shows that
  % . However,
  \par Our findings suggest that while sketching
@@ -171,9 +172,9 @@
  recommended in \zvpp corresponded
  to the same three groups of genes discussed
  in a recent publication~\cite{Gloss2017}:
- induced genes (profiles with expression levels going up \includegraphics[width=2\baselineskip,keepaspectratio]{figures/induced.png}),
- repressed genes (starting high then decreasing \includegraphics[width=2\baselineskip,keepaspectratio]{figures/repressed.png}),
- and transients (rising first then dropping at another time point \includegraphics[width=2\baselineskip,keepaspectratio]{figures/transient.png}). The clusters provoked G2 to generate a hypothesis
+ induced genes (profiles with expression levels going up \includegraphics[width=2\baselineskip,keepaspectratio]{figures/up.pdf}),
+ repressed genes (starting high then decreasing \includegraphics[width=2\baselineskip,keepaspectratio]{figures/down.pdf}),
+ and transients (rising first then dropping at another time point \includegraphics[width=2\baselineskip,keepaspectratio]{figures/updown.pdf}). The clusters provoked G2 to generate a hypothesis
  regarding the properties of transients:
  \textit{``Is that because all the transient groups
  get clustered together, or can I get sharp patterns
@@ -245,25 +246,13 @@
  % illustrates the state transitions computed based on event sequences from the evaluation study. %stay in the same state.
  %Figure~\ref{fig:taxonomy},
  To compute the state transition probabilities in the Markov model, we make use of event sequences from the evaluation study, where each event consists of labels describing when specific features were used.
- Using the taxonomy in Table~\ref{bigfeaturetable}, we map each usage of a feature in \zvpp to one of the three sensemaking processes.
- Each participant's event sequence
- is divided into sessions,
- each indicating a separate line of inquiry
- during the analysis.
- Based on these event sequences---one for each session,
- we compute the aggregate state transition probabilities
- (edge weight labels in Figure~\ref{fig:transition})
- to characterize how participants from each domain
- move between different sensemaking processes\rchange{\footnote{We chose to break down these results by the domain, rather than on an individual basis, because we found that the analytical patterns are very similar within the domains (possibily due to how similiar the analytical inquiries and datasets were within the domains).}}. For example, in material science,
- bottom-up exploration
- leads to context creation 60\% of the time
- and to top-down pattern search
- the rest of the time.
+ Using the taxonomy in Table~\ref{bigfeaturetable}, we map each usage of a feature in \zvpp to one of the three sensemaking processes. Each participant's event sequence is divided into sessions, each indicating a separate line of inquiry during the analysis. Based on these event sequences---one for each session,
+ we compute the aggregate state transition probabilities (edge weight labels in Figure~\ref{fig:transition}) to characterize how participants from each domain move between different sensemaking processes\rchange{\footnote{We chose to break down these results by the domain, rather than on an individual basis, since we found that the analytical patterns are very similar within the domains (possibily due to how similiar the analytical inquiries and datasets were within the domains).}}. For example, in material science, \rchange{60\% of events that started with }bottom-up exploration \rchange{lead} to context creation and to top-down pattern search the rest of the time.
  Self-directed edges indicate the probability that the participant
  would continue with the same type of sensemaking process.
  For example, when an astronomer performs top-down pattern search,
  it is followed by another top-down process 64\% of the time and context creation the rest of the time,
- but never followed by a bottom-up process.
+ but never followed by a bottom-up process.\dor{Is the use of "X\% of the time" clear here?}
  This high self-directed transition probability
  reflects how astronomers often need to iteratively
  refine their top-down query through pattern
