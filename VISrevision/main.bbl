@@ -328,6 +328,23 @@ T.~Munzner.
 }{.}\hspace{.4pt}111}}
 
 
+\bibitem{Nielsen1994}
+J.~Nielsen.
+\newblock Usability inspection methods.
+\newblock In {\em Conference Companion on Human Factors in Computing Systems},
+  CHI '94, pp. 413--414. ACM, New York, NY, USA, 1994. doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1145\discretionary{/}{%
+}{/}259963\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}260531}}
+
+
+\bibitem{Norman1986}
+D.~A. Norman and S.~W. Draper.
+\newblock {\em User Centered System Design; New Perspectives on Human-Computer
+  Interaction}.
+\newblock L. Erlbaum Associates Inc., Hillsdale, NJ, USA, 1986.
+
 \bibitem{North2006}
 C.~North.
 \newblock {Toward measuring visualization insight}.
@@ -423,6 +440,11 @@ K.~Ryall, N.~Lesh, T.~Lanning, D.~Leigh, H.~Miyashita, and S.~Makino.
 }{/}1056808\hspace{.1pt}\discretionary{.}{%
 }{.}\hspace{.4pt}1057017}}
 
+
+\bibitem{Schuler1993}
+D.~Schuler and A.~Namioka, eds.
+\newblock {\em Participatory Design: Principles and Practices}.
+\newblock L. Erlbaum Associates Inc., Hillsdale, NJ, USA, 1993.
 
 \bibitem{Sedlmair2012}
 M.~Sedlmair, M.~Meyer, and T.~Munzner.
