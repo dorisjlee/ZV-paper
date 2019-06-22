@@ -1,5 +1,5 @@
-TEX=/usr/local/texlive/2014/bin/universal-darwin/pdflatex
-BIBTEX=/usr/local/texlive/2014/bin/universal-darwin/bibtex
+TEX=pdflatex
+BIBTEX=bibtex
 DOC := main
 BIB := reference.bib
 SRCS := $(wildcard *.tex) $(BIB) $(FIGS) Makefile
