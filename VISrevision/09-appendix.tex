@@ -12,13 +12,6 @@
      \item \href{http://cs.cmu.edu/~jernst/stem/}{Short Time-series Expression Miner (Genetics)}
      \item \href{http://srdata.nist.gov/solubility/}{Solubility Database (Material Science)}
    \end{denselist}
- \begin{figure}[h!]
-   \centering
-   \includegraphics[width=0.9\linewidth]{figures/workflow.png}
-   \caption{Screenshots from contextual inquiry: a) A1 examines a light curve manually using the Jupyter notebook environment, b) G2 uses a domain-specific software to examine clustering outputs.}
-   \label{workflow}
-   % \vspace*{-20pt}
- \end{figure}
  \npar Our collaboration with participants is illustrated in Figure~\ref{timeline}, where we began with an existing VQS (\zv, as illustrated in Figure~\ref{oldZV}) and incrementally incorporated features, such as dynamic class creation (Figure~\ref{dcc}), throughout the PD process.
  \begin{figure}[h!]
  	\centering
@@ -36,17 +29,17 @@
  	\label{oldZV}
    % \vspace{-5pt}
  \end{figure}
- \npar As discussed in Section~\ref{sec:feature_dsicovery}, not all of the features proposed by participants during PD were incorporated in the \zvpp prototype. Based on our meeting logs with participants, we found that reasons for not carrying a feature from the design to implementation stage included:
- \begin{denselist} %he amount of nice-to-have features that one could envision for the tool is endless.
- \item Nice-to-haves: One of the most common reasons for unincorporated features comes from participant's requests for nice-to-have features. To this end, we use two criteria to heuristically judge whether to implement a particular feature:
- \begin{enumerate}[leftmargin=*]
- \item \textit{Necessity:} Without this feature, can participants still work with this dataset using the tool and meet their information needs?
- \item \textit{Generality:} Will this feature benefit only this specific use case or be potentially useful for other domains as well?
- \end{enumerate}
- \item ``One-shot'' operations: We decided not to include features that only needed to be performed once and remain fixed thereafter in the analysis workflow. For example, certain preprocessing operations such as filtering null values only needed to be performed once with an external tool.
- \item Substantial research or engineering effort: Some proposed features did not make sense in the context of VQS or required a completely different set of research questions. For example, the question of how to properly compute similarity between time series with non-uniform number of datapoints arose in the astronomy and genetics use case, but requires the development of a novel distance metric and algorithm that is out of the scope of our design study objective. %. For example, M3 proposed functional fitting to obtain fitting coefficients. Other features
- \item Underdeveloped ideas: Other feature requirements came from casual specification that were underspecified. For example, A1 wanted to look for objects that have deficiency in one band and high emission in another band, but the scientific definition of ``deficiency'' in terms of brightness levels was ambiguous.
- \end{denselist}
+ % \npar As discussed in Section~\ref{sec:feature_dsicovery}, not all of the features proposed by participants during PD were incorporated in the \zvpp prototype. Based on our meeting logs with participants, we found that reasons for not carrying a feature from the design to implementation stage included:
+ % \begin{denselist} %he amount of nice-to-have features that one could envision for the tool is endless.
+ % \item Nice-to-haves: One of the most common reasons for unincorporated features comes from participant's requests for nice-to-have features. To this end, we use two criteria to heuristically judge whether to implement a particular feature:
+ % \begin{enumerate}[leftmargin=*]
+ % \item \textit{Necessity:} Without this feature, can participants still work with this dataset using the tool and meet their information needs?
+ % \item \textit{Generality:} Will this feature benefit only this specific use case or be potentially useful for other domains as well?
+ % \end{enumerate}
+ % \item ``One-shot'' operations: We decided not to include features that only needed to be performed once and remain fixed thereafter in the analysis workflow. For example, certain preprocessing operations such as filtering null values only needed to be performed once with an external tool.
+ % \item Substantial research or engineering effort: Some proposed features did not make sense in the context of VQS or required a completely different set of research questions. For example, the question of how to properly compute similarity between time series with non-uniform number of datapoints arose in the astronomy and genetics use case, but requires the development of a novel distance metric and algorithm that is out of the scope of our design study objective. %. For example, M3 proposed functional fitting to obtain fitting coefficients. Other features
+ % \item Underdeveloped ideas: Other feature requirements came from casual specification that were underspecified. For example, A1 wanted to look for objects that have deficiency in one band and high emission in another band, but the scientific definition of ``deficiency'' in terms of brightness levels was ambiguous.
+ % \end{denselist}
   \begin{figure}[h!]
    \centering
    \includegraphics[width=0.9\linewidth]{figures/dcc.pdf}
