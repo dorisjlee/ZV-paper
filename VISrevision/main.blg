@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2019)
+This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: abbrv-doi.bst
@@ -15,45 +15,45 @@ Warning--empty booktitle in HoltzblattJones
 Warning--there's a number but no volume in Keim2006
 Warning--empty journal in Mannino2018
 Warning--empty journal in mohebbi2011google
-You've used 58 entries,
+You've used 52 entries,
             2598 wiz_defined-function locations,
-            1011 strings with 17365 characters,
-and the built_in function-call counts, 51270 in all, are:
-= -- 11010
-> -- 1029
-< -- 1721
-+ -- 2107
-- -- 384
-* -- 1722
-:= -- 7358
-add.period$ -- 190
-call.type$ -- 58
-change.case$ -- 341
+            965 strings with 15637 characters,
+and the built_in function-call counts, 46270 in all, are:
+= -- 10002
+> -- 906
+< -- 1580
++ -- 1919
+- -- 339
+* -- 1520
+:= -- 6647
+add.period$ -- 171
+call.type$ -- 52
+change.case$ -- 302
 chr.to.int$ -- 0
-cite$ -- 63
-duplicate$ -- 901
-empty$ -- 1747
-format.name$ -- 346
-if$ -- 13597
+cite$ -- 57
+duplicate$ -- 806
+empty$ -- 1560
+format.name$ -- 304
+if$ -- 12298
 int.to.chr$ -- 0
-int.to.str$ -- 58
-missing$ -- 64
-newline$ -- 499
-num.names$ -- 117
-pop$ -- 375
+int.to.str$ -- 52
+missing$ -- 58
+newline$ -- 451
+num.names$ -- 105
+pop$ -- 340
 preamble$ -- 1
-purify$ -- 289
+purify$ -- 256
 quote$ -- 0
-skip$ -- 672
+skip$ -- 593
 stack$ -- 0
-substring$ -- 3128
-swap$ -- 271
-text.length$ -- 960
+substring$ -- 2793
+swap$ -- 238
+text.length$ -- 876
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 218
+type$ -- 194
 warning$ -- 5
-while$ -- 296
-width$ -- 60
-write$ -- 1683
+while$ -- 266
+width$ -- 54
+write$ -- 1525
 (There were 8 warnings)
