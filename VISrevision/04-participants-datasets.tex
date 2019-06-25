@@ -10,13 +10,13 @@
  \par\noindent\stitle{Participants and Goals:} 
  \npar The Dark Energy Survey (DES) is a multi-institution project that surveys 300 million galaxies over 525 nights to study dark energy~\cite{DrlicaWagner2018}. The telescope used to survey these galaxies also focuses on smaller patches of the sky on a weekly interval to discover astronomical transients, i.e., objects whose brightness changes dramatically as a function of time, such as supernovae or quasars. Their dataset consisted of a large collection of \emph{light curves}: brightness observations over time, one associated with each astronomical object, plotted as a time series. Over five months, we worked closely with A1, an astronomer on the project's data management team at a supercomputing facility. Their scientific goal was to \rchange{\emph{identify potential astronomical transients in order to study their properties}, i.e., identify patterns in line charts}. \cut{These insights can help further constrain physical models regarding the formation of these objects.}
  \cut{
- \begin{figure}[ht!]
-   \centering
-   \includegraphics[width=\linewidth]{figures/CIscreenshot.pdf}
-   \caption{\rchange{Screenshots from contextual inquiry. Left: A1 performs data smoothing to clean the data and then examines a light curve manually using a Jupyter notebook. Right: G2 uses a domain-specific software to perform clustering and visualize the outputs.}}
-   \label{CIscreenshot}
-   \vspace*{-15pt}
- \end{figure}
+	 \begin{figure}[ht!]
+	   \centering
+	   \includegraphics[width=\linewidth]{figures/CIscreenshot.pdf}
+	   \caption{\rchange{Screenshots from contextual inquiry. Left: A1 performs data smoothing to clean the data and then examines a light curve manually using a Jupyter notebook. Right: G2 uses a domain-specific software to perform clustering and visualize the outputs.}}
+	   \label{CIscreenshot}
+	   \vspace*{-15pt}
+	 \end{figure}
  }
  \par\noindent\stitle{Existing Workflow and Design Opportunities:} 
  \npar \rchange{Since astronomical datasets are often terabytes in scale, they are often processed and stored in highly specialized data management systems in supercomputing centers. As a preliminary step, the astronomer downloads a data sample to explore in a Jupyter notebook, performs data cleaning and wrangling, and verifies data fidelity by computing a set of relevant statistics. Then, to identify transients, the primary scientific goal of their exploration,} the astronomer programmatically \rchange{generates} visualizations of candidate objects with \texttt{matplotlib} and visually \rchange{examines} each light curve. \cut{\rchange{Figure~\ref{CIscreenshot} (left) shows an example of such a manually-generated light curve.}} If an object of interest \rchange{is} identified through visual analysis, the astronomer may inspect the image of the object for verifying that the significant change in brightness was not due to an imaging artifact. 
