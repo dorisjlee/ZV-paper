@@ -224,18 +224,6 @@ P.~Isenberg, T.~Zuk, C.~Collins, and S.~Carpendale.
 }{.}\hspace{.4pt}1377974}}
 
 
-\bibitem{Keim2006}
-D.~A. Keim, F.~Mansmann, J.~Schneidewind, and H.~Ziegler.
-\newblock {Challenges in Visual Data Analysis}.
-\newblock {\em Tenth International Conference on Information Visualization,
-  2006}, (Iv 2006):9--16, 2006. doi: {{%
-10\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}1109\discretionary{/}{%
-}{/}IV\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}2006\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}31}}
-
-
 \bibitem{Khetan2018}
 A.~Khetan, D.~Krishnamurthy, and V.~Viswanathan.
 \newblock Towards synergistic electrode-electrolyte design principles for
@@ -476,11 +464,6 @@ T.~Siddiqui, J.~Lee, A.~Kim, E.~Xue, X.~Yu, S.~Zou, L.~Guo, C.~Liu, C.~Wang,
 \newblock Fast-forwarding to desired visualizations with zenvisage.
 \newblock In {\em The biennial Conference on Innovative Data Systems Research
   (CIDR)}, 2017.
-
-\bibitem{Tukey1970}
-J.~W. Tukey.
-\newblock {\em Exploratory data analysis}.
-\newblock Addison-Wesley, 1970.
 
 \bibitem{wattenberg2001sketching}
 M.~Wattenberg.
