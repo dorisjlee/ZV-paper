@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: abbrv-doi.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: reference.bib
+Warning--I'm ignoring North2006's extra "doi" field
+--line 584 of file reference.bib
+Warning--I'm ignoring HoltzblattJones's extra "title" field
+--line 923 of file reference.bib
+Warning--I'm ignoring BodkerGronbaek's extra "title" field
+--line 935 of file reference.bib
+Warning--empty booktitle in BodkerGronbaek
+Warning--empty booktitle in HoltzblattJones
+Warning--empty journal in Mannino2018
+Warning--empty journal in mohebbi2011google
+You've used 50 entries,
+            2598 wiz_defined-function locations,
+            953 strings with 15411 characters,
+and the built_in function-call counts, 45361 in all, are:
+= -- 9832
+> -- 881
+< -- 1551
++ -- 1879
+- -- 330
+* -- 1478
+:= -- 6491
+add.period$ -- 166
+call.type$ -- 50
+change.case$ -- 293
+chr.to.int$ -- 0
+cite$ -- 54
+duplicate$ -- 795
+empty$ -- 1524
+format.name$ -- 296
+if$ -- 12090
+int.to.chr$ -- 0
+int.to.str$ -- 50
+missing$ -- 55
+newline$ -- 435
+num.names$ -- 101
+pop$ -- 329
+preamble$ -- 1
+purify$ -- 248
+quote$ -- 0
+skip$ -- 594
+stack$ -- 0
+substring$ -- 2743
+swap$ -- 245
+text.length$ -- 860
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 188
+warning$ -- 4
+while$ -- 259
+width$ -- 52
+write$ -- 1487
+(There were 7 warnings)
